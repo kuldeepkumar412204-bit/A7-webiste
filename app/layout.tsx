@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "A7 SATTA KING | Live Kalyan, Gali, Disawar, Milan Satta Results & Charts",
-  description: "Get the fastest live Kalyan, Gali, Disawar, and Milan Satta results. View daily updates, real-time live tickers, official channel links, and historical chart data.",
-  keywords: "satta, ay satta, satta king, live satta results, kalyan results, gali disawar result chart",
+  title: "A7 Satta King Result | Latest Satta Charts, Matka Results & Updates",
+  description: "Check A7 Satta King latest results, daily Satta charts, Matka updates, and records. Stay updated with real-time results and game timings.",
+  keywords: "A7 Satta, A7 Satta King, Satta King result, Satta Matka, Satta charts, daily Satta result, Satta King chart, A7 Satta result today, Matka result, Satta games India",
   icons: {
     icon: "/favicon.ico",
   },
