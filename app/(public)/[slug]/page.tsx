@@ -32,10 +32,12 @@ interface PageProps {
 
 export default async function page({ params }: PageProps) {
   const { slug } = await params;
-  const Component = componentMap[slug.toLocaleLowerCase()];
+  const Component = componentMap[slug];
 
   // If no matching component found, still show the chart
   const showContent = Component ? true : false;
+
+  console.log("Rendering page for slug:", slug, componentMap[slug], "Show content:", showContent);
 
   return (
     <Suspense
