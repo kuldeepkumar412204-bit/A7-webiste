@@ -19,7 +19,7 @@ export default function SattaResultTable() {
     const { data: apiData = [], isLoading: apiIsLoading, error: apiError } = useQuery({
         queryKey: ["satta-api", "daily-api"],
         queryFn: fetchDailyApiData,
-        staleTime: 1000 * 60 * 5, // 5 minutes
+        staleTime: 1000 * 60 * 2, // 2 minutes
     });
 
     // console.log("apiData", apiData);
