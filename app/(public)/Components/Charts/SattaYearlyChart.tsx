@@ -87,16 +87,16 @@ export default function SattaYearlyChart() {
   });
 
   // Auto redirect to home after 3 seconds when game not found
-  useEffect(() => {
-    if (!gameData && !isLoading) {
-      const timer = setTimeout(() => {
-        router.push("/");
-      }, 3000);
-      return () => clearTimeout(timer);
-    }
-  }, [gameData, isLoading, router]);
+  // useEffect(() => {
+  //   if (!gameData && !isLoading) {
+  //     const timer = setTimeout(() => {
+  //       router.push("/");
+  //     }, 3000);
+  //     return () => clearTimeout(timer);
+  //   }
+  // }, [gameData, isLoading, router]);
 
-  if ( !gameData && !isLoading) {
+  if (false && !gameData && !isLoading) {
     return (
       <div className="w-full min-h-[60vh] flex flex-col items-center justify-center bg-white p-6 text-center">
         <div className="max-w-md">
