@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     "Satta Result Ghaziabad",
   ],
   alternates: {
-    canonical: "/ghaziabad",
+    canonical: `${process.env.SITE_URL}/ghaziabad`,
   },
   openGraph: {
     title: "Ghaziabad Satta Result 2026 Today | Ghaziabad Chart & Live Updates",
     description:
       "Check the latest Ghaziabad Satta Result 2026 with daily updates, full charts, and historical records. Get fast and accurate results on A7 Satta King.",
-    url: "/ghaziabad-satta-result",
+    url: `${process.env.SITE_URL}/ghaziabad`,
     siteName: "A7 Satta King",
     locale: "en_US",
     type: "website",

@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     "Satta Result Agra",
   ],
   alternates: {
-    canonical: "/agra-satta-result",
+    canonical: `${process.env.SITE_URL}/agra`,
   },
   openGraph: {
     title: "Agra Satta Result 2026 Today | Agra Chart & Live Updates",
     description:
       "Check the latest Agra Satta Result 2026 with live updates, daily results, and full chart history. Get accurate and fast updates on A7 Satta King.",
-    url: "/agra-satta-result",
+    url: `${process.env.SITE_URL}/agra`,
     siteName: "A7 Satta King",
     type: "website",
   },

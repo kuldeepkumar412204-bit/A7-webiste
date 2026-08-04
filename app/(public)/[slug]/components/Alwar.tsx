@@ -15,13 +15,13 @@ export const metadata: Metadata = {
     "Satta Result Alwar",
   ],
   alternates: {
-    canonical: "/alwar-satta-result",
+    canonical: `${process.env.SITE_URL}/alwar-satta-result`,
   },
   openGraph: {
     title: "Alwar Satta Result 2026 Today | Alwar Chart & Live Updates",
     description:
       "Check the latest Alwar Satta Result 2026 with daily updates, full charts, and historical records. Get fast and accurate results on A7 Satta King.",
-    url: "/alwar-satta-result",
+    url: `${process.env.SITE_URL}/alwar-satta-result`,
     siteName: "A7 Satta King",
     type: "website",
     locale: "en_US",

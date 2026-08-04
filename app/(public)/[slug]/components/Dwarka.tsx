@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     "Satta Result Dwarka",
   ],
   alternates: {
-    canonical: "/dwarka",
+    canonical: `${process.env.SITE_URL}/dwarka`,
   },
   openGraph: {
     title: "Dwarka Satta Result 2026 Today | Dwarka Chart & Live Updates",
     description:
       "Check the latest Dwarka Satta Result 2026 with daily updates, full charts, and historical records. Get fast and accurate results on A7 Satta King.",
-    url: "/dwarka",
+    url: `${process.env.SITE_URL}/dwarka`,
     siteName: "A7 Satta King",
     locale: "en_US",
     type: "website",

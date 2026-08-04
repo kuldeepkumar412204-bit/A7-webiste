@@ -15,13 +15,13 @@ export const metadata: Metadata = {
         "Sadar Bazar History Chart",
     ],
     alternates: {
-        canonical: "/sadar-bazar",
+        canonical: `${process.env.SITE_URL}/sadar-bazar`,
     },
     openGraph: {
         title: "Sadar Bazar Satta Result 2026 Today | Sadar Bazar Chart & Updates",
         description:
             "Check the latest Sadar Bazar Satta Result 2026 with updated charts, daily results, and historical data. Get fast and accurate updates only on A7 Satta King.",
-        url: "/sadar-bazar",
+        url: `${process.env.SITE_URL}/sadar-bazar`,
         siteName: "A7 Satta King",
         type: "website",
         locale: "en_IN",

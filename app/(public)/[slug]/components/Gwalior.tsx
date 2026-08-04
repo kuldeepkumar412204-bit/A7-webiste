@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     "Satta Result Gwalior",
   ],
   alternates: {
-    canonical: "/gwalior-satta-result",
+    canonical: `${process.env.SITE_URL}/gwalior`,
   },
   openGraph: {
     title: "Gwalior Satta Result 2026 Today | Gwalior Chart & Daily Updates",
     description:
       "Check the latest Gwalior Satta Result 2026 with today's updates, full chart, and previous records. Get fast and accurate results only on A7 Satta King.",
-    url: "/gwalior-satta-result",
+    url: `${process.env.SITE_URL}/gwalior`,
     siteName: "A7 Satta King",
     type: "website",
     locale: "en_IN",

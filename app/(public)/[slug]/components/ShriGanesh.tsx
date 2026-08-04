@@ -15,13 +15,13 @@ export const metadata: Metadata = {
         "Satta Result Shri Ganesh",
     ],
     alternates: {
-        canonical: "/shri-ganesh",
+        canonical: `${process.env.SITE_URL}/shri-ganesh`,
     },
     openGraph: {
         title: "Shri Ganesh Satta Result 2026 Today | Shri Ganesh Chart & Updates",
         description:
             "Check the latest Shri Ganesh Satta Result 2026 with daily updates, full charts, and historical records. Get accurate and fast results on A7 Satta King.",
-        url: "/shri-ganesh",
+        url: `${process.env.SITE_URL}/shri-ganesh`,
         siteName: "A7 Satta King",
         type: "website",
     },

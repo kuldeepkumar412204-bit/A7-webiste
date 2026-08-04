@@ -14,13 +14,13 @@ export const metadata: Metadata = {
         "Satta Result Faridabad",
     ],
     alternates: {
-        canonical: "/faridabad",
+        canonical: `${process.env.SITE_URL}/faridabad`,
     },
     openGraph: {
         title: "Faridabad Satta Result 2026 Today | Faridabad Chart & Live Updates",
         description:
             "Check the latest Faridabad Satta Result 2026 with live updates, daily results, and full chart history. Get accurate and fast updates on A7 Satta King.",
-        url: "/faridabad",
+        url: `${process.env.SITE_URL}/faridabad`,
         siteName: "A7 Satta King",
         type: "website",
     },

@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     "Satta Result Gali",
   ],
   alternates: {
-    canonical: "/gali-satta",
+    canonical: `${process.env.SITE_URL}/gali`,
   },
   openGraph: {
     title: "Gali Satta Result 2026 Today | Gali Chart & Live Updates",
     description:
       "Check the latest Gali Satta Result 2026 with daily updates, full charts, and historical records. Get fast and accurate results on A7 Satta King.",
-    url: "/gali-satta",
+    url: `${process.env.SITE_URL}/gali`,
     siteName: "A7 Satta King",
     locale: "en_US",
     type: "website",

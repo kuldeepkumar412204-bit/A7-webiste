@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     "Delhi Matka Satta Chart",
   ],
   alternates: {
-    canonical: "https://yourdomain.com/delhi-matka",
+    canonical: `${process.env.SITE_URL}/delhi-matka`,
   },
   openGraph: {
     title: "Delhi Matka Satta Results 2026 Today | Delhi Matka Chart & Updates",
     description:
       "Check the latest Delhi Matka Satta Results 2026 with daily updates, full charts, and historical records. Get fast and accurate updates on A7 Satta King.",
-    url: "/delhi-matka",
+    url: `${process.env.SITE_URL}/delhi-matka`,
     siteName: "A7 Satta King",
     locale: "en_US",
     type: "website",
