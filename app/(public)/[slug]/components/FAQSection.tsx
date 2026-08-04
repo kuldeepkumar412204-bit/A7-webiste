@@ -1,13 +1,18 @@
+import { ReactNode } from "react";
+
 interface FAQItem {
     question: string;
-    answer: string;
+    answer: ReactNode | string;
 }
 
 export default function FAQSection(
     { faqItems }: {
-        faqItems: FAQItem[]
+        faqItems?: FAQItem[]
     }
 ) {
+    if (!faqItems || faqItems.length === 0) {
+        return null; // Don't render the FAQ section if there are no items
+    }
     return (
         <>
 
@@ -22,7 +27,7 @@ export default function FAQSection(
                 {/* Accordion List Container */}
                 <div className="w-full bg-white py-6 px-4 md:px-6 max-w-4xl mx-auto">
                     <div className="space-y-3">
-                        {faqItems.map((item, idx) => (
+                        {faqItems?.map((item, idx) => (
                             <details
                                 key={idx}
                                 className="border border-gray-200 rounded-lg overflow-hidden shadow-sm group"
