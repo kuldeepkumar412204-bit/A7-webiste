@@ -36,7 +36,7 @@ export default function LoginPage() {
         <>
             <Toaster
                 position="top-center" />
-            <div className="min-h-screen flex items-center justify-center bg-white px-4">
+            <div className="min-h-[70vh] flex items-center justify-center bg-white px-4">
                 <div className="w-full max-w-md bg-white border-2 border-black p-8">
                     <div className="mb-8 text-center">
                         <h1 className="text-2xl font-bold text-black">
