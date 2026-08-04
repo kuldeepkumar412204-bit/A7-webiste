@@ -1,46 +1,51 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 
+
+const links = [
+  { text: "A7SATTA 🏠", href: "/" },
+  { text: "CHART", href: "/chart" },
+  { text: "CONTACT", href: "/contact" },
+  { text: "LOGIN", href: "/login" },
+];
+
 export default function Navbar() {
+    const pathname = usePathname();
   return (
     <>
 
 
       <div className="bg-black pt-[30px] pb-5">
 
-        <nav className="w-full px-4">
-          <div className="w-full block">
+         <nav className="w-full px-4">
+        <div className="w-full block">
+          {links.map((link, index) => {
+            const isActive = pathname === link.href;
 
-            {/* Brand/Logo Pill Button */}
-            <div className="float-left w-1/4 px-[2px] lg:px-[30px]">
-              <Link
-                href="/"
-                className="block rounded-[30px] border border-black bg-[#fff] p-[8px] lg:px-[30px] lg:py-3 text-center text-[8px] sm:text-[10px] md:text-[12px] lg:text-[14px] font-bold uppercase tracking-[0.5px] lg:shadow-[2px_2px_0_rgba(255,216,100,0.9)]"
+            return (
+              <div
+                key={link.href}
+                className="float-left w-1/4 px-[2px] lg:px-[30px]"
               >
-                A7SATTA 🏠
-              </Link>
-            </div>
-
-            {/* Navigation Link: CHART */}
-            {
-              [{ text: "CHART", href: "/chart" }, { text: "CONTACT", href: "/contact" }, { text: "LOGIN", href: "/login" }].map((link, index) => (
-                <div className="float-left w-1/4 px-[2px] lg:px-[30px]"
-                  key={index}
-
+                <Link
+                  href={link.href}
+                  className={`block rounded-[30px] border border-black p-[8px] lg:px-[30px] lg:py-3 text-center text-[8px] sm:text-[10px] md:text-[12px] lg:text-[14px] font-bold uppercase tracking-[0.5px] transition-all duration-200
+                    ${
+                      isActive
+                        ? "bg-white lg:shadow-[2px_2px_0_rgba(255,216,100,0.9)]"
+                        : "bg-[#ffd800] lg:shadow-[2px_2px_0_hsla(0,0%,100%,0.9)] hover:bg-[#ffe44d]"
+                    }`}
                 >
-
-                  <Link
-                    href={link.href}
-                    className="block rounded-[30px] border border-black bg-[#ffd800] p-[8px] lg:px-[30px] lg:py-3 text-center text-[8px] sm:text-[10px] md:text-[12px] lg:text-[14px] font-bold uppercase tracking-[0.5px] lg:shadow-[2px_2px_0_hsla(0,0%,100%,0.9)]"
-                  >
-                    {link.text}
-                  </Link>
-                </div>
-              ))
-            }
-          </div>
-
-        </nav>
+                  {link.text}
+                </Link>
+              </div>
+            );
+          })}
+        </div>
+      </nav>
         <div className="w-full pt-[18px] block overflow-hidden shadow-inner">
           {/* Marquee Ticker Banner Track */}
           <div className="w-full bg-gradient-to-r border-t overflow-hidden shadow-inner">
