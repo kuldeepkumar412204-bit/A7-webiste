@@ -31,59 +31,77 @@ export default function KhaiwalGrid() {
   });
 
   return (
-    <div className="w-full py-4 font-sans select-none">
-      <div className="w-full max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 items-start">
+    <div className="w-full my-[5px] font-sans select-none">
+      <div className="w-full max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[5px] items-start text-[14px]">
 
         {/* COLUMN 1: AJAY BHAI KHAIWAL */}
-        <div className="w-full bg-gradient-to-b from-[#ffd200] via-[#ffd200] to-white border-2 border-dashed border-red-600 rounded-2xl p-4 text-center flex flex-col items-center">
-          <div>
-            <span className="block text-black font-black text-xs tracking-tight mb-1">--सीधे सट्टा कंपनी का No 1 खाईवाल--</span>
-            <h3 className="text-black font-black text-sm sm:text-base tracking-wide flex items-center justify-center gap-1">
-              🎰 AJAY BHAI KHAIWAL 🎰
-            </h3>
+        <div className="w-full bg-gradient-to-b from-[#ffd800] via-[#ffd000dd] to-white border-[3px] border-dashed border-red-600 rounded-[20px] px-2 py-4 text-center flex flex-col items-center">
+          <div className="">
+            <p className=" text-black tracking-tight text-[14.4px] mb-[3.2px]">
+              <strong>
+                --सीधे सट्टा कंपनी का No 1 खाईवाल--
+              </strong>
+            </p>
+            <p className="font-bold mb-[3.2px]">
+              <strong>
+              ♕♕ KUBER BHAI  KHAIWAL ♕♕
 
-            <div className="mt-4 space-y-1.5 w-full text-left px-2">
+
+            </strong>
+            </p>
+
+            <div className="w-full text-left">
               {timingsData1And2.map((item, idx) => (
-                <div key={idx+"aguahdu"} className="flex justify-between items-center text-xs font-black text-black">
-                  <span>⏰ {item.location}</span>
-                  <span className="text-gray-500 font-bold flex-1 border-b border-dotted border-black/40 mx-1 mb-1"></span>
-                  <span>{item.time}</span>
+                <div key={idx+"aguahdu"} className="flex justify-center text-black/80 items-center text-[14.4px] font-semibold mb-[3.2px]">
+                  ⏰ {item.location} {"  "}
+                  <span className="font-bold">
+                    ----------- 
+                  </span>
+                  <span className="text-black/90 font-bold"> {" "} {item.time}</span>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="w-full mt-5 flex flex-col items-center gap-2">
-            <span className="text-black font-black text-xs sm:text-sm">🤪 🤪 AJAY BHAI KHAIWAL 🤪 🤪</span>
-            <a href={`https://wa.me/${data?.whatsappNumber}`} className="text-blue-800 font-black text-xs sm:text-sm underline hover:text-blue-900 mb-1">
+          <div className="w-full flex flex-col items-center gap-2 mb-[3.2px] text-[14.4px]">
+            <span className="text-black/85 font-black ">🤪 🤪 AJAY BHAI KHAIWAL 🤪 🤪</span>
+            <a href={`https://wa.me/${data?.whatsappNumber}`} className="text-blue-800 font-black underline hover:text-blue-900 mb-1">
               Game play करने के लिये नीचे लिंक पर क्लिक करे
             </a>
             <WhatsAppButton number={data?.whatsappNumber}/>
           </div>
         </div>
 
-        {/* COLUMN 2: JASSI BHAI KHAIWAL */}
-        <div className="w-full bg-gradient-to-b from-[#ffd200] via-[#ffd200] to-white border-2 border-dashed border-red-600 rounded-2xl p-4 text-center flex flex-col items-center justify-between">
-          <div>
-            <span className="block text-black font-black text-xs tracking-tight mb-1">--सीधे सट्टा कंपनी का No 1 खाईवाल--</span>
-            <h3 className="text-black font-black text-sm sm:text-base tracking-wide flex items-center justify-center gap-1">
-              🎰 JASSI BHAI KHAIWAL 🎰
-            </h3>
+        {/* COLUMN 2: AJAY BHAI KHAIWAL */}
+        <div className="w-full bg-gradient-to-b text-black/80 from-[#ffd800] via-[#ffd000dd] to-white border-[3px] border-dashed border-red-600 rounded-[20px] px-2 py-4 text-center flex flex-col items-center">
+          <div className="">
+            <p className=" tracking-tight text-[14.4px] mb-[3.2px]">
+              <strong>
+                --सीधे सट्टा कंपनी का No 1 खाईवाल--
+              </strong>
+            </p>
+            <p className="font-bold mb-[3.2px]">
+              <strong>
+              ♕♕ JASSI BHAI  KHAIWAL ♕♕
+            </strong>
+            </p>
 
-            <div className="mt-4 space-y-1.5 w-full text-left px-2">
+            <div className="w-full text-left">
               {timingsData1And2.map((item, idx) => (
-                <div key={idx+"xyz"} className="flex justify-between items-center text-xs font-black text-black">
-                  <span>⏰ {item.location}</span>
-                  <span className="text-gray-500 font-bold flex-1 border-b border-dotted border-black/40 mx-1 mb-1"></span>
-                  <span>{item.time}</span>
+                <div key={idx+"aguahdu"} className="flex justify-center items-center text-[14.4px] font-semibold mb-[3.2px]">
+                  ⏰ {item.location} {"  "}
+                  <span className="font-bold">
+                    ----------- 
+                  </span>
+                  <span className="text-black/90 font-bold"> {" "} {item.time}</span>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="w-full mt-5 flex flex-col items-center gap-2">
-            <span className="text-black font-black text-xs sm:text-sm">🤪 🤪 JASSI BHAI KHAIWAL 🤪 🤪</span>
-            <a href={`https://wa.me/${data?.whatsappNumber}`} className="text-blue-800 font-black text-xs sm:text-sm underline hover:text-blue-900 mb-1">
+          <div className="w-full flex flex-col items-center gap-2 mb-[3.2px] text-[14.4px]">
+            <span className=" font-black ">🙂🙂 JASSI BHAI KHAIWAL 🙂🙂 </span>
+            <a href={`https://wa.me/${data?.whatsappNumber}`} className="text-blue-800 font-black underline hover:text-blue-900 mb-1">
               Game play करने के लिये नीचे लिंक पर क्लिक करे
             </a>
             <WhatsAppButton number={data?.whatsappNumber}/>
@@ -91,52 +109,62 @@ export default function KhaiwalGrid() {
         </div>
 
         {/* COLUMN 3: CRICKET ID INFO */}
-        <div className="w-full bg-gradient-to-b from-[#ffd200] via-[#ffd200] to-white border-2 border-dashed border-red-600 rounded-2xl p-4 text-center flex flex-col items-center justify-center justify-self-center">
-          <p className="text-black font-black text-xs sm:text-sm leading-relaxed max-w-xs">
+        <div className="text-[14.4px] text-black/80 w-full bg-gradient-to-b from-[#ffd800] via-[#ffd000dd] to-white border-[3px] border-dashed border-red-600 rounded-[20px] px-2 py-4 text-center flex flex-col items-center">
+          <p className=" font-black leading-relaxed max-w-xs">
             नमस्कार साथियों Cricket <span className="bg-purple-600 text-white px-1 py-0.5 rounded text-[10px]">ID</span> लेने वाले भाई नीचे दिए गए लिंक पर क्लिक करे
           </p>
 
-          <div className="flex gap-0.5 my-3 text-emerald-600 font-black text-sm">
-            ✳️✳️✳️✳️✳️✳️✳️✳️✳️✳️
+          <div className="flex gap-0.5 my-1 text-emerald-600 font-black text-sm">
+            ✳️✳️✳️✳️✳️✳️✳️✳️✳️✳️✳️✳️
           </div>
 
-          <span className="text-black font-black text-xs sm:text-sm uppercase tracking-wide">
+          <span className=" font-black text-xs sm:text-sm tracking-wide">
             minimum <span className="bg-purple-600 text-white px-1 py-0.5 rounded text-[10px]">ID</span> 500₹ maximum no limit
           </span>
-
-          <div className="mt-5 text-left bg-white/40 p-3 rounded-xl border border-black/10 max-w-xs">
-            <p className="text-black font-black text-xs leading-relaxed">
-              <span className="font-black text-red-600 underline">Note</span> 👉 इस नंबर पर सिर्फ क्रिकेट खेलने वाले ही msg करे फालतू के msg करने वाला ब्लॉक कर दिया जाएगा
-            </p>
+<div className="flex gap-0.5 my-1 text-emerald-600 font-black text-sm">
+            ✳️✳️✳️✳️✳️✳️✳️✳️✳️✳️✳️✳️
           </div>
+          <p className="font-bold">
+            Note 👉 इस नंबर पर सिर्फ क्रिकेट खेलने वाले ही msg करे फालतू के msg करने वाला ब्लॉक कर दिया जाएगा
 
-          <div className="mt-6">
+
+          </p>
+
+          <div className="mt-2">
             <WhatsAppButton number={data?.whatsappNumber}/>
           </div>
         </div>
 
         {/* COLUMN 4: RAMAN BHAI KHAIWAL */}
-        <div className="w-full bg-gradient-to-b from-[#ffd200] via-[#ffd200] to-white border-2 border-dashed border-red-600 rounded-2xl p-4 text-center flex flex-col items-center justify-between">
-          <div>
-            <span className="block text-black font-black text-xs tracking-tight mb-1">--सीधे सट्टा कंपनी का No 1 खाईवाल--</span>
-            <h3 className="text-black font-black text-sm sm:text-base tracking-wide flex items-center justify-center gap-1">
-              🎰 RAMAN BHAI KHAIWAL 🎰
-            </h3>
+        <div className="w-full bg-gradient-to-b text-black/80 from-[#ffd800] via-[#ffd000dd] to-white border-[3px] border-dashed border-red-600 rounded-[20px] px-2 py-4 text-center flex flex-col items-center">
+          <div className="">
+            <p className=" tracking-tight text-[14.4px] mb-[3.2px]">
+              <strong>
+                --सीधे सट्टा कंपनी का No 1 खाईवाल--
+              </strong>
+            </p>
+            <p className="font-bold mb-[3.2px]">
+              <strong>
+              ♕♕ RAMAN BHAI  KHAIWAL ♕♕
+            </strong>
+            </p>
 
-            <div className="mt-4 space-y-1.5 w-full text-left px-2">
-              {timingsData4.map((item, idx) => (
-                <div key={idx + "abc"} className="flex justify-between items-center text-xs font-black text-black">
-                  <span>⏰ {item.location}</span>
-                  <span className="text-gray-500 font-bold flex-1 border-b border-dotted border-black/40 mx-1 mb-1"></span>
-                  <span>{item.time}</span>
+            <div className="w-full text-left">
+              {timingsData1And2.map((item, idx) => (
+                <div key={idx+"aguahdu"} className="flex justify-center items-center text-[14.4px] font-semibold mb-[3.2px]">
+                  ⏰ {item.location} {"  "}
+                  <span className="font-bold">
+                    ----------- 
+                  </span>
+                  <span className="text-black/90 font-bold"> {" "} {item.time}</span>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="w-full mt-5 flex flex-col items-center gap-2">
-            <span className="text-black font-black text-xs sm:text-sm">🤪 🤪 RAMAN BHAI KHAIWAL 🤪 🤪</span>
-            <a href="https://wa.me/your_link" className="text-blue-800 font-black text-xs sm:text-sm underline hover:text-blue-900 mb-1">
+          <div className="w-full flex flex-col items-center gap-2 mb-[3.2px] text-[14.4px]">
+            <span className=" font-black ">🙂🙂  RAMAN BHAI KHAIWAL  🙂🙂 </span>
+            <a href={`https://wa.me/${data?.whatsappNumber}`} className="text-blue-800 font-black underline hover:text-blue-900 mb-1">
               Game play करने के लिये नीचे लिंक पर क्लिक करे
             </a>
             <WhatsAppButton number={data?.whatsappNumber}/>

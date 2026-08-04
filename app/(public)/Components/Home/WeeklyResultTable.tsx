@@ -31,7 +31,7 @@ export default function WeeklyResultTable({
       {title && (
         <div className="w-full bg-gradient-to-b from-orange-400 to-[#ffd200] border-b-2 border-black py-4 text-center">
           <h3 className="text-xl sm:text-3xl font-semibold text-black tracking-wider uppercase">
-            {title} {selectedMonth.toUpperCase()} {selectedYear}
+            {title}
           </h3>
         </div>
       )}

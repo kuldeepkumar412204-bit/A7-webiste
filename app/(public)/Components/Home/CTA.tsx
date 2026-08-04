@@ -11,18 +11,19 @@ export default function CTA(){
     return (
         <>
         
-        <div>
+        <div className="mb-[5px]">
         {/* TELEGRAM ROW */}
-        <div className="w-full bg-gradient-to-b from-[#ffd200] via-[#ffd200] to-white border-2 border-dashed border-red-500 rounded-2xl  py-6 px-4 text-center flex flex-col items-center justify-center">
-          <p className="text-black font-semibold text-sm uppercase tracking-tight max-w-5xl leading-relaxed">
+        <div className="w-full bg-gradient-to-b text-black/80 text-[14.4px] from-[#ffd800] via-[#ffd000dd] to-white border-[3px] border-dashed border-red-600 rounded-[20px] px-2 py-4 text-center flex flex-col items-center">
+          <p className=" font-semibold uppercase tracking-tight max-w-5xl leading-relaxed">
             🙏🏿नमस्कार साथियो 🙏🏿
 
           </p>
-          <p className="text-black font-semibold text-sm uppercase tracking-tight max-w-5xl leading-relaxed">
-            अपनी गेम का रिजल्ट हमारी web साइट पर लगवाने के लिए संपर्क करें।
+          <p className="font-semibold tracking-tight max-w-5xl leading-relaxed">
+            अपनी गेम का रिजल्ट हमारी 
+            <strong> web </strong> साइट पर लगवाने के लिए संपर्क करें।
 
           </p>
-          <p className="text-black font-bold text-sm uppercase tracking-tight max-w-5xl leading-relaxed mt-2">
+          <p className="font-bold uppercase tracking-tight max-w-5xl leading-relaxed mt-2">
             ----ARUN BHAI ----
 
 
@@ -40,11 +41,11 @@ export default function CTA(){
           </a>
 
 
-          <p className="text-black font-semibold text-sm uppercase tracking-tight max-w-5xl leading-relaxed mt-6">
+          <p className="font-semibold uppercase tracking-tight max-w-5xl leading-relaxed mt-2">
             NOTE:   इस नंबर पर लीक गेम नही मिलता गेम लेने वाले भाई कॉल या मैसेज न करें।
 
           </p>
-          <p className="text-black font-semibold text-sm uppercase tracking-tight max-w-5xl leading-relaxed">
+          <p className="font-semibold uppercase tracking-tight max-w-5xl leading-relaxed">
             किसी भी भाई को किसी भी तरह की कोई शिकायत या परेशानी हो तो हमसे telegram पर संपर्क करे
           </p>
           <a

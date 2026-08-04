@@ -18,8 +18,8 @@ export default function CommunityLinks() {
       <div className="w-full mx-auto flex flex-col gap-2">
         
         {/* TELEGRAM ROW */}
-        <div className="w-full bg-[#ffd200] border border-dashed border-red-500  py-6 px-4 text-center flex flex-col items-center justify-center gap-3">
-          <p className="text-black font-semibold text-sm sm:text-base uppercase tracking-tight max-w-5xl leading-relaxed">
+        <div className="w-full bg-[#ffd200] border border-dashed border-red-500  py-6 px-4 text-center flex flex-col items-center justify-center gap-2">
+          <p className="text-black font-bold text-sm sm:text-base uppercase tracking-tight max-w-5xl leading-relaxed">
             "NOW TELEGRAM PLAYERS CAN ALSO JOIN OUR TELEGRAM CHANNEL TO GET RESULTS QUICKLY AND RECEIVE SUPERFAST RESULTS."
           </p>
           <a
@@ -33,8 +33,8 @@ export default function CommunityLinks() {
         </div>
 
         {/* WHATSAPP ROW */}
-        <div className="w-full bg-[#ffd200] border border-dashed border-red-500 py-6 px-4 text-center flex flex-col items-center justify-center gap-3">
-          <p className="text-black font-semibold text-sm sm:text-base uppercase tracking-tight max-w-5xl leading-relaxed">
+        <div className="w-full bg-[#ffd200] border border-dashed border-red-500 py-6 px-4 text-center flex flex-col items-center justify-center gap-2">
+          <p className="text-black font-bold text-sm sm:text-base uppercase tracking-tight max-w-5xl leading-relaxed">
             "NOW WHATSAPP PLAYERS CAN ALSO JOIN OUR WHATSAPP CHANNEL TO GET RESULTS QUICKLY AND RECEIVE SUPERFAST RESULTS."
           </p>
           <a
@@ -50,14 +50,14 @@ export default function CommunityLinks() {
         </div>
 
         {/* SHRI GANESH UPDATE TRACK */}
-        <div className="w-full bg-[#ffd200] border border-dashed border-red-500 py-6 px-4 text-center">
+        <div className="w-full bg-[#ffd200] border border-dashed border-red-500 p-5 text-center">
           <p className="text-black font-semibold text-xs sm:text-sm md:text-base uppercase tracking-tight">
             <a href="#shri-ganesh" className="underline text-blue-900 hover:text-zinc-800">SHRI GANESH SATTA KING</a> RESULT IS UPDATED EVERYDAY AT <span className="font-bold">4:40 PM</span>.
           </p>
         </div>
 
         {/* SADAR BAZAR UPDATE TRACK */}
-        <div className="w-full bg-[#ffd200] border border-dashed border-red-500 py-6 px-4 text-center">
+        <div className="w-full bg-[#ffd200] border border-dashed border-red-500 p-5 text-center">
           <p className="text-black font-semibold text-xs sm:text-sm md:text-base uppercase tracking-tight">
             <a href="#sadar-bazar" className="underline text-blue-900 hover:text-zinc-800">SADAR BAZAR SATTA KING 2025</a> CHART IS AVAILABLE ON A7SATTA.COM
           </p>

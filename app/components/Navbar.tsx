@@ -4,61 +4,64 @@ import React from "react";
 export default function Navbar() {
   return (
     <>
-    
-    
-   
-    <nav className="w-full bg-black py-4 gap-4 border-b-4 border-black">
-        <div className="w-full max-w-8xl px-2 py-4 sm:px-6 grid grid-cols-4 mx-auto items-center justify-center gap-x-2 sm:gap-x-14 gap-y-4">
-        
-        {/* Brand/Logo Pill Button */}
-        <Link
-          href="/"
-          className="bg-white text-black w-full font-semibold text-[10px] sm:text-sm px-2 py-2 sm:px-9 sm:py-2.5 rounded-full border border-black sm:shadow-[2px_2px_0px_#ffffff] hover:sm:shadow-[2px_2px_0px_#FFD200] transition-all duration-150 tracking-wider text-nowrap text-center"
-        >
-          A7SATTA 🏠
-        </Link>
 
-        {/* Navigation Link: CHART */}
-        <Link
-          href="/chart"
-          className="bg-[#ffd800] text-black font-semibold text-[10px] sm:text-sm px-4 py-2 sm:px-9 sm:py-2.5 rounded-full border border-black sm:shadow-[2px_2px_0px_#ffffff] hover:sm:shadow-[2px_2px_0px_#ffd800] transition-all duration-150 tracking-wider text-center"
-        >
-          CHART
-        </Link>
 
-        {/* Navigation Link: CONTACT */}
-        <Link
-          href="/contact"
-          className="bg-[#ffd800] text-black font-semibold text-[10px] sm:text-sm px-4 py-2 sm:px-9 sm:py-2.5 rounded-full border border-black sm:shadow-[2px_2px_0px_#ffffff] hover:sm:shadow-[2px_2px_0px_#ffd800] transition-all duration-150 tracking-wider text-center"
-        >
-          CONTACT
-        </Link>
+      <div className="bg-black pt-[30px] pb-5">
 
-        {/* Navigation Link: LOGIN */}
-        <Link
-          href="/login"
-          className="bg-[#ffd800] text-black font-semibold text-[10px]  sm:text-sm px-4 py-2 sm:px-9 sm:py-2.5 rounded-full border border-black sm:shadow-[2px_2px_0px_#ffffff] hover:sm:shadow-[2px_2px_0px_#ffd800] transition-all duration-150 tracking-wider text-center"
-        >
-          LOGIN
-        </Link>
+        <nav className="w-full px-4">
+          <div className="w-full block">
 
-      </div>
-        <div className="w-full bg-gradient-to-r border-t  overflow-hidden shadow-inner">
-        {/* Marquee Ticker Banner Track */}
-        <div className="w-full bg-gradient-to-r py-1.5 border-t overflow-hidden shadow-inner">
-          {React.createElement('marquee', {
-            behavior: 'scroll',
-            direction: 'left',
-            scrollamount: '5',
-            className: 'text-[#140E05] font-bold text-xs sm:text-sm tracking-wide flex items-center text-white',
-          }, "✨ Welcome to A7 SATTA KING Official Website! Stay updated with historical data insights, game rule books, and real-time live winning news updates around the clock. 🚀")}
+            {/* Brand/Logo Pill Button */}
+            <div className="float-left w-1/4 px-[30px]">
+              <Link
+                href="/"
+                className="block rounded-[30px] border border-black bg-[#fff] px-[30px] py-3 text-center text-[14px] font-bold uppercase tracking-[0.5px] shadow-[2px_2px_0_rgba(255,216,100,0.9)]"
+              >
+                A7SATTA 🏠
+              </Link>
+            </div>
+
+            {/* Navigation Link: CHART */}
+            {
+              [{ text: "CHART", href: "/chart" }, { text: "CONTACT", href: "/contact" }, { text: "LOGIN", href: "/login" }].map((link, index) => (
+                <div className="float-left w-1/4 px-[30px]"
+                  key={index}
+
+                >
+
+                  <Link
+                    href={link.href}
+                    className="block rounded-[30px] border border-black bg-[#ffd800] px-[30px] py-3 text-center text-[14px] font-bold uppercase tracking-[0.5px] shadow-[2px_2px_0_hsla(0,0%,100%,0.9)]"
+                  >
+                    {link.text}
+                  </Link>
+                </div>
+              ))
+            }
+          </div>
+
+        </nav>
+        <div className="w-full pt-[18px] block overflow-hidden shadow-inner">
+          {/* Marquee Ticker Banner Track */}
+          <div className="w-full bg-gradient-to-r border-t overflow-hidden shadow-inner">
+            {React.createElement('marquee', {
+              behavior: 'scroll',
+              direction: 'left',
+              scrollamount: '5',
+              className: 'text-[#140E05] font-medium text-[16px] tracking-wide flex items-center text-white',
+            }, " Welcome to A7 SATTA KING Official Website! Stay updated with historical data insights, game rule books, and real-time live winning news updates around the clock. 🚀")}
+          </div>
         </div>
+
+
       </div>
-      </nav>
- {/* 2. MAIN BRAND HEADER (Yellow background, big title) */}
-          <header className="w-full bg-[#ffd800] py-8 text-center select-none overflow-hidden">
-            {/* Custom Keyframes Style Injection */}
-            <style>{`
+      {/* 2. MAIN BRAND HEADER (Yellow background, big title) */}
+      <header className="  w-full bg-[#ffd800] py-6 text-center select-none overflow-hidden">
+
+        <div className="container mx-auto px-[12px]">
+          {/* Custom Keyframes Style Injection */}
+
+          <style>{`
             @keyframes strictOpacityFade {
               0%, 100% { opacity: 0; }
               50% { opacity: 1; }
@@ -67,13 +70,17 @@ export default function Navbar() {
               animation: strictOpacityFade 2s ease-in-out infinite;
             }
           `}</style>
-    
-    <Link href={"/"}>
-    <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tighter text-black uppercase animate-custom-fade">
+
+          <Link href={"/"}>
+            <h1 className="text-[calc(1.375rem+1.5vw)] leading-[1.2] font-semibold tracking-tighter text-black uppercase animate-custom-fade">
               A7 SATTA KING OFFICIAL
             </h1>
-    </Link>
-            
-          </header></>
+          </Link>
+        </div>
+
+
+      </header>
+    </>
+
   );
 }

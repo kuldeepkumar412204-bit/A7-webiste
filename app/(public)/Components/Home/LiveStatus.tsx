@@ -4,37 +4,42 @@ import { useEffect, useState } from "react";
 
 export default function LiveStatus() {
 
-      const [currentTime, setCurrentTime] = useState("");
-      const [selectedYear, setSelectedYear] = useState(2026);
-      const [selectedMonth, setSelectedMonth] = useState("July");
-    
-      // Clock Update
-      useEffect(() => {
+    const [currentTime, setCurrentTime] = useState("");
+    const [selectedYear, setSelectedYear] = useState(2026);
+    const [selectedMonth, setSelectedMonth] = useState("July");
+
+    // Clock Update
+    useEffect(() => {
         const updateTime = () => {
-          const now = new Date();
-          setCurrentTime(now.toLocaleString("en-US", {
-            month: "long",
-            day: "numeric",
-            year: "numeric",
-            hour: "2-digit",
-            minute: "2-digit",
-            second: "2-digit",
-            hour12: true
-          }));
+            const now = new Date();
+            const date = now.toLocaleDateString("en-US", {
+                month: "long",
+                day: "numeric",
+                year: "numeric",
+            });
+
+            const time = now.toLocaleTimeString("en-US", {
+                hour: "2-digit",
+                minute: "2-digit",
+                second: "2-digit",
+                hour12: true,
+            });
+
+            setCurrentTime(`${date} ${time}`);
         };
         updateTime();
         const interval = setInterval(updateTime, 1000);
         return () => clearInterval(interval);
-      }, []);
+    }, []);
 
     return (
         <>
-            <section className="w-full bg-black py-10 px-4 text-center border-b-4 border-black text-white">
+            <section className="w-full bg-black py-[24px] px-4 text-center border-b-4 border-black text-white">
                 <div className="max-w-4xl mx-auto flex flex-col items-center gap-4">
-                    <div className="text-[#ffd200] text-lg sm:text-xl font-bold tracking-wider font-mono">
+                    <div className="block min-h-8 text-center text-[20px] font-bold text-[#ffd800]">
                         {currentTime || "July 4, 2026 5:59:50 PM"}
                     </div>
-                    <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">
+                    <h2 className="text-[24px] font-black text-white tracking-tight">
                         हा भाई यही आती हे सबसे पहले खबर रूको और देखो
                     </h2>
                     <div>
@@ -72,17 +77,19 @@ export default function LiveStatus() {
             </section>
 
             {/* 4. DISAWER RESULT PANEL (Yellow background) */}
-            <section className="w-full bg-[#ffd200]  py-8 text-center text-black">
-                <div className="max-w-md mx-auto flex flex-col items-center">
-                    <h3 className="text-3xl font-semibold tracking-tight">DISAWER</h3>
-                    <span className="text-base font-bold text-black/80 mt-1 uppercase">5:15 AM</span>
-                    <div className="flex items-center gap-4 mt-4  px-6 py-2.5 rounded-xl">
-                        <span className="text-2xl font-mono font-black">39</span>
+            <section className="w-full bg-[#ffd800] pt-[20px] text-center text-black">
+                <div className="max-w-md mx-auto pb-[15px] flex flex-col items-center">
+                    <h3 className="text-[24px] font-semibold tracking-tight">DISAWER</h3>
+                    <span className="my-2 text-center text-[18px] font-semibold text-black">5:15 AM</span>
+                    <div className="flex items-center rounded-xl text-black/70">
+                        <span className="text-[20px] font-mono font-black">39</span>
                         {/* Green arrow */}
-                        <span className="w-8 h-8 bg-[#10b981] rounded flex items-center justify-center text-white text-lg font-black border border-black shadow-[1px_1px_0px_#000000]">
-                            ➜
-                        </span>
-                        <span className="text-2xl font-mono font-black">91</span>
+                        <img
+                            src="/arrow.gif"
+                            alt="Arrow"
+                            className="mx-[5px] h-[30px] w-[30px]"
+                        />
+                        <span className="text-[20px] font-mono font-black">91</span>
                     </div>
                 </div>
             </section>

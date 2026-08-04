@@ -9,6 +9,43 @@ import SattaChartSearch from "./Components/Home/SattaChartSearch";
 import WeeklyResultsSection from "./Components/Home/WeeklyResultsSection";
 import CTA from "./Components/Home/CTA";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "A7 Satta King Result | Latest Satta Charts, Matka Results & Updates",
+  description:
+    "Check A7 Satta King latest results, daily Satta charts, Matka updates, and records. Stay updated with real-time results and game timings.",
+  keywords: [
+    "A7 Satta",
+    "A7 Satta King",
+    "Satta King result",
+    "Satta Matka",
+    "Satta charts",
+    "daily Satta result",
+    "Satta King chart",
+    "A7 Satta result today",
+    "Matka result",
+    "Satta games India",
+  ],
+  alternates: {
+    canonical: "https://a7sattaking.co/",
+  },
+  openGraph: {
+    title: "A7 Satta King Result | Latest Satta Charts, Matka Results & Updates",
+    description:
+      "Check A7 Satta King latest results, daily Satta charts, Matka updates, and records. Stay updated with real-time results and game timings.",
+    url: "https://a7sattaking.co/",
+    siteName: "Your Website Name",
+    type: "website",
+    locale: "en_IN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "A7 Satta King Result | Latest Satta Charts, Matka Results & Updates",
+    description:
+      "Check A7 Satta King latest results, daily Satta charts, Matka updates, and records. Stay updated with real-time results and game timings.",
+  },
+};
 
 export default function Home() {
 
@@ -22,7 +59,7 @@ export default function Home() {
 
 
       {/* 3. LIVE STATUS BLOCK (Black background) */}
-      <LiveStatus/>
+      <LiveStatus />
       {/* 6. SATTA ANNOUNCEMENT HEADER BANNER */}
 
       <CommunityLinks />
@@ -32,12 +69,12 @@ export default function Home() {
 
       <SattaResultTable />
 
-      <CTA/>
-      <main className="mx-auto pt-8 flex-grow w-full flex flex-col gap-10">
+      <CTA />
+      <main className="mx-auto mt-[5px] flex-grow w-full flex flex-col gap-10">
 
 
         {/* 8. DOUBLE HISTORIC RESULT CHART GRID */}
-        <section id="charts" className="flex flex-col gap-6">
+        <section id="charts" className="flex flex-col">
 
           {/* Header & Filter options */}
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 ">
@@ -56,16 +93,14 @@ export default function Home() {
 
         </section>
         {/* 9. SEO TEXT WITH SOLID YELLOW HEADER */}
-
-        <FAQSection />
-
-
-        {/* 10. A7 SATTA KING BLOG (Black background card blocks) */}
-        <Blogs />
-
       </main>
-      {/* 12. FLOATING BOTTOM RIGHT REFRESH BUTTON */}
-      
+      <FAQSection />
+
+
+      {/* 10. A7 SATTA KING BLOG (Black background card blocks) */}
+      <Blogs />
+
+
 
     </div>
   );

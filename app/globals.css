@@ -1,21 +1,36 @@
 @import "tailwindcss";
 
+
 :root {
   --background: #ffffff;
   --foreground: #000000;
   --yellow: #ffd800;
 }
 
+@font-face {
+  font-family: "HelveticaLight";
+  src: url("/fonts/Helvetica-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+
 @theme {
   --color-primary: #000000;
   --color-secondary: var(--yellow);
-   --container-8xl: 96rem; /* 1536px */
+  --container-8xl: 96rem;
+  /* 1536px */
 
 }
 
-button{
+body {
+  font-family: "HelveticaLight", sans-serif;
+}
+
+button {
   cursor: pointer;
 }
+
 /* Custom Scrollbar for chart table */
 .custom-scrollbar::-webkit-scrollbar {
   height: 8px;
@@ -40,12 +55,11 @@ button{
   position: relative;
   width: 60px;
   height: 60px;
-  background: #e11d48; /* Red 600 */
-  clip-path: polygon(
-    50% 0%, 61% 12%, 77% 6%, 79% 23%, 94% 23%, 89% 39%, 99% 49%, 89% 61%, 94% 77%, 79% 77%,
-    77% 94%, 61% 88%, 50% 100%, 39% 88%, 23% 94%, 21% 77%, 6% 77%, 11% 61%, 1% 49%, 11% 39%,
-    6% 23%, 21% 23%, 23% 6%, 39% 12%
-  );
+  background: #e11d48;
+  /* Red 600 */
+  clip-path: polygon(50% 0%, 61% 12%, 77% 6%, 79% 23%, 94% 23%, 89% 39%, 99% 49%, 89% 61%, 94% 77%, 79% 77%,
+      77% 94%, 61% 88%, 50% 100%, 39% 88%, 23% 94%, 21% 77%, 6% 77%, 11% 61%, 1% 49%, 11% 39%,
+      6% 23%, 21% 23%, 23% 6%, 39% 12%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,9 +71,12 @@ button{
 }
 
 @keyframes star-pulse {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.15);
   }

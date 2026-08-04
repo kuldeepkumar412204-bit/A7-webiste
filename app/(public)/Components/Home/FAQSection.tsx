@@ -23,7 +23,7 @@ export default function FAQSection() {
   // Main H2 Text Content Sections
   const infoSections: InfoSection[] = [
     {
-      heading: "What is A7 Satta King",
+      heading: "What is A7 Satta King?",
       description:
         "A7 Satta King is a famous platform for announcing many satta results. While several websites announce the satta results, they are not reliable, and there is a lack of consistency; on the other hand, A7 Satta King is a trustworthy and consistent website for checking everyday satta results, and players can check the whole year's satta chart here, which is crucial for the game.",
     },
@@ -199,21 +199,21 @@ export default function FAQSection() {
   ];
 
   return (
-    <div className="w-full bg-white font-sans">
+    <div className="w-full bg-white font-sans my-[16px] text-[16px]">
       <div className="w-full flex flex-col">
         {/* Render Main Content Blocks */}
         {infoSections.map((section, idx) => (
           <div key={idx} className="w-full">
             {/* Bright Yellow Heading Bar */}
-            <div className="w-full bg-[#ffd200] py-3.5 px-4 text-center border-b border-black/10">
-              <h2 className="text-black font-semibold text-sm sm:text-lg md:text-xl tracking-wide uppercase">
+            <div className="w-full bg-[#ffd800] p-4 mb-2 text-center border-b border-black/10">
+              <h2 className="text-[#212529] font-bold text-[20px] tracking-wide">
                 {section.heading}
               </h2>
             </div>
 
             {/* Clean White Description Content Box */}
-            <div className="w-full bg-white py-5 px-4 md:px-6 max-w-8xl mx-auto">
-              <div className="text-black font-medium text-xs sm:text-base leading-relaxed text-justify md:text-left tracking-normal">
+            <div className="w-full bg-white p-4 pt-0 md:px-6 max-w-8xl mx-auto">
+              <div className="text-[#212529] font-medium leading-relaxed text-justify md:text-left tracking-normal">
                 {section.description}
               </div>
             </div>

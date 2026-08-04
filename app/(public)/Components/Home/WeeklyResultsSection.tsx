@@ -65,10 +65,10 @@ export default function MonthlyResultsSection() {
   }
 
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col">
       {/* Table 1 Viewport */}
       <WeeklyResultTable
-        title={`${selectedMonth.toUpperCase()} SATTA RESULT CHART`}
+        title={` SATTA RESULT CHART  ${selectedMonth.toUpperCase()} ${selectedYear}`}
         data={table1}
         searchQuery={searchQuery}
         selectedMonth={selectedMonth}
@@ -77,7 +77,6 @@ export default function MonthlyResultsSection() {
 
       {/* Table 2 Viewport */}
       <WeeklyResultTable
-        title={`${selectedMonth.toUpperCase()} ADDITIONAL ENTRIES`}
         data={table2}
         searchQuery={searchQuery}
         selectedMonth={selectedMonth}

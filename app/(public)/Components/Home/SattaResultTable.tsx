@@ -26,14 +26,14 @@ export default function SattaResultTable() {
 
     return (
         <div>
-            <div className="w-full bg-white py-6 font-sans select-none flex justify-center">
+            <div className="w-full bg-white font-sans select-none flex justify-center">
                 <div className="w-full max-w-8xl border border-gray-400 overflow-hidden shadow-sm">
 
                     {/* TABLE HEADERS */}
-                    <div className="grid grid-cols-[4fr_3fr_3fr] bg-black text-center text-white text-base font-bold py-2 border-b border-gray-400">
-                        <div className="border-r border-gray-600/50 py-1">सट्टा का नाम</div>
-                        <div className="border-r border-gray-600/50 py-1">कल आया था</div>
-                        <div className="py-1">आज का रिजल्ट</div>
+                    <div className="flex bg-black text-center text-white text-[14.4px] font-bold py-2 border-b border-gray-400">
+                        <div className="border-r border-gray-600/50 py-1 w-[37%]">सट्टा का नाम</div>
+                        <div className="border-r border-gray-600/50 py-1 w-[33%]">कल आया था</div>
+                        <div className="py-1 w-[33%]">आज का रिजल्ट</div>
                     </div>
 
                     {/* TABLE ROWS */}
@@ -75,12 +75,12 @@ export default function SattaResultTable() {
                             </div>
                         ))}
                     </div> */}
-                    <div className="divide-y divide-gray-300">
+                    <div className="divide-y divide-gray-300 text-[22px]">
                         {apiData.map((data: any, index: number) => (
-                            <div key={data.name} className="grid grid-cols-[4fr_3fr_3fr] items-center text-center">
+                            <div key={data.name} className="flex items-center text-center">
 
                                 {/* Column 1: Name & Timing */}
-                                <div className="bg-[#FFD200] py-3 px-2 flex flex-col justify-center items-center h-full border-r border-gray-300">
+                                <div className="w-[37%] bg-[#FFD200] py-3 px-2 flex flex-col justify-center items-center h-full border-r border-gray-300">
                                     <Link href={`/${data?.name?.split(" ").join("-")}`} className="text-black font-bold text-[22px] tracking-tight leading-tight uppercase hover:text-blue-800">
                                         {data?.name}
                                     </Link>
@@ -90,12 +90,12 @@ export default function SattaResultTable() {
                                 </div>
 
                                 {/* Column 2: Yesterday's Result */}
-                                <div className="py-2 text-black font-bold text-[22px] sm:text-xl border-r border-gray-300 bg-white h-full flex items-center justify-center">
+                                <div className="w-[33%] py-2 text-black font-bold text-[22px] sm:text-xl border-r border-gray-300 bg-white h-full flex items-center justify-center">
                                     {data?.yesterday}
                                 </div>
 
                                 {/* Column 3 - Today Result */}
-                                <div className="py-2 bg-white h-full flex items-center justify-center">
+                                <div className="w-[33%] py-2 bg-white h-full flex items-center justify-center">
                                     {data?.result === "XX" ? (
                                         <div className="w-10 h-10">
                                             <Image
@@ -123,19 +123,19 @@ export default function SattaResultTable() {
                 <div className="w-full max-w-8xl border border-gray-400 overflow-hidden shadow-sm">
 
                     {/* TABLE HEADERS */}
-                    <div className="grid grid-cols-[4fr_3fr_3fr] bg-black text-center text-white text-base font-bold py-2 border-b border-gray-400">
-                        <div className="border-r border-gray-600/50 py-1">सट्टा का नाम</div>
-                        <div className="border-r border-gray-600/50 py-1">कल आया था</div>
-                        <div className="py-1">आज का रिजल्ट</div>
+                    <div className="flex bg-black text-center text-white text-[14.4px] font-bold py-2 border-b border-gray-400">
+                        <div className="border-r border-gray-600/50 py-1 w-[37%]">सट्टा का नाम</div>
+                        <div className="border-r border-gray-600/50 py-1 w-[33%]">कल आया था</div>
+                        <div className="py-1 w-[33%]">आज का रिजल्ट</div>
                     </div>
 
                     {/* TABLE ROWS */}
-                    <div className="divide-y divide-gray-300">
+                    <div className="divide-y divide-gray-300 text-[22px]">
                         {satta.filter((item) => item.tableNo === 2).map((game, index) => (
-                            <div key={game?._id} className="grid grid-cols-[4fr_3fr_3fr] items-center text-center">
+                            <div key={game?._id} className="flex items-center text-center">
 
                                 {/* Column 1: Name & Timing */}
-                                <div className="bg-[#FFD200] py-3 px-2 flex flex-col justify-center items-center h-full border-r border-gray-300">
+                                <div className="w-[37%] bg-[#FFD200] py-3 px-2 flex flex-col justify-center items-center h-full border-r border-gray-300">
                                     <Link href={`/${game.slug}`} className="text-black font-bold text-[22px] tracking-tight leading-tight uppercase hover:text-blue-800">
                                         {game.game}
                                     </Link>
@@ -145,12 +145,12 @@ export default function SattaResultTable() {
                                 </div>
 
                                 {/* Column 2: Yesterday's Result */}
-                                <div className="py-2 text-black font-bold text-[22px] sm:text-xl border-r border-gray-300 bg-white h-full flex items-center justify-center">
+                                <div className="w-[33%] py-2 text-black font-bold text-[22px] sm:text-xl border-r border-gray-300 bg-white h-full flex items-center justify-center">
                                     {game.result?.[0] ?? "-"}
                                 </div>
 
                                 {/* Column 3 - Today Result */}
-                                <div className="py-2 bg-white h-full flex items-center justify-center">
+                                <div className="w-[33%] py-2 bg-white h-full flex items-center justify-center">
                                     {!hasTimePassed(game.time) ? (
                                         <div className="w-10 h-10">
                                             <Image

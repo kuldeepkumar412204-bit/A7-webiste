@@ -16,7 +16,7 @@ export default function SattaChartSearch() {
   };
 
   return (
-    <div className="w-full bg-white font-sans select-none">
+    <div className="w-full bg-white font-sans select-none py-[12.8px]">
 
       {/* Main Search Controls Container Row */}
       <div className="w-full py-0 px-4 flex justify-center items-center">
