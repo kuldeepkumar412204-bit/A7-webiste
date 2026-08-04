@@ -46,18 +46,18 @@ export default function SattaChartLinksGrid() {
     });
 
     return (
-        <div className="w-full bg-white pb-8 font-sans select-none">
+        <div className="w-full bg-white pb-8 select-none">
 
-            <div className="bg-black py-6">
-                <p className="text-base sm:text-lg text-center text-white">
+            <div className="bg-black py-[25px]">
+                <p className="text-[16px] leading-[28px] text-center text-white">
                     A7satta provides all kind of satta king results everyday.
 
                 </p>
 
             </div>
             {/* Top Main Heading Banner with exact Orange-Yellow Gradient */}
-            <div className="w-full bg-gradient-to-b from-[#FFA500] to-[#FFD200] py-6 text-center border-b border-black/10 mb-5">
-                <h2 className="text-black font-semibold text-xl sm:text-2xl md:text-3xl tracking-wide uppercase">
+            <div className="bg-gradient-to-b from-[#ff9000] to-[#ffe400] border-b border-b-black border-t-2 border-t-black text-black py-5">
+                <h2 className="text-black font-semibold text-[calc(1.325rem+0.9vw)] text-center mb-2 tracking-wide uppercase">
                     SATTA KING CHART 2026
                 </h2>
             </div>

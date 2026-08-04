@@ -12,10 +12,10 @@ export default function Navbar() {
           <div className="w-full block">
 
             {/* Brand/Logo Pill Button */}
-            <div className="float-left w-1/4 px-[30px]">
+            <div className="float-left w-1/4 px-[2px] lg:px-[30px]">
               <Link
                 href="/"
-                className="block rounded-[30px] border border-black bg-[#fff] px-[30px] py-3 text-center text-[14px] font-bold uppercase tracking-[0.5px] shadow-[2px_2px_0_rgba(255,216,100,0.9)]"
+                className="block rounded-[30px] border border-black bg-[#fff] p-[8px] lg:px-[30px] lg:py-3 text-center text-[8px] sm:text-[10px] md:text-[12px] lg:text-[14px] font-bold uppercase tracking-[0.5px] lg:shadow-[2px_2px_0_rgba(255,216,100,0.9)]"
               >
                 A7SATTA 🏠
               </Link>
@@ -24,14 +24,14 @@ export default function Navbar() {
             {/* Navigation Link: CHART */}
             {
               [{ text: "CHART", href: "/chart" }, { text: "CONTACT", href: "/contact" }, { text: "LOGIN", href: "/login" }].map((link, index) => (
-                <div className="float-left w-1/4 px-[30px]"
+                <div className="float-left w-1/4 px-[2px] lg:px-[30px]"
                   key={index}
 
                 >
 
                   <Link
                     href={link.href}
-                    className="block rounded-[30px] border border-black bg-[#ffd800] px-[30px] py-3 text-center text-[14px] font-bold uppercase tracking-[0.5px] shadow-[2px_2px_0_hsla(0,0%,100%,0.9)]"
+                    className="block rounded-[30px] border border-black bg-[#ffd800] p-[8px] lg:px-[30px] lg:py-3 text-center text-[8px] sm:text-[10px] md:text-[12px] lg:text-[14px] font-bold uppercase tracking-[0.5px] lg:shadow-[2px_2px_0_hsla(0,0%,100%,0.9)]"
                   >
                     {link.text}
                   </Link>
@@ -48,7 +48,7 @@ export default function Navbar() {
               behavior: 'scroll',
               direction: 'left',
               scrollamount: '5',
-              className: 'text-[#140E05] font-medium text-[16px] tracking-wide flex items-center text-white',
+              className: 'text-[#140E05] font-medium text-[14px] lg:text-[16px] tracking-wide flex items-center text-white',
             }, " Welcome to A7 SATTA KING Official Website! Stay updated with historical data insights, game rule books, and real-time live winning news updates around the clock. 🚀")}
           </div>
         </div>

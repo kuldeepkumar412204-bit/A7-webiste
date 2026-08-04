@@ -32,7 +32,7 @@ export default function Blogs() {
                 </h4>
             </div>
 
-            <div className="w-full max-w-8xl mx-auto py-6">
+            <div className="w-full max-w-8xl mx-auto py-6 px-6">
                 {loading ? (
                     <div className="text-center font-bold py-10">
                         Loading blogs...

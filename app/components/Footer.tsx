@@ -19,8 +19,9 @@ export default function Footer(){
           <div className="text-[10px] bg-secondary text-xs sm:text-sm text-black  font-bold w-full py-4 capitalize">
            <span className="text-neutral-500"> ©</span> 2026 A7 Satta King All Rights Reserved.
           </div>
-          <div className="text-[10px] sm:text-sm font-semibold text-secondary max-w-4xl leading-relaxed mt-6">
-            Disclaimer: A7 SATTA KING OFFICIAL is an informational directory service. We do not operate gambling activities. Matka is subject to local state legislation regulations.
+          <div className="text-[14px] font-semibold text-secondary max-w-7xl leading-relaxed mt-6">
+            Disclaimer: The information available on this website is based on publicly accessible sources and is provided for general informational purposes only. We do not guarantee the accuracy, completeness, or reliability of any data, charts, or results displayed. Users are advised to use their own judgment and discretion while referring to the content. This website holds no responsibility for any decisions, losses, or consequences arising from the use of this information.
+
           </div>
           
         </div>
