@@ -53,7 +53,10 @@ export default function FAQSection() {
     {
       heading: "Games Covered on A7 Satta King",
       description:
-        "A7 Satta King provides thorough details about every well-known Satta game that Satta players regularly play. For several well-known Satta games, including Sadar Bazar, Gwalior Satta, Satta King Disawar, A7 Satta, Delhi Bazar, Delhi Matka, Gali Satta, and Shri Ganesh, players can access the most recent Satta charts and results. Regional updates for Agra Satta, Faridabad Satta, Alwar Satta, Ghaziabad Satta, A7 Satta, and Dwarka Satta are also available on the website.",
+        (
+          <>
+          A7 Satta King provides thorough details about every well-known Satta game that Satta players regularly play. For several well-known Satta games, including <a href="https://a7sattaking.co/sadar-bazar" className="internal-link">Sadar Bazar</a>, <a href="https://a7sattaking.co/gwalior" className="internal-link">Gwalior Satta</a>, Satta King Disawar, A7 Satta, <a href="https://a7sattaking.co/delhi-bazar" className="internal-link">Delhi Bazar</a>, <a href="https://a7sattaking.co/delhi-matka" className="internal-link">Delhi Matka</a>, <a href="https://a7sattaking.co/gali-satta" className="internal-link">Gali Satta</a>, and <a href="https://a7sattaking.co/shri-ganesh" className="internal-link">Shri Ganesh</a>, players can access the most recent Satta charts and results. Regional updates for <a href="https://a7sattaking.co/agra" className="internal-link">Agra Satta</a>, <a href="https://a7sattaking.co/faridabad" className="internal-link">Faridabad Satta</a>, <a href="https://a7sattaking.co/alwar" className="internal-link">Alwar Satta</a>, <a href="https://a7sattaking.co/ghaziabad" className="internal-link">Ghaziabad Satta</a>, A7 Satta, and <a href="https://a7sattaking.co/dwarka" className="internal-link">Dwarka Satta</a> are also available on the website.</>
+        ),
     },
     {
       heading: "How to play A7 Satta King games?",
@@ -66,7 +69,7 @@ export default function FAQSection() {
         <>
           Every STA player frequently searches for an A7 Satta STA website that
           offers concise explanations, trustworthy results, up-to-date charts,
-          and an easy-to-use interface. A7 Satta King.com's primary goal is to
+          and an easy-to-use interface. A7 Satta King.co's primary goal is to
           make information clear and easy to access so that users can locate
           what they're looking for. Satta players may stay up to date with ease
           thanks to well-organised records, a simple design, and often updated
@@ -111,7 +114,7 @@ export default function FAQSection() {
   // Accordion FAQs
   const faqItems: FAQItem[] = [
     {
-      question: "A7 Satta: What is it?",
+      question: "A7 Satta King results: What is it?",
       answer:
         "Satta King and Matka result tables, daily winning numbers, historical records, and updates for other Satta games are all available on A7 Satta. People go to the website to compare historical data and view results.",
     },

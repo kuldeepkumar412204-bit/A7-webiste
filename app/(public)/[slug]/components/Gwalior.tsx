@@ -5,9 +5,9 @@ import { Metadata } from "next";
 import FAQSection from "./FAQSection";
 
 export const metadata: Metadata = {
-  title: "Gwalior Satta Result 2026 Today | Gwalior Chart & Daily Updates",
+  title: "Gwalior Satta Result 2026 Today | Chart & Daily Updates",
   description:
-    "Check the latest Gwalior Satta Result 2026 with today's updates, full chart, and previous records. Get fast and accurate results only on A7 Satta King.",
+    "Check the latest Gwalior Satta Result 2026 with today’s updates, full chart, and previous records. Get fast, right results only on A7 Satta King.",
   keywords: [
     "Gwalior Satta Result",
     "Gwalior Result Today",
@@ -20,9 +20,9 @@ export const metadata: Metadata = {
     canonical: `${process.env.SITE_URL}/gwalior`,
   },
   openGraph: {
-    title: "Gwalior Satta Result 2026 Today | Gwalior Chart & Daily Updates",
+    title: "Gwalior Satta Result 2026 Today | Chart & Daily Updates",
     description:
-      "Check the latest Gwalior Satta Result 2026 with today's updates, full chart, and previous records. Get fast and accurate results only on A7 Satta King.",
+      "Check the latest Gwalior Satta Result 2026 with today’s updates, full chart, and previous records. Get fast, right results only on A7 Satta King.",
     url: `${process.env.SITE_URL}/gwalior`,
     siteName: "A7 Satta King",
     type: "website",
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gwalior Satta Result 2026 Today | Gwalior Chart & Daily Updates",
+    title: "Gwalior Satta Result 2026 Today | Chart & Daily Updates",
     description:
-      "Check the latest Gwalior Satta Result 2026 with today's updates, full chart, and previous records. Get fast and accurate results only on A7 Satta King.",
+      "Check the latest Gwalior Satta Result 2026 with today’s updates, full chart, and previous records. Get fast, right results only on A7 Satta King.",
   },
 };
 

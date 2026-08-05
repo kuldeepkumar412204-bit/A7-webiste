@@ -103,6 +103,16 @@ button {
   animation: star-pulse 1.5s infinite ease-in-out;
 }
 
+.internal-link {
+  color: #0070f3 !important;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.internal-link:hover {
+  color: #0051a8 !important;
+}
+
 @keyframes star-pulse {
 
   0%,

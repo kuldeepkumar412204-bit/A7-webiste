@@ -3,9 +3,9 @@ import { Metadata } from "next";
 import FAQSection from "./FAQSection";
 
 export const metadata: Metadata = {
-    title: "Sadar Bazar Satta Result 2026 Today | Sadar Bazar Chart & Updates",
+    title: "Sadar Bazar Satta Result 2026 Today | Chart & Updates",
     description:
-        "Check the latest Sadar Bazar Satta Result 2026 with updated charts, daily results, and historical data. Get fast and accurate updates only on A7 Satta King.",
+        "Check the latest Sadar Bazar Satta Result 2026 with updated charts, daily results, and historical data. Accurate updates only on A7 Satta King.",
     keywords: [
         "Sadar Bazar Satta Result",
         "Sadar Bazar Result Today",
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
         canonical: `${process.env.SITE_URL}/sadar-bazar`,
     },
     openGraph: {
-        title: "Sadar Bazar Satta Result 2026 Today | Sadar Bazar Chart & Updates",
+        title: "Sadar Bazar Satta Result 2026 Today | Chart & Updates",
         description:
-            "Check the latest Sadar Bazar Satta Result 2026 with updated charts, daily results, and historical data. Get fast and accurate updates only on A7 Satta King.",
+            "Check the latest Sadar Bazar Satta Result 2026 with updated charts, daily results, and historical data. Accurate updates only on A7 Satta King.",
         url: `${process.env.SITE_URL}/sadar-bazar`,
         siteName: "A7 Satta King",
         type: "website",
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Sadar Bazar Satta Result 2026 Today | Sadar Bazar Chart & Updates",
+        title: "Sadar Bazar Satta Result 2026 Today | Chart & Updates",
         description:
-            "Check the latest Sadar Bazar Satta Result 2026 with updated charts, daily results, and historical data. Get fast and accurate updates only on A7 Satta King.",
+            "Check the latest Sadar Bazar Satta Result 2026 with updated charts, daily results, and historical data. Accurate updates only on A7 Satta King.",
     },
 };
 
@@ -82,12 +82,12 @@ export default function SadarBazar() {
         {
             heading: "Why Users Prefer Sadar Bazar Updates on A7",
             description:
-                "The game section of A7-satta.com is very easily comprehensible and simple. It is easy to comprehend for anyone. The latest updates can be seen at any time and the chart is easily understood. Plus, it's easy and smooth to jump between pages.\n\nAll in all, it's very simple to understand, and new players and old players can quickly find the information they need without wasting time.",
+                "The game section of a7sattaking.co is very easily comprehensible and simple. It is easy to comprehend for anyone. The latest updates can be seen at any time and the chart is easily understood. Plus, it's easy and smooth to jump between pages.\n\nAll in all, it's very simple to understand, and new players and old players can quickly find the information they need without wasting time.",
         },
         {
             heading: "How Are Sadar Bazar Satta Result Updates Shared?",
             description:
-                "After obtaining information from public sources, the A7-satta.com team verifies the results and chart data before posting them on the website. Once the details are confirmed, the latest updates are posted immediately in a simple and easy-to-read format, enabling users to view the records without getting any confusion.",
+                "After obtaining information from public sources, the a7sattaking.co team verifies the results and chart data before posting them on the website. Once the details are confirmed, the latest updates are posted immediately in a simple and easy-to-read format, enabling users to view the records without getting any confusion.",
         },
         {
             heading: "Stay Updated with Sadar Bazar Satta Result in 2026",

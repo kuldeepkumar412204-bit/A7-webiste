@@ -12,7 +12,7 @@ import CTA from "./Components/Home/CTA";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "A7 Satta King Result | Latest Satta Charts, Matka Results & Updates",
+  title: "A7 Satta King | Satta Charts, Matka Result & Updates",
   description:
     "Check A7 Satta King latest results, daily Satta charts, Matka updates, and records. Stay updated with real-time results and game timings.",
   keywords: [
