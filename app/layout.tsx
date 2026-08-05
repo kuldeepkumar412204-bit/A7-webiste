@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import QueryProvider from "./providers/QueryProvider";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -70,18 +71,29 @@ export default function RootLayout({
     >
       <head>
         <meta name="google-site-verification" content="oBOQi1ZMROmvu5ZMz2NkIqJEm-Huux1VXvwYLW1SnpY" />
-        {/* <!-- Google tag (gtag.js) --> */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-JNJ1F66QKS"></script>
-        <script>
-          {`  window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
 
-              gtag('config', 'G-JNJ1F66QKS');`}
-        </script>
         <meta name="msvalidate.01" content="EF72A7197BBE9290314576523B27F5D2" />
       </head>
       <body className="min-h-full flex flex-col bg-slate-950 text-slate-100 selection:bg-indigo-500 selection:text-white">
+
+       {/* Load Google Analytics */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=G-JNJ1F66QKS`}
+          strategy="afterInteractive"
+        />
+
+        {/* Initialize Google Analytics */}
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            window.gtag = gtag;
+
+            gtag('js', new Date());
+            gtag('config', 'G-JNJ1F66QKS');
+          `}
+        </Script>
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
