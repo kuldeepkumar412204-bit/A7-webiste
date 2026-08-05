@@ -23,6 +23,41 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "A7 Satta King",
+  url: "https://a7sattaking.co/",
+  logo: "https://a7sattaking.co/logo.png",
+  description:
+    "A7 Satta King provides latest satta king results, daily satta charts, matka updates, and historical records with real-time updates.",
+  sameAs: ["https://a7sattaking.co/"],
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "customer support",
+    areaServed: "IN",
+    availableLanguage: ["Hindi", "English"],
+  },
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "A7 Satta King",
+  url: "https://a7sattaking.co/",
+  description:
+    "Check A7 Satta King latest results, daily satta charts, Matka updates, and records with real-time updates and game timings.",
+  publisher: {
+    "@type": "Organization",
+    name: "A7 Satta King",
+  },
+  potentialAction: {
+    "@type": "SearchAction",
+    target: "https://a7sattaking.co/?s={search_term_string}",
+    "query-input": "required name=search_term_string",
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -34,6 +69,19 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
     >
       <body className="min-h-full flex flex-col bg-slate-950 text-slate-100 selection:bg-indigo-500 selection:text-white">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteSchema),
+          }}
+        />
         <QueryProvider>
           {children}
         </QueryProvider>

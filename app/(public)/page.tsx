@@ -55,7 +55,7 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen bg-white text-black font-sans selection:bg-[#ffd200] selection:text-black">
+    <div className="flex flex-col min-h-screen bg-white text-black selection:bg-[#ffd200] selection:text-black">
 
 
       {/* 3. LIVE STATUS BLOCK (Black background) */}
@@ -79,8 +79,8 @@ export default function Home() {
           {/* Header & Filter options */}
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 ">
 
-            <div className="w-full bg-gradient-to-b from-orange-400 to-[#ffd200] border-t-2 border-b border-black py-4 pb-6 text-center">
-              <h3 className="text-xl sm:text-xl font-semibold text-black tracking-wider uppercase">
+            <div className="w-full bg-gradient-to-b from-[#ff9000] to-[#ffe400] border-b border-b-black border-t-2 border-t-black text-black py-[20px]">
+              <h3 className="text-[1.25rem] font-semibold text-black tracking-wider uppercase text-center mb-2 leading-[1.2]">
                 SATTA RECORD CHART 2026
               </h3>
             </div>

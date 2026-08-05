@@ -27,10 +27,10 @@ export default function WeeklyResultTable({
   const totalDays = availableDates.length;
 
   return (
-    <div className="flex flex-col border-2 border-black overflow-hidden">
+    <div className="flex flex-col overflow-hidden">
       {title && (
-        <div className="w-full bg-gradient-to-b from-orange-400 to-[#ffd200] border-b-2 border-black py-4 text-center">
-          <h3 className="text-xl sm:text-3xl font-semibold text-black tracking-wider uppercase">
+        <div className="bg-gradient-to-b from-[#ff9000] to-[#ffe400] border-t-[2px] border-b border-black text-black py-5">
+          <h3 className="text-[calc(1.325rem+0.9vw)] font-semibold text-black tracking-wider uppercase text-center leading-[1.2] mb-[0.2rem]">
             {title}
           </h3>
         </div>
@@ -39,15 +39,15 @@ export default function WeeklyResultTable({
       <div className="overflow-x-auto custom-scrollbar">
         <table className="w-full text-left border-collapse min-w-[1200px]">
           <thead>
-            <tr className="bg-[#ffd200] text-black border-b-2 border-black text-xs font-extrabold uppercase">
-              <th className="py-3 px-4 min-w-[120px] left-0 z-20 bg-[#ffd200] border-r-2 border-black text-center">
-                Date
+            <tr className="bg-[#ffd200] text-black border-b-2 border-black text-[13px] font-extrabold uppercase">
+              <th className="py-3 px-4 min-w-[120px] left-0 z-20 bg-[#ffd200] border-[1px] border-[#333] text-center capitalize">
+                <strong>Date</strong>
               </th>
 
               {filteredGames.map((game, index) => (
                 <th
                   key={game.game + index}
-                  className="py-3 px-2 text-center border-r border-black/40 text-xs min-w-[120px]"
+                  className="py-3 px-2 text-center border-[1px] border-[#333] text-[13px] min-w-[120px]"
                 >
                   <div className="flex flex-col items-center justify-center gap-0.5">
                     <span>{game.game}</span>
@@ -60,7 +60,7 @@ export default function WeeklyResultTable({
             </tr>
           </thead>
 
-          <tbody className="divide-y divide-black/30 text-xs font-bold bg-white text-black">
+          <tbody className="divide-y divide-black/30 text-[13px] font-bold bg-white text-black">
             {Array.from({ length: totalDays }).map((_, dayIdx) => {
               // Read exact target index labels directly from API configuration array sequence strings
               const rawDateLabel = availableDates[dayIdx] || "";
@@ -94,7 +94,7 @@ export default function WeeklyResultTable({
                     return (
                       <td
                         key={`${row.game}-${dayIdx}`}
-                        className="py-1 px-2 text-center border-r border-black/25 font-mono text-sm"
+                        className="py-1 px-2 text-center border-r border-black/25 font-mono text-[13px]"
                       >
                         {value === "-" || value === null ? (
                           <span className="text-black/35 font-bold">-</span>
