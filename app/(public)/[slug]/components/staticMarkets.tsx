@@ -5,7 +5,8 @@ export interface Market {
   name: string;
   seo?:{
     metaTitle: string;
-  metaDescription: string;
+    metaDescription: string;
+    metaKeywords?: string;
   }
   resultTime?: string;
   sections?: {

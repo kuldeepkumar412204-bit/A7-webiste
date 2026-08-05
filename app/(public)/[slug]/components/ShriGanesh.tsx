@@ -3,9 +3,9 @@ import FAQSection from "./FAQSection";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Shri Ganesh Satta Result 2026 Today | Shri Ganesh Chart & Updates",
+    title: "Shri Ganesh Satta Result 2026 Today | Chart & Updates",
     description:
-        "Check the latest Shri Ganesh Satta Result 2026 with daily updates, full charts, and historical records. Get accurate and fast results on A7 Satta King.",
+        "Check the latest Shri Ganesh Satta Result 2026 with daily updates, full charts, and historical records. Accurate and fast results on A7 Satta King.",
     keywords: [
         "Shri Ganesh Satta Result",
         "Shri Ganesh Result Today",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         canonical: `${process.env.SITE_URL}/shri-ganesh`,
     },
     openGraph: {
-        title: "Shri Ganesh Satta Result 2026 Today | Shri Ganesh Chart & Updates",
+        title: "Shri Ganesh Satta Result 2026 Today | Chart & Updates",
         description:
             "Check the latest Shri Ganesh Satta Result 2026 with daily updates, full charts, and historical records. Get accurate and fast results on A7 Satta King.",
         url: `${process.env.SITE_URL}/shri-ganesh`,
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Shri Ganesh Satta Result 2026 Today | Shri Ganesh Chart & Updates",
+        title: "Shri Ganesh Satta Result 2026 Today | Chart & Updates",
         description:
             "Check the latest Shri Ganesh Satta Result 2026 with daily updates, full charts, and historical records. Get accurate and fast results on A7 Satta King.",
     },

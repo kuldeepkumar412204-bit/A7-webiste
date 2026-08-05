@@ -1,34 +1,48 @@
 import { Suspense } from "react";
+import type { ComponentType } from "react";
 import SattaYearlyChart from "../Components/Charts/SattaYearlyChart";
-import SadarBazar from "./components/SadarBazar";
-import Gwalior from "./components/Gwalior";
-import DelhiBazar from "./components/DelhiBazar";
-import ShriGanesh from "./components/ShriGanesh";
-import Agra from "./components/Agra";
-import Faridabad from "./components/Faridabad";
-import Alwar from "./components/Alwar";
-import Gahaziabad from "./components/Ghaziabad";
-import Dwarka from "./components/Dwarka";
-import Gali from "./components/Gali";
-import DelhiMatka from "./components/DelhiMatka";
-import { Market, staticMarkets } from "./components/staticMarkets";
-import FAQSection from "./components/FAQSection";
+import SadarBazar, { metadata as sadarBazarMetadata } from "./components/SadarBazar";
+import Gwalior, { metadata as gwaliorMetadata } from "./components/Gwalior";
+import DelhiBazar, { metadata as delhiBazarMetadata } from "./components/DelhiBazar";
+import ShriGanesh, { metadata as shriGaneshMetadata } from "./components/ShriGanesh";
+import Agra, { metadata as agraMetadata } from "./components/Agra";
+import Faridabad, { metadata as faridabadMetadata } from "./components/Faridabad";
+import Alwar, { metadata as alwarMetadata } from "./components/Alwar";
+import Gahaziabad, { metadata as ghaziabadMetadata } from "./components/Ghaziabad";
+import Dwarka, { metadata as dwarkaMetadata } from "./components/Dwarka";
+import Gali, { metadata as galiMetadata } from "./components/Gali";
+import DelhiMatka, { metadata as delhiMatkaMetadata } from "./components/DelhiMatka";
+import { staticMarkets } from "./components/staticMarkets";
 import { Metadata } from "next";
 import StaticMarketPage from "./components/StaticMarketPage";
+import { notFound } from "next/navigation";
 
+const componentMap: Record<string, ComponentType> = {
+  "sadar-bazar": SadarBazar,
+  "gwalior": Gwalior,
+  "delhi-bazar": DelhiBazar,
+  "shri-ganesh": ShriGanesh,
+  "agra": Agra,
+  "faridabad": Faridabad,
+  "alwar": Alwar,
+  "ghaziabad": Gahaziabad,
+  "dwarka": Dwarka,
+  "gali": Gali,
+  "delhi-matka": DelhiMatka,
+};
 
-const componentMap: Record<string, React.ComponentType> = {
-  'sadar-bazar': SadarBazar,
-  'gwalior': Gwalior,
-  'delhi-bazar': DelhiBazar,
-  'shri-ganesh': ShriGanesh,
-  'agra': Agra,
-  'faridabad': Faridabad,
-  'alwar': Alwar,
-  'ghaziabad': Gahaziabad,
-  'dwarka': Dwarka,
-  'gali': Gali,
-  'delhi-matka': DelhiMatka,
+const componentMetadataMap: Record<string, Metadata> = {
+  "sadar-bazar": sadarBazarMetadata,
+  "gwalior": gwaliorMetadata,
+  "delhi-bazar": delhiBazarMetadata,
+  "shri-ganesh": shriGaneshMetadata,
+  "agra": agraMetadata,
+  "faridabad": faridabadMetadata,
+  "alwar": alwarMetadata,
+  "ghaziabad": ghaziabadMetadata,
+  "dwarka": dwarkaMetadata,
+  "gali": galiMetadata,
+  "delhi-matka": delhiMatkaMetadata,
 };
 
 interface PageProps {
@@ -37,34 +51,34 @@ interface PageProps {
 
 const SITE_URL = process.env.SITE_URL || "https://a7sattaking.com"; // Default value if not set
 
-export async function generateMetadata({
-  params,
-}: PageProps): Promise<Metadata> {
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
+  const slugKey = String(slug).toLowerCase().trim();
+  const componentMetadata = componentMetadataMap[slugKey];
+  const market = staticMarkets[slugKey];
 
-  const market = staticMarkets[slug];
+  if (componentMetadata) {
+    return componentMetadata;
+  }
 
-  if (market) {
-    const title = market?.seo?.metaTitle;
-    const description = market?.seo?.metaDescription;
-    const url = `${SITE_URL}/${slug}`;
+  if (market?.seo?.metaTitle || market?.seo?.metaDescription) {
+    const title = market.seo?.metaTitle ?? componentMetadata?.title;
+    const description = market.seo?.metaDescription ?? componentMetadata?.description;
+    const url = `${SITE_URL}/${slugKey}`;
 
     return {
       title,
       description,
-
       alternates: {
         canonical: url,
       },
-
       openGraph: {
         title,
         description,
         url,
-        siteName: "Your Website Name",
+        siteName: "A7 Satta King",
         type: "website",
-        locale: "en_US",
-
+        locale: "en_IN",
         images: [
           {
             url: `${SITE_URL}/images/og-default.jpg`,
@@ -74,15 +88,17 @@ export async function generateMetadata({
           },
         ],
       },
-
       twitter: {
         card: "summary_large_image",
         title,
         description,
-
         images: [`${SITE_URL}/images/og-default.jpg`],
       },
     };
+  }
+
+  if (componentMetadata) {
+    return componentMetadata;
   }
 
   return {
@@ -93,14 +109,14 @@ export async function generateMetadata({
 
 export default async function page({ params }: PageProps) {
   const { slug } = await params;
-  const Component = componentMap[slug];
-    const market = staticMarkets[slug];
+    const slugKey = String(slug).toLowerCase().trim();
 
+  const Component = componentMap[slugKey];
+  const market = staticMarkets[slugKey];
 
-  // If no matching component found, still show the chart
-  const showContent = Component ? true : false;
-
-  console.log("Rendering page for slug:", slug, componentMap[slug], "Show content:", showContent);
+  if (!Component && !market) {
+    notFound();
+  }
 
   return (
     <Suspense
@@ -112,11 +128,7 @@ export default async function page({ params }: PageProps) {
       }
     >
       <SattaYearlyChart />
-      {Component ? (
-        <Component />
-      ) : market ? (
-        <StaticMarketPage market={market} />
-      ) : null}
+      {Component ? <Component /> : market ? <StaticMarketPage market={market} /> : null}
     </Suspense>
-  )
+  );
 }

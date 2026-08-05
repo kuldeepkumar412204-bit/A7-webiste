@@ -2,10 +2,10 @@ import FAQSection from "./FAQSection";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://yourdomain.com"),
-  title: "Delhi Matka Satta Results 2026 Today | Delhi Matka Chart & Updates",
+  metadataBase: new URL(process.env.SITE_URL || "https://a7sattaking.com"),
+  title: "Delhi Matka Satta Results 2026 Today | Chart & Updates",
   description:
-    "Check the latest Delhi Matka Satta Results 2026 with daily updates, full charts, and historical records. Get fast and accurate updates on A7 Satta King.",
+    "Check Delhi Matka Satta Results 2026 with daily updates, full charts, and history records on A7 Satta King.",
   keywords: [
     "Delhi Matka Satta Results",
     "Delhi Matka Result Today",
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     canonical: `${process.env.SITE_URL}/delhi-matka`,
   },
   openGraph: {
-    title: "Delhi Matka Satta Results 2026 Today | Delhi Matka Chart & Updates",
+    title: "Delhi Matka Satta Results 2026 Today | Chart & Updates",
     description:
-      "Check the latest Delhi Matka Satta Results 2026 with daily updates, full charts, and historical records. Get fast and accurate updates on A7 Satta King.",
+      "Check Delhi Matka Satta Results 2026 with daily updates, full charts, and history records on A7 Satta King.",
     url: `${process.env.SITE_URL}/delhi-matka`,
     siteName: "A7 Satta King",
     locale: "en_US",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Delhi Matka Satta Results 2026 Today | Delhi Matka Chart & Updates",
+    title: "Delhi Matka Satta Results 2026 Today | Chart & Updates",
     description:
-      "Check the latest Delhi Matka Satta Results 2026 with daily updates, full charts, and historical records. Get fast and accurate updates on A7 Satta King.",
+      "Check Delhi Matka Satta Results 2026 with daily updates, full charts, and history records on A7 Satta King.",
   },
 };
 

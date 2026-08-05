@@ -3,24 +3,26 @@ import { Metadata } from "next";
 import FAQSection from "./FAQSection";
 
 export const metadata: Metadata = {
-    title: "Sadar Bazar Satta Result 2026 Today | Sadar Bazar Chart & Updates",
+    title: "Delhi Bazar Satta Result Live 2026 | Chart & Updates",
     description:
-        "Check the latest Sadar Bazar Satta Result 2026 with updated charts, daily results, and historical data. Get fast and accurate updates only on A7 Satta King.",
+        "Check Delhi Bazar Satta Result 2026 with the latest charts, daily updates, and fast results on A7 Satta King.",
     keywords: [
-        "Sadar Bazar Satta Result",
-        "Sadar Bazar Result Today",
-        "Sadar Bazar Chart 2026",
-        "Satta Bazar Result",
-        "Satta King Sadar Bazar",
-        "Sadar Bazar History Chart",
+        "Delhi Bazar Satta Result",
+        "DB Result 2026",
+        "Delhi Bazar chart",
+        "Satta King Delhi Bazar",
+        "DB Satta result today",
+        "Delhi Bazar live result",
+        "Satta Matka Delhi Bazar",
+        "A7 Satta King DB result"
     ],
     alternates: {
         canonical: `${process.env.SITE_URL}/sadar-bazar`,
     },
     openGraph: {
-        title: "Sadar Bazar Satta Result 2026 Today | Sadar Bazar Chart & Updates",
+        title: "Delhi Bazar Satta Result Live 2026 | Chart & Updates",
         description:
-            "Check the latest Sadar Bazar Satta Result 2026 with updated charts, daily results, and historical data. Get fast and accurate updates only on A7 Satta King.",
+            "Check Delhi Bazar Satta Result 2026 with the latest charts, daily updates, and fast results on A7 Satta King.",
         url: `${process.env.SITE_URL}/sadar-bazar`,
         siteName: "A7 Satta King",
         type: "website",
@@ -28,9 +30,9 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Sadar Bazar Satta Result 2026 Today | Sadar Bazar Chart & Updates",
+        title: "Delhi Bazar Satta Result Live 2026 | Chart & Updates",
         description:
-            "Check the latest Sadar Bazar Satta Result 2026 with updated charts, daily results, and historical data. Get fast and accurate updates only on A7 Satta King.",
+            "Check Delhi Bazar Satta Result 2026 with the latest charts, daily updates, and fast results on A7 Satta King.",
     },
 };
 
@@ -136,115 +138,115 @@ export default function DelhiBazar() {
 
     // Accordion FAQs - styled like FAQSection
     const faqItems = [
-  {
-    question: "What exactly is Delhi Bazar Satta?",
-    answer:
-      "Delhi Bazar Satta is a popular number-based game where users follow daily results and compare them with past charts to track changes over time.",
-  },
-  {
-    question: "Do I need to register to check Delhi Bazar Satta results?",
-    answer:
-      "No, registration is not required. You can view all Delhi Bazar results and charts for free.",
-  },
-  {
-    question: "When are Delhi Bazar Satta results announced?",
-    answer:
-      "Results are usually announced at a fixed time every day, but timings may vary. It’s best to check A7 Satta King regularly for updates.",
-  },
-  {
-    question: "Is A7 Satta King a reliable source for Delhi Bazar results?",
-    answer:
-      "Yes, A7 Satta King provides accurate and updated information, including results and historical charts.",
-  },
-  {
-    question: "Why is Delhi Bazar Satta so popular?",
-    answer:
-      "It is popular because results are updated daily and users can access complete historical charts for comparison.",
-  },
-  {
-    question: "Are there other Satta games available on A7 Satta King?",
-    answer:
-      "Yes, apart from Delhi Bazar, the platform also provides results and charts for many other Satta games.",
-  },
-  {
-    question: "Where can I check today’s Delhi Bazar Satta result?",
-    answer:
-      "You can check the latest and most accurate Delhi Bazar results on A7 Satta King, where updates are posted regularly.",
-  },
-  {
-    question: "Does A7 Satta King provide tips or predictions?",
-    answer:
-      "No, the platform only shares results and historical charts for reference. It does not provide predictions or guaranteed numbers.",
-  },
-  {
-    question: "Can I check Delhi Bazar results on my mobile device?",
-    answer:
-      "Yes, the website is mobile-friendly, allowing you to easily check results on smartphones and tablets.",
-  },
-  {
-    question: "Are Delhi Bazar results updated daily?",
-    answer:
-      "Yes, results and charts are updated daily to keep users informed with the latest information.",
-  },
-  {
-    question: "Can I view historical charts of Delhi Bazar Satta?",
-    answer:
-      "Yes, users can access past charts and records to review previous results.",
-  },
-  {
-    question: "When are Delhi Bazar results updated?",
-    answer:
-      "Results are updated daily after confirmation from reliable sources to ensure accuracy.",
-  },
-];
+        {
+            question: "What exactly is Delhi Bazar Satta?",
+            answer:
+                "Delhi Bazar Satta is a popular number-based game where users follow daily results and compare them with past charts to track changes over time.",
+        },
+        {
+            question: "Do I need to register to check Delhi Bazar Satta results?",
+            answer:
+                "No, registration is not required. You can view all Delhi Bazar results and charts for free.",
+        },
+        {
+            question: "When are Delhi Bazar Satta results announced?",
+            answer:
+                "Results are usually announced at a fixed time every day, but timings may vary. It’s best to check A7 Satta King regularly for updates.",
+        },
+        {
+            question: "Is A7 Satta King a reliable source for Delhi Bazar results?",
+            answer:
+                "Yes, A7 Satta King provides accurate and updated information, including results and historical charts.",
+        },
+        {
+            question: "Why is Delhi Bazar Satta so popular?",
+            answer:
+                "It is popular because results are updated daily and users can access complete historical charts for comparison.",
+        },
+        {
+            question: "Are there other Satta games available on A7 Satta King?",
+            answer:
+                "Yes, apart from Delhi Bazar, the platform also provides results and charts for many other Satta games.",
+        },
+        {
+            question: "Where can I check today’s Delhi Bazar Satta result?",
+            answer:
+                "You can check the latest and most accurate Delhi Bazar results on A7 Satta King, where updates are posted regularly.",
+        },
+        {
+            question: "Does A7 Satta King provide tips or predictions?",
+            answer:
+                "No, the platform only shares results and historical charts for reference. It does not provide predictions or guaranteed numbers.",
+        },
+        {
+            question: "Can I check Delhi Bazar results on my mobile device?",
+            answer:
+                "Yes, the website is mobile-friendly, allowing you to easily check results on smartphones and tablets.",
+        },
+        {
+            question: "Are Delhi Bazar results updated daily?",
+            answer:
+                "Yes, results and charts are updated daily to keep users informed with the latest information.",
+        },
+        {
+            question: "Can I view historical charts of Delhi Bazar Satta?",
+            answer:
+                "Yes, users can access past charts and records to review previous results.",
+        },
+        {
+            question: "When are Delhi Bazar results updated?",
+            answer:
+                "Results are updated daily after confirmation from reliable sources to ensure accuracy.",
+        },
+    ];
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqItems.map((faq) => ({
-    "@type": "Question",
-    name: faq.question,
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: faq.answer,
-    },
-  })),
-};
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: faqItems.map((faq) => ({
+            "@type": "Question",
+            name: faq.question,
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: faq.answer,
+            },
+        })),
+    };
 
 
     return (
         <>
-         <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify(faqSchema),
-      }}
-    />
-        <div className="w-full bg-white font-sans">
-            <div className="w-full flex flex-col">
-                {/* Render Main Content Blocks */}
-                {infoSections.map((section, idx) => (
-                    <div key={idx} className="w-full">
-                        {/* Bright Yellow Heading Bar */}
-                        <div className="w-full bg-[#ffd200] py-3.5 px-4 text-center border-b border-black/10">
-                            <h2 className="text-black font-bold text-sm sm:text-lg md:text-xl tracking-wide uppercase">
-                                {section.heading}
-                            </h2>
-                        </div>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(faqSchema),
+                }}
+            />
+            <div className="w-full bg-white font-sans">
+                <div className="w-full flex flex-col">
+                    {/* Render Main Content Blocks */}
+                    {infoSections.map((section, idx) => (
+                        <div key={idx} className="w-full">
+                            {/* Bright Yellow Heading Bar */}
+                            <div className="w-full bg-[#ffd200] py-3.5 px-4 text-center border-b border-black/10">
+                                <h2 className="text-black font-bold text-sm sm:text-lg md:text-xl tracking-wide uppercase">
+                                    {section.heading}
+                                </h2>
+                            </div>
 
-                        {/* Clean White Description Content Box */}
-                        <div className="w-full bg-white py-5 px-4 md:px-6 max-w-8xl mx-auto">
-                            <div className="text-black font-medium text-xs sm:text-base leading-relaxed text-justify md:text-left tracking-normal whitespace-pre-line">
-                                {section.description}
+                            {/* Clean White Description Content Box */}
+                            <div className="w-full bg-white py-5 px-4 md:px-6 max-w-8xl mx-auto">
+                                <div className="text-black font-medium text-xs sm:text-base leading-relaxed text-justify md:text-left tracking-normal whitespace-pre-line">
+                                    {section.description}
+                                </div>
                             </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
 
-                {/* --- FREQUENTLY ASKED QUESTIONS (ACCORDION SECTION) --- */}
-                <FAQSection faqItems={faqItems} />
+                    {/* --- FREQUENTLY ASKED QUESTIONS (ACCORDION SECTION) --- */}
+                    <FAQSection faqItems={faqItems} />
+                </div>
             </div>
-        </div>
         </>
     );
 

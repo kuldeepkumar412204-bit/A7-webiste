@@ -2,9 +2,9 @@ import FAQSection from "./FAQSection";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Ghaziabad Satta Result 2026 Today | Ghaziabad Chart & Live Updates",
+  title: "Ghaziabad Satta Result 2026 Today | Chart & Live Updates",
   description:
-    "Check the latest Ghaziabad Satta Result 2026 with daily updates, full charts, and historical records. Get fast and accurate results on A7 Satta King.",
+    "Check Ghaziabad Satta Result 2026 with daily updates, full charts, and history records on A7 Satta King.",
   keywords: [
     "Ghaziabad Satta Result",
     "Ghaziabad Result Today",
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     canonical: `${process.env.SITE_URL}/ghaziabad`,
   },
   openGraph: {
-    title: "Ghaziabad Satta Result 2026 Today | Ghaziabad Chart & Live Updates",
+    title: "Ghaziabad Satta Result 2026 Today | Chart & Live Updates",
     description:
-      "Check the latest Ghaziabad Satta Result 2026 with daily updates, full charts, and historical records. Get fast and accurate results on A7 Satta King.",
+      "Check Ghaziabad Satta Result 2026 with daily updates, full charts, and history records on A7 Satta King.",
     url: `${process.env.SITE_URL}/ghaziabad`,
     siteName: "A7 Satta King",
     locale: "en_US",
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ghaziabad Satta Result 2026 Today | Ghaziabad Chart & Live Updates",
+    title: "Ghaziabad Satta Result 2026 Today | Chart & Live Updates",
     description:
-      "Check the latest Ghaziabad Satta Result 2026 with daily updates, full charts, and historical records. Get fast and accurate results on A7 Satta King.",
+      "Check Ghaziabad Satta Result 2026 with daily updates, full charts, and history records on A7 Satta King.",
   },
 };
 

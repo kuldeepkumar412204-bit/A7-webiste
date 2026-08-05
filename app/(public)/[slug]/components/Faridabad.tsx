@@ -2,9 +2,9 @@ import FAQSection from "./FAQSection";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Faridabad Satta Result 2026 Today | Faridabad Chart & Live Updates",
+    title: "Faridabad Satta Result 2026 Today | Chart & Live Updates",
     description:
-        "Check the latest Faridabad Satta Result 2026 with live updates, daily results, and full chart history. Get accurate and fast updates on A7 Satta King.",
+        "Check Faridabad Satta Result 2026 with live updates, daily results, and chart history on A7 Satta King.",
     keywords: [
         "Faridabad Satta Result",
         "Faridabad Result Today",
@@ -17,18 +17,18 @@ export const metadata: Metadata = {
         canonical: `${process.env.SITE_URL}/faridabad`,
     },
     openGraph: {
-        title: "Faridabad Satta Result 2026 Today | Faridabad Chart & Live Updates",
+        title: "Faridabad Satta Result 2026 Today | Chart & Live Updates",
         description:
-            "Check the latest Faridabad Satta Result 2026 with live updates, daily results, and full chart history. Get accurate and fast updates on A7 Satta King.",
+            "Check Faridabad Satta Result 2026 with live updates, daily results, and chart history on A7 Satta King.",
         url: `${process.env.SITE_URL}/faridabad`,
         siteName: "A7 Satta King",
         type: "website",
     },
     twitter: {
         card: "summary_large_image",
-        title: "Faridabad Satta Result 2026 Today | Faridabad Chart & Live Updates",
+        title: "Faridabad Satta Result 2026 Today | Chart & Live Updates",
         description:
-            "Check the latest Faridabad Satta Result 2026 with live updates, daily results, and full chart history. Get accurate and fast updates on A7 Satta King.",
+            "Check Faridabad Satta Result 2026 with live updates, daily results, and chart history on A7 Satta King.",
     },
 };
 
