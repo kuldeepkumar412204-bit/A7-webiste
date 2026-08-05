@@ -105,9 +105,9 @@ export default async function page({ params }: PageProps) {
   const Component = componentMap[slugKey];
   const market = staticMarkets[slugKey];
 
-  if (!Component && !market) {
-    notFound();
-  }
+  // if (!Component && !market) {
+  //   notFound();
+  // }
 
   return (
     <Suspense
