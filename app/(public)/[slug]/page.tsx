@@ -62,8 +62,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   if (market?.seo?.metaTitle || market?.seo?.metaDescription) {
-    const title = market.seo?.metaTitle ?? componentMetadata?.title;
-    const description = market.seo?.metaDescription ?? componentMetadata?.description;
+    const title = market.seo?.metaTitle;
+    const description = market.seo?.metaDescription;
     const url = `${SITE_URL}/${slugKey}`;
 
     return {
@@ -79,20 +79,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         siteName: "A7 Satta King",
         type: "website",
         locale: "en_IN",
-        images: [
-          {
-            url: `${SITE_URL}/images/og-default.jpg`,
-            width: 1200,
-            height: 630,
-            alt: title,
-          },
-        ],
       },
       twitter: {
         card: "summary_large_image",
         title,
         description,
-        images: [`${SITE_URL}/images/og-default.jpg`],
       },
     };
   }
