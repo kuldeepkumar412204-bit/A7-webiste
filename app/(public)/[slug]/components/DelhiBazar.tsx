@@ -17,13 +17,13 @@ export const metadata: Metadata = {
         "A7 Satta King DB result"
     ],
     alternates: {
-        canonical: `${process.env.SITE_URL}/sadar-bazar`,
+        canonical: `${process.env.SITE_URL}/delhi-bazar`,
     },
     openGraph: {
         title: "Delhi Bazar Satta Result Live 2026 | Chart & Updates",
         description:
             "Check Delhi Bazar Satta Result 2026 with the latest charts, daily updates, and fast results on A7 Satta King.",
-        url: `${process.env.SITE_URL}/sadar-bazar`,
+        url: `${process.env.SITE_URL}/delhi-bazar`,
         siteName: "A7 Satta King",
         type: "website",
         locale: "en_IN",
