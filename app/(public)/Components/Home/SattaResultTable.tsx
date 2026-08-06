@@ -23,6 +23,25 @@ export default function SattaResultTable() {
     });
 
     // console.log("apiData", apiData);
+    const parseTimeToMinutes = (time?: string) => {
+    if (!time) return Infinity;
+    const cleaned = time.replace("at ", "").trim(); // "09:25 PM"
+    const match = cleaned.match(/(\d{1,2}):(\d{2})\s?(AM|PM)/i);
+    if (!match) return Infinity;
+
+    let [, hh, mm, period] = match;
+    let hours = parseInt(hh, 10);
+    const minutes = parseInt(mm, 10);
+
+    if (period.toUpperCase() === "PM" && hours !== 12) hours += 12;
+    if (period.toUpperCase() === "AM" && hours === 12) hours = 0;
+
+    return hours * 60 + minutes;
+};
+
+        const sortedData = [...apiData].sort(
+            (a, b) => parseTimeToMinutes(a?.open_time) - parseTimeToMinutes(b?.open_time)
+        );
 
     return (
         <div>
@@ -76,7 +95,7 @@ export default function SattaResultTable() {
                         ))}
                     </div> */}
                     <div className="text-[22px]">
-                        {apiData.map((data: any, index: number) => (
+                        {sortedData.map((data: any, index: number) => (
                             <div key={data.name} className="flex items-stretch text-center">
 
                                 {/* Column 1: Name & Timing */}

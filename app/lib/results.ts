@@ -42,7 +42,7 @@ export const fetchDailyData = async (): Promise<GameRow[]> => {
   return json.data;
 };
 
-export const fetchDailyApiData = async (): Promise<GameRow[]> => {
+export const fetchDailyApiData = async (): Promise<any[]> => {
   const response = await fetch(
     "/api/data-v2"
   );
