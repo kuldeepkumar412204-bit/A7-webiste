@@ -76,12 +76,14 @@ export default function MonthlyResultsSection() {
       />
 
       {/* Table 2 Viewport */}
-      <WeeklyResultTable
+      <div className="mt-2 sm:mt-0">
+        <WeeklyResultTable
         data={table2}
         searchQuery={searchQuery}
         selectedMonth={selectedMonth}
         selectedYear={selectedYear}
       />
+      </div>
     </div>
   );
 }

@@ -58,13 +58,25 @@
 }
 
 body {
-    font-family: Helvetica,sans-serif;
-    font-size: 14px;
-    line-height: 1.42857143;
-    margin: 0;
-    padding: 0;
-    color: var(--color);
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  margin: 0;
+  padding: 0;
+  color: var(--color);
+  background: white;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 1px;
+}
+
+
 
 button {
   cursor: pointer;
@@ -110,7 +122,7 @@ button {
 }
 
 .internal-link {
-  color: #0070f3 !important;
+  color: #023378 !important;
   text-decoration: underline;
   cursor: pointer;
 }
@@ -129,11 +141,4 @@ button {
   50% {
     transform: scale(1.15);
   }
-}
-
-body {
-  background-color: var(--background);
-  color: var(--foreground);
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  overflow-x: hidden;
 }

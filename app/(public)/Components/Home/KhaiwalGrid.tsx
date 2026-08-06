@@ -32,7 +32,7 @@ export default function KhaiwalGrid() {
 
   return (
     <div className="w-full my-[5px] font-sans select-none">
-      <div className="w-full max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[5px] items-start text-[14px]">
+      <div className="w-full max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-[5px] items-start text-[14px]">
 
         {/* COLUMN 1: AJAY BHAI KHAIWAL */}
         <div className="w-full bg-gradient-to-b from-[#ffd800] via-[#ffd000dd] to-white border-[3px] border-dashed border-red-600 rounded-[20px] px-2 py-4 text-center flex flex-col items-center">
@@ -109,7 +109,7 @@ export default function KhaiwalGrid() {
         </div>
 
         {/* COLUMN 3: CRICKET ID INFO */}
-        <div className="text-[14.4px] text-black/80 w-full bg-gradient-to-b from-[#ffd800] via-[#ffd000dd] to-white border-[3px] border-dashed border-red-600 rounded-[20px] px-2 py-4 text-center flex flex-col items-center">
+        {/* <div className="text-[14.4px] text-black/80 w-full bg-gradient-to-b from-[#ffd800] via-[#ffd000dd] to-white border-[3px] border-dashed border-red-600 rounded-[20px] px-2 py-4 text-center flex flex-col items-center">
           <p className=" font-black leading-relaxed max-w-xs">
             नमस्कार साथियों Cricket <span className="bg-purple-600 text-white px-1 py-0.5 rounded text-[10px]">ID</span> लेने वाले भाई नीचे दिए गए लिंक पर क्लिक करे
           </p>
@@ -133,10 +133,10 @@ export default function KhaiwalGrid() {
           <div className="mt-2">
             <WhatsAppButton number={data?.whatsappNumber}/>
           </div>
-        </div>
+        </div> */}
 
         {/* COLUMN 4: RAMAN BHAI KHAIWAL */}
-        <div className="w-full bg-gradient-to-b text-black/80 from-[#ffd800] via-[#ffd000dd] to-white border-[3px] border-dashed border-red-600 rounded-[20px] px-2 py-4 text-center flex flex-col items-center">
+        {/* <div className="w-full bg-gradient-to-b text-black/80 from-[#ffd800] via-[#ffd000dd] to-white border-[3px] border-dashed border-red-600 rounded-[20px] px-2 py-4 text-center flex flex-col items-center">
           <div className="">
             <p className=" tracking-tight text-[14.4px] mb-[3.2px]">
               <strong>
@@ -169,7 +169,7 @@ export default function KhaiwalGrid() {
             </a>
             <WhatsAppButton number={data?.whatsappNumber}/>
           </div>
-        </div>
+        </div> */}
 
       </div>
     </div>

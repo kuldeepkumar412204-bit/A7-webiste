@@ -80,8 +80,8 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 ">
 
             <div className="w-full bg-gradient-to-b from-[#ff9000] to-[#ffe400] border-b border-b-black border-t-2 border-t-black text-black py-[20px]">
-              <h3 className="text-[1.25rem] font-semibold text-black tracking-wider uppercase text-center mb-2 leading-[1.2]">
-                SATTA RECORD CHART 2026
+              <h3 className="text-[1.25rem] font-medium text-black tracking-wider uppercase text-center mb-2 leading-[1.2]">
+                SATTA KING RECORD CHART 2026
               </h3>
             </div>
 

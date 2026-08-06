@@ -78,17 +78,17 @@ export default function LiveStatus() {
             {/* 4. DISAWER RESULT PANEL (Yellow background) */}
             <section className="w-full bg-[#ffd800] pt-[20px] text-center text-black">
                 <div className="max-w-md mx-auto pb-[15px] flex flex-col items-center">
-                    <h3 className="text-[24px] font-semibold tracking-tight">DISAWER</h3>
-                    <span className="my-2 text-center text-[18px] font-semibold text-black">5:15 AM</span>
+                    <h3 className="text-[24px] font-medium tracking-tight">DISAWER</h3>
+                    <span className="my-2 text-center text-[18px] font-medium text-black">5:15 AM</span>
                     <div className="flex items-center rounded-xl text-black/70">
-                        <span className="text-[20px] font-mono font-black">39</span>
+                        <span className="text-[20px] font-bold">39</span>
                         {/* Green arrow */}
                         <img
                             src="/arrow.gif"
                             alt="Arrow"
                             className="mx-[5px] h-[30px] w-[30px]"
                         />
-                        <span className="text-[20px] font-mono font-black">91</span>
+                        <span className="text-[20px] font-bold">91</span>
                     </div>
                 </div>
             </section>

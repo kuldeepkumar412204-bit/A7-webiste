@@ -30,10 +30,10 @@ export default function SattaResultTable() {
                 <div className="w-full max-w-8xl border border-gray-400 overflow-hidden shadow-sm">
 
                     {/* TABLE HEADERS */}
-                    <div className="flex bg-black text-center text-white text-[14.4px] font-bold py-2 border-b border-gray-400">
-                        <div className="border-r border-gray-600/50 py-1 w-[37%]">सट्टा का नाम</div>
-                        <div className="border-r border-gray-600/50 py-1 w-[33%]">कल आया था</div>
-                        <div className="py-1 w-[33%]">आज का रिजल्ट</div>
+                    <div className="flex bg-black text-center text-white text-[14px] font-bold">
+                        <div className="p-2 w-[40%] sm:w-[37%] border border-[#333]">सट्टा का नाम</div>
+                        <div className="p-2 w-[33%] border border-[#333]">कल आया था</div>
+                        <div className="p-2 w-[33%] border border-[#333]">आज का रिजल्ट</div>
                     </div>
 
                     {/* TABLE ROWS */}
@@ -75,27 +75,32 @@ export default function SattaResultTable() {
                             </div>
                         ))}
                     </div> */}
-                    <div className="divide-y divide-gray-300 text-[22px]">
+                    <div className="text-[22px]">
                         {apiData.map((data: any, index: number) => (
-                            <div key={data.name} className="flex items-center text-center">
+                            <div key={data.name} className="flex items-stretch text-center">
 
                                 {/* Column 1: Name & Timing */}
-                                <div className="w-[37%] bg-[#FFD200] py-3 px-2 flex flex-col justify-center items-center h-full border-r border-gray-300">
-                                    <Link href={`/${data?.name?.split(" ").join("-")}`} className="text-black font-bold text-[22px] tracking-tight leading-tight uppercase hover:text-blue-800">
+                                <div className="w-[40%] sm:w-[37%]">
+                                    <div className=" bg-[#FFD200] p-[0.5rem] flex flex-col justify-center items-center h-full border border-t-0 border-primary">
+                                    <Link href={`/${data?.name?.split(" ").join("-")}`} className="text-black  text-[15px] font-bold md:text-[22px] tracking-tight leading-tight uppercase hover:text-blue-800">
                                         {data?.name}
                                     </Link>
-                                    <span className="text-black font-bold text-sm sm:text-xl tracking-tight leading-tight mt-2">
+                                    <span className="text-black text-[15px] font-bold md:text-[22px] tracking-tight leading-tight md:mt-2">
                                         {data?.open_time?.replace("at ", "")}
                                     </span>
                                 </div>
+                                </div>
 
                                 {/* Column 2: Yesterday's Result */}
-                                <div className="w-[33%] py-2 text-black font-bold text-[22px] sm:text-xl border-r border-gray-300 bg-white h-full flex items-center justify-center">
-                                    {data?.yesterday}
+                                <div className="w-[33%] py-3 flex items-center justify-center border border-t-0 border-x-0 border-primary">
+                                    <div className="w-full mx-2  text-black font-bold text-[22px] flex items-center justify-center">
+                                        {data?.yesterday}
+                                    </div>
                                 </div>
 
                                 {/* Column 3 - Today Result */}
-                                <div className="w-[33%] py-2 bg-white h-full flex items-center justify-center">
+                                <div className="w-[33%] py-3 flex items-center justify-center border border-t-0 border-primary">
+                                    <div className="w-full mx-2 py-2  text-black font-bold text-[22px] flex items-center justify-center">
                                     {data?.result === "XX" ? (
                                         <div className="w-10 h-10">
                                             <Image
@@ -111,6 +116,7 @@ export default function SattaResultTable() {
                                             {data?.result}
                                         </span>
                                     )}
+                                    </div>
                                 </div>
 
                             </div>
@@ -119,53 +125,62 @@ export default function SattaResultTable() {
 
 
                 </div>
-            </div><div className="w-full bg-white py-6 font-sans select-none flex justify-center">
+            </div>
+            <div className="w-full bg-white py-6 font-sans select-none flex justify-center">
                 <div className="w-full max-w-8xl border border-gray-400 overflow-hidden shadow-sm">
 
                     {/* TABLE HEADERS */}
-                    <div className="flex bg-black text-center text-white text-[14.4px] font-bold py-2 border-b border-gray-400">
-                        <div className="border-r border-gray-600/50 py-1 w-[37%]">सट्टा का नाम</div>
-                        <div className="border-r border-gray-600/50 py-1 w-[33%]">कल आया था</div>
-                        <div className="py-1 w-[33%]">आज का रिजल्ट</div>
+                    <div className="flex bg-black text-center text-white text-[14px] font-bold">
+                        <div className="p-2 w-[40%] sm:w-[37%] border border-[#333]">सट्टा का नाम</div>
+                        <div className="p-2 w-[33%] border border-[#333]">कल आया था</div>
+                        <div className="p-2 w-[33%] border border-[#333]">आज का रिजल्ट</div>
                     </div>
 
                     {/* TABLE ROWS */}
-                    <div className="divide-y divide-gray-300 text-[22px]">
+                    <div className=" text-[22px]">
                         {satta.filter((item) => item.tableNo === 2).map((game, index) => (
-                            <div key={game?._id} className="flex items-center text-center">
+                            <div key={game?._id} className="flex items-stretch text-center">
 
                                 {/* Column 1: Name & Timing */}
-                                <div className="w-[37%] bg-[#FFD200] py-3 px-2 flex flex-col justify-center items-center h-full border-r border-gray-300">
-                                    <Link href={`/${game.slug}`} className="text-black font-bold text-[22px] tracking-tight leading-tight uppercase hover:text-blue-800">
+                                <div className="w-[40%] sm:w-[37%]">
+<div className=" bg-[#FFD200] p-[0.5rem] flex flex-col justify-center items-center h-full border border-t-0 border-primary">
+                                    <Link href={`/${game.slug}`} className="text-black text-[15px] font-bold md:text-[22px] tracking-tight leading-tight uppercase hover:text-blue-800">
                                         {game.game}
                                     </Link>
-                                    <span className="text-black font-bold text-sm sm:text-xl tracking-tight leading-tight mt-2">
+                                    <span className="text-black text-[15px] font-bold md:text-[22px] tracking-tight leading-tight dm:mt-2">
                                         {game.time}
                                     </span>
                                 </div>
+                                </div>
+                                
 
                                 {/* Column 2: Yesterday's Result */}
-                                <div className="w-[33%] py-2 text-black font-bold text-[22px] sm:text-xl border-r border-gray-300 bg-white h-full flex items-center justify-center">
-                                    {game.result?.[0] ?? "-"}
+                                <div className="w-[33%] py-3 flex items-center justify-center border border-t-0 border-x-0 border-primary">
+                                    <div className="w-full mx-2 py-2  text-black font-bold text-[22px] flex items-center justify-center">
+                                        {game.result?.[0] ?? "-"}
+                                    </div>
                                 </div>
 
                                 {/* Column 3 - Today Result */}
-                                <div className="w-[33%] py-2 bg-white h-full flex items-center justify-center">
-                                    {!hasTimePassed(game.time) ? (
-                                        <div className="w-10 h-10">
-                                            <Image
-                                                src="/new.gif"
-                                                alt="New"
-                                                width={300}
-                                                height={300}
-                                                unoptimized
-                                            />
-                                        </div>
-                                    ) : (
-                                        <span className="text-black font-bold text-[22px] sm:text-xl">
-                                            {game.result?.[1] ?? "-"}
-                                        </span>
-                                    )}
+                                <div className="w-[33%] py-3 flex items-center justify-center border border-t-0 border-primary">
+                                    <div className="w-full mx-2 py-2  text-black font-bold text-[22px] flex items-center justify-center">
+
+                                        {!hasTimePassed(game.time) ? (
+                                            <div className="w-10 h-10">
+                                                <Image
+                                                    src="/new.gif"
+                                                    alt="New"
+                                                    width={300}
+                                                    height={300}
+                                                    unoptimized
+                                                />
+                                            </div>
+                                        ) : (
+                                            <span className="text-black font-bold text-[22px] sm:text-xl">
+                                                {game.result?.[1] ?? "-"}
+                                            </span>
+                                        )}
+                                    </div>
                                 </div>
 
                             </div>

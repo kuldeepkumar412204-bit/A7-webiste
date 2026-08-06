@@ -6,10 +6,12 @@ import React from "react";
 
 
 const links = [
-  { text: "A7SATTA 🏠", href: "/" },
+  { text: "Home", href: "/" },
   { text: "CHART", href: "/chart" },
   { text: "CONTACT", href: "/contact" },
-  { text: "LOGIN", href: "/login" },
+  // { text: "LOGIN", href: "/login" },
+    { text: "disclaimer", href: "/disclaimer" },
+
 ];
 
 export default function Navbar() {
@@ -18,7 +20,7 @@ export default function Navbar() {
     <>
 
 
-      <div className="bg-black pt-[30px] pb-5">
+      <div className="bg-black pt-[30px] pb-[20px]">
 
          <nav className="w-full px-4">
         <div className="w-full block">
@@ -46,22 +48,22 @@ export default function Navbar() {
           })}
         </div>
       </nav>
-        <div className="w-full pt-[18px] block overflow-hidden shadow-inner">
+        <div className="w-full pt-[34px] block overflow-hidden shadow-inner">
           {/* Marquee Ticker Banner Track */}
-          <div className="w-full bg-gradient-to-r border-t overflow-hidden shadow-inner">
+          <div className="w-full bg-gradient-to-r overflow-hidden shadow-inner">
             {React.createElement('marquee', {
               behavior: 'scroll',
               direction: 'left',
               scrollamount: '5',
-              className: 'text-[#140E05] font-medium text-[14px] lg:text-[16px] tracking-wide flex items-center text-white',
-            }, " Welcome to A7 SATTA KING Official Website! Stay updated with historical data insights, game rule books, and real-time live winning news updates around the clock. 🚀")}
+              className: 'text-[#140E05] font-medium text-[14px] tracking-wide flex items-center text-white mb-[8px]',
+            }, " Welcome to A7 SATTA KING Official Website! Stay updated with historical data insights, game rule books, and real-time live winning news updates around the clock.")}
           </div>
         </div>
 
 
       </div>
       {/* 2. MAIN BRAND HEADER (Yellow background, big title) */}
-      <header className="  w-full bg-[#ffd800] py-6 text-center select-none overflow-hidden">
+      <header className="  w-full bg-[#ffd800] py-[30px] text-center select-none overflow-hidden">
 
         <div className="container mx-auto px-[12px]">
           {/* Custom Keyframes Style Injection */}
@@ -77,7 +79,7 @@ export default function Navbar() {
           `}</style>
 
           <Link href={"/"}>
-            <h1 className="text-[calc(1.375rem+1.5vw)] leading-[1.2] font-semibold tracking-tighter text-black uppercase animate-custom-fade">
+            <h1 className="text-[27px] font-semibold tracking-tighter text-black uppercase animate-custom-fade">
               A7 SATTA KING OFFICIAL
             </h1>
           </Link>

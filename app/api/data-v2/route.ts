@@ -7,9 +7,9 @@ const API_URL =
   "https://king.sattaapi.com/wp-json/satta/v1/results";
 
 const apiData = {
-  api_key: "dn7MKfLcz5ID246eI#*f",
-  domain_key: "vhjKtEAaTvjWrnSiIk@&Kp#52",
-  domain: "kingvercel.app",
+  api_key: "X#RPiKK6)tJlA9KjFHk!",
+  domain_key: "%oHsGrly!3r9Nr93a@GbMWl$C",
+  domain: "a7sattaking.co",
 };
 
 // Global cache

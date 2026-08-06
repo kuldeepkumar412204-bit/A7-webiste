@@ -16,7 +16,7 @@ export default function Footer(){
               Terms & Conditions
             </a>
           </div>
-          <div className="text-[10px] bg-secondary text-xs sm:text-sm text-black  font-bold w-full py-4 capitalize">
+          <div className=" bg-secondary text-[14px] text-black  font-bold w-full py-4 capitalize">
            <span className="text-neutral-500"> ©</span> 2026 A7 Satta King All Rights Reserved.
           </div>
           <div className="text-[14px] font-semibold text-secondary max-w-7xl leading-relaxed mt-6">

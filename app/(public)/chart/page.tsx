@@ -63,15 +63,13 @@ export default function SattaChartLinksGrid() {
             </div>
 
             {/* 3-Column Links Responsive Grid Container */}
-            <div className="max-w-[98%] mx-auto grid grid-cols-1 md:grid-cols-3 gap-x-2 gap-y-2 px-2">
+            <div className=" mx-auto grid grid-flow-row grid-cols-1 md:grid-cols-[1fr_1fr_1fr] gap-[5px] p-[10px]">
                 {satta.map((chart: any, idx: number) => (
                     <Link
                         key={idx}
                         href={`/${chart.slug}`}
                         className="
-        w-full py-3 px-4 rounded text-center font-semibold text-xs sm:text-sm tracking-tight uppercase transition-all duration-150 border border-black/10
-        bg-[#FFD200] text-black
-        shadow-[2px_2px_0px_rgba(250,250,250,1)]
+        bg-[#ffd800] rounded-[5px] text-black font-medium py-[10px] text-center uppercase
         hover:bg-black hover:text-[#FFD200]
         hover:brightness-100
         active:translate-y-[1px]

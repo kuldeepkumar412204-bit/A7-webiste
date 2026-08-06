@@ -30,16 +30,16 @@ export default function WeeklyResultTable({
     <div className="flex flex-col overflow-hidden">
       {title && (
         <div className="bg-gradient-to-b from-[#ff9000] to-[#ffe400] border-t-[2px] border-b border-black text-black py-5">
-          <h3 className="text-[calc(1.325rem+0.9vw)] xl:text-[2rem] font-semibold text-black tracking-wider uppercase text-center leading-[1.2] mb-[0.2rem]">
+          <h3 className="text-[15px] md:text-[calc(1.375rem+1.5vw)] font-semibold text-black tracking-wider uppercase text-center leading-[1.2] mb-[0.2rem]">
             {title}
           </h3>
         </div>
       )}
 
-      <div className="overflow-x-auto custom-scrollbar">
+      <div className="overflow-x-auto scrollbar-thin">
         <table className="w-full text-left border-collapse min-w-[1200px]">
           <thead>
-            <tr className="bg-[#ffd200] text-black border-b-2 border-black text-[13px] font-extrabold uppercase">
+            <tr className="bg-[#ffd200] text-black border-b border-black text-[13px] font-extrabold uppercase">
               <th className="py-3 px-4 min-w-[120px] left-0 z-20 bg-[#ffd200] border-[1px] border-[#333] text-center capitalize">
                 <strong>Date</strong>
               </th>
@@ -58,7 +58,7 @@ export default function WeeklyResultTable({
             </tr>
           </thead>
 
-          <tbody className="divide-y divide-black/30 text-[13px] font-bold bg-white text-black">
+          <tbody className=" text-[13px] font-bold bg-white text-black">
             {Array.from({ length: totalDays }).map((_, dayIdx) => {
               // Read exact target index labels directly from API configuration array sequence strings
               const rawDateLabel = availableDates[dayIdx] || "";
@@ -79,9 +79,9 @@ export default function WeeklyResultTable({
               return (
                 <tr
                   key={dayIdx}
-                  className="hover:bg-yellow-50 transition-colors border-b border-black/40"
+                  className="hover:bg-yellow-50 transition-colors"
                 >
-                  <td className="py-3 px-4 font-black w-32 text-[13px] left-0 z-20 bg-[#ffd200] border-r-2 border-black text-center shadow-[2px_0_5px_rgba(0,0,0,0.1)] font-mono">
+                  <td className="p-[0.5rem] font-bold w-32 text-[13px] left-0 z-20 bg-[#ffd200] border border-black text-center shadow-[2px_0_5px_rgba(0,0,0,0.1)]">
                     {formattedDateView}
                   </td>
 
@@ -92,7 +92,7 @@ export default function WeeklyResultTable({
                     return (
                       <td
                         key={`${row.game}-${dayIdx}`}
-                        className="py-1 px-2 text-center border-r border-black/25 font-mono text-[13px]"
+                        className="p-[0.5rem] text-center border-r border-b border-black text-[13px]"
                       >
                         {value === "-" || value === null ? (
                           <span className="text-black/35 font-bold">-</span>

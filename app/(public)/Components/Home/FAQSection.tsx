@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 
-interface InfoSection {
+export interface InfoSection {
   heading: string;
   description: React.ReactNode;
 }
@@ -36,7 +36,6 @@ export default function FAQSection() {
           see on the chart page are part of the most recently announced results
           for each game and its timing.
           <br />
-          <br />
           We keep things simple and easy to follow, so you don’t have to spend
           time trying to figure anything out. You can easily check the latest
           updates and keep up with the results without any confusion. Everything
@@ -55,7 +54,7 @@ export default function FAQSection() {
       description:
         (
           <>
-          A7 Satta King provides thorough details about every well-known Satta game that Satta players regularly play. For several well-known Satta games, including <a href="https://a7sattaking.co/sadar-bazar" className="internal-link">Sadar Bazar</a>, <a href="https://a7sattaking.co/gwalior" className="internal-link">Gwalior Satta</a>, Satta King Disawar, A7 Satta, <a href="https://a7sattaking.co/delhi-bazar" className="internal-link">Delhi Bazar</a>, <a href="https://a7sattaking.co/delhi-matka" className="internal-link">Delhi Matka</a>, <a href="https://a7sattaking.co/gali-satta" className="internal-link">Gali Satta</a>, and <a href="https://a7sattaking.co/shri-ganesh" className="internal-link">Shri Ganesh</a>, players can access the most recent Satta charts and results. Regional updates for <a href="https://a7sattaking.co/agra" className="internal-link">Agra Satta</a>, <a href="https://a7sattaking.co/faridabad" className="internal-link">Faridabad Satta</a>, <a href="https://a7sattaking.co/alwar" className="internal-link">Alwar Satta</a>, <a href="https://a7sattaking.co/ghaziabad" className="internal-link">Ghaziabad Satta</a>, A7 Satta, and <a href="https://a7sattaking.co/dwarka" className="internal-link">Dwarka Satta</a> are also available on the website.</>
+            A7 Satta King provides thorough details about every well-known Satta game that Satta players regularly play. For several well-known Satta games, including <a href="https://a7sattaking.co/sadar-bazar" className="internal-link">Sadar Bazar</a>, <a href="https://a7sattaking.co/gwalior" className="internal-link">Gwalior Satta</a>, Satta King Disawar, A7 Satta, <a href="https://a7sattaking.co/delhi-bazar" className="internal-link">Delhi Bazar</a>, <a href="https://a7sattaking.co/delhi-matka" className="internal-link">Delhi Matka</a>, <a href="https://a7sattaking.co/gali-satta" className="internal-link">Gali Satta</a>, and <a href="https://a7sattaking.co/shri-ganesh" className="internal-link">Shri Ganesh</a>, players can access the most recent Satta charts and results. Regional updates for <a href="https://a7sattaking.co/agra" className="internal-link">Agra Satta</a>, <a href="https://a7sattaking.co/faridabad" className="internal-link">Faridabad Satta</a>, <a href="https://a7sattaking.co/alwar" className="internal-link">Alwar Satta</a>, <a href="https://a7sattaking.co/ghaziabad" className="internal-link">Ghaziabad Satta</a>, A7 Satta, and <a href="https://a7sattaking.co/dwarka" className="internal-link">Dwarka Satta</a> are also available on the website.</>
         ),
     },
     {
@@ -202,25 +201,34 @@ export default function FAQSection() {
   ];
 
   return (
-    <div className="w-full bg-white font-sans my-[16px] text-[16px]">
+    <div className="w-full bg-white my-[16px] text-[16px]">
       <div className="w-full flex flex-col">
         {/* Render Main Content Blocks */}
         {infoSections.map((section, idx) => (
-          <div key={idx} className="w-full">
-            {/* Bright Yellow Heading Bar */}
+          <>
+            <div key={idx} className="w-full text-primary">
+              <div className="w-full p-4 py-2 mb-1">
+                <h2 className="text-[calc(1.325rem+0.9vw)] lg:text-[2rem] font-semibold mb-[0.5rem]">
+                  {section.heading}
+                </h2>
+                <p className="text-[20px]"> {section.description}</p>
+              </div>
+            </div>
+
+            {/* <div key={idx} className="w-full">
             <div className="w-full bg-[#ffd800] p-4 mb-2 text-center border-b border-black/10">
               <h2 className="text-[#212529] font-bold text-[20px] tracking-wide">
                 {section.heading}
               </h2>
             </div>
 
-            {/* Clean White Description Content Box */}
             <div className="w-full bg-white p-4 pt-0 md:px-6 max-w-8xl mx-auto">
               <div className="text-[#212529] font-medium leading-relaxed text-justify md:text-left tracking-normal">
                 {section.description}
               </div>
             </div>
-          </div>
+          </div> */}
+          </>
         ))}
 
         {/* --- FREQUENTLY ASKED QUESTIONS (ACCORDION SECTION) --- */}
@@ -261,11 +269,10 @@ export default function FAQSection() {
 
                     {/* Accordion Content Box */}
                     <div
-                      className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                        isOpen
+                      className={`transition-all duration-300 ease-in-out overflow-hidden ${isOpen
                           ? "max-h-[500px] border-t border-gray-100"
                           : "max-h-0"
-                      }`}
+                        }`}
                     >
                       <div className="p-4 bg-white text-gray-800 text-xs sm:text-sm md:text-base leading-relaxed">
                         {item.answer}

@@ -120,10 +120,10 @@ export default function SattaYearlyChart() {
   }
 
   return (
-    <div className="w-full bg-white pb-10 font-sans select-none">
+    <div className="w-full bg-white pb-10 select-none">
 
       {/* Top Header Banner with exact Yellow-to-Orange Gradient */}
-      <div className="w-full bg-gradient-to-b from-[#FFA500] to-[#FFD200] py-5 text-center border-b-2 border-black/90">
+      <div className="w-full bg-gradient-to-b from-[#FFA500] to-[#FFD200] py-5 text-center border-y-2 border-black/90">
         <h2 className="text-black font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl tracking-wider uppercase">
           {gameName} YEARLY CHART {selectedYear}
         </h2>
@@ -177,7 +177,7 @@ export default function SattaYearlyChart() {
                 {headers.map((header, index) => (
                   <th
                     key={index}
-                    className={`py-3 text-xs sm:text-sm font-black tracking-wider text-black ${index === 0 ? "text-[#0022ff]" : ""
+                    className={`p-[.5rem] text-[1rem] font-bold tracking-wider text-black ${index === 0 ? "text-[#0022ff]" : ""
                       }`}
                   >
                     {header}
@@ -191,7 +191,7 @@ export default function SattaYearlyChart() {
               {chartData.map((row) => (
                 <tr key={row.day} className="hover:bg-gray-50/50 transition-colors duration-100">
                   {/* Date Index Column */}
-                  <td className="relative py-2 text-[17px] font-bold text-[#0022ff] border-r border-gray-100/30">
+                  <td className="relative p-[0.5rem] text-[17px] font-bold text-[#0022ff] border-r border-gray-100/30">
                     {row.day}
                     <span className="w-[80%] left-1/2 -translate-x-1/2 h-0 border-t border-gray-300 absolute bottom-0">
 
