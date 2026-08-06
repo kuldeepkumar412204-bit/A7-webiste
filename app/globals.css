@@ -5,6 +5,7 @@
   --background: #ffffff;
   --foreground: #000000;
   --yellow: #ffd800;
+  --color: #212529;
 }
 
 
@@ -49,7 +50,7 @@
 }
 
 @theme {
-  --color-primary: #000000;
+  --color-primary: #212529;
   --color-secondary: var(--yellow);
   --container-8xl: 96rem;
   /* 1536px */
@@ -57,7 +58,12 @@
 }
 
 body {
-  font-family: "Helvetica", sans-serif;
+    font-family: Helvetica,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    margin: 0;
+    padding: 0;
+    color: var(--color);
 }
 
 button {

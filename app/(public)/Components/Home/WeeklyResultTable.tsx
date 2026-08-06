@@ -30,7 +30,7 @@ export default function WeeklyResultTable({
     <div className="flex flex-col overflow-hidden">
       {title && (
         <div className="bg-gradient-to-b from-[#ff9000] to-[#ffe400] border-t-[2px] border-b border-black text-black py-5">
-          <h3 className="text-[calc(1.325rem+0.9vw)] font-semibold text-black tracking-wider uppercase text-center leading-[1.2] mb-[0.2rem]">
+          <h3 className="text-[calc(1.325rem+0.9vw)] xl:text-[2rem] font-semibold text-black tracking-wider uppercase text-center leading-[1.2] mb-[0.2rem]">
             {title}
           </h3>
         </div>
@@ -47,14 +47,12 @@ export default function WeeklyResultTable({
               {filteredGames.map((game, index) => (
                 <th
                   key={game.game + index}
-                  className="py-3 px-2 text-center border-[1px] border-[#333] text-[13px] min-w-[120px]"
+                  className="p-2 text-center border-[1px] border-[#333] text-[13px] min-w-[120px] leading-0"
                 >
-                  <div className="flex flex-col items-center justify-center gap-0.5">
-                    <span>{game.game}</span>
+                    {game.game}
                     {/* <span className="text-[10px] text-black/60 font-mono font-medium lowercase">
                       ({game.time})
                     </span> */}
-                  </div>
                 </th>
               ))}
             </tr>

@@ -43,16 +43,16 @@ export default function LiveStatus() {
                         हा भाई यही आती हे सबसे पहले खबर रूको और देखो
                     </h2>
                     <div>
-                        <div className="hidden md:block text-2xl sm:text-3xl font-bold tracking-widest text-white mt-2 uppercase">
-                            <div className="">
-                                delhi bazar
+                        <div className="text-[33px] font-semibold tracking-widest text-white mt-2 uppercase">
+                            <div className="" style={{ letterSpacing: "1px" }}>
+                                disawer
                             </div>
-                            <div className="mt-4 sm:mt-6">
+                            <div className="py-[1rem] text-[39px]">
                                 26
                             </div>
 
                         </div>
-                        <div className="hidden md:block text-2xl sm:text-3xl font-bold tracking-widest text-white mt-6 uppercase">
+                        {/* <div className="hidden md:block text-2xl sm:text-3xl font-bold tracking-widest text-white mt-6 uppercase">
                             <div className="">
                                 gwalior
                             </div>
@@ -65,12 +65,11 @@ export default function LiveStatus() {
                             <div className="">
                                 AGRA
                             </div>
-                            {/* Animated red starburst WAIT badge */}
                             <div className="wait-starburst mt-6 mx-auto ">
                                 <span>WAIT</span>
                             </div>
 
-                        </div>
+                        </div> */}
 
                     </div>
                 </div>
