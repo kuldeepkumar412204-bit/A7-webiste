@@ -37,19 +37,20 @@ export default function WeeklyResultTable({
       )}
 
       <div className="overflow-x-auto scrollbar-thin">
-        <table className="w-full text-left border-collapse min-w-[1200px]">
+        <table className="w-full text-left border-collapse">
           <thead>
             <tr className="bg-[#ffd200] text-black border-b border-black text-[13px] font-extrabold uppercase">
-              <th className="py-3 px-4 min-w-[120px] left-0 z-20 bg-[#ffd200] border-[1px] border-[#333] text-center capitalize">
+              <th className="p-[0.5rem] min-w-[120px] z-20 bg-[#ffd200] border-[1px] border-[#333] text-center capitalize">
                 <strong>Date</strong>
               </th>
 
               {filteredGames.map((game, index) => (
                 <th
                   key={game.game + index}
-                  className="p-2 text-center border-[1px] border-[#333] text-[13px] min-w-[120px] leading-0"
+                  className=" p-[0.5rem] text-center border-[1px] border-[#333] text-[13px] min-w-[120px]"
                 >
-                    {game.game}
+                                          {game.game}
+
                     {/* <span className="text-[10px] text-black/60 font-mono font-medium lowercase">
                       ({game.time})
                     </span> */}
@@ -81,7 +82,7 @@ export default function WeeklyResultTable({
                   key={dayIdx}
                   className="hover:bg-yellow-50 transition-colors"
                 >
-                  <td className="p-[0.5rem] font-bold w-32 text-[13px] left-0 z-20 bg-[#ffd200] border border-black text-center shadow-[2px_0_5px_rgba(0,0,0,0.1)]">
+                  <td className="min-w-[120px] p-[0.5rem] font-bold text-[13px] left-0 z-20 bg-[#ffd200] border border-black text-center shadow-[2px_0_5px_rgba(0,0,0,0.1)]">
                     {formattedDateView}
                   </td>
 
@@ -92,7 +93,7 @@ export default function WeeklyResultTable({
                     return (
                       <td
                         key={`${row.game}-${dayIdx}`}
-                        className="p-[0.5rem] text-center border-r border-b border-black text-[13px]"
+                        className="min-w-[120px] p-[0.5rem] text-center border-r border-b border-black text-[13px]"
                       >
                         {value === "-" || value === null ? (
                           <span className="text-black/35 font-bold">-</span>
