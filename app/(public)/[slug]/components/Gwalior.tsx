@@ -1,6 +1,3 @@
-"use client";
-
-import React, { useState } from "react";
 import { Metadata } from "next";
 import FAQSection from "./FAQSection";
 
@@ -43,15 +40,6 @@ interface InfoSection {
 
 
 export default function Gwalior() {
-  // State to track which FAQ accordion item is open
-  const [openFaqIdx, setOpenFaqIdx] = useState<number | null>(null);
-
-  const toggleFaq = (idx: number) => {
-    setOpenFaqIdx(openFaqIdx === idx ? null : idx);
-  };
-
-  const gameName = "gwalior";
-  const resultTime = "2:20 PM";
 
   // Main Content Blocks - styled like FAQSection
   const infoSections: InfoSection[] = [

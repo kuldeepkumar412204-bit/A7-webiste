@@ -57,13 +57,10 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-white text-black selection:bg-[#ffd200] selection:text-black">
 
-
       {/* 3. LIVE STATUS BLOCK (Black background) */}
       <LiveStatus />
-      {/* 6. SATTA ANNOUNCEMENT HEADER BANNER */}
 
       <CommunityLinks />
-
 
       <KhaiwalGrid />
 
@@ -71,7 +68,6 @@ export default function Home() {
 
       <CTA />
       <main className="mx-auto mt-[5px] flex-grow w-full flex flex-col gap-10">
-
 
         {/* 8. DOUBLE HISTORIC RESULT CHART GRID */}
         <section id="charts" className="flex flex-col">
@@ -90,17 +86,13 @@ export default function Home() {
 
           <WeeklyResultsSection />
 
-
         </section>
         {/* 9. SEO TEXT WITH SOLID YELLOW HEADER */}
       </main>
       <FAQSection />
 
-
       {/* 10. A7 SATTA KING BLOG (Black background card blocks) */}
-      <Blogs />
-
-
+      {/* <Blogs /> */}
 
     </div>
   );
