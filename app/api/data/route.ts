@@ -96,9 +96,9 @@ export async function GET(req: NextRequest) {
     });
 
 
-    if (range === "daily") return daily(games);
-    if (range === "weekly") return weekly(games);
-    if (range === "monthly") return monthly(games);
+    if (range === "daily") return daily(sortedGames);
+    if (range === "weekly") return weekly(sortedGames);
+    if (range === "monthly") return monthly(sortedGames);
 
     // yearly
     const year = parseInt(searchParams.get("year") ?? String(new Date().getFullYear()), 10);
