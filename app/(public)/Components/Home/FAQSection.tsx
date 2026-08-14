@@ -208,7 +208,7 @@ export default function FAQSection() {
           <>
             <div key={idx} className="w-full text-primary">
               <div className="w-full p-4 py-2 mb-1">
-                <h2 className="text-[calc(1.325rem+0.9vw)] lg:text-[2rem] font-semibold mb-[0.5rem]">
+                <h2 className="text-[calc(1.3rem+.6vw)] font-semibold mb-[0.5rem]">
                   {section.heading}
                 </h2>
                 <p className="text-[20px]"> {section.description}</p>

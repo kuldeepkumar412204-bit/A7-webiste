@@ -17,7 +17,7 @@ export default function Footer(){
             </a>
           </div>
           <div className=" bg-secondary text-[14px] text-black  font-bold w-full py-4 capitalize">
-           <span className="text-neutral-500"> ©</span> 2026 A7 Satta King All Rights Reserved.
+           <span className="text-neutral-500"> ©</span> 2026 A7 SATTAKING All Rights Reserved.
           </div>
           <div className="text-[14px] font-semibold text-secondary max-w-7xl leading-relaxed mt-6">
             Disclaimer: The information available on this website is based on publicly accessible sources and is provided for general informational purposes only. We do not guarantee the accuracy, completeness, or reliability of any data, charts, or results displayed. Users are advised to use their own judgment and discretion while referring to the content. This website holds no responsibility for any decisions, losses, or consequences arising from the use of this information.

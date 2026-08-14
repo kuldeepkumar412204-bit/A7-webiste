@@ -24,24 +24,35 @@ export default function SattaResultTable() {
 
     // console.log("apiData", apiData);
     const parseTimeToMinutes = (time?: string) => {
-    if (!time) return Infinity;
-    const cleaned = time.replace("at ", "").trim(); // "09:25 PM"
-    const match = cleaned.match(/(\d{1,2}):(\d{2})\s?(AM|PM)/i);
-    if (!match) return Infinity;
+        if (!time) return Infinity;
+        const cleaned = time.replace("at ", "").trim(); // "09:25 PM"
+        const match = cleaned.match(/(\d{1,2}):(\d{2})\s?(AM|PM)/i);
+        if (!match) return Infinity;
 
-    let [, hh, mm, period] = match;
-    let hours = parseInt(hh, 10);
-    const minutes = parseInt(mm, 10);
+        let [, hh, mm, period] = match;
+        let hours = parseInt(hh, 10);
+        const minutes = parseInt(mm, 10);
 
-    if (period.toUpperCase() === "PM" && hours !== 12) hours += 12;
-    if (period.toUpperCase() === "AM" && hours === 12) hours = 0;
+        if (period.toUpperCase() === "PM" && hours !== 12) hours += 12;
+        if (period.toUpperCase() === "AM" && hours === 12) hours = 0;
 
-    return hours * 60 + minutes;
-};
+        return hours * 60 + minutes;
+    };
 
-        const sortedData = [...apiData].sort(
-            (a, b) => parseTimeToMinutes(a?.open_time) - parseTimeToMinutes(b?.open_time)
-        );
+    const sortedData = [...apiData].sort(
+        (a, b) => parseTimeToMinutes(a?.open_time) - parseTimeToMinutes(b?.open_time)
+    );
+
+    const hasTimePassed = (time?: string) => {
+        if (!time) return false;
+
+        const targetMinutes = parseTimeToMinutes(time);
+
+        const now = new Date();
+        const currentMinutes = now.getHours() * 60 + now.getMinutes();
+
+        return currentMinutes >= targetMinutes;
+    };
 
     return (
         <div>
@@ -120,7 +131,7 @@ export default function SattaResultTable() {
                                 {/* Column 3 - Today Result */}
                                 <div className="w-[33%] p-[0.5rem] flex items-center justify-center border border-t-0 border-primary">
                                     <div className="w-full   text-black font-bold text-[22px] flex items-center justify-center">
-                                        {data?.result === "XX" ? (
+                                        {data?.result === "XX" && !hasTimePassed(data?.open_time) ? (
                                             <div className="w-10 h-10">
                                                 <Image
                                                     src="/new.gif"
@@ -132,6 +143,7 @@ export default function SattaResultTable() {
                                             </div>
                                         ) : (
                                             <span className="text-black font-bold text-[22px] sm:text-xl">
+                                                {/* {data?.result === "XX" ? '--' :data?.result} */}
                                                 {data?.result}
                                             </span>
                                         )}
