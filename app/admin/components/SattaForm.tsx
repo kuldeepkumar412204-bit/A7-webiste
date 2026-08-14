@@ -7,9 +7,10 @@ interface SattaGame {
   _id?: string;
   name: string;
   slug: string;
-  resultTime: string; 
+  resultTime: string;
   isActive?: boolean;
   tableNo: 1 | 2; // Added tableNo support
+  order?: number | undefined;
 }
 
 interface SattaFormProps {
@@ -38,7 +39,7 @@ function generateSlug(value: string): string {
   const latinOnly = value
     .toLowerCase()
     .trim()
-    .replace(/[^\x00-\x7F]/g, " ") 
+    .replace(/[^\x00-\x7F]/g, " ")
     .replace(/\s+/g, "-")
     .replace(/[^a-z0-9-]/g, "")
     .replace(/-+/g, "-")
@@ -58,6 +59,7 @@ export default function SattaForm({ initialData, onSuccess }: SattaFormProps) {
   const [name, setName] = useState(initialData?.name ?? "");
   const [isActive, setIsActive] = useState(initialData?.isActive ?? true);
   const [tableNo, setTableNo] = useState<1 | 2>((initialData?.tableNo as 1 | 2) ?? 1); // Track dropdown choices
+  const [order, setOrder] = useState(initialData?.order || undefined);
 
   const init12 = useMemo(() => to12hr(initialData?.resultTime ?? ""), [initialData?.resultTime]);
   const [timeHour, setTimeHour] = useState(init12.hour);
@@ -102,6 +104,7 @@ export default function SattaForm({ initialData, onSuccess }: SattaFormProps) {
           resultTime: resultTime24,
           isActive,
           tableNo: Number(tableNo), // Included table number in submission payload
+          order: Number(order),
         }),
       });
 
@@ -215,11 +218,10 @@ export default function SattaForm({ initialData, onSuccess }: SattaFormProps) {
                   key={p}
                   type="button"
                   onClick={() => setTimePeriod(p)}
-                  className={`px-4 py-3 text-sm font-semibold transition-colors ${
-                    timePeriod === p
+                  className={`px-4 py-3 text-sm font-semibold transition-colors ${timePeriod === p
                       ? "bg-[#e11d48] text-white"
                       : "bg-white text-gray-600 hover:bg-gray-50"
-                  }`}
+                    }`}
                 >
                   {p}
                 </button>
@@ -233,21 +235,37 @@ export default function SattaForm({ initialData, onSuccess }: SattaFormProps) {
         </div>
 
         {/* Table Assignment Select Input Box Selection Dropdown */}
-        <div>
-          <label className="block text-sm font-semibold text-gray-700 mb-1.5">
-            Assign Display Table Number <span className="text-red-500">*</span>
-          </label>
-          <select
-            value={tableNo}
-            onChange={(e) => setTableNo(Number(e.target.value) as 1 | 2)}
-            className="w-full rounded-xl border border-gray-300 px-4 py-3 text-sm outline-none transition focus:border-[#e11d48] focus:ring-2 focus:ring-[#e11d48]/20 bg-white cursor-pointer"
-          >
-            <option value={1}>Table 1</option>
-            <option value={2}>Table 2</option>
-          </select>
-          <p className="text-xs text-gray-400 mt-1.5">
-            Selects which component viewport layout block maps this active dataset logic row.
-          </p>
+        <div className="grid sm:grid-cols-2 gap-4">
+          <div>
+            <label className="block text-sm font-semibold text-gray-700 mb-1.5">
+              Assign Display Table Number <span className="text-red-500">*</span>
+            </label>
+            <select
+              value={tableNo}
+              onChange={(e) => setTableNo(Number(e.target.value) as 1 | 2)}
+              className="w-full rounded-xl border border-gray-300 px-4 py-3 text-sm outline-none transition focus:border-[#e11d48] focus:ring-2 focus:ring-[#e11d48]/20 bg-white cursor-pointer"
+            >
+              <option value={1}>Table 1</option>
+              <option value={2}>Table 2</option>
+            </select>
+            <p className="text-xs text-gray-400 mt-1.5">
+              Selects which component viewport layout block maps this active dataset logic row.
+            </p>
+          </div>
+
+
+          <div>
+            <label className="block text-sm font-semibold text-gray-700 mb-1.5">
+              Order <span className="text-red-500"></span>
+            </label>
+            <input
+              type="text"
+              value={order}
+              onChange={(e) => setOrder(Number(e.target.value))}
+              placeholder="e.g. 1"
+              className="w-full rounded-xl border border-gray-300 px-4 py-3 text-sm outline-none transition focus:border-[#e11d48] focus:ring-2 focus:ring-[#e11d48]/20"
+            />
+          </div>
         </div>
 
         {/* isActive Toggle */}
@@ -259,14 +277,12 @@ export default function SattaForm({ initialData, onSuccess }: SattaFormProps) {
           <button
             type="button"
             onClick={() => setIsActive(!isActive)}
-            className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none ${
-              isActive ? "bg-[#e11d48]" : "bg-gray-300"
-            }`}
+            className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none ${isActive ? "bg-[#e11d48]" : "bg-gray-300"
+              }`}
           >
             <span
-              className={`inline-block h-4 w-4 transform rounded-full bg-white shadow-sm transition-transform ${
-                isActive ? "translate-x-6" : "translate-x-1"
-              }`}
+              className={`inline-block h-4 w-4 transform rounded-full bg-white shadow-sm transition-transform ${isActive ? "translate-x-6" : "translate-x-1"
+                }`}
             />
           </button>
         </div>
@@ -293,11 +309,10 @@ export default function SattaForm({ initialData, onSuccess }: SattaFormProps) {
         {/* Message */}
         {message && (
           <div
-            className={`rounded-xl p-3 text-sm font-medium text-center ${
-              message.type === "success"
+            className={`rounded-xl p-3 text-sm font-medium text-center ${message.type === "success"
                 ? "bg-green-50 text-green-700 border border-green-200"
                 : "bg-red-50 text-red-700 border border-red-200"
-            }`}
+              }`}
           >
             {message.text}
           </div>

@@ -99,9 +99,9 @@ export async function GET(req: NextRequest) {
 // ─── Daily ────────────────────────────────────────────────────────────────────
 async function daily(games: any[]) {
   const todayStart = getISTMidnightUTC(0);
-  const todayEnd = new Date(getISTMidnightUTC(-1).getTime() - 1); 
+  const todayEnd = new Date(getISTMidnightUTC(-1).getTime() - 1);
   const yesterdayStart = getISTMidnightUTC(1);
-  const yesterdayEnd = new Date(todayStart.getTime() - 1); 
+  const yesterdayEnd = new Date(todayStart.getTime() - 1);
 
   const [todayRows, yesterdayRows] = await Promise.all([
     Result.find({
@@ -145,8 +145,8 @@ async function daily(games: any[]) {
 
 // ─── Weekly ───────────────────────────────────────────────────────────────────
 async function weekly(games: any[]) {
-  const weekStart = getISTMidnightUTC(6);                        
-  const weekEnd = new Date(getISTMidnightUTC(-1).getTime() - 1); 
+  const weekStart = getISTMidnightUTC(6);
+  const weekEnd = new Date(getISTMidnightUTC(-1).getTime() - 1);
 
   const rows = await Result.find({
     drawDate: { $gte: weekStart, $lte: weekEnd },
@@ -195,12 +195,12 @@ async function monthly(games: any[]) {
   const nowIST = new Date(
     new Date().toLocaleString("en-US", { timeZone: "Asia/Kolkata" })
   );
-  
+
   const currentDay = nowIST.getDate(); // e.g., 16
 
   // 1. Calculate how many days have passed since the 1st of the current month
   // If it's the 16th, we need 16 labels. getISTDateLabels(N) returns [N-1 days ago ... today]
-  const totalDaysThisMonth = currentDay; 
+  const totalDaysThisMonth = currentDay;
   const dateLabels = getISTDateLabels(totalDaysThisMonth);
 
   // 2. Fetch records ranging from the 1st of the month till today's end
@@ -215,6 +215,27 @@ async function monthly(games: any[]) {
     .select("sattaId drawDate result")
     .lean();
 
+  const sortedGames = [...games].sort((a, b) => {
+    const aHasOrder = a.order !== undefined && a.order !== null;
+    const bHasOrder = b.order !== undefined && b.order !== null;
+
+    // Ordered games come first
+    if (aHasOrder && !bHasOrder) return -1;
+    if (!aHasOrder && bHasOrder) return 1;
+
+    // Both have order → sort by order
+    if (aHasOrder && bHasOrder) {
+      return a.order - b.order;
+    }
+
+    // Neither has order → oldest created first
+    return (
+      new Date(a.createdAt).getTime() -
+      new Date(b.createdAt).getTime()
+    );
+  });
+
+
   const byGame = new Map<string, Map<string, string>>();
   for (const r of rows) {
     const id = r.sattaId.toString();
@@ -225,7 +246,7 @@ async function monthly(games: any[]) {
 
   const todayLabel = utcToISTDateLabel(new Date());
 
-  const data = games.map((game) => {
+  const data = sortedGames.map((game) => {
     const id = game._id.toString();
     const dateMap = byGame.get(id) ?? new Map<string, string>();
 
@@ -234,6 +255,7 @@ async function monthly(games: any[]) {
       time: formatTime12(game.resultTime),
       tableNo: game.tableNo,
       slug: game.slug,
+      order: game.order,
       dates: dateLabels,
       result: dateLabels.map((d) => {
         // Hide future dates just in case
@@ -280,7 +302,7 @@ async function yearly(games: any[], year: number) {
   for (const r of rows) {
     const id = r.sattaId.toString();
     const gameEntry = byGame.get(id);
-    if (!gameEntry) continue; 
+    if (!gameEntry) continue;
 
     const istDate = new Date(r.drawDate.getTime() + 5.5 * 60 * 60 * 1000);
     const monthName = MONTHS[istDate.getUTCMonth()];
@@ -302,7 +324,7 @@ async function yearly(games: any[], year: number) {
 
   const data = games.map((game) => {
     const id = game._id.toString();
-    const months = byGame.get(id)!; 
+    const months = byGame.get(id)!;
 
     if (year === currentYear) {
       if (!hasResultTimePassed(game.resultTime)) {

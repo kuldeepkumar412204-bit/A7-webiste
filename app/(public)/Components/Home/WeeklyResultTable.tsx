@@ -36,11 +36,11 @@ export default function WeeklyResultTable({
         </div>
       )}
 
-      <div className="overflow-x-auto scrollbar-thin">
+      <div className="overflow-x-auto">
         <table className="w-full text-left border-collapse">
           <thead>
-            <tr className="bg-[#ffd200] text-black border-b border-black text-[13px] font-extrabold uppercase">
-              <th className="p-[0.5rem] min-w-[120px] z-20 bg-[#ffd200] border-[1px] border-[#333] text-center capitalize">
+            <tr className="bg-[#ffd800] text-black border-b border-black text-[13px] font-extrabold uppercase">
+              <th className="p-[0.5rem] min-w-[120px] w-[120px] z-20 bg-[#ffd800] border-[1px] border-[#333] text-center capitalize">
                 <strong>Date</strong>
               </th>
 

@@ -36,6 +36,8 @@ export async function PATCH(req: NextRequest, { params }: Params) {
     const { id } = await params;
     const body = await req.json();
 
+    console.log(body.order)
+
     const satta = await Satta.findByIdAndUpdate(
       id,
       {
@@ -45,10 +47,14 @@ export async function PATCH(req: NextRequest, { params }: Params) {
           resultTime: body.resultTime,
           isActive: body.isActive,
           tableNo: body.tableNo,
+          order: body.order,
         },
-      },
-      { new: true, runValidators: true }
+      },{
+        returnDocument: 'after'
+      }
     );
+
+    console.log(satta)
 
     if (!satta) {
       return NextResponse.json(

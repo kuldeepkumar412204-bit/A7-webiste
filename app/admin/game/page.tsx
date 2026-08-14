@@ -213,6 +213,7 @@ export default function GameListPage() {
                     <div className="flex items-center gap-1"><Clock size={12} /> Result Time (IST)</div>
                   </th>
                   <th className="px-5 py-3.5 text-xs font-semibold text-gray-500 uppercase tracking-wider">Table Assignment</th>
+                  <th className="px-5 py-3.5 text-xs font-semibold text-gray-500 uppercase tracking-wider">Order</th>
                   <th className="px-5 py-3.5 text-xs font-semibold text-gray-500 uppercase tracking-wider">Status</th>
                   <th className="px-5 py-3.5 text-xs font-semibold text-gray-500 uppercase tracking-wider">Created</th>
                   <th className="px-5 py-3.5 text-xs font-semibold text-gray-500 uppercase tracking-wider text-right">Actions</th>
@@ -239,6 +240,11 @@ export default function GameListPage() {
                       <span className="inline-flex items-center gap-1 text-xs bg-slate-100 text-slate-700 px-2.5 py-1 rounded-lg font-medium border border-slate-200">
                         <LayoutGrid size={12} className="text-slate-400" />
                         {game.tableNo ? `Table ${game.tableNo}` : "Not Assigned"}
+                      </span>
+                    </td>
+                    <td className="px-5 py-4">
+                      <span className="inline-flex items-center gap-1 text-xs bg-slate-100 text-slate-700 px-2.5 py-1 rounded-lg font-medium border border-slate-200">
+                        {game.order ? `${game.order}` : "-"}
                       </span>
                     </td>
                     <td className="px-5 py-4">

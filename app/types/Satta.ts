@@ -7,4 +7,5 @@ export interface ISatta {
   createdAt: string;
   updatedAt: string;
   tableNo: number;
+  order: number | undefined;
 }

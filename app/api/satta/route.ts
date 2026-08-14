@@ -60,6 +60,7 @@ export async function POST(req: NextRequest) {
       resultTime: body.resultTime,
       isActive: body.isActive ?? true,
       tableNo: body.tableNo||1,
+      order: body.order||undefined,
     });
 
     return NextResponse.json(
