@@ -74,6 +74,28 @@ export async function GET(req: NextRequest) {
       return NextResponse.json({ success: true, range, data: [] });
     }
 
+
+    const sortedGames = [...games].sort((a:any, b:any) => {
+      const aHasOrder = a.order !== undefined && a.order !== null;
+      const bHasOrder = b.order !== undefined && b.order !== null;
+
+      // Ordered games come first
+      if (aHasOrder && !bHasOrder) return -1;
+      if (!aHasOrder && bHasOrder) return 1;
+
+      // Both have order → sort by order
+      if (aHasOrder && bHasOrder) {
+        return a.order - b.order;
+      }
+
+      // Neither has order → oldest created first
+      return (
+        new Date(a?.createdAt).getTime() -
+        new Date(b?.createdAt).getTime()
+      );
+    });
+
+
     if (range === "daily") return daily(games);
     if (range === "weekly") return weekly(games);
     if (range === "monthly") return monthly(games);
@@ -215,26 +237,6 @@ async function monthly(games: any[]) {
     .select("sattaId drawDate result")
     .lean();
 
-  const sortedGames = [...games].sort((a, b) => {
-    const aHasOrder = a.order !== undefined && a.order !== null;
-    const bHasOrder = b.order !== undefined && b.order !== null;
-
-    // Ordered games come first
-    if (aHasOrder && !bHasOrder) return -1;
-    if (!aHasOrder && bHasOrder) return 1;
-
-    // Both have order → sort by order
-    if (aHasOrder && bHasOrder) {
-      return a.order - b.order;
-    }
-
-    // Neither has order → oldest created first
-    return (
-      new Date(a.createdAt).getTime() -
-      new Date(b.createdAt).getTime()
-    );
-  });
-
 
   const byGame = new Map<string, Map<string, string>>();
   for (const r of rows) {
@@ -246,7 +248,7 @@ async function monthly(games: any[]) {
 
   const todayLabel = utcToISTDateLabel(new Date());
 
-  const data = sortedGames.map((game) => {
+  const data = games.map((game) => {
     const id = game._id.toString();
     const dateMap = byGame.get(id) ?? new Map<string, string>();
 
