@@ -21,7 +21,7 @@ export default function KhaiwalGrid() {
 
 
         {
-          khaiwalData.map((data, index) => (
+          khaiwalData?.sort((a, b) => a.order - b.order)?.map((data, index) => (
             <><div className="w-full bg-gradient-to-b from-[#ffd800] via-[#ffd000dd] to-white border-[3px] border-dashed border-red-600 rounded-[20px] px-2 py-4 text-center flex flex-col items-center">
               <div className="">
                 <div
