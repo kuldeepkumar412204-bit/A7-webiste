@@ -15,7 +15,7 @@ export default function ContactForm({ initialData, onSuccess, onClose }: Contact
     const isEditMode = !!initialData?._id;
 
     const [name, setName] = useState(initialData?.name ?? "");
-    const [whatsappNumber, setWhatsappNumber] = useState(initialData?.whatsappNumber ?? "");
+    const [whatsappNumberOrUrl, setwhatsappNumberOrUrl] = useState(initialData?.whatsappNumberOrUrl ?? "");
     const [telegramLink, setTelegramLink] = useState(initialData?.telegramLink ?? "");
     const [email, setEmail] = useState(initialData?.email ?? "");
     const [isActive, setIsActive] = useState(initialData?.isActive ?? true);
@@ -47,8 +47,23 @@ export default function ContactForm({ initialData, onSuccess, onClose }: Contact
             return;
         }
 
-        if (whatsappNumber && !/^[+\d\s-]{6,20}$/.test(whatsappNumber.trim())) {
-            setMessage({ type: "error", text: "Please enter a valid WhatsApp number." });
+        if (
+            whatsappNumberOrUrl && !(
+                /^[+\d\s-]{6,20}$/.test(whatsappNumberOrUrl.trim()) ||
+                (() => {
+                    try {
+                        new URL(whatsappNumberOrUrl.trim());
+                        return true;
+                    } catch {
+                        return false;
+                    }
+                })()
+            )
+        ) {
+            setMessage({
+                type: "error",
+                text: "Please enter a valid WhatsApp number or URL."
+            });
             setLoading(false);
             return;
         }
@@ -62,7 +77,7 @@ export default function ContactForm({ initialData, onSuccess, onClose }: Contact
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
                     name: name.trim(),
-                    whatsappNumber: whatsappNumber.trim() || undefined,
+                    whatsappNumberOrUrl: whatsappNumberOrUrl.trim() || undefined,
                     telegramLink: telegramLink.trim() || undefined,
                     email: email.trim() || undefined,
                     isActive,
@@ -76,7 +91,7 @@ export default function ContactForm({ initialData, onSuccess, onClose }: Contact
 
             if (!isEditMode) {
                 setName("");
-                setWhatsappNumber("");
+                setwhatsappNumberOrUrl("");
                 setTelegramLink("");
                 setEmail("");
                 setIsActive(true);
@@ -136,11 +151,11 @@ export default function ContactForm({ initialData, onSuccess, onClose }: Contact
                 </div>
 
                 <div>
-                    <label className="block text-xs font-semibold text-gray-700 mb-1">WhatsApp Number</label>
+                    <label className="block text-xs font-semibold text-gray-700 mb-1">WhatsApp Number Or Chanel Link</label>
                     <input
-                        type="tel"
-                        value={whatsappNumber}
-                        onChange={(e) => setWhatsappNumber(e.target.value)}
+                        type="text"
+                        value={whatsappNumberOrUrl}
+                        onChange={(e) => setwhatsappNumberOrUrl(e.target.value)}
                         placeholder="+91 99999 88888"
                         className="w-full h-9 rounded-md border border-gray-300 px-3 text-xs outline-none transition focus:border-[#e11d48] focus:ring-1 focus:ring-[#e11d48]/20 bg-gray-50/50"
                     />
@@ -209,8 +224,8 @@ export default function ContactForm({ initialData, onSuccess, onClose }: Contact
                 {message && (
                     <div
                         className={`rounded-md p-2.5 text-xs font-medium text-center ${message.type === "success"
-                                ? "bg-green-50 text-green-700 border border-green-200"
-                                : "bg-red-50 text-red-700 border border-red-200"
+                            ? "bg-green-50 text-green-700 border border-green-200"
+                            : "bg-red-50 text-red-700 border border-red-200"
                             }`}
                     >
                         {message.text}

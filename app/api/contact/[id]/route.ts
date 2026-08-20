@@ -43,14 +43,16 @@ export async function PATCH(req: NextRequest, { params }: Params) {
       ? { $or: [{ _id: id }, { referenceId: id }] }
       : { referenceId: id };
 
+    console.log(body)
+
     const contact = await Contact.findOneAndUpdate(
       query,
       {
         $set: {
           name: body.name,
-          whatsappNumber: body.whatsappNumber,
-          telegramLink: body.telegramLink,
-          email: body.email,
+          whatsappNumberOrUrl: body.whatsappNumberOrUrl??"",
+          telegramLink: body.telegramLink??"",
+          email: body.email??"",
           isActive: body.isActive,
         },
       },

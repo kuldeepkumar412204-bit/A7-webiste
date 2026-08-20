@@ -58,3 +58,20 @@ export const fetchDailyApiData = async (): Promise<any[]> => {
 
   return json.results.data;
 };
+
+export const fetchKhaiwal = async (): Promise<any[]> => {
+  const response = await fetch(
+    "/api/khaiwal"
+  );
+
+  if (!response.ok) {
+    throw new Error("Failed to fetch data");
+  }
+
+  // console.log("response", response)
+
+  const json = await response.json();
+  // console.log("response", response, json)
+
+  return json.data;
+};

@@ -82,7 +82,7 @@ export async function POST(req: NextRequest) {
 
         const contact = await Contact.create({
             name: body.name,
-            whatsappNumber: body.whatsappNumber,
+            whatsappNumberOrUrl: body.whatsappNumberOrUrl,
             telegramLink: body.telegramLink,
             email: body.email,
             isActive: body.isActive ?? true,

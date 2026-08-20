@@ -1,6 +1,8 @@
 'use client';
 import { fetchContact } from "@/app/lib/contact";
 import { useQuery } from "@tanstack/react-query";
+import WhatsAppButton from "../Global/WhatsppBtn";
+import TelegramButton from "../Global/TelegramButton";
 
 export default function CTA(){
     const { data } = useQuery({
@@ -29,16 +31,7 @@ export default function CTA(){
 
           </p>
 
-          <a
-            href={`https://wa.me/${data?.whatsappNumber}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-4 text-white "
-          >
-            {/* WhatsApp Pill Icon Wrapper */}
-            <img src="/whatsapp-btn.png" alt="" className="h-[65px] text-[#00a2ed]" />
-
-          </a>
+          <WhatsAppButton value={data?.whatsappNumberOrUrl}/>
 
 
           <p className="font-semibold uppercase tracking-tight max-w-5xl leading-relaxed mt-2">
@@ -48,14 +41,7 @@ export default function CTA(){
           <p className="font-semibold uppercase tracking-tight max-w-5xl leading-relaxed">
             किसी भी भाई को किसी भी तरह की कोई शिकायत या परेशानी हो तो हमसे telegram पर संपर्क करे
           </p>
-          <a
-            href={data?.telegramLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-4 text-white font-black transition-all duration-150"
-          >
-            <img src="/telegram-btn.png" alt="" className="h-[65px] text-[#00a2ed]" />
-          </a>
+          <TelegramButton value={data?.telegramLink}/>
         </div>
       </div></>
     )

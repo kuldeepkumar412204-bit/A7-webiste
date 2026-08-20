@@ -2,7 +2,7 @@ import mongoose, { Schema, Model, Document } from "mongoose";
 
 export interface IContactDocument extends Document {
   name: string;
-  whatsappNumber?: string;
+  whatsappNumberOrUrl?: string;
   telegramLink?: string;
   email?: string;
   isActive: boolean;
@@ -24,7 +24,7 @@ const ContactSchema = new Schema<IContactDocument>(
       required: true,
       trim: true,
     },
-    whatsappNumber: {
+    whatsappNumberOrUrl: {
       type: String,
       trim: true,
     },

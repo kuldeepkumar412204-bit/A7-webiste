@@ -1,112 +1,46 @@
 "use client";
-import { fetchContact } from "@/app/lib/contact";
-import { getKhaiwalTimings, KhaiwalTiming } from "@/app/lib/khaiwal";
+
+import { fetchKhaiwal } from "@/app/lib/results";
 import { useQuery } from "@tanstack/react-query";
-import React, { useEffect, useState } from "react";
-import { FaWhatsapp } from "react-icons/fa";
 
 export default function KhaiwalGrid() {
-  const [timings, setTimings] = useState<KhaiwalTiming[]>([]);
-
-  useEffect(() => {
-    const fetchTimings = async () => {
-      try {
-        const data = await getKhaiwalTimings();
-        setTimings(data);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-
-    fetchTimings();
-  }, []);
-  const timingsData1And2 = timings;
-
-  const timingsData4 = timings;
-
-    const { data } = useQuery({
-    queryKey: ["contact", "A79PYR47"],
-    queryFn:  () => fetchContact("A79PYR47"),
+  const { data: khaiwalData = [], isLoading: apiIsLoading, error: apiError } = useQuery({
+    queryKey: ["khaiwal-api", "khaiwal-api"],
+    queryFn: fetchKhaiwal,
     staleTime: 1000 * 60 * 5, // 5 minutes
   });
 
+  // console.log("khaiwalData", khaiwalData);
+
+
   return (
-    <div className="w-full my-[5px] font-sans select-none">
+    <div className="w-full my-[5px] font-sans">
       <div className="w-full max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-[5px] items-start text-[14px]">
 
         {/* COLUMN 1: AJAY BHAI KHAIWAL */}
-        <div className="w-full bg-gradient-to-b from-[#ffd800] via-[#ffd000dd] to-white border-[3px] border-dashed border-red-600 rounded-[20px] px-2 py-4 text-center flex flex-col items-center">
-          <div className="">
-            <p className=" text-black tracking-tight text-[14.4px] mb-[3.2px]">
-              <strong>
-                --सीधे सट्टा कंपनी का No 1 खाईवाल--
-              </strong>
-            </p>
-            <p className="font-bold mb-[3.2px]">
-              <strong>
-              ♕♕ KUBER BHAI  KHAIWAL ♕♕
 
 
-            </strong>
-            </p>
+        {
+          khaiwalData.map((data, index) => (
+            <><div className="w-full bg-gradient-to-b from-[#ffd800] via-[#ffd000dd] to-white border-[3px] border-dashed border-red-600 rounded-[20px] px-2 py-4 text-center flex flex-col items-center">
+              <div className="">
+                <div
+                  className="ql-editor !p-0"
+                  dangerouslySetInnerHTML={{ __html: data.data }}
+                />
+              </div>
 
-            <div className="w-full text-left">
-              {timingsData1And2.map((item, idx) => (
-                <div key={idx+"aguahdu"} className="flex justify-center text-black/80 items-center text-[14.4px] font-semibold mb-[3.2px]">
-                  ⏰ {item.location} {"  "}
-                  <span className="font-bold">
-                    ----------- 
-                  </span>
-                  <span className="text-black/90 font-bold"> {" "} {item.time}</span>
-                </div>
-              ))}
+              <div className="w-full flex flex-col items-center gap-2 mb-[3.2px] text-[14.4px] mt-2">
+                <a href={`https://wa.me/${data.whatsappNumber}`} className="text-blue-800 font-black underline hover:text-blue-900 mb-1">
+                  Game play करने के लिये नीचे लिंक पर क्लिक करे
+                </a>
+                <WhatsAppButton number={data.whatsappNumber} />
+              </div>
             </div>
-          </div>
 
-          <div className="w-full flex flex-col items-center gap-2 mb-[3.2px] text-[14.4px]">
-            <span className="text-black/85 font-black ">🤪 🤪 AJAY BHAI KHAIWAL 🤪 🤪</span>
-            <a href={`https://wa.me/${data?.whatsappNumber}`} className="text-blue-800 font-black underline hover:text-blue-900 mb-1">
-              Game play करने के लिये नीचे लिंक पर क्लिक करे
-            </a>
-            <WhatsAppButton number={data?.whatsappNumber}/>
-          </div>
-        </div>
-
-        {/* COLUMN 2: AJAY BHAI KHAIWAL */}
-        <div className="w-full bg-gradient-to-b text-black/80 from-[#ffd800] via-[#ffd000dd] to-white border-[3px] border-dashed border-red-600 rounded-[20px] px-2 py-4 text-center flex flex-col items-center">
-          <div className="">
-            <p className=" tracking-tight text-[14.4px] mb-[3.2px]">
-              <strong>
-                --सीधे सट्टा कंपनी का No 1 खाईवाल--
-              </strong>
-            </p>
-            <p className="font-bold mb-[3.2px]">
-              <strong>
-              ♕♕ JASSI BHAI  KHAIWAL ♕♕
-            </strong>
-            </p>
-
-            <div className="w-full text-left">
-              {timingsData1And2.map((item, idx) => (
-                <div key={idx+"aguahdu"} className="flex justify-center items-center text-[14.4px] font-semibold mb-[3.2px]">
-                  ⏰ {item.location} {"  "}
-                  <span className="font-bold">
-                    ----------- 
-                  </span>
-                  <span className="text-black/90 font-bold"> {" "} {item.time}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="w-full flex flex-col items-center gap-2 mb-[3.2px] text-[14.4px]">
-            <span className=" font-black ">🙂🙂 JASSI BHAI KHAIWAL 🙂🙂 </span>
-            <a href={`https://wa.me/${data?.whatsappNumber}`} className="text-blue-800 font-black underline hover:text-blue-900 mb-1">
-              Game play करने के लिये नीचे लिंक पर क्लिक करे
-            </a>
-            <WhatsAppButton number={data?.whatsappNumber}/>
-          </div>
-        </div>
+            </>
+          ))
+        }
 
         {/* COLUMN 3: CRICKET ID INFO */}
         {/* <div className="text-[14.4px] text-black/80 w-full bg-gradient-to-b from-[#ffd800] via-[#ffd000dd] to-white border-[3px] border-dashed border-red-600 rounded-[20px] px-2 py-4 text-center flex flex-col items-center">
@@ -177,7 +111,7 @@ export default function KhaiwalGrid() {
 }
 
 // Reusable Exact WhatsApp Button Layout Component
-function WhatsAppButton({number}:{number:string|any;}) {
+function WhatsAppButton({ number }: { number: string | any; }) {
   return (
     <a
       href={`https://wa.me/${number}`}

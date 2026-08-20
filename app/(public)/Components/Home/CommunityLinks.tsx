@@ -4,12 +4,14 @@ import { fetchContact } from "@/app/lib/contact";
 import { useQuery } from "@tanstack/react-query";
 import React from "react";
 import { FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
+import WhatsAppButton from "../Global/WhatsppBtn";
+import TelegramButton from "../Global/TelegramButton";
 
 
 export default function CommunityLinks() {
    const { data } = useQuery({
-    queryKey: ["contact", "A79PYR47"],
-    queryFn:  () => fetchContact("A79PYR47"),
+    queryKey: ["contact", "A7CHAN0ANI"],
+    queryFn:  () => fetchContact("A7CHAN0ANI"),
     staleTime: 1000 * 60 * 5, // 5 minutes
   });
   console.log(data)
@@ -23,16 +25,7 @@ export default function CommunityLinks() {
             NOW WHATSAPP PLAYERS CAN ALSO JOIN OUR WHATSAPP CHANNEL TO GET RESULTS QUICKLY AND RECEIVE SUPERFAST RESULTS.
           </p>
           <div className="flex justify-center">
-            <a
-            href={`https://wa.me/${data?.whatsappNumber}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-4 text-white "
-          >
-            {/* WhatsApp Pill Icon Wrapper */}
-                        <img src="/whatsapp-btn.png" alt="" className="h-[69px] text-[#00a2ed]" />
-
-          </a>
+            <WhatsAppButton value={data?.whatsappNumberOrUrl}/>
           </div>
         </div>
         
@@ -42,14 +35,7 @@ export default function CommunityLinks() {
             NOW TELEGRAM PLAYERS CAN ALSO JOIN OUR TELEGRAM CHANNEL TO GET RESULTS QUICKLY AND RECEIVE SUPERFAST RESULTS.
           </p>
           <div className="flex justify-center">
-            <a
-            href={data?.telegramLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-4 text-white font-black transition-all duration-150"
-          >
-            <img src="/telegram-btn.png" alt="" className="h-[69px] text-[#00a2ed]" />
-          </a>
+            <TelegramButton value={data?.telegramLink}/>
           </div>
         </div>
 
