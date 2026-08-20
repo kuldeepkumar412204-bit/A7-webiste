@@ -9,11 +9,10 @@ const TelegramButton: React.FC<TelegramButtonProps> = ({
   value,
   className = "",
 }) => {
-  if (!value?.trim()) return null;
 
   return (
     <a
-      href={value.trim()}
+      href={value?value.trim():"#"}
       target="_blank"
       rel="noopener noreferrer"
       className={`flex items-center gap-4 text-white font-black transition-all duration-150 ${className}`}
