@@ -15,7 +15,7 @@ export async function GET(req: NextRequest) {
     if (status) filter.status = status;
 
     const results = (await Result.find(filter)
-      .populate("sattaId", "name slug resultTime")
+      .populate("sattaId")
       .sort({ drawDate: -1 })
       .lean())
       .filter((r) => r.sattaId);

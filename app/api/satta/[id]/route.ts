@@ -48,6 +48,8 @@ export async function PATCH(req: NextRequest, { params }: Params) {
           isActive: body.isActive,
           tableNo: body.tableNo,
           order: body.order,
+          source: body.source || "MANUAL",
+          apiName: body.apiName || null,
         },
       },{
         returnDocument: 'after'

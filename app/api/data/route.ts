@@ -119,50 +119,78 @@ export async function GET(req: NextRequest) {
 }
 
 // ─── Daily ────────────────────────────────────────────────────────────────────
-async function daily(games: any[]) {
-  const todayStart = getISTMidnightUTC(0);
-  const todayEnd = new Date(getISTMidnightUTC(-1).getTime() - 1);
-  const yesterdayStart = getISTMidnightUTC(1);
-  const yesterdayEnd = new Date(todayStart.getTime() - 1);
+function getISTDate(offsetDays: number = 0): Date {
+  const d = new Date();
+  d.setDate(d.getDate() - offsetDays);
+  const dateStr = d.toLocaleDateString("en-CA", { timeZone: "Asia/Kolkata" });
+  return new Date(`${dateStr}T00:00:00.000Z`);
+}
 
-  const [todayRows, yesterdayRows] = await Promise.all([
-    Result.find({
-      drawDate: { $gte: todayStart, $lte: todayEnd },
-      status: "published",
-      isActive: true,
-    })
-      .select("sattaId result")
-      .lean(),
+export async function daily(games: any[]) {
+  try {
+    const todayDrawDate = getISTDate(0);      // Today 00:00:00.000Z
+    const yesterdayDrawDate = getISTDate(1);  // Yesterday 00:00:00.000Z
 
-    Result.find({
-      drawDate: { $gte: yesterdayStart, $lte: yesterdayEnd },
-      status: "published",
-      isActive: true,
-    })
-      .select("sattaId result")
-      .lean(),
-  ]);
+    // Fetch exact matches for yesterday and today concurrently
+    const [todayRows, yesterdayRows] = await Promise.all([
+      Result.find({
+        drawDate: todayDrawDate,
+        status: "published",
+        isActive: true,
+      })
+        .select("sattaId result")
+        .lean(),
 
-  const todayMap = new Map(todayRows.map((r) => [r.sattaId.toString(), r.result]));
-  const yesterdayMap = new Map(yesterdayRows.map((r) => [r.sattaId.toString(), r.result]));
+      Result.find({
+        drawDate: yesterdayDrawDate,
+        status: "published",
+        isActive: true,
+      })
+        .select("sattaId result")
+        .lean(),
+    ]);
+    // console.log("todayRows", todayRows)
 
-  const data = games.map((game) => {
-    const id = game._id.toString();
-    const showTodayResult = hasResultTimePassed(game.resultTime);
+    // Build fast lookup maps using stringified ObjectIds
+    const todayMap = new Map(todayRows.map((r) => [r.sattaId.toString(), r.result]));
+    const yesterdayMap = new Map(yesterdayRows.map((r) => [r.sattaId.toString(), r.result]));
 
-    return {
-      game: game.name,
-      time: formatTime12(game.resultTime),
-      tableNo: game.tableNo,
-      slug: game.slug,
-      result: [
-        yesterdayMap.get(id) ?? null,
-        showTodayResult ? todayMap.get(id) ?? null : null,
-      ],
-    };
-  });
+    const data = games.map((game) => {
+      const id = game._id.toString();
+      const showTodayResult = hasResultTimePassed(game.resultTime);
 
-  return NextResponse.json({ success: true, range: "daily", data });
+      // Yesterday fallback: if no record exists, default to "--"
+      const yesterdayResult = yesterdayMap.get(id) ?? "--";
+
+      // Today fallback: 
+      // If cutoff time has passed OR a DB result exists -> return result or "WAIT"
+      // If result time hasn't arrived yet -> keep "WAIT" badge active
+      let todayResult = "WAIT";
+      if (todayMap.has(id)) {
+        todayResult = todayMap.get(id)!;
+      } else if (!showTodayResult) {
+        todayResult = "WAIT";
+      }
+
+      return {
+        _id: id,
+        game: game.name,
+        time: formatTime12(game.resultTime),
+        tableNo: game.tableNo,
+        slug: game.slug,
+        order: game.order ?? 0,
+        result: [yesterdayResult, todayResult],
+      };
+    });
+
+    return NextResponse.json({ success: true, range: "daily", data });
+  } catch (error: any) {
+    console.error("Error in daily market endpoint:", error);
+    return NextResponse.json(
+      { success: false, message: "Failed to fetch daily market results" },
+      { status: 500 }
+    );
+  }
 }
 
 // ─── Weekly ───────────────────────────────────────────────────────────────────

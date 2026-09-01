@@ -8,9 +8,11 @@ interface SattaGame {
   name: string;
   slug: string;
   resultTime: string;
+  source?: "API" | "MANUAL";
+  apiName?: string | null;
   isActive?: boolean;
-  tableNo: 1 | 2; // Added tableNo support
-  order?: number | undefined;
+  tableNo: 1 | 2;
+  order?: number;
 }
 
 interface SattaFormProps {
@@ -57,9 +59,11 @@ export default function SattaForm({ initialData, onSuccess }: SattaFormProps) {
   const isEditMode = !!initialData?._id;
 
   const [name, setName] = useState(initialData?.name ?? "");
+  const [source, setSource] = useState<"MANUAL" | "API">(initialData?.source ?? "MANUAL");
+  const [apiName, setApiName] = useState(initialData?.apiName ?? "");
   const [isActive, setIsActive] = useState(initialData?.isActive ?? true);
-  const [tableNo, setTableNo] = useState<1 | 2>((initialData?.tableNo as 1 | 2) ?? 1); // Track dropdown choices
-  const [order, setOrder] = useState(initialData?.order || undefined);
+  const [tableNo, setTableNo] = useState<1 | 2>((initialData?.tableNo as 1 | 2) ?? 1);
+  const [order, setOrder] = useState<string>(initialData?.order?.toString() ?? "");
 
   const init12 = useMemo(() => to12hr(initialData?.resultTime ?? ""), [initialData?.resultTime]);
   const [timeHour, setTimeHour] = useState(init12.hour);
@@ -89,6 +93,12 @@ export default function SattaForm({ initialData, onSuccess }: SattaFormProps) {
       return;
     }
 
+    if (source === "API" && !apiName.trim()) {
+      setMessage({ type: "error", text: "API Game Key Name is required when API source is selected" });
+      setLoading(false);
+      return;
+    }
+
     const resultTime24 = to24hr(timeHour, timeMinute.padStart(2, "0"), timePeriod);
 
     try {
@@ -102,9 +112,11 @@ export default function SattaForm({ initialData, onSuccess }: SattaFormProps) {
           name,
           slug: generateSlug(name),
           resultTime: resultTime24,
+          source,
+          apiName: source === "API" ? apiName.trim() : null,
           isActive,
-          tableNo: Number(tableNo), // Included table number in submission payload
-          order: Number(order),
+          tableNo: Number(tableNo),
+          order: order !== "" ? Number(order) : undefined,
         }),
       });
 
@@ -119,11 +131,14 @@ export default function SattaForm({ initialData, onSuccess }: SattaFormProps) {
 
       if (!isEditMode) {
         setName("");
+        setSource("MANUAL");
+        setApiName("");
         setTimeHour("10");
         setTimeMinute("00");
         setTimePeriod("PM");
         setIsActive(true);
-        setTableNo(1); // Reset dropdown option choice
+        setTableNo(1);
+        setOrder("");
       }
 
       onSuccess?.(data.data);
@@ -160,7 +175,38 @@ export default function SattaForm({ initialData, onSuccess }: SattaFormProps) {
         onSubmit={handleSubmit}
         className="bg-white rounded-2xl border border-gray-200 shadow-sm p-6 space-y-5"
       >
-        {/* Name */}
+        {/* Source Selection (API vs MANUAL) */}
+        <div>
+          <label className="block text-sm font-semibold text-gray-700 mb-1.5">
+            Result Update Source <span className="text-red-500">*</span>
+          </label>
+          <div className="grid grid-cols-2 gap-2 p-1 bg-gray-100 rounded-xl">
+            <button
+              type="button"
+              onClick={() => setSource("MANUAL")}
+              className={`py-2.5 text-sm font-semibold rounded-lg transition-all ${
+                source === "MANUAL"
+                  ? "bg-white text-gray-900 shadow-sm"
+                  : "text-gray-500 hover:text-gray-800"
+              }`}
+            >
+              ✋ Manual Input
+            </button>
+            <button
+              type="button"
+              onClick={() => setSource("API")}
+              className={`py-2.5 text-sm font-semibold rounded-lg transition-all ${
+                source === "API"
+                  ? "bg-[#e11d48] text-white shadow-sm"
+                  : "text-gray-500 hover:text-gray-800"
+              }`}
+            >
+              ⚡ Auto API Sync
+            </button>
+          </div>
+        </div>
+
+        {/* Game Name */}
         <div>
           <label className="block text-sm font-semibold text-gray-700 mb-1.5">
             Game Name <span className="text-red-500">*</span>
@@ -170,7 +216,7 @@ export default function SattaForm({ initialData, onSuccess }: SattaFormProps) {
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
-            placeholder="e.g. GALI SATTA KING"
+            placeholder="e.g. KAROL BAGH"
             className="w-full rounded-xl border border-gray-300 px-4 py-3 text-sm outline-none transition focus:border-[#e11d48] focus:ring-2 focus:ring-[#e11d48]/20"
           />
           {name && (
@@ -186,6 +232,26 @@ export default function SattaForm({ initialData, onSuccess }: SattaFormProps) {
             </p>
           )}
         </div>
+
+        {/* External API Field Name (Visible only when API is chosen) */}
+        {source === "API" && (
+          <div className="p-4 bg-rose-50 border border-rose-100 rounded-xl space-y-1.5">
+            <label className="block text-sm font-semibold text-gray-800">
+              API External Key Name <span className="text-red-500">*</span>
+            </label>
+            <input
+              type="text"
+              value={apiName}
+              onChange={(e) => setApiName(e.target.value)}
+              required={source === "API"}
+              placeholder="e.g. KAROL BAGH or ANMOL BAZAR"
+              className="w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm outline-none focus:border-[#e11d48] bg-white"
+            />
+            <p className="text-xs text-gray-500">
+              Must match the exact market name string returned by the third-party API payload.
+            </p>
+          </div>
+        )}
 
         {/* Result Time */}
         <div>
@@ -218,10 +284,11 @@ export default function SattaForm({ initialData, onSuccess }: SattaFormProps) {
                   key={p}
                   type="button"
                   onClick={() => setTimePeriod(p)}
-                  className={`px-4 py-3 text-sm font-semibold transition-colors ${timePeriod === p
+                  className={`px-4 py-3 text-sm font-semibold transition-colors ${
+                    timePeriod === p
                       ? "bg-[#e11d48] text-white"
                       : "bg-white text-gray-600 hover:bg-gray-50"
-                    }`}
+                  }`}
                 >
                   {p}
                 </button>
@@ -234,11 +301,11 @@ export default function SattaForm({ initialData, onSuccess }: SattaFormProps) {
           </p>
         </div>
 
-        {/* Table Assignment Select Input Box Selection Dropdown */}
+        {/* Table & Order Selection */}
         <div className="grid sm:grid-cols-2 gap-4">
           <div>
             <label className="block text-sm font-semibold text-gray-700 mb-1.5">
-              Assign Display Table Number <span className="text-red-500">*</span>
+              Display Table <span className="text-red-500">*</span>
             </label>
             <select
               value={tableNo}
@@ -248,20 +315,16 @@ export default function SattaForm({ initialData, onSuccess }: SattaFormProps) {
               <option value={1}>Table 1</option>
               <option value={2}>Table 2</option>
             </select>
-            <p className="text-xs text-gray-400 mt-1.5">
-              Selects which component viewport layout block maps this active dataset logic row.
-            </p>
           </div>
-
 
           <div>
             <label className="block text-sm font-semibold text-gray-700 mb-1.5">
-              Order <span className="text-red-500"></span>
+              Display Order
             </label>
             <input
-              type="text"
+              type="number"
               value={order}
-              onChange={(e) => setOrder(Number(e.target.value))}
+              onChange={(e) => setOrder(e.target.value)}
               placeholder="e.g. 1"
               className="w-full rounded-xl border border-gray-300 px-4 py-3 text-sm outline-none transition focus:border-[#e11d48] focus:ring-2 focus:ring-[#e11d48]/20"
             />
@@ -277,12 +340,14 @@ export default function SattaForm({ initialData, onSuccess }: SattaFormProps) {
           <button
             type="button"
             onClick={() => setIsActive(!isActive)}
-            className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none ${isActive ? "bg-[#e11d48]" : "bg-gray-300"
-              }`}
+            className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none ${
+              isActive ? "bg-[#e11d48]" : "bg-gray-300"
+            }`}
           >
             <span
-              className={`inline-block h-4 w-4 transform rounded-full bg-white shadow-sm transition-transform ${isActive ? "translate-x-6" : "translate-x-1"
-                }`}
+              className={`inline-block h-4 w-4 transform rounded-full bg-white shadow-sm transition-transform ${
+                isActive ? "translate-x-6" : "translate-x-1"
+              }`}
             />
           </button>
         </div>
@@ -301,18 +366,21 @@ export default function SattaForm({ initialData, onSuccess }: SattaFormProps) {
               </svg>
               {isEditMode ? "Updating..." : "Creating..."}
             </>
+          ) : isEditMode ? (
+            "Update Satta Game"
           ) : (
-            isEditMode ? "Update Satta Game" : "Create Satta Game"
+            "Create Satta Game"
           )}
         </button>
 
-        {/* Message */}
+        {/* Message Banner */}
         {message && (
           <div
-            className={`rounded-xl p-3 text-sm font-medium text-center ${message.type === "success"
+            className={`rounded-xl p-3 text-sm font-medium text-center ${
+              message.type === "success"
                 ? "bg-green-50 text-green-700 border border-green-200"
                 : "bg-red-50 text-red-700 border border-red-200"
-              }`}
+            }`}
           >
             {message.text}
           </div>

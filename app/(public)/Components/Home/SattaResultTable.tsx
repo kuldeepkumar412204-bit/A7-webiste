@@ -67,49 +67,71 @@ export default function SattaResultTable() {
                     </div>
 
                     {/* TABLE ROWS */}
-                    {/* <div className="divide-y divide-gray-300">
-                        {satta.filter((item) => item.tableNo === 1).map((game, index) => (
-                            <div key={game?._id} className="grid grid-cols-[4fr_3fr_3fr]  items-center text-center">
+                    <div className="divide-y divide-gray-300">
+                        {satta
+                            .filter((item) => item.tableNo === 1)
+                            .map((game:any) => {
+                                const todayResult = game.result?.[1];
+                                const hasResult = todayResult && todayResult !== "WAIT" && todayResult !== "--";
+                                const timePassed = hasTimePassed(game.time);
 
-                                <div className="bg-[#FFD200] py-2 px-2 flex flex-col justify-center items-center h-full border-r border-gray-300">
-                                    <Link href={`/${game.slug}`} className="text-black font-bold text-[22px] tracking-tight leading-tight uppercase hover:text-blue-800">
-                                        {game?.game}
-                                    </Link>
-                                    <span className="text-black font-bold text-base sm:text-xl tracking-tight leading-tight mt-2">
-                                        {game.time}
-                                    </span>
-                                </div>
-
-                                <div className="py-2 text-black font-bold text-[22px] sm:text-xl border-r border-gray-300 bg-white h-full flex items-center justify-center">
-                                    {game.result?.[0] ?? "-"}
-                                </div>
-
-                                <div className="py-2 bg-white h-full flex items-center justify-center">
-                                    {!hasTimePassed(game.time) ? (
-                                        <div className="w-10 h-10">
-                                            <Image
-                                                src="/new.gif"
-                                                alt="New"
-                                                width={300}
-                                                height={300}
-                                                unoptimized
-                                            />
+                                return (
+                                    <div
+                                        key={game?._id}
+                                        className="grid grid-cols-[4fr_3fr_3fr] items-center text-center border-b border-gray-300"
+                                    >
+                                        {/* Column 1: Game Name & Time */}
+                                        <div className="bg-[#FFD200] py-2 px-2 flex flex-col justify-center items-center h-full border-r border-gray-300">
+                                            <Link
+                                                href={`/${game.slug}`}
+                                                className="text-black font-bold text-[22px] tracking-tight leading-tight uppercase hover:text-blue-800"
+                                            >
+                                                {game?.game}
+                                            </Link>
+                                            <span className="text-black font-bold text-base sm:text-xl tracking-tight leading-tight mt-2">
+                                                {game.time}
+                                            </span>
                                         </div>
-                                    ) : (
-                                        <span className="text-black font-bold text-[22px] sm:text-xl">
-                                            {game.result?.[1]??"-"}
-                                        </span>
-                                    )}
-                                </div>
 
-                            </div>
-                        ))}
-                    </div> */}
-                    <div className="text-[22px]">
+                                        {/* Column 2: Yesterday's Result */}
+                                        <div className="py-2 text-black font-bold text-[22px] sm:text-xl border-r border-gray-300 bg-white h-full flex items-center justify-center">
+                                            {game.result?.[0] ?? "--"}
+                                        </div>
+
+                                        {/* Column 3: Today's Result with Secure Fallback */}
+                                        <div className="py-2 bg-white h-full flex items-center justify-center">
+                                            {hasResult ? (
+                                                /* 1. If result exists (e.g. 05, 08), show the number */
+                                                <span className="text-black font-bold text-[22px] sm:text-xl">
+                                                    {todayResult}
+                                                </span>
+                                            ) : !timePassed ? (
+                                                /* 2. If result missing BUT time hasn't passed yet, show GIF badge */
+                                                <div className="w-10 h-10 flex items-center justify-center">
+                                                    <Image
+                                                        src="/new.gif"
+                                                        alt="WAIT"
+                                                        width={40}
+                                                        height={40}
+                                                        unoptimized
+                                                    />
+                                                </div>
+                                            ) : (
+                                                /* 3. SECURE FALLBACK: Time passed but no result yet from API */
+                                                <span className=" font-extrabold text-[18px] tracking-wider">
+                                                    --
+                                                </span>
+                                                /* Or simply <span className="text-black font-bold text-[22px]">--</span> */
+                                            )}
+                                        </div>
+                                    </div>
+                                );
+                            })}
+                    </div>
+                    {/* <div className="text-[22px]">
                         {sortedData.map((data: any, index: number) => (
                             <div key={data.name} className="flex items-stretch text-center">
 
-                                {/* Column 1: Name & Timing */}
                                 <div className="w-[40%] sm:w-[37%]">
                                     <div className=" bg-[#FFD200] p-[0.5rem] flex flex-col justify-center items-center h-full border border-t-0 border-primary">
                                         <Link href={`/${data?.name?.split(" ").join("-")}`} className="text-black  text-[15px] font-bold md:text-[22px] tracking-tight leading-tight uppercase hover:text-blue-800">
@@ -121,17 +143,15 @@ export default function SattaResultTable() {
                                     </div>
                                 </div>
 
-                                {/* Column 2: Yesterday's Result */}
                                 <div className="w-[33%] p-[0.5rem] flex items-center justify-center border border-t-0 border-x-0 border-primary">
                                     <div className="w-full  text-black font-bold text-[22px] flex items-center justify-center">
                                         {data?.yesterday}
                                     </div>
                                 </div>
 
-                                {/* Column 3 - Today Result */}
                                 <div className="w-[33%] p-[0.5rem] flex items-center justify-center border border-t-0 border-primary">
                                     <div className="w-full   text-black font-bold text-[22px] flex items-center justify-center">
-                                        {data?.result === "XX" && !hasTimePassed(data?.open_time) ? (
+                                        {data?.result === "WAIT" && !hasTimePassed(data?.open_time) ? (
                                             <div className="w-10 h-10">
                                                 <Image
                                                     src="/new.gif"
@@ -143,7 +163,6 @@ export default function SattaResultTable() {
                                             </div>
                                         ) : (
                                             <span className="text-black font-bold text-[22px] sm:text-xl">
-                                                {/* {data?.result === "XX" ? '--' :data?.result} */}
                                                 {data?.result}
                                             </span>
                                         )}
@@ -152,7 +171,7 @@ export default function SattaResultTable() {
 
                             </div>
                         ))}
-                    </div>
+                    </div> */}
 
 
                 </div>
@@ -169,53 +188,65 @@ export default function SattaResultTable() {
 
                     {/* TABLE ROWS */}
                     <div className=" text-[22px]">
-                        {satta.filter((item) => item.tableNo === 2).map((game, index) => (
-                            <div key={game?._id} className="flex items-stretch text-center">
+                        {satta
+                            .filter((item) => item.tableNo === 2)
+                            .map((game:any) => {
+                                const todayResult = game.result?.[1];
+                                const hasResult = todayResult && todayResult !== "WAIT" && todayResult !== "--";
+                                const timePassed = hasTimePassed(game.time);
 
-                                {/* Column 1: Name & Timing */}
-                                <div className="w-[40%] sm:w-[37%]">
-                                    <div className=" bg-[#FFD200] p-[0.5rem] flex flex-col justify-center items-center h-full border border-t-0 border-primary">
-                                        <Link href={`/${game.slug}`} className="text-black text-[15px] font-bold md:text-[22px] tracking-tight leading-tight uppercase hover:text-blue-800">
-                                            {game.game}
-                                        </Link>
-                                        <span className="text-black text-[15px] font-bold md:text-[22px] tracking-tight leading-tight dm:mt-2">
-                                            {game.time}
-                                        </span>
-                                    </div>
-                                </div>
-
-
-                                {/* Column 2: Yesterday's Result */}
-                                <div className="w-[33%] p-[0.5rem]  flex items-center justify-center border border-t-0 border-x-0 border-primary">
-                                    <div className="w-full  text-black font-bold text-[22px] flex items-center justify-center">
-                                        {game.result?.[0] ?? "-"}
-                                    </div>
-                                </div>
-
-                                {/* Column 3 - Today Result */}
-                                <div className="w-[33%] p-[0.5rem] flex items-center justify-center border border-t-0 border-primary">
-                                    <div className="w-full  text-black font-bold text-[22px] flex items-center justify-center">
-
-                                        {!hasTimePassed(game.time) ? (
-                                            <div className="w-10 h-10">
-                                                <Image
-                                                    src="/new.gif"
-                                                    alt="New"
-                                                    width={300}
-                                                    height={300}
-                                                    unoptimized
-                                                />
-                                            </div>
-                                        ) : (
-                                            <span className="text-black font-bold text-[22px] sm:text-xl">
-                                                {game.result?.[1] ?? "-"}
+                                return (
+                                    <div
+                                        key={game?._id}
+                                        className="grid grid-cols-[4fr_3fr_3fr] items-center text-center border-b border-gray-300"
+                                    >
+                                        {/* Column 1: Game Name & Time */}
+                                        <div className="bg-[#FFD200] py-2 px-2 flex flex-col justify-center items-center h-full border-r border-gray-300">
+                                            <Link
+                                                href={`/${game.slug}`}
+                                                className="text-black font-bold text-[22px] tracking-tight leading-tight uppercase hover:text-blue-800"
+                                            >
+                                                {game?.game}
+                                            </Link>
+                                            <span className="text-black font-bold text-base sm:text-xl tracking-tight leading-tight mt-2">
+                                                {game.time}
                                             </span>
-                                        )}
-                                    </div>
-                                </div>
+                                        </div>
 
-                            </div>
-                        ))}
+                                        {/* Column 2: Yesterday's Result */}
+                                        <div className="py-2 text-black font-bold text-[22px] sm:text-xl border-r border-gray-300 bg-white h-full flex items-center justify-center">
+                                            {game.result?.[0] ?? "--"}
+                                        </div>
+
+                                        {/* Column 3: Today's Result with Secure Fallback */}
+                                        <div className="py-2 bg-white h-full flex items-center justify-center">
+                                            {hasResult ? (
+                                                /* 1. If result exists (e.g. 05, 08), show the number */
+                                                <span className="text-black font-bold text-[22px] sm:text-xl">
+                                                    {todayResult}
+                                                </span>
+                                            ) : !timePassed ? (
+                                                /* 2. If result missing BUT time hasn't passed yet, show GIF badge */
+                                                <div className="w-10 h-10 flex items-center justify-center">
+                                                    <Image
+                                                        src="/new.gif"
+                                                        alt="WAIT"
+                                                        width={40}
+                                                        height={40}
+                                                        unoptimized
+                                                    />
+                                                </div>
+                                            ) : (
+                                                /* 3. SECURE FALLBACK: Time passed but no result yet from API */
+                                                <span className=" font-extrabold text-[18px] tracking-wider">
+                                                    --
+                                                </span>
+                                                /* Or simply <span className="text-black font-bold text-[22px]">--</span> */
+                                            )}
+                                        </div>
+                                    </div>
+                                );
+                            })}
                     </div>
 
                 </div>

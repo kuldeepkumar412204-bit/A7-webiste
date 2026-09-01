@@ -54,19 +54,32 @@ export async function POST(req: NextRequest) {
 
     const body = await req.json();
 
-    const satta = await Satta.create({
+    const source = body.source || "MANUAL";
+    if (!["API", "MANUAL"].includes(source)) {
+      return NextResponse.json(
+        {
+          success: false,
+          message: "source must be either 'API' or 'MANUAL'",
+        },
+        { status: 400 }
+      );
+    }
+
+    const game = await Satta.create({
       name: body.name,
       slug: body.slug,
       resultTime: body.resultTime,
+      source: source,
+      apiName: body.apiName || null,
       isActive: body.isActive ?? true,
-      tableNo: body.tableNo||1,
-      order: body.order||undefined,
+      tableNo: body.tableNo || 1,
+      order: body.order || undefined,
     });
 
     return NextResponse.json(
       {
         success: true,
-        data: satta,
+        data: game,
       },
       { status: 201 }
     );
@@ -74,7 +87,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json(
       {
         success: false,
-        message: error.message,
+        message: error.message || "Failed to create game",
       },
       { status: 400 }
     );
