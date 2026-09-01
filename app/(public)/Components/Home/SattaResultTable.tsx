@@ -13,9 +13,12 @@ export default function SattaResultTable() {
     const { data: satta = [], isLoading, error } = useQuery({
         queryKey: ["satta", "daily"],
         queryFn: fetchDailyData,
-        staleTime: 1000 * 60 * 5, // 5 minutes
+        staleTime: 0,
+        refetchInterval: 30 * 1000, // every 30 seconds
+        refetchIntervalInBackground: true,
     });
 
+    console.log("satta", satta);
     const { data: apiData = [], isLoading: apiIsLoading, error: apiError } = useQuery({
         queryKey: ["satta-api", "daily-api"],
         queryFn: fetchDailyApiData,
@@ -70,7 +73,7 @@ export default function SattaResultTable() {
                     <div className="divide-y divide-gray-300">
                         {satta
                             .filter((item) => item.tableNo === 1)
-                            .map((game:any) => {
+                            .map((game: any) => {
                                 const todayResult = game.result?.[1];
                                 const hasResult = todayResult && todayResult !== "WAIT" && todayResult !== "--";
                                 const timePassed = hasTimePassed(game.time);
@@ -190,7 +193,7 @@ export default function SattaResultTable() {
                     <div className=" text-[22px]">
                         {satta
                             .filter((item) => item.tableNo === 2)
-                            .map((game:any) => {
+                            .map((game: any) => {
                                 const todayResult = game.result?.[1];
                                 const hasResult = todayResult && todayResult !== "WAIT" && todayResult !== "--";
                                 const timePassed = hasTimePassed(game.time);
