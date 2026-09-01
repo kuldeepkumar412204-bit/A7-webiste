@@ -51,7 +51,7 @@ export default function ResultListPage() {
     try {
       const res = await fetch("/api/results");
       const data = await res.json();
-      console.log("data",data )
+      console.log("data", data)
       if (data.success) setResults(data.data);
     } catch {
       showToast("error", "Failed to load results");
@@ -101,9 +101,8 @@ export default function ResultListPage() {
       {/* Toast */}
       {toast && (
         <div
-          className={`fixed top-20 right-4 z-50 px-4 py-3 rounded-xl shadow-lg text-sm font-medium text-white ${
-            toast.type === "success" ? "bg-green-600" : "bg-red-600"
-          }`}
+          className={`fixed top-20 right-4 z-50 px-4 py-3 rounded-xl shadow-lg text-sm font-medium text-white ${toast.type === "success" ? "bg-green-600" : "bg-red-600"
+            }`}
         >
           {toast.text}
         </div>
@@ -146,16 +145,14 @@ export default function ResultListPage() {
             <button
               key={s}
               onClick={() => setStatusFilter(s)}
-              className={`px-3 py-2.5 font-medium capitalize transition-colors ${
-                statusFilter === s
+              className={`px-3 py-2.5 font-medium capitalize transition-colors ${statusFilter === s
                   ? "bg-[#1f2937] text-white"
                   : "bg-white text-gray-500 hover:bg-gray-50"
-              }`}
+                }`}
             >
               {s}{" "}
-              <span className={`ml-1 text-xs px-1.5 py-0.5 rounded-full ${
-                statusFilter === s ? "bg-white/20 text-white" : "bg-gray-100 text-gray-500"
-              }`}>
+              <span className={`ml-1 text-xs px-1.5 py-0.5 rounded-full ${statusFilter === s ? "bg-white/20 text-white" : "bg-gray-100 text-gray-500"
+                }`}>
                 {statusCounts[s]}
               </span>
             </button>
@@ -198,6 +195,8 @@ export default function ResultListPage() {
                   <th className="px-5 py-3.5 text-xs font-semibold text-gray-500 uppercase tracking-wider">#</th>
                   <th className="px-5 py-3.5 text-xs font-semibold text-gray-500 uppercase tracking-wider">Game</th>
                   <th className="px-5 py-3.5 text-xs font-semibold text-gray-500 uppercase tracking-wider">Draw Date</th>
+                  <th className="px-5 py-3.5 text-xs font-semibold text-gray-500 uppercase tracking-wider">Mode</th>
+
                   <th className="px-5 py-3.5 text-xs font-semibold text-gray-500 uppercase tracking-wider">Result</th>
                   <th className="px-5 py-3.5 text-xs font-semibold text-gray-500 uppercase tracking-wider">Status</th>
                   <th className="px-5 py-3.5 text-xs font-semibold text-gray-500 uppercase tracking-wider">Active</th>
@@ -219,6 +218,16 @@ export default function ResultListPage() {
                       <td className="px-5 py-4 text-gray-600">
                         {formatDate(r.drawDate)}
                       </td>
+                      <td className="px-5 py-4 whitespace-nowrap">
+                        <span
+                          className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold uppercase tracking-wider font-mono ${r.sattaId.source === "API"
+                              ? "bg-rose-100 text-rose-700 dark:bg-rose-950/50 dark:text-rose-300"
+                              : "bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300"
+                            }`}
+                        >
+                          {r.sattaId.source === "API" ? "API" : "Manual"}
+                        </span>
+                      </td>
                       <td className="px-5 py-4">
                         <span className="inline-block text-2xl font-black text-[#e11d48] tracking-widest font-mono">
                           {r.result}
@@ -226,27 +235,24 @@ export default function ResultListPage() {
                       </td>
                       <td className="px-5 py-4">
                         <span
-                          className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold capitalize ${
-                            r.status === "published"
+                          className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold capitalize ${r.status === "published"
                               ? "bg-green-100 text-green-700"
                               : "bg-amber-100 text-amber-700"
-                          }`}
+                            }`}
                         >
                           <span
-                            className={`h-1.5 w-1.5 rounded-full ${
-                              r.status === "published" ? "bg-green-500" : "bg-amber-500"
-                            }`}
+                            className={`h-1.5 w-1.5 rounded-full ${r.status === "published" ? "bg-green-500" : "bg-amber-500"
+                              }`}
                           />
                           {r.status}
                         </span>
                       </td>
                       <td className="px-5 py-4">
                         <span
-                          className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold ${
-                            r.isActive
+                          className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold ${r.isActive
                               ? "bg-green-100 text-green-700"
                               : "bg-gray-100 text-gray-500"
-                          }`}
+                            }`}
                         >
                           <span
                             className={`h-1.5 w-1.5 rounded-full ${r.isActive ? "bg-green-500" : "bg-gray-400"}`}

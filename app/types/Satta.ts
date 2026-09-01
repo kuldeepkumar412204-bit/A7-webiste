@@ -8,4 +8,6 @@ export interface ISatta {
   updatedAt: string;
   tableNo: number;
   order: number | undefined;
+  source: "API" | "MANUAL";
+  apiName?: string;
 }
