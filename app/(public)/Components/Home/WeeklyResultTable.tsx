@@ -95,7 +95,7 @@ export default function WeeklyResultTable({
                         key={`${row.game}-${dayIdx}`}
                         className="min-w-[120px] p-[0.5rem] text-center border-r border-b border-black text-[13px]"
                       >
-                        {value === "-" || value === null ? (
+                        {value === "-" || value === "WAIT" || value === null ? (
                           <span className="text-black/35 font-bold">-</span>
                         ) : (
                           <span className="font-extrabold text-gray-900">{value}</span>

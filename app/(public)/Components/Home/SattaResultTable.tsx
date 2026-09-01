@@ -81,51 +81,54 @@ export default function SattaResultTable() {
                                 return (
                                     <div
                                         key={game?._id}
-                                        className="grid grid-cols-[4fr_3fr_3fr] items-center text-center border-b border-gray-300"
-                                    >
+                                        className="flex items-stretch text-center"                                    >
                                         {/* Column 1: Game Name & Time */}
-                                        <div className="bg-[#FFD200] py-2 px-2 flex flex-col justify-center items-center h-full border-r border-gray-300">
-                                            <Link
-                                                href={`/${game.slug}`}
-                                                className="text-black font-bold text-[22px] tracking-tight leading-tight uppercase hover:text-blue-800"
-                                            >
-                                                {game?.game}
-                                            </Link>
-                                            <span className="text-black font-bold text-base sm:text-xl tracking-tight leading-tight mt-2">
-                                                {game.time}
-                                            </span>
+                                        <div className="w-[40%] sm:w-[37%]">
+                                            <div className=" bg-[#FFD200] p-[0.5rem] flex flex-col justify-center items-center h-full border border-t-0 border-primary">
+                                                <Link href={`/${game.slug}`} className="text-black  text-[15px] font-bold md:text-[22px] tracking-tight leading-tight uppercase hover:text-blue-800">
+                                                    {game?.game}
+                                                </Link>
+                                                <span className="text-black text-[15px] font-bold md:text-[22px] tracking-tight leading-tight md:mt-2">
+                                                    {game?.time}
+                                                </span>
+                                            </div>
                                         </div>
 
                                         {/* Column 2: Yesterday's Result */}
-                                        <div className="py-2 text-black font-bold text-[22px] sm:text-xl border-r border-gray-300 bg-white h-full flex items-center justify-center">
-                                            {game.result?.[0] ?? "--"}
+
+                                        <div className="w-[33%] p-[0.5rem] flex items-center justify-center border border-t-0 border-x-0 border-primary">
+                                            <div className="w-full  text-black font-bold text-[22px] flex items-center justify-center">
+                                                {game.result?.[0] ?? "--"}
+                                            </div>
                                         </div>
 
                                         {/* Column 3: Today's Result with Secure Fallback */}
-                                        <div className="py-2 bg-white h-full flex items-center justify-center">
-                                            {hasResult ? (
-                                                /* 1. If result exists (e.g. 05, 08), show the number */
-                                                <span className="text-black font-bold text-[22px] sm:text-xl">
-                                                    {todayResult}
-                                                </span>
-                                            ) : !timePassed ? (
-                                                /* 2. If result missing BUT time hasn't passed yet, show GIF badge */
-                                                <div className="w-10 h-10 flex items-center justify-center">
-                                                    <Image
-                                                        src="/new.gif"
-                                                        alt="WAIT"
-                                                        width={40}
-                                                        height={40}
-                                                        unoptimized
-                                                    />
-                                                </div>
-                                            ) : (
-                                                /* 3. SECURE FALLBACK: Time passed but no result yet from API */
-                                                <span className=" font-extrabold text-[18px] tracking-wider">
-                                                    --
-                                                </span>
-                                                /* Or simply <span className="text-black font-bold text-[22px]">--</span> */
-                                            )}
+                                        <div className="w-[33%] p-[0.5rem] flex items-center justify-center border border-t-0 border-primary">
+                                            <div className="w-full   text-black font-bold text-[22px] flex items-center justify-center">
+                                                {hasResult ? (
+                                                    /* 1. If result exists (e.g. 05, 08), show the number */
+                                                    <span className="text-black font-bold text-[22px] sm:text-xl">
+                                                        {todayResult}
+                                                    </span>
+                                                ) : !timePassed ? (
+                                                    /* 2. If result missing BUT time hasn't passed yet, show GIF badge */
+                                                    <div className="w-10 h-10 flex items-center justify-center">
+                                                        <Image
+                                                            src="/new.gif"
+                                                            alt="WAIT"
+                                                            width={40}
+                                                            height={40}
+                                                            unoptimized
+                                                        />
+                                                    </div>
+                                                ) : (
+                                                    /* 3. SECURE FALLBACK: Time passed but no result yet from API */
+                                                    <span className=" font-extrabold text-[18px] tracking-wider">
+                                                        --
+                                                    </span>
+                                                    /* Or simply <span className="text-black font-bold text-[22px]">--</span> */
+                                                )}
+                                            </div>
                                         </div>
                                     </div>
                                 );
@@ -201,51 +204,54 @@ export default function SattaResultTable() {
                                 return (
                                     <div
                                         key={game?._id}
-                                        className="grid grid-cols-[4fr_3fr_3fr] items-center text-center border-b border-gray-300"
-                                    >
+                                        className="flex items-stretch text-center"                                    >
                                         {/* Column 1: Game Name & Time */}
-                                        <div className="bg-[#FFD200] py-2 px-2 flex flex-col justify-center items-center h-full border-r border-gray-300">
-                                            <Link
-                                                href={`/${game.slug}`}
-                                                className="text-black font-bold text-[22px] tracking-tight leading-tight uppercase hover:text-blue-800"
-                                            >
-                                                {game?.game}
-                                            </Link>
-                                            <span className="text-black font-bold text-base sm:text-xl tracking-tight leading-tight mt-2">
-                                                {game.time}
-                                            </span>
+                                        <div className="w-[40%] sm:w-[37%]">
+                                            <div className=" bg-[#FFD200] p-[0.5rem] flex flex-col justify-center items-center h-full border border-t-0 border-primary">
+                                                <Link href={`/${game.slug}`} className="text-black  text-[15px] font-bold md:text-[22px] tracking-tight leading-tight uppercase hover:text-blue-800">
+                                                    {game?.game}
+                                                </Link>
+                                                <span className="text-black text-[15px] font-bold md:text-[22px] tracking-tight leading-tight md:mt-2">
+                                                    {game?.time}
+                                                </span>
+                                            </div>
                                         </div>
 
                                         {/* Column 2: Yesterday's Result */}
-                                        <div className="py-2 text-black font-bold text-[22px] sm:text-xl border-r border-gray-300 bg-white h-full flex items-center justify-center">
-                                            {game.result?.[0] ?? "--"}
+
+                                        <div className="w-[33%] p-[0.5rem] flex items-center justify-center border border-t-0 border-x-0 border-primary">
+                                            <div className="w-full  text-black font-bold text-[22px] flex items-center justify-center">
+                                                {game.result?.[0] ?? "--"}
+                                            </div>
                                         </div>
 
                                         {/* Column 3: Today's Result with Secure Fallback */}
-                                        <div className="py-2 bg-white h-full flex items-center justify-center">
-                                            {hasResult ? (
-                                                /* 1. If result exists (e.g. 05, 08), show the number */
-                                                <span className="text-black font-bold text-[22px] sm:text-xl">
-                                                    {todayResult}
-                                                </span>
-                                            ) : !timePassed ? (
-                                                /* 2. If result missing BUT time hasn't passed yet, show GIF badge */
-                                                <div className="w-10 h-10 flex items-center justify-center">
-                                                    <Image
-                                                        src="/new.gif"
-                                                        alt="WAIT"
-                                                        width={40}
-                                                        height={40}
-                                                        unoptimized
-                                                    />
-                                                </div>
-                                            ) : (
-                                                /* 3. SECURE FALLBACK: Time passed but no result yet from API */
-                                                <span className=" font-extrabold text-[18px] tracking-wider">
-                                                    --
-                                                </span>
-                                                /* Or simply <span className="text-black font-bold text-[22px]">--</span> */
-                                            )}
+                                        <div className="w-[33%] p-[0.5rem] flex items-center justify-center border border-t-0 border-primary">
+                                            <div className="w-full   text-black font-bold text-[22px] flex items-center justify-center">
+                                                {hasResult ? (
+                                                    /* 1. If result exists (e.g. 05, 08), show the number */
+                                                    <span className="text-black font-bold text-[22px] sm:text-xl">
+                                                        {todayResult}
+                                                    </span>
+                                                ) : !timePassed ? (
+                                                    /* 2. If result missing BUT time hasn't passed yet, show GIF badge */
+                                                    <div className="w-10 h-10 flex items-center justify-center">
+                                                        <Image
+                                                            src="/new.gif"
+                                                            alt="WAIT"
+                                                            width={40}
+                                                            height={40}
+                                                            unoptimized
+                                                        />
+                                                    </div>
+                                                ) : (
+                                                    /* 3. SECURE FALLBACK: Time passed but no result yet from API */
+                                                    <span className=" font-extrabold text-[18px] tracking-wider">
+                                                        --
+                                                    </span>
+                                                    /* Or simply <span className="text-black font-bold text-[22px]">--</span> */
+                                                )}
+                                            </div>
                                         </div>
                                     </div>
                                 );

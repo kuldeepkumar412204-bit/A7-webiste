@@ -146,8 +146,8 @@ export default function ResultListPage() {
               key={s}
               onClick={() => setStatusFilter(s)}
               className={`px-3 py-2.5 font-medium capitalize transition-colors ${statusFilter === s
-                  ? "bg-[#1f2937] text-white"
-                  : "bg-white text-gray-500 hover:bg-gray-50"
+                ? "bg-[#1f2937] text-white"
+                : "bg-white text-gray-500 hover:bg-gray-50"
                 }`}
             >
               {s}{" "}
@@ -221,23 +221,31 @@ export default function ResultListPage() {
                       <td className="px-5 py-4 whitespace-nowrap">
                         <span
                           className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold uppercase tracking-wider font-mono ${r.sattaId.source === "API"
-                              ? "bg-rose-100 text-rose-700 dark:bg-rose-950/50 dark:text-rose-300"
-                              : "bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300"
+                            ? "bg-rose-100 text-rose-700 dark:bg-rose-950/50 dark:text-rose-300"
+                            : "bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300"
                             }`}
                         >
                           {r.sattaId.source === "API" ? "API" : "Manual"}
                         </span>
                       </td>
                       <td className="px-5 py-4">
-                        <span className="inline-block text-2xl font-black text-[#e11d48] tracking-widest font-mono">
-                          {r.result}
-                        </span>
+                        {r.result && r.result !== "WAIT" && r.result !== "--" ? (
+                          /* Declared numerical result */
+                          <span className="inline-block text-2xl font-black text-[#e11d48] tracking-widest font-mono">
+                            {r.result}
+                          </span>
+                        ) : (
+                          /* Pending / Missing status for Admin view */
+                          <span className="inline-block text-sm font-semibold text-slate-400 uppercase tracking-wide">
+                            {r.result === "WAIT" ? "Pending" : "--"}
+                          </span>
+                        )}
                       </td>
                       <td className="px-5 py-4">
                         <span
                           className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold capitalize ${r.status === "published"
-                              ? "bg-green-100 text-green-700"
-                              : "bg-amber-100 text-amber-700"
+                            ? "bg-green-100 text-green-700"
+                            : "bg-amber-100 text-amber-700"
                             }`}
                         >
                           <span
@@ -250,8 +258,8 @@ export default function ResultListPage() {
                       <td className="px-5 py-4">
                         <span
                           className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold ${r.isActive
-                              ? "bg-green-100 text-green-700"
-                              : "bg-gray-100 text-gray-500"
+                            ? "bg-green-100 text-green-700"
+                            : "bg-gray-100 text-gray-500"
                             }`}
                         >
                           <span
