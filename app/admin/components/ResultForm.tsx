@@ -9,6 +9,7 @@ interface ResultData {
   sattaId: string;
   drawDate: string; // "YYYY-MM-DD"
   result: string;
+  source: "API" | "MANUAL";
   status: "draft" | "published";
   isActive: boolean;
 }
@@ -38,7 +39,6 @@ export default function ResultForm({ initialData, onSuccess }: ResultFormProps) 
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState<{ type: "success" | "error"; text: string } | null>(null);
 
-  // Fetch all satta games for dropdown
   useEffect(() => {
     const fetchGames = async () => {
       try {
@@ -54,12 +54,11 @@ export default function ResultForm({ initialData, onSuccess }: ResultFormProps) 
     fetchGames();
   }, []);
 
-  const handleResultChange = (val: string) => {
-    // Allow only up to 2 digits
-    const cleaned = val.replace(/\D/g, "").slice(0, 2);
-    setResult(cleaned);
-  };
+  const selectedGame = games.find((g) => g._id === sattaId);
 
+  const handleResultChange = (val: string) => {
+  setResult(val);
+};
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setLoading(true);
@@ -71,11 +70,17 @@ export default function ResultForm({ initialData, onSuccess }: ResultFormProps) 
       return;
     }
 
-    if (!/^\d{2}$/.test(result)) {
-      setMessage({ type: "error", text: "Result must be exactly 2 digits (e.g. 07, 42, 99)" });
+    if (result !== "" && !/^\d{2}$/.test(result)) {
+      setMessage({
+        type: "error",
+        text: "Result must be exactly 2 digits (e.g. 07, 42, 99)"
+      });
       setLoading(false);
       return;
     }
+
+    // Automatically derive the result's source from the selected Satta game
+    const derivedSource: "API" | "MANUAL" = selectedGame?.source ?? initialData?.source ?? "MANUAL";
 
     try {
       const url = isEditMode ? `/api/results/${initialData?._id}` : "/api/results";
@@ -84,7 +89,14 @@ export default function ResultForm({ initialData, onSuccess }: ResultFormProps) 
       const res = await fetch(url, {
         method,
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ sattaId, drawDate, result, status, isActive }),
+        body: JSON.stringify({
+          sattaId,
+          drawDate,
+          result,
+          source: derivedSource, // <-- Included in payload!
+          status,
+          isActive,
+        }),
       });
 
       const data = await res.json();
@@ -107,16 +119,23 @@ export default function ResultForm({ initialData, onSuccess }: ResultFormProps) 
         setTimeout(() => router.push("/admin/results"), 1000);
       }
     } catch (error) {
+      let errorMsg = "Something went wrong";
+      if (error instanceof Error) {
+        errorMsg = error.message;
+        if (errorMsg.includes("E11000") || errorMsg.includes("duplicate key")) {
+          errorMsg = "A result for this game and draw date already exists!";
+        }
+      }
+
       setMessage({
         type: "error",
-        text: error instanceof Error ? error.message : "Something went wrong",
+        text: errorMsg,
       });
     } finally {
       setLoading(false);
     }
   };
 
-  // Helper to display time in IST 12-hr
   const formatTime = (time24: string) => {
     if (!time24) return "";
     const [hStr, mStr] = time24.split(":");
@@ -126,8 +145,6 @@ export default function ResultForm({ initialData, onSuccess }: ResultFormProps) 
     else if (h > 12) h -= 12;
     return `${h}:${mStr} ${period}`;
   };
-
-  const selectedGame = games.find((g) => g._id === sattaId);
 
   return (
     <div className="max-w-xl w-full">
@@ -170,13 +187,29 @@ export default function ResultForm({ initialData, onSuccess }: ResultFormProps) 
               ))}
             </select>
           )}
+
+          {/* Game Metadata Context Display */}
           {selectedGame && (
-            <p className="text-xs text-gray-400 mt-1.5">
-              Result time:{" "}
-              <span className="font-semibold text-gray-600">
-                {formatTime(selectedGame.resultTime)} IST
+            <div className="flex items-center justify-between text-xs text-gray-400 mt-2 px-1">
+              <span>
+                Result time:{" "}
+                <strong className="text-gray-600">
+                  {formatTime(selectedGame.resultTime)} IST
+                </strong>
               </span>
-            </p>
+              <span>
+                Source:{" "}
+                <strong
+                  className={
+                    selectedGame.source === "API"
+                      ? "text-blue-600 font-semibold"
+                      : "text-amber-600 font-semibold"
+                  }
+                >
+                  {selectedGame.source}
+                </strong>
+              </span>
+            </div>
           )}
         </div>
 
@@ -202,10 +235,9 @@ export default function ResultForm({ initialData, onSuccess }: ResultFormProps) 
           <div className="relative">
             <input
               type="text"
-              inputMode="numeric"
+              inputMode="text"
               value={result}
               onChange={(e) => handleResultChange(e.target.value)}
-              required
               placeholder="e.g. 07"
               maxLength={2}
               className="w-full rounded-xl border border-gray-300 px-4 py-3 text-center text-3xl font-bold tracking-widest outline-none focus:border-[#e11d48] focus:ring-2 focus:ring-[#e11d48]/20"

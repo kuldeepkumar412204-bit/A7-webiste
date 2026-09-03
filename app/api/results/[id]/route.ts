@@ -37,29 +37,52 @@ export async function PATCH(req: NextRequest, { params }: Params) {
     const { id } = await params;
     const body = await req.json();
 
-    const result = await Result.findByIdAndUpdate(
-      id,
-      {
-        $set: {
-          sattaId: body.sattaId,
-          drawDate: body.drawDate,
-          result: body.result,
-          status: body.status,
-          isActive: body.isActive,
-        },
-      },
-      { new: true, runValidators: true }
-    ).populate("sattaId", "name slug resultTime");
+    const invalidPlaceholders = ["", "--", "WAIT", "**", "XX"];
+    const rawResult = typeof body.result === "string" ? body.result.trim() : "";
+    const isValidResult = Boolean(rawResult && !invalidPlaceholders.includes(rawResult));
 
-    if (!result) {
+    // Construct update data
+    const updateData: Record<string, any> = {};
+
+    if (body.sattaId !== undefined) updateData.sattaId = body.sattaId;
+    if (body.drawDate !== undefined) updateData.drawDate = body.drawDate;
+    if (body.source !== undefined) updateData.source = body.source; // Update source from payload
+    if (body.status !== undefined) updateData.status = body.status;
+    if (body.isActive !== undefined) updateData.isActive = body.isActive;
+
+    if (body.result !== undefined) {
+      updateData.result = rawResult;
+
+      // Handle override locking logic ONLY for "API" source games
+      const targetSource = body.source || "MANUAL";
+      if (targetSource === "API") {
+        updateData.isOverridden = isValidResult;
+      }
+    }
+
+    const updatedResult = await Result.findByIdAndUpdate(
+      id,
+      { $set: updateData },
+      { new: true, runValidators: true }
+    ).populate("sattaId", "name slug resultTime source");
+
+    if (!updatedResult) {
       return NextResponse.json(
         { success: false, message: "Result not found" },
         { status: 404 }
       );
     }
 
-    return NextResponse.json({ success: true, data: result });
+    return NextResponse.json({ success: true, data: updatedResult });
   } catch (error: any) {
+    // Graceful duplicate entry error handling
+    if (error.code === 11000) {
+      return NextResponse.json(
+        { success: false, message: "A result entry for this game and date already exists." },
+        { status: 409 }
+      );
+    }
+
     return NextResponse.json(
       { success: false, message: error.message },
       { status: 400 }

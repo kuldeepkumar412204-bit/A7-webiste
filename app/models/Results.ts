@@ -7,6 +7,7 @@ export interface IResultDocument extends Document {
   source: "API" | "MANUAL";
   status: "draft" | "published";
   isActive: boolean;
+  isOverridden: boolean; // <-- Tracks admin overrides
   createdAt: Date;
   updatedAt: Date;
 }
@@ -26,7 +27,6 @@ const ResultSchema = new Schema<IResultDocument>(
     },
     result: {
       type: String,
-      required: true,
       trim: true,
     },
     source: {
@@ -43,6 +43,7 @@ const ResultSchema = new Schema<IResultDocument>(
       type: Boolean,
       default: true,
     },
+    isOverridden: { type: Boolean, default: false }, // <-- Tracks admin overrides
   },
   { timestamps: true }
 );
