@@ -98,7 +98,7 @@ export default function SattaResultTable() {
 
                                         <div className="w-[33%] p-[0.5rem] flex items-center justify-center border border-t-0 border-x-0 border-primary">
                                             <div className="w-full  text-black font-bold text-[22px] flex items-center justify-center">
-                                                {game.result?.[0] ?? "--"}
+                                                {game.result?.[0] === "WAIT" || game.result?.[0] === "**" ? "--" : game.result?.[0]}
                                             </div>
                                         </div>
 
