@@ -4,13 +4,13 @@ export default function Footer(){
         <div className="flex flex-col items-center gap-6">
           <div className="max-w-7xl mx-auto  flex justify-center gap-6 text-xs sm:text-sm font-bold capitalize">
             <a
-              href="#privacy"
+              href="/privacy-policy"
               className="text-[#ffd200] hover:text-[#ffe033] underline"
             >
               Privacy Policy
             </a>
             <a
-              href="#terms"
+              href="/terms"
               className="text-[#ffd200] hover:text-[#ffe033] underline"
             >
               Terms & Conditions
