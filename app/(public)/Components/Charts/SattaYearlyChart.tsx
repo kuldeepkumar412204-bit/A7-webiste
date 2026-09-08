@@ -125,7 +125,7 @@ export default function SattaYearlyChart() {
       {/* Top Header Banner with exact Yellow-to-Orange Gradient */}
       <div className="w-full bg-gradient-to-b from-[#FFA500] to-[#FFD200] py-5 text-center border-y-2 border-black/90">
         <h2 className="text-black font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl tracking-wider uppercase">
-          {gameName} YEARLY CHART {selectedYear}
+          {gameData ? gameName :  !isLoading ? 'undefined': ''} YEARLY CHART {selectedYear}
         </h2>
 
         {/* Year Selector */}
