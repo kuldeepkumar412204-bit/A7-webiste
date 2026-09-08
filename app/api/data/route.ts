@@ -166,19 +166,19 @@ export async function daily(games: any[]) {
       // If cutoff time has passed OR a DB result exists -> return result or "WAIT"
       // If result time hasn't arrived yet -> keep "WAIT" badge active
       let todayResult = "WAIT";
-      // if (todayMap.has(id)) {
-      //   todayResult = todayMap.get(id)!;
-      // } else if (!showTodayResult) {
-      //   todayResult = "WAIT";
-      // }
-
-      if (showTodayResult) {
-        // Only check DB if draw time has arrived/passed
-        todayResult = todayMap.get(id) ?? "--";
-      } else {
-        // If time has not arrived yet, strictly hold "WAIT"
+      if (todayMap.has(id)) {
+        todayResult = todayMap.get(id)!;
+      } else if (!showTodayResult) {
         todayResult = "WAIT";
       }
+
+      // if (showTodayResult) {
+      //   // Only check DB if draw time has arrived/passed
+      //   todayResult = todayMap.get(id) ?? "--";
+      // } else {
+      //   // If time has not arrived yet, strictly hold "WAIT"
+      //   todayResult = "WAIT";
+      // }
 
       return {
         _id: id,
