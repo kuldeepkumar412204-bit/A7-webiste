@@ -171,14 +171,8 @@ export async function generateMetadata({
 
   // Fallback
   return {
-    title: `${slugKey.replace(/-/g, " ")} | A7 Satta King`,
-    description: `Information and latest updates for ${slugKey.replace(
-      /-/g,
-      " ",
-    )}.`,
-    alternates: {
-      canonical: `${SITE_URL}/${slugKey}`,
-    },
+    title: ` A7 Satta King`,
+    description: undefined,
   };
 }
 
