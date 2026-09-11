@@ -1,5 +1,6 @@
 'use client';
 
+import { GameRow } from "@/app/lib/satta";
 import Image from "next/image";
 import { useEffect, useState, useCallback } from "react";
 
@@ -54,7 +55,7 @@ const getISTMinutesNow = (): number => {
 export default function LiveStatus() {
   const [currentTime, setCurrentTime] = useState("");
   const [latestGames, setLatestGames] = useState<GameLiveStatus[]>([]);
-
+  const [disawarResult, setDisawarResult] = useState();
   // Live Clock Display
   // Replace the clock useEffect to force IST instead of local browser tz
   useEffect(() => {
@@ -90,6 +91,9 @@ export default function LiveStatus() {
 
       const responseData = await res.json();
       const rawData = responseData.data || responseData;
+
+      setDisawarResult(rawData.find((item:any)=>item.game==="disawer").result);
+      // console.log("disawarResult", rawData.find((item:any)=>item.game==="disawer").result);
 
       if (Array.isArray(rawData)) {
         // 1. Process all items
@@ -177,14 +181,14 @@ export default function LiveStatus() {
                     <h3 className="text-[24px] font-medium tracking-tight">DISAWER</h3>
                     <span className="my-2 text-center text-[18px] font-medium text-black">5:15 AM</span>
                     <div className="flex items-center rounded-xl text-black/70">
-                        <span className="text-[20px] font-bold">67</span>
+                        <span className="text-[20px] font-bold">{disawarResult && disawarResult[0]}</span>
                         {/* Green arrow */}
                         <img
                             src="/arrow.gif"
                             alt="Arrow"
                             className="mx-[5px] h-[30px] w-[30px]"
                         />
-                        <span className="text-[20px] font-bold">92</span>
+                        <span className="text-[20px] font-bold">{disawarResult && disawarResult[1]}</span>
                     </div>
                 </div>
             </section>
