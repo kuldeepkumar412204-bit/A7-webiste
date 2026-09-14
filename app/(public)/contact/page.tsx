@@ -5,25 +5,20 @@ import { InfoSection } from "../Components/Home/FAQSection";
 const SITE_URL = process.env.SITE_URL || "https://a7sattaking.co";
 
 export const metadata: Metadata = {
-  title: "About A7 Satta King | Satta Results & Charts 2026",
+  title: "Contact A7 Satta King",
 
   description:
-    "Learn about A7 Satta King, a platform providing Satta King results, charts, and updates for popular games including Sadar Bazar, Gwalior, Delhi Bazar, Gali, Ghaziabad, Agra, Alwar and more.",
+    "Visit the official contact page of A7 Satta King to get support, inquiries, and latest updates related to satta results and charts.",
 
   keywords: [
-    "About A7 Satta King",
-    "A7 Satta King",
-    "Satta King Results",
-    "Satta King Chart 2026",
-    "Satta Results 2026",
-    "Satta King Charts",
-    "Gali Satta Result",
-    "Ghaziabad Satta Result",
-    "Delhi Bazar Satta Result",
-    "Sadar Bazar Satta Result",
-    "Gwalior Satta Result",
-    "Alwar Satta Result",
-  ],
+  "Contact A7 Satta King",
+  "A7 Satta King Contact",
+  "Satta King Contact Page",
+  "A7 Satta Support",
+  "Satta King Help",
+  "A7 Satta King Customer Support",
+  "Satta Result Contact",
+],
 
   authors: [
     {

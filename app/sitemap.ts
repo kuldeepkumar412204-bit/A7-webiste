@@ -35,7 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     },
     {
-      url: `${baseUrl}/terms`,
+      url: `${baseUrl}/terms-and-conditions`,
       lastModified: "2026-09-07",
       changeFrequency: "daily",
       priority: 0.5,

@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: "A7satta King Terms and Conditions 2026",
     description:
       "Read A7satta King Terms and Conditions to understand website usage rules, user responsibilities, disclaimers, and legal policies.",
-    url: `${SITE_URL}/terms-and-conditions`,
+    url: `${SITE_URL}/terms-and-conditions-and-conditions`,
     siteName: "A7 Satta King",
     locale: "en_IN",
   },
