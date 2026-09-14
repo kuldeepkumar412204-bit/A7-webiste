@@ -178,18 +178,18 @@ export default function TermsAndConditionsPage() {
           </p>
 
           {/* Contact Information */}
-          <h2 className="text-[calc(1.325rem+0.9vw)] lg:text-[2rem] font-bold">
+          {/* <h2 className="text-[calc(1.325rem+0.9vw)] lg:text-[2rem] font-bold">
             Contact Information
-          </h2>
+          </h2> */}
 
-          <p className="mb-10">
+          {/* <p className="mb-10">
             If you have any questions regarding these Terms and Conditions, you
             can contact us at{" "}
             <a href="mailto:mail@a7satta.com" className="underline">
               mail@a7satta.com
             </a>
             .
-          </p>
+          </p> */}
 
           {/* Conclusion */}
           <h2 className="text-[calc(1.325rem+0.9vw)] lg:text-[2rem] font-bold">

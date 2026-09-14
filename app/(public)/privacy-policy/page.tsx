@@ -185,7 +185,7 @@ export default function PrivacyPolicyPage() {
           </p>
 
           {/* Contact Us */}
-          <h2 className="text-[calc(1.325rem+0.9vw)] lg:text-[2rem] font-bold">
+          {/* <h2 className="text-[calc(1.325rem+0.9vw)] lg:text-[2rem] font-bold">
             Contact Us
           </h2>
 
@@ -196,7 +196,7 @@ export default function PrivacyPolicyPage() {
               mail@a7satta.com
             </a>
             .
-          </p>
+          </p> */}
 
           <p className="mb-4">
             <strong>
