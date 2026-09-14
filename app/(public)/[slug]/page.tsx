@@ -61,7 +61,7 @@ interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
-const SITE_URL = process.env.SITE_URL || "https://a7sattaking.com"; // Default value if not set
+const SITE_URL = process.env.SITE_URL || "https://a7sattaking.co"; // Default value if not set
 
 // export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
 //   const { slug } = await params;
@@ -144,9 +144,13 @@ export async function generateMetadata({
         " ",
       )} results, charts and latest updates on A7 Satta King.`;
 
+
+    const keywords = market.seo.metaKeywords;
+
     return {
       title,
       description,
+      keywords:keywords,
 
       alternates: {
         canonical: `${SITE_URL}/${slugKey}`,

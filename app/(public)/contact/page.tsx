@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { InfoSection } from "../Components/Home/FAQSection";
 
-const SITE_URL = process.env.SITE_URL || "https://a7sattaking.com";
+const SITE_URL = process.env.SITE_URL || "https://a7sattaking.co";
 
 export const metadata: Metadata = {
   title: "About A7 Satta King | Satta Results & Charts 2026",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   publisher: "A7 Satta King",
 
   alternates: {
-    canonical: `${SITE_URL}/about`,
+    canonical: `${SITE_URL}/contact`,
   },
 
   robots: {
@@ -140,11 +140,11 @@ export default function AboutPage() {
 
   return (
     <>
-      <div className="bg-[linear-gradient(180deg,_#ff9000,_#ffe400)] border-b border-b-black border-t-[2px] border-t-black text-black py-[20px]">
+      {/* <div className="bg-[linear-gradient(180deg,_#ff9000,_#ffe400)] border-b border-b-black border-t-[2px] border-t-black text-black py-[20px]">
         <h2 className="text-[calc(1.375rem+1.5vw)] min-[1200px]:text-[2.5rem] text-center uppercase font-bold">
           About A7 Satta King
         </h2>
-      </div>
+      </div> */}
 
       <section className="mx-auto bg-white">
         <div className="text-[20px] font-normal p-[1rem] mb-8 max-w-[700px] mx-auto">

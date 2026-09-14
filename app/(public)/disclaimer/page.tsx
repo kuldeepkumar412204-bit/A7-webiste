@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Read the A7 Satta King disclaimer covering information accuracy, third-party links, personal responsibility, legal advice, and website usage.",
   alternates: {
-    canonical: "https://a7sattaking.com/disclaimer",
+    canonical: "https://a7sattaking.co/disclaimer",
   },
   robots: {
     index: true,
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: "Disclaimer | A7 Satta King",
     description:
       "Read the A7 Satta King disclaimer and important information regarding website usage.",
-    url: "https://a7sattaking.com/disclaimer",
+    url: "https://a7sattaking.co/disclaimer",
     siteName: "A7 Satta King",
     locale: "en_IN",
   },

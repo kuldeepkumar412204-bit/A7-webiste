@@ -6,12 +6,7 @@ export const metadata: Metadata = {
   description:
     "Check Ghaziabad Satta Result 2026 with daily updates, full charts, and history records on A7 Satta King.",
   keywords: [
-    "Ghaziabad Satta Result",
-    "Ghaziabad Result Today",
-    "Ghaziabad Chart 2026",
-    "Satta King Ghaziabad",
-    "Ghaziabad Satta Chart",
-    "Satta Result Ghaziabad",
+    "Ghaziabad Satta Result 2026", "Ghaziabad Satta Result Today", "Gaziabad Satta King Result", "Ghaziabad Satta Chart 2026", "Ghaziabad Satta Live Updates", "Ghaziabad Satta History", "Satta King Ghaziabad Result",
   ],
   alternates: {
     canonical: `${process.env.SITE_URL}/gaziabad`,

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-const SITE_URL = process.env.SITE_URL || "https://a7sattaking.com";
+const SITE_URL = process.env.SITE_URL || "https://a7sattaking.co";
 
 export const metadata: Metadata = {
   title: "A7satta King Terms and Conditions 2026",
