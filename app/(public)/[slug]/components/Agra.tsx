@@ -1,4 +1,5 @@
 import FAQSection from "./FAQSection";
+import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -137,6 +138,14 @@ export default function Agra() {
             heading: "Stay Connected",
             description:
                 "A7 Satta King frequently provides updates, chart modifications, and crucial information understandably. To keep up with daily trends and outcomes, bookmark the page.",
+        },
+        {
+            heading: "Explore More Satta Markets Along with Agra",
+            description: (
+                <>
+                    Along with checking Agra updates, users also explore markets like <Link href="/udaipur-city" className="text-blue-600 underline">Udaipur City Satta Result</Link>, <Link href="/raj-shree" className="text-blue-600 underline">Raj Shree Satta Result</Link>, and <Link href="/ajmer" className="text-blue-600 underline">Ajmer Satta Result</Link> to stay updated with different result timings. You can also follow <Link href="/mandi-bazar" className="text-blue-600 underline">Mandi Bazar Satta Result</Link> and <Link href="/sialkot" className="text-blue-600 underline">Sialkot Satta Result</Link> for additional updates throughout the day.
+                </>
+            ),
         },
         {
             heading: "Disclaimer",

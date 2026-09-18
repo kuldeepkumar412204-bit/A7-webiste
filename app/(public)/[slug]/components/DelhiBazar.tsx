@@ -1,5 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
+import Link from "next/link";
 import FAQSection from "./FAQSection";
 
 export const metadata: Metadata = {
@@ -113,6 +114,14 @@ export default function DelhiBazar() {
             heading: "How Can We Find Updates About Delhi Bazaar?",
             description:
                 "Before being published, results and chart data are gathered from reliable public sources and thoroughly examined. Updates are promptly and explicitly posted after confirmation. This procedure aids A7 Satta King.com in keeping reliable and accurate records.",
+        },
+        {
+            heading: "Explore Other Satta Markets Along with Delhi Bazar",
+            description: (
+                <>
+                    Along with checking the daily Delhi Bazar updates, users also follow markets like <Link href="/sadar-bazar" className="text-blue-600 underline">Sadar Bazar Satta Result</Link>, <Link href="/gwalior" className="text-blue-600 underline">Gwalior Satta Result</Link>, and <Link href="/delhi-matka" className="text-blue-600 underline">Delhi Matka Satta Result</Link> to stay updated with multiple results. You can also track <Link href="/faridabad" className="text-blue-600 underline">Faridabad Satta Result</Link> and <Link href="/gaziabad" className="text-blue-600 underline">Gaziabad Satta Result</Link> for additional daily updates across different time slots.
+                </>
+            ),
         },
         {
             heading: "Disclaimer",

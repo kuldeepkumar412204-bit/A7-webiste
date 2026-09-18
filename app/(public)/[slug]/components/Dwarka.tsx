@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import FAQSection from "./FAQSection";
 
 export const metadata: Metadata = {
@@ -167,6 +168,14 @@ export default function Dwarka() {
         heading: "Stay Updated with Dwarka Satta News",
         description:
             "A7 Satta King regularly shares updates related to chart changes, trends, and daily results. Users can stay connected to get the latest information quickly and easily.",
+    },
+    {
+        heading: "Discover Additional Daily Satta Result Options",
+        description: (
+            <>
+                Along with checking Dwarka updates, users also explore markets like <Link href="/delhi-bazar" className="text-blue-600 underline">Delhi Bazar Satta Result</Link>, <Link href="/shri-ganesh" className="text-blue-600 underline">Shri Ganesh Satta Result</Link>, and <Link href="/gali" className="text-blue-600 underline">Gali Satta Result</Link> to stay updated with different result timings. You can also follow <Link href="/raj-shree" className="text-blue-600 underline">Raj Shree Satta Result</Link> and <Link href="/udaipur-city" className="text-blue-600 underline">Udaipur City Satta Result</Link> for additional updates throughout the day.
+            </>
+        ),
     },
     {
         heading: "Important Disclaimer",

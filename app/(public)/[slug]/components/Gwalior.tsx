@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import FAQSection from "./FAQSection";
 
 export const metadata: Metadata = {
@@ -117,6 +118,14 @@ export default function Gwalior() {
       heading: "Final Thoughts and Next Steps",
       description:
         "Need to view the 2026 results and charts? Check the GWALIOR Satta Result and record of A7 Satta King for the latest results. You can view previous records whenever needed, check the latest updates, and save the page for later reference.",
+    },
+    {
+      heading: "Stay Updated with Late Night Satta Games",
+      description: (
+        <>
+          For final updates of the day, users follow <Link href="/dehradun-city" className="text-blue-600 underline">Dehradun City Satta Result</Link> and <Link href="/daman" className="text-blue-600 underline">Daman Satta Result</Link>. Many also track <Link href="/dwarka-city" className="text-blue-600 underline">Dwarka City Satta Result</Link> to complete the full-day result cycle.
+        </>
+      ),
     },
     {
       heading: "Quick Disclaimer",

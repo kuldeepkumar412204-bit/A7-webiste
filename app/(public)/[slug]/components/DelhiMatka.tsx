@@ -1,4 +1,5 @@
 import FAQSection from "./FAQSection";
+import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -151,6 +152,14 @@ export default function DelhiMatka() {
         heading: "Stay Updated with Delhi Matka Satta",
         description:
             "A7 Satta King shares regular updates related to results, charts, and trends. Users can stay connected to check the latest information anytime.",
+    },
+    {
+        heading: "Check Other Satta Markets Alongside Delhi Matka",
+        description: (
+            <>
+                Along with the following Delhi Matka updates, users can also explore markets like <Link href="/gwalior" className="text-blue-600 underline">Gwalior Satta Result</Link>, <Link href="/shri-ganesh" className="text-blue-600 underline">Shri Ganesh Satta Result</Link>, and <Link href="/karol-bagh" className="text-blue-600 underline">Karol Bagh Satta Result</Link> to stay updated on different result timings. You can also track <Link href="/anmol-bazar" className="text-blue-600 underline">Anmol Bazar Satta Result</Link> and <Link href="/delhi-darbar" className="text-blue-600 underline">Delhi Darbar Satta Result</Link> for additional updates across the day.
+            </>
+        ),
     },
     {
         heading: "Important Disclaimer",

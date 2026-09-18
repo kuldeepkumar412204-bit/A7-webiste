@@ -1,4 +1,5 @@
 import FAQSection from "./FAQSection";
+import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -136,6 +137,14 @@ export default function Gali() {
         heading: "Stay Updated with Gali Satta News",
         description:
             "A7 Satta King shares daily updates, including chart changes, trend highlights, and important information in a simple format. Users can stay connected to access the latest updates anytime.",
+    },
+    {
+        heading: "Browse More Satta Results Across Different Markets",
+        description: (
+            <>
+                Along with checking Gali updates, users also explore markets like <Link href="/delhi-savera" className="text-blue-600 underline">Delhi Savera Satta Result</Link>, <Link href="/lakshmi-bajar" className="text-blue-600 underline">Lakshmi Bajar Satta Result</Link>, and <Link href="/karol-bagh" className="text-blue-600 underline">Karol Bagh Satta Result</Link> to stay updated with different result timings. You can also follow <Link href="/anmol-bazar" className="text-blue-600 underline">Anmol Bazar Satta Result</Link> and <Link href="/mirzapur" className="text-blue-600 underline">Mirzapur Satta Result</Link> for additional updates throughout the day.
+            </>
+        ),
     },
     {
         heading: "Important Disclaimer",
