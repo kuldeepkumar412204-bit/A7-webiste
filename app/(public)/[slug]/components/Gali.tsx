@@ -142,7 +142,7 @@ export default function Gali() {
         heading: "Browse More Satta Results Across Different Markets",
         description: (
             <>
-                Along with checking Gali updates, users also explore markets like <Link href="/delhi-savera" className="text-blue-600 underline">Delhi Savera Satta Result</Link>, <Link href="/lakshmi-bajar" className="text-blue-600 underline">Lakshmi Bajar Satta Result</Link>, and <Link href="/karol-bagh" className="text-blue-600 underline">Karol Bagh Satta Result</Link> to stay updated with different result timings. You can also follow <Link href="/anmol-bazar" className="text-blue-600 underline">Anmol Bazar Satta Result</Link> and <Link href="/mirzapur" className="text-blue-600 underline">Mirzapur Satta Result</Link> for additional updates throughout the day.
+                Along with checking Gali updates, users also explore games like <Link href="/delhi-savera" className="text-blue-600 underline">Delhi Savera Satta Result</Link>, <Link href="/lakshmi-bajar" className="text-blue-600 underline">Lakshmi Bajar Satta Result</Link>, and <Link href="/karol-bagh" className="text-blue-600 underline">Karol Bagh Satta Result</Link> to stay updated with different result timings. You can also follow <Link href="/anmol-bazar" className="text-blue-600 underline">Anmol Bazar Satta Result</Link> and <Link href="/mirzapur" className="text-blue-600 underline">Mirzapur Satta Result</Link> for additional updates throughout the day.
             </>
         ),
     },

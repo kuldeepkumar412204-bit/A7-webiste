@@ -248,7 +248,7 @@ export default function SattaForm({ initialData, onSuccess }: SattaFormProps) {
               className="w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm outline-none focus:border-[#e11d48] bg-white"
             />
             <p className="text-xs text-gray-500">
-              Must match the exact market name string returned by the third-party API payload.
+              Must match the exact game name string returned by the third-party API payload.
             </p>
           </div>
         )}

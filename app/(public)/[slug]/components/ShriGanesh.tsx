@@ -116,7 +116,7 @@ export default function ShriGanesh() {
             heading: "Explore More Satta Games Along with Shri Ganesh",
             description: (
                 <>
-                    Along with checking Shri Ganesh updates, users also explore markets like <Link href="/agra" className="text-blue-600 underline">Agra Satta Result</Link>, <Link href="/alwar" className="text-blue-600 underline">Alwar Satta Result</Link>, and <Link href="/dwarka" className="text-blue-600 underline">Dwarka Satta Result</Link> to stay updated on different result times. You can also follow <Link href="/new-ganga" className="text-blue-600 underline">New Ganga Satta Result</Link> and <Link href="/jaipur-matka" className="text-blue-600 underline">Jaipur Matka Satta Result</Link> for additional updates throughout the day.
+                    Along with checking Shri Ganesh updates, users also explore games like <Link href="/agra" className="text-blue-600 underline">Agra Satta Result</Link>, <Link href="/alwar" className="text-blue-600 underline">Alwar Satta Result</Link>, and <Link href="/dwarka" className="text-blue-600 underline">Dwarka Satta Result</Link> to stay updated on different result times. You can also follow <Link href="/new-ganga" className="text-blue-600 underline">New Ganga Satta Result</Link> and <Link href="/jaipur-matka" className="text-blue-600 underline">Jaipur Matka Satta Result</Link> for additional updates throughout the day.
                 </>
             ),
         },

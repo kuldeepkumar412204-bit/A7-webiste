@@ -163,10 +163,10 @@ export default function Gahaziabad() {
       ),
     },
     {
-      heading: "Stay Updated with More Satta Markets and Results",
+      heading: "Stay Updated with More Satta games and Results",
       description: (
         <>
-          Along with checking Ghaziabad updates, users also explore markets like <Link href="/shri-lakshmi" className="text-blue-600 underline">Shri Lakshmi Satta Result</Link>, <Link href="/agra-city" className="text-blue-600 underline">Agra City Satta Result</Link>, and <Link href="/dwarka-city" className="text-blue-600 underline">Dwarka City Satta Result</Link> to stay updated with different result timings. You can also follow <Link href="/dehradun-city" className="text-blue-600 underline">Dehradun City Satta Result</Link> and <Link href="/daman" className="text-blue-600 underline">Daman Satta Result</Link> for additional updates throughout the day.
+          Along with checking Ghaziabad updates, users also explore games like <Link href="/shri-lakshmi" className="text-blue-600 underline">Shri Lakshmi Satta Result</Link>, <Link href="/agra-city" className="text-blue-600 underline">Agra City Satta Result</Link>, and <Link href="/dwarka-city" className="text-blue-600 underline">Dwarka City Satta Result</Link> to stay updated with different result timings. You can also follow <Link href="/dehradun-city" className="text-blue-600 underline">Dehradun City Satta Result</Link> and <Link href="/daman" className="text-blue-600 underline">Daman Satta Result</Link> for additional updates throughout the day.
         </>
       ),
     },

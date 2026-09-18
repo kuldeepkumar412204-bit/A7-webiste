@@ -157,10 +157,10 @@ const Alwar: NextPage<Props> = ({ }) => {
             ),
         },
         {
-            heading: "Explore More Satta Markets Along with Alwar",
+            heading: "Explore More Satta games Along with Alwar",
             description: (
                 <>
-                    Along with checking Alwar updates, users also explore markets like <Link href="/delhi-darbar" className="text-blue-600 underline">Delhi Darbar Satta Result</Link>, <Link href="/mirzapur" className="text-blue-600 underline">Mirzapur Satta Result</Link>, and <Link href="/anmol-bazar" className="text-blue-600 underline">Anmol Bazar Satta Result</Link> to stay updated with different result timings. You can also follow <Link href="/karol-bagh" className="text-blue-600 underline">Karol Bagh Satta Result</Link> and <Link href="/new-ganga" className="text-blue-600 underline">New Ganga Satta Result</Link> for additional updates throughout the day.
+                    Along with checking Alwar updates, users also explore games like <Link href="/delhi-darbar" className="text-blue-600 underline">Delhi Darbar Satta Result</Link>, <Link href="/mirzapur" className="text-blue-600 underline">Mirzapur Satta Result</Link>, and <Link href="/anmol-bazar" className="text-blue-600 underline">Anmol Bazar Satta Result</Link> to stay updated with different result timings. You can also follow <Link href="/karol-bagh" className="text-blue-600 underline">Karol Bagh Satta Result</Link> and <Link href="/new-ganga" className="text-blue-600 underline">New Ganga Satta Result</Link> for additional updates throughout the day.
                 </>
             ),
         },

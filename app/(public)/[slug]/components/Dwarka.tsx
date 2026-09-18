@@ -56,7 +56,7 @@ export default function Dwarka() {
         description: (
             <>
                 <p>
-                    Dwarka Satta is part of the larger Satta Matka network, which includes popular markets such as Gali, Disawar, and Faridabad. Each market has its own result timing and user base.
+                    Dwarka Satta is part of the larger Satta Matka network, which includes popular games such as Gali, Disawar, and Faridabad. Each game has its own result timing and user base.
                 </p>
 
                 <p className="mt-3">
@@ -142,7 +142,7 @@ export default function Dwarka() {
                 <ul className="list-disc pl-6 mt-4 space-y-2">
                     <li>Complete chart data from January 2026 to the present</li>
                     <li>Easy identification of number patterns</li>
-                    <li>Access to multiple market updates in one place</li>
+                    <li>Access to multiple game updates in one place</li>
                     <li>Simple and structured data for analysis</li>
                 </ul>
             </>
@@ -173,7 +173,7 @@ export default function Dwarka() {
         heading: "Discover Additional Daily Satta Result Options",
         description: (
             <>
-                Along with checking Dwarka updates, users also explore markets like <Link href="/delhi-bazar" className="text-blue-600 underline">Delhi Bazar Satta Result</Link>, <Link href="/shri-ganesh" className="text-blue-600 underline">Shri Ganesh Satta Result</Link>, and <Link href="/gali" className="text-blue-600 underline">Gali Satta Result</Link> to stay updated with different result timings. You can also follow <Link href="/raj-shree" className="text-blue-600 underline">Raj Shree Satta Result</Link> and <Link href="/udaipur-city" className="text-blue-600 underline">Udaipur City Satta Result</Link> for additional updates throughout the day.
+                Along with checking Dwarka updates, users also explore games like <Link href="/delhi-bazar" className="text-blue-600 underline">Delhi Bazar Satta Result</Link>, <Link href="/shri-ganesh" className="text-blue-600 underline">Shri Ganesh Satta Result</Link>, and <Link href="/gali" className="text-blue-600 underline">Gali Satta Result</Link> to stay updated with different result timings. You can also follow <Link href="/raj-shree" className="text-blue-600 underline">Raj Shree Satta Result</Link> and <Link href="/udaipur-city" className="text-blue-600 underline">Udaipur City Satta Result</Link> for additional updates throughout the day.
             </>
         ),
     },

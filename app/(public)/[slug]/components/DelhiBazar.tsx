@@ -51,7 +51,7 @@ export default function DelhiBazar() {
             description: (
                 <>
                     <p>
-                        Hey there, Satta Matka Market fans! Welcome to A7 Satta King, your
+                        Hey there, Satta Matka game fans! Welcome to A7 Satta King, your
                         reliable source for Delhi Bazar game information. We understand that
                         users want fast and accurate updates. That’s why this Result and Chart
                         2026 page is designed to be a one-stop destination.
@@ -116,10 +116,10 @@ export default function DelhiBazar() {
                 "Before being published, results and chart data are gathered from reliable public sources and thoroughly examined. Updates are promptly and explicitly posted after confirmation. This procedure aids A7 Satta King.com in keeping reliable and accurate records.",
         },
         {
-            heading: "Explore Other Satta Markets Along with Delhi Bazar",
+            heading: "Explore Other Satta games Along with Delhi Bazar",
             description: (
                 <>
-                    Along with checking the daily Delhi Bazar updates, users also follow markets like <Link href="/sadar-bazar" className="text-blue-600 underline">Sadar Bazar Satta Result</Link>, <Link href="/gwalior" className="text-blue-600 underline">Gwalior Satta Result</Link>, and <Link href="/delhi-matka" className="text-blue-600 underline">Delhi Matka Satta Result</Link> to stay updated with multiple results. You can also track <Link href="/faridabad" className="text-blue-600 underline">Faridabad Satta Result</Link> and <Link href="/gaziabad" className="text-blue-600 underline">Gaziabad Satta Result</Link> for additional daily updates across different time slots.
+                    Along with checking the daily Delhi Bazar updates, users also follow games like <Link href="/sadar-bazar" className="text-blue-600 underline">Sadar Bazar Satta Result</Link>, <Link href="/gwalior" className="text-blue-600 underline">Gwalior Satta Result</Link>, and <Link href="/delhi-matka" className="text-blue-600 underline">Delhi Matka Satta Result</Link> to stay updated with multiple results. You can also track <Link href="/faridabad" className="text-blue-600 underline">Faridabad Satta Result</Link> and <Link href="/gaziabad" className="text-blue-600 underline">Gaziabad Satta Result</Link> for additional daily updates across different time slots.
                 </>
             ),
         },

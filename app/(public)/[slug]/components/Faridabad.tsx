@@ -139,7 +139,7 @@ export default function Faridabad() {
             heading: "Explore More Satta Results Along with Faridabad",
             description: (
                 <>
-                    Along with checking Faridabad updates, users also explore markets like <Link href="/dehradun-city" className="text-blue-600 underline">Dehradun City Satta Result</Link>, <Link href="/daman" className="text-blue-600 underline">Daman Satta Result</Link>, and <Link href="/dwarka-city" className="text-blue-600 underline">Dwarka City Satta Result</Link> to stay updated with different result timings. You can also follow <Link href="/delhi-savera" className="text-blue-600 underline">Delhi Savera Satta Result</Link> and <Link href="/lakshmi-bajar" className="text-blue-600 underline">Lakshmi Bajar Satta Result</Link> for additional updates across the day.
+                    Along with checking Faridabad updates, users also explore games like <Link href="/dehradun-city" className="text-blue-600 underline">Dehradun City Satta Result</Link>, <Link href="/daman" className="text-blue-600 underline">Daman Satta Result</Link>, and <Link href="/dwarka-city" className="text-blue-600 underline">Dwarka City Satta Result</Link> to stay updated with different result timings. You can also follow <Link href="/delhi-savera" className="text-blue-600 underline">Delhi Savera Satta Result</Link> and <Link href="/lakshmi-bajar" className="text-blue-600 underline">Lakshmi Bajar Satta Result</Link> for additional updates across the day.
                 </>
             ),
         },

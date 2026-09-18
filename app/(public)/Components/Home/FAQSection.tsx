@@ -90,7 +90,7 @@ export default function FAQSection() {
     {
       heading: "Can I Check A7 Satta Results on This Website?",
       description:
-        "Users can examine A7 Satta result-related information on the A7 Satta website, since both platforms often include comparable Satta market games, result updates, and historical chart records. These websites are frequently used by visitors to examine past performance charts, daily number updates, market timing data, and historical record archives related to frequently searched Satta markets.",
+        "Users can examine A7 Satta result-related information on the A7 Satta website, since both platforms often include comparable Satta game games, result updates, and historical chart records. These websites are frequently used by visitors to examine past performance charts, daily number updates, game timing data, and historical record archives related to frequently searched Satta markets.",
     },
     {
       heading: "Legal Disclaimer",

@@ -89,7 +89,7 @@ export default function SadarBazar() {
             heading:"Check Multiple Satta Results Across Different Cities",
             description: (
                 <>
-                Users often follow multiple markets like <Link href="/agra" className="text-blue-600 underline">Agra Satta Result</Link>, <Link href="/faridabad" className="text-blue-600 underline">Faridabad Satta Result</Link>, and <Link href="/alwar" className="text-blue-600 underline">Alwar Satta Result</Link> to stay updated with frequent results. For evening updates, many also track <Link href="/gaziabad" className="text-blue-600 underline">Gaziabad Satta Result</Link> and <Link href="/dwarka" className="text-blue-600 underline">Dwarka Satta Result</Link> along with late-night <Link href="/gali" className="text-blue-600 underline">Gali Satta Result</Link>.
+                Users often follow multiple games like <Link href="/agra" className="text-blue-600 underline">Agra Satta Result</Link>, <Link href="/faridabad" className="text-blue-600 underline">Faridabad Satta Result</Link>, and <Link href="/alwar" className="text-blue-600 underline">Alwar Satta Result</Link> to stay updated with frequent results. For evening updates, many also track <Link href="/gaziabad" className="text-blue-600 underline">Gaziabad Satta Result</Link> and <Link href="/dwarka" className="text-blue-600 underline">Dwarka Satta Result</Link> along with late-night <Link href="/gali" className="text-blue-600 underline">Gali Satta Result</Link>.
                 </>
             )
         },
@@ -110,7 +110,7 @@ export default function SadarBazar() {
         {
             question: "What is Sadar Bazar Satta?",
             answer:
-                "Sadar Bazar Satta is a popular market name where many people search for daily results, charts, and previous records online.",
+                "Sadar Bazar Satta is a popular game name where many people search for daily results, charts, and previous records online.",
         },
         {
             question: "How can I check Sadar Bazar Satta Result?",
