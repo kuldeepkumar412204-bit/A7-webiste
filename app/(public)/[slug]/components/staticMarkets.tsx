@@ -149,8 +149,8 @@ export const staticMarkets: Record<string, Market> = {
               Gail Satta Result
             </Link>
             ,{" "}
-            <Link href="https://a7sattaking.co/lakshmi-bajar" className="text-blue-600 underline">
-              Lakshmi Bajar Satta Result
+           <Link href="https://a7sattaking.co/disawar" className="text-blue-600 underline">
+              Disawar Satta Result
             </Link>
             ,{" "}
             <Link href="https://a7sattaking.co/agra-city" className="text-blue-600 underline">
@@ -3291,5 +3291,138 @@ export const staticMarkets: Record<string, Market> = {
           "Yes, previous Shri Lakshmi results are available in the chart section for reference.",
       },
     ],
-  }
+  },
+  "disawer": {
+    slug: "disawer",
+    name: "Disawer",
+    seo: {
+      metaTitle: "Disawar Satta Result Today | A7 Satta King Live Update 2026",
+      metaDescription:
+        "Check Disawar Satta Result today on A7 Satta King. Get live updates, chart, and previous results in one place.",
+      metaKeywords: "Disawar Satta Result, Disawar Result Today, A7 Satta King, Disawar Satta Chart, Satta King Disawar, Disawar Live Result, Disawar Result Update, A7 Disawar Result, Satta Result Today, Disawar Number Result"
+    },
+    sections: [
+      {
+        heading: "Disawar Satta Result – Today Live Update, Chart & Record",
+        description: (
+          <>
+            <p>
+              If you are looking for the latest Disawar Satta Result, you are in the right place. This page provides accurate and timely updates so you never miss any important result. Disawar is one of the most searched and followed markets, and users rely on fast updates to stay informed.            </p>
+
+          </>
+        ),
+      },
+      {
+        heading: "What is Disawar Satta Result?",
+        description: (
+          <>
+            <p>
+              The Disawar Satta Result refers to the daily outcome declared for the Disawar game. On <Link href="https://a7sattaking.co" className="text-blue-600 underline">
+                A7 Satta King
+              </Link>, Players and followers check these results regularly to track patterns, understand trends, and stay updated with previous records. Having access to reliable result data helps users analyze past performance and make informed decisions.
+            </p>
+
+          </>
+        ),
+      },
+      {
+        heading: "Disawar Satta Result Today",
+        description: (
+          <>
+            <p>
+              On this page, you will get the Disawar Satta Result Today with real-time updates. The results are published as soon as they are declared, ensuring that users always have access to the most current information without delays.
+            </p>
+          </>
+        ),
+      },
+      {
+        heading: "Disawar Satta Chart & History",
+        description: (
+          <>
+            <p>
+              Along with today’s result, we also provide the complete Disawar Satta Chart. This chart includes previous results, making it easier to analyze number patterns and historical data. Many users prefer checking the chart before making any assumptions, as it gives a clear overview of records.
+            </p>
+          </>
+        ),
+      },
+      {
+        heading: "Why Check Disawar Results Here?",
+        description: (
+          <>
+
+            <ul className="list-disc pl-6 mt-3 space-y-2">
+              <li>Fast and accurate updates</li>
+              <li>Daily result availability</li>
+              <li>Complete chart and history record</li>
+              <li>Easy-to-read format for users</li>
+            </ul>
+          </>
+        ),
+      },
+      {
+        heading: "Explore Other Satta Results Alongside Disawar",
+        description: (
+          <p>
+            Along with checking Disawar updates, users also explore games like {" "}
+            <Link href="https://a7sattaking.co/delhi-bazar" className="text-blue-600 underline">
+              Delhi Bazar Satta Result
+            </Link>
+            ,{" "}
+            <Link href="https://a7sattaking.co/faridabad" className="text-blue-600 underline">
+              Faridabad Satta Result
+            </Link>
+            ,{" "} and  {" "}
+            <Link href="https://a7sattaking.co/gwalior" className="text-blue-600 underline">
+              Gwalior Satta Result
+            </Link> {" "}
+            to stay updated with different result timings. You can also follow {" "}
+            <Link href="https://a7sattaking.co/shri-lakshmi" className="text-blue-600 underline">
+              Shri Lakshmi Satta Result
+            </Link>,{" "} and {" "}
+            <Link href="https://a7sattaking.co/agra-city" className="text-blue-600 underline">
+              Agra City Satta Result
+            </Link>{" "}
+            for additional updates throughout the day.
+          </p>
+        ),
+      },
+      {
+        heading: "Disclaimer",
+        description: (
+          <>
+            <p>
+              This website is created for informational and educational purposes only. We do not promote or support any form of gambling or illegal activities. The Disawar Satta Result information provided here is based on publicly available data and is intended only for knowledge and reference. Users are advised to follow local laws and regulations before engaging in any such activities.
+            </p>
+          </>
+        ),
+      },
+    ],
+    faqs: [
+      {
+        question: "What time is the Disawar Satta Result declared?",
+        answer:
+          "The Disawar Satta Result is usually announced at a fixed time every day. Users should check this page regularly for the latest update.",
+      },
+      {
+        question: "Where can I check today’s Disawar Satta Result?",
+        answer:
+          "You can check the Disawar Satta Result Today on this page with real-time updates and accurate information.",
+      },
+      {
+        question: "Is the Disawar Satta Chart available here?",
+        answer:
+          "Yes, this page provides a complete Disawar Satta Chart along with past results to help users analyze historical data.",
+      },
+      {
+        question: "How often is the Disawar result updated?",
+        answer:
+          "The result is updated daily as soon as it is officially declared.",
+      },
+      {
+        question: "Can I rely on this page for accurate results?",
+        answer:
+          "We aim to provide fast and accurate updates, but users should always verify information independently.",
+      },
+    ],
+  },
 };

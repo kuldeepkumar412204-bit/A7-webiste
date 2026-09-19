@@ -119,7 +119,9 @@ export default function DelhiBazar() {
             heading: "Explore Other Satta games Along with Delhi Bazar",
             description: (
                 <>
-                    Along with checking the daily Delhi Bazar updates, users also follow games like <Link href="/sadar-bazar" className="text-blue-600 underline">Sadar Bazar Satta Result</Link>, <Link href="/gwalior" className="text-blue-600 underline">Gwalior Satta Result</Link>, and <Link href="/delhi-matka" className="text-blue-600 underline">Delhi Matka Satta Result</Link> to stay updated with multiple results. You can also track <Link href="/faridabad" className="text-blue-600 underline">Faridabad Satta Result</Link> and <Link href="/gaziabad" className="text-blue-600 underline">Gaziabad Satta Result</Link> for additional daily updates across different time slots.
+                    Along with checking the daily Delhi Bazar updates, users also follow games like <Link href="/sadar-bazar" className="text-blue-600 underline">Sadar Bazar Satta Result</Link>, <Link href="/gwalior" className="text-blue-600 underline">Gwalior Satta Result</Link>, and <Link href="https://a7sattaking.co/disawar" className="text-blue-600 underline">
+              Disawar Satta Result
+            </Link> to stay updated with multiple results. You can also track <Link href="/faridabad" className="text-blue-600 underline">Faridabad Satta Result</Link> and <Link href="/gaziabad" className="text-blue-600 underline">Gaziabad Satta Result</Link> for additional daily updates across different time slots.
                 </>
             ),
         },

@@ -123,7 +123,9 @@ export default function Gwalior() {
       heading: "Stay Updated with Late Night Satta Games",
       description: (
         <>
-          For final updates of the day, users follow <Link href="/dehradun-city" className="text-blue-600 underline">Dehradun City Satta Result</Link> and <Link href="/daman" className="text-blue-600 underline">Daman Satta Result</Link>. Many also track <Link href="/dwarka-city" className="text-blue-600 underline">Dwarka City Satta Result</Link> to complete the full-day result cycle.
+          For final updates of the day, users follow <Link href="/dehradun-city" className="text-blue-600 underline">Dehradun City Satta Result</Link> and <Link href="/daman" className="text-blue-600 underline">Daman Satta Result</Link>. Many also track <Link href="https://a7sattaking.co/disawar" className="text-blue-600 underline">
+              Disawar Satta Result
+            </Link> to complete the full-day result cycle.
         </>
       ),
     },
