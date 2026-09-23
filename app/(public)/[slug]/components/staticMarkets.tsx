@@ -68,7 +68,7 @@ export const staticMarkets: Record<string, Market> = {
               If you want quick access to Karol Bagh Satta Results, this page brings together the latest updates, past records, and important information in a simple format. Users can easily check the Karol Bagh Satta Results today or browse older data without any confusion.
             </p>
             <p className="mt-3">
-              Karol Bagh is a frequently followed game in the daily Satta cycle. Due to its regular timing and steady interest among users, it continues to be one of the commonly searched results. On <Link href="https://a7sattaking.co/" className="text-blue-600 underline">
+              Karol Bagh is a frequently followed game in the daily Satta cycle. Due to its regular timing and steady interest among users, it continues to be one of the commonly searched results. On <Link href="https://www.a7sattaking.co/" className="text-blue-600 underline">
                 A7 Satta King</Link>, you can stay informed with updated numbers and charts in one place.
             </p>
           </>
@@ -82,7 +82,7 @@ export const staticMarkets: Record<string, Market> = {
               Karol Bagh Satta Results refer to the daily outcome declared for the Karol Bagh game within the Satta King system. These results are announced at a set time each day, making it easy for users to track updates regularly.
             </p>
             <p className="mt-3">
-              Through <Link href="https://a7sattaking.co/" className="text-blue-600 underline">
+              Through <Link href="https://www.a7sattaking.co/" className="text-blue-600 underline">
                 A7 Satta King</Link>, users can view the most recent result along with historical data. Its consistent updates make it a regular part of many users’ daily checks.
             </p>
           </>),
@@ -149,15 +149,15 @@ export const staticMarkets: Record<string, Market> = {
               Gail Satta Result
             </Link>
             ,{" "}
-           <Link href="https://a7sattaking.co/disawar" className="text-blue-600 underline">
+           <Link href="https://www.a7sattaking.co/disawar" className="text-blue-600 underline">
               Disawar Satta Result
             </Link>
             ,{" "}
-            <Link href="https://a7sattaking.co/agra-city" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/agra-city" className="text-blue-600 underline">
               Agra City Satta Result
             </Link>
             , and{" "}
-            <Link href="https://a7sattaking.co/ajmer" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/ajmer" className="text-blue-600 underline">
               Ajmer Satta Result
             </Link>
             to keep track of multiple updates throughout the day.
@@ -341,20 +341,20 @@ export const staticMarkets: Record<string, Market> = {
         description: (
           <p>
             While checking the Anmol Bazar Satta Result, users on A7 Satta King also follow other games like {" "}
-            <Link href="https://a7sattaking.co/delhi-darbar" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/delhi-darbar" className="text-blue-600 underline">
               Delhi Darbar Satta Result
             </Link>,
             {" "}
 
-            <Link href="https://a7sattaking.co/karol-bagh" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/karol-bagh" className="text-blue-600 underline">
               Karol Bagh Satta Results
             </Link>,
             {" "}
-            <Link href="https://a7sattaking.co/shri-lakshmi" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/shri-lakshmi" className="text-blue-600 underline">
               Shri lakshami Satta Result
             </Link>
             ,{" "} and {" "}
-            <Link href="https://a7sattaking.co/mirzapur" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/mirzapur" className="text-blue-600 underline">
               Mirzapur Satta Result
             </Link> {" "}
             to stay updated with multiple results throughout the day.
@@ -518,20 +518,20 @@ export const staticMarkets: Record<string, Market> = {
         description: (
           <p>
             While checking the Delhi Darbar Satta Result, users on A7 Satta King also follow games like {" "}
-            <Link href="https://a7sattaking.co/new-ganga" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/new-ganga" className="text-blue-600 underline">
               New Ganga Satta Result
             </Link>,
             {" "}
 
-            <Link href="https://a7sattaking.co/anmol-bazar" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/anmol-bazar" className="text-blue-600 underline">
               Anmol Bazar Satta Result
             </Link>,
             {" "}
-            <Link href="https://a7sattaking.co/jaipur-matka" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/jaipur-matka" className="text-blue-600 underline">
               Jaipur Matka Satta Results
             </Link>
             ,{" "} and {" "}
-            <Link href="https://a7sattaking.co/raj-shree" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/raj-shree" className="text-blue-600 underline">
               Raj Shree Satta Result
             </Link> {" "}
             to stay updated with multiple results throughout the day.
@@ -636,7 +636,7 @@ export const staticMarkets: Record<string, Market> = {
               every day, making it convenient for users to stay updated regularly.
             </p>
             <p className="mt-3">
-              On <Link href="https://a7sattaking.co" className="text-blue-600 underline">
+              On <Link href="https://www.a7sattaking.co" className="text-blue-600 underline">
                 A7 Satta King
               </Link>, users can check the latest New Ganga result along with
               previous data and chart records, helping them stay informed without switching
@@ -827,7 +827,7 @@ export const staticMarkets: Record<string, Market> = {
               Raj Shree Satta Results refer to the daily declared outcome of the Raj Shree game within the Satta King system. The result is released at a scheduled time every day, making it convenient for users to stay updated.
             </p>
             <p className="mt-3">
-              On <Link href={"https://a7sattaking.co/"} className="text-blue-600 underline">A7 Satta King</Link>, users can check the most recent result along with previous records and chart details, helping them track both current and historical data without switching platforms.
+              On <Link href={"https://www.a7sattaking.co/"} className="text-blue-600 underline">A7 Satta King</Link>, users can check the most recent result along with previous records and chart details, helping them track both current and historical data without switching platforms.
             </p>
           </>
         ),
@@ -889,19 +889,19 @@ export const staticMarkets: Record<string, Market> = {
         description: (
           <p>
             While checking the Raj Shree Satta Results, users on A7 Satta King also follow games like{" "}
-            <Link href="https://a7sattaking.co/shri-ganesh" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/shri-ganesh" className="text-blue-600 underline">
               Shri Ganesh Satta Result
             </Link>
             ,{" "}
-            <Link href="https://a7sattaking.co/mandi-bazar" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/mandi-bazar" className="text-blue-600 underline">
               Mandi Bazar Satta Result
             </Link>
             ,{" "}
-            <Link href="https://a7sattaking.co/jaipur-matka" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/jaipur-matka" className="text-blue-600 underline">
               Jaipur Matka Satta Result
             </Link>
             , and{" "}
-            <Link href="https://a7sattaking.co/dwarka" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/dwarka" className="text-blue-600 underline">
               Dwarka Satta Result
             </Link>{" "}
             to stay updated with multiple results throughout the day.
@@ -995,7 +995,7 @@ export const staticMarkets: Record<string, Market> = {
               Udaipur City Satta Results refer to the daily announced outcome of the Udaipur City game within the Satta King system. The result is released at a set time every day, making it simple for users to stay updated regularly.
             </p>
             <p className="mt-3">
-              On <Link href="https://a7sattaking.co" className="text-blue-600 underline">
+              On <Link href="https://www.a7sattaking.co" className="text-blue-600 underline">
                 A7 Satta King
               </Link>, users can check the current result as well as earlier records and chart history, helping them track both recent and past data without any hassle.
 
@@ -1062,19 +1062,19 @@ export const staticMarkets: Record<string, Market> = {
         description: (
           <p>
             While checking the Udaipur City Satta Results, users on A7 Satta King also follow games like{" "}
-            <Link href="https://a7sattaking.co/agra" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/agra" className="text-blue-600 underline">
               Agra City Satta Results
             </Link>
             ,{" "}
-            <Link href="https://a7sattaking.co/gaziabad" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/gaziabad" className="text-blue-600 underline">
               Gaziabad Satta Result
             </Link>
             ,{" "}
-            <Link href="https://a7sattaking.co/mandi-bazar" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/mandi-bazar" className="text-blue-600 underline">
               Mandi Bazar Satta Result
             </Link>
             , and{" "}
-            <Link href="https://a7sattaking.co/delhi-savera" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/delhi-savera" className="text-blue-600 underline">
               Delhi Savera Satta Result
             </Link>{" "}
             to stay updated with multiple results across the day.
@@ -1179,7 +1179,7 @@ export const staticMarkets: Record<string, Market> = {
 
             </p>
             <p className="mt-3">
-              On <Link href="https://a7sattaking.co" className="text-blue-600 underline">
+              On <Link href="https://www.a7sattaking.co" className="text-blue-600 underline">
                 A7 Satta King
               </Link>, users can check the current result as well as past records and chart details, helping them track both recent and previous updates without any hassle.
 
@@ -1246,19 +1246,19 @@ export const staticMarkets: Record<string, Market> = {
         description: (
           <p>
             While checking the Mandi Bazar Satta Results, users on A7 Satta King also follow games like{" "}
-            <Link href="https://a7sattaking.co/agra-city" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/agra-city" className="text-blue-600 underline">
               Agra City Satta Result
             </Link>
             ,{" "}
-            <Link href="https://a7sattaking.co/udaipur-city" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/udaipur-city" className="text-blue-600 underline">
               Udaipur City Satta Results
             </Link>
             ,{" "}
-            <Link href="https://a7sattaking.co/raj-shree" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/raj-shree" className="text-blue-600 underline">
               Raj Shree Satta Results
             </Link>
             , and{" "}
-            <Link href="https://a7sattaking.co/alwar" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/alwar" className="text-blue-600 underline">
               Alwar Satta Result
             </Link>{" "}
             to stay updated with multiple results throughout the day.
@@ -1353,7 +1353,7 @@ export const staticMarkets: Record<string, Market> = {
 
             </p>
             <p className="mt-3">
-              On <Link href="https://a7sattaking.co" className="text-blue-600 underline">
+              On <Link href="https://www.a7sattaking.co" className="text-blue-600 underline">
                 A7 Satta King
               </Link>, users can access both the latest result and historical data. This helps in staying updated with current numbers while also reviewing earlier records conveniently.
             </p>
@@ -1419,19 +1419,19 @@ export const staticMarkets: Record<string, Market> = {
         description: (
           <p>
             Along with Sialkot Satta Results, users on A7 Satta King also check other games like{" "}
-            <Link href="https://a7sattaking.co/new-ganga" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/new-ganga" className="text-blue-600 underline">
               New Ganga Satta Results, ,
             </Link>
             ,{" "}
-            <Link href="https://a7sattaking.co/gali" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/gali" className="text-blue-600 underline">
               Gali Satta Result
             </Link>
             ,{" "}
-            <Link href="https://a7sattaking.co/udaipur-city" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/udaipur-city" className="text-blue-600 underline">
               Udaipur City Satta Results
             </Link>
             , and{" "}
-            <Link href="https://a7sattaking.co/raj-shree" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/raj-shree" className="text-blue-600 underline">
               Raj Shree Satta Results
             </Link>{" "}
             to stay updated with multiple results throughout the day.
@@ -1556,7 +1556,7 @@ export const staticMarkets: Record<string, Market> = {
               Dehradun City Satta Result is the daily outcome declared for the Dehradun City game under the Satta King system. The result is announced at a specific time each day, allowing users to stay updated with consistent timing.
             </p>
             <p className="mt-3">
-              On <Link href="https://a7sattaking.co" className="text-blue-600 underline">
+              On <Link href="https://www.a7sattaking.co" className="text-blue-600 underline">
                 A7 Satta King
               </Link>, users can easily check the latest result along with earlier records and chart details. This makes it simple to track both current and past information without visiting multiple pages.
 
@@ -1623,19 +1623,19 @@ export const staticMarkets: Record<string, Market> = {
         description: (
           <p>
             Along with Dehradun City Satta Result, users also explore results like{" "}
-            <Link href="https://a7sattaking.co/dwarka-city" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/dwarka-city" className="text-blue-600 underline">
               Dwarka City Satta Result
             </Link>
             ,{" "}
-            <Link href="https://a7sattaking.co/sialkot" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/sialkot" className="text-blue-600 underline">
               Sialkot Satta Results
             </Link>
             ,{" "}
-            <Link href="https://a7sattaking.co/mandi-bazar" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/mandi-bazar" className="text-blue-600 underline">
               Mandi Bazar Satta Results
             </Link>
             , and{" "}
-            <Link href="https://a7sattaking.co/ajmer" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/ajmer" className="text-blue-600 underline">
               Ajmer Satta Result
             </Link>{" "}
             to stay updated with multiple games throughout the day.
@@ -1729,7 +1729,7 @@ export const staticMarkets: Record<string, Market> = {
               Daman Satta Result refers to the daily outcome declared for the Daman game within the Satta King system. The result is announced at a specific time each day, allowing users to follow updates easily.
             </p>
             <p className="mt-3">
-              On <Link href="https://a7sattaking.co" className="text-blue-600 underline">
+              On <Link href="https://www.a7sattaking.co" className="text-blue-600 underline">
                 A7 Satta King
               </Link>, users can view both the current result and earlier records. This helps in staying updated with complete information without needing multiple sources.
 
@@ -1796,19 +1796,19 @@ export const staticMarkets: Record<string, Market> = {
         description: (
           <p>
             Along with Daman Satta Result, users on A7 Satta King also check games like{" "}
-            <Link href="https://a7sattaking.co/dehradun-city" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/dehradun-city" className="text-blue-600 underline">
               Dehradun City Satta Result
             </Link>
             ,{" "}
-            <Link href="https://a7sattaking.co/dwarka-city" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/dwarka-city" className="text-blue-600 underline">
               Dwarka City Satta Result
             </Link>
             ,{" "}
-            <Link href="https://a7sattaking.co/sialkot" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/sialkot" className="text-blue-600 underline">
               Sialkot Satta Results
             </Link>
             , and{" "}
-            <Link href="https://a7sattaking.co/mandi-bazar" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/mandi-bazar" className="text-blue-600 underline">
               Mandi Bazar Satta Results
             </Link>{" "}
             to stay updated across multiple results throughout the day.
@@ -1904,7 +1904,7 @@ export const staticMarkets: Record<string, Market> = {
         heading: "What is Delhi Savera Satta Result?",
         description:
           (<>
-            The Delhi Savera Satta Result refers to the early morning result of the Delhi-based Satta market. “Savera” means morning, and this result is usually announced at the start of the day. On             <Link href="https://a7sattaking.co/" className="text-blue-600 underline">
+            The Delhi Savera Satta Result refers to the early morning result of the Delhi-based Satta market. “Savera” means morning, and this result is usually announced at the start of the day. On             <Link href="https://www.a7sattaking.co/" className="text-blue-600 underline">
               A7 Satta King</Link>, users can check the latest Delhi Savera result quickly along with updated charts and daily records. Many users visit regularly to stay informed about the latest numbers and ongoing trends.</>),
       },
       {
@@ -2082,7 +2082,7 @@ export const staticMarkets: Record<string, Market> = {
           <>
             <p>
               The Lakshmi Bajar Satta Result is a popular game in the Satta King cycle
-              where results are announced daily at a fixed time. On <Link href="https://a7sattaking.co/" className="text-blue-600 underline">A7 Satta King</Link>, users can
+              where results are announced daily at a fixed time. On <Link href="https://www.a7sattaking.co/" className="text-blue-600 underline">A7 Satta King</Link>, users can
               easily check the latest Lakshmi Bajar result along with chart records and
               other important game updates.
             </p>
@@ -2280,7 +2280,7 @@ export const staticMarkets: Record<string, Market> = {
 
             </p>
             <p className="mt-3">
-              On <Link href="https://a7sattaking.co" className="text-blue-600 underline">
+              On <Link href="https://www.a7sattaking.co" className="text-blue-600 underline">
                 A7 Satta King
               </Link>users can check the most recent result along with previous data and chart details, making it easier to follow both current and past updates.
 
@@ -2348,19 +2348,19 @@ export const staticMarkets: Record<string, Market> = {
         description: (
           <p>
             While checking the Jaipur Matka Satta Result, users on A7 Satta King also follow games like{" "}
-            <Link href="https://a7sattaking.co/new-ganga" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/new-ganga" className="text-blue-600 underline">
               New Ganga Satta Result
             </Link>
             ,{" "}
-            <Link href="https://a7sattaking.co/daman" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/daman" className="text-blue-600 underline">
               Daman Satta Result
             </Link>
             ,{" "}
-            <Link href="https://a7sattaking.co/delhi-darbar" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/delhi-darbar" className="text-blue-600 underline">
               Delhi Darbar Satta Result
             </Link>
             , and{" "}
-            <Link href="https://a7sattaking.co/anmol-bazar" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/anmol-bazar" className="text-blue-600 underline">
               Anmol Bazar Satta Result
             </Link>{" "}
             to stay updated with multiple results throughout the day.
@@ -2514,19 +2514,19 @@ export const staticMarkets: Record<string, Market> = {
         description: (
           <p>
             While checking the Agra City Satta Result, users on A7 Satta King also follow games like{" "}
-            <Link href="https://a7sattaking.co/gwalior" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/gwalior" className="text-blue-600 underline">
               Gwalior Satta Result
             </Link>
             ,{" "}
-            <Link href="https://a7sattaking.co/lakshmi-bajar" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/lakshmi-bajar" className="text-blue-600 underline">
               Lakshmi Bajar Satta Result
             </Link>
             ,{" "}
-            <Link href="https://a7sattaking.co/faridabad" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/faridabad" className="text-blue-600 underline">
               Faridabad Satta Result
             </Link>
             , and{" "}
-            <Link href="https://a7sattaking.co/sialkot" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/sialkot" className="text-blue-600 underline">
               Sialkot Satta Result
             </Link>{" "}
             to stay updated with multiple results throughout the day.
@@ -2619,7 +2619,7 @@ export const staticMarkets: Record<string, Market> = {
               Ajmer Satta Result refers to the daily declared outcome of the Ajmer game within the Satta King system. The result is announced at a set time each day, making it convenient for users to stay updated regularly.
             </p>
             <p className="mt-3">
-              On <Link href="https://a7sattaking.co" className="text-blue-600 underline">
+              On <Link href="https://www.a7sattaking.co" className="text-blue-600 underline">
                 A7 Satta King
               </Link>, users can check the latest result along with earlier records and chart details, helping them keep track of both current and past updates without confusion.
             </p>
@@ -2684,19 +2684,19 @@ export const staticMarkets: Record<string, Market> = {
         description: (
           <p>
             While checking the Ajmer Satta Result, users on A7 Satta King also follow games like{" "}
-            <Link href="https://a7sattaking.co/udaipur-city" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/udaipur-city" className="text-blue-600 underline">
               Udaipur City Satta Results,
             </Link>
             ,{" "}
-            <Link href="https://a7sattaking.co/raj-shree" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/raj-shree" className="text-blue-600 underline">
               Raj Shree Satta Results
             </Link>
             ,{" "}
-            <Link href="https://a7sattaking.co/agra-city" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/agra-city" className="text-blue-600 underline">
               Agra City Satta Result
             </Link>
             , and{" "}
-            <Link href="https://a7sattaking.co/shri-lakshmi" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/shri-lakshmi" className="text-blue-600 underline">
               Shri Lakshmi Satta Result
             </Link>{" "}
             to stay updated with multiple results throughout the day.
@@ -2790,7 +2790,7 @@ export const staticMarkets: Record<string, Market> = {
               Dwarka City Satta Result is the daily declared outcome of the Dwarka City game within the Satta King system. The result is released at a specific time each day, making it easy for users to stay updated regularly.
             </p>
             <p className="mt-3">
-              On <Link href="https://a7sattaking.co" className="text-blue-600 underline">
+              On <Link href="https://www.a7sattaking.co" className="text-blue-600 underline">
                 A7 Satta King
               </Link>, users can check both the latest result and earlier records, helping them keep track of ongoing and previous updates without any difficulty.
 
@@ -2856,19 +2856,19 @@ export const staticMarkets: Record<string, Market> = {
         description: (
           <p>
             While checking the Dwarka City Satta Result, users on A7 Satta King also follow games like{" "}
-            <Link href="https://a7sattaking.co/sialkot" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/sialkot" className="text-blue-600 underline">
               Sialkot Satta Results
             </Link>
             ,{" "}
-            <Link href="https://a7sattaking.co/faridabad" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/faridabad" className="text-blue-600 underline">
               Faridabad Satta Results
             </Link>
             ,{" "}
-            <Link href="https://a7sattaking.co/gali" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/gali" className="text-blue-600 underline">
               Gali Satta Result
             </Link>
             , and{" "}
-            <Link href="https://a7sattaking.co/udaipur-city" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/udaipur-city" className="text-blue-600 underline">
               Udaipur City Satta Results
             </Link>{" "}
             to stay updated with multiple results throughout the day.
@@ -2970,7 +2970,7 @@ export const staticMarkets: Record<string, Market> = {
               each day, allowing users to follow updates consistently.
             </p>
             <p className="mt-3">
-              On <Link href="https://a7sattaking.co" className="text-blue-600 underline">
+              On <Link href="https://www.a7sattaking.co" className="text-blue-600 underline">
                 A7 Satta King
               </Link>, users can check the latest result along with historical data
               and chart records, making it easier to stay informed without checking
@@ -3151,7 +3151,7 @@ export const staticMarkets: Record<string, Market> = {
               Shri Lakshmi Satta Result refers to the daily declared outcome of the Shri Lakshmi game within the Satta King system. The result is announced at a specific time each day, making it convenient for users to stay updated regularly.
             </p>
             <p className="mt-3">
-              On <Link href="https://a7sattaking.co" className="text-blue-600 underline">
+              On <Link href="https://www.a7sattaking.co" className="text-blue-600 underline">
                 A7 Satta King
               </Link>, users can view the latest result as well as previous data and chart records, helping them track both current and past information in one place.
 
@@ -3217,19 +3217,19 @@ export const staticMarkets: Record<string, Market> = {
         description: (
           <p>
             While checking the Shri Lakshmi Satta Result, users on A7 Satta King also follow games like{" "}
-            <Link href="https://a7sattaking.co/delhi-bazar" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/delhi-bazar" className="text-blue-600 underline">
               Delhi Bazar Satta Result
             </Link>
             ,{" "}
-            <Link href="https://a7sattaking.co/anmol-bazar" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/anmol-bazar" className="text-blue-600 underline">
               Anmol Bazar Satta Result
             </Link>
             ,{" "}
-            <Link href="https://a7sattaking.co/raj-shree" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/raj-shree" className="text-blue-600 underline">
               Raj Shree Satta Result
             </Link>
             , and{" "}
-            <Link href="https://a7sattaking.co/dwarka-city" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/dwarka-city" className="text-blue-600 underline">
               Dwarka City Satta Result
             </Link>{" "}
             to stay updated with multiple results throughout the day.
@@ -3317,7 +3317,7 @@ export const staticMarkets: Record<string, Market> = {
         description: (
           <>
             <p>
-              The Disawar Satta Result refers to the daily outcome declared for the Disawar game. On <Link href="https://a7sattaking.co" className="text-blue-600 underline">
+              The Disawar Satta Result refers to the daily outcome declared for the Disawar game. On <Link href="https://www.a7sattaking.co" className="text-blue-600 underline">
                 A7 Satta King
               </Link>, Players and followers check these results regularly to track patterns, understand trends, and stay updated with previous records. Having access to reliable result data helps users analyze past performance and make informed decisions.
             </p>
@@ -3364,22 +3364,22 @@ export const staticMarkets: Record<string, Market> = {
         description: (
           <p>
             Along with checking Disawar updates, users also explore games like {" "}
-            <Link href="https://a7sattaking.co/delhi-bazar" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/delhi-bazar" className="text-blue-600 underline">
               Delhi Bazar Satta Result
             </Link>
             ,{" "}
-            <Link href="https://a7sattaking.co/faridabad" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/faridabad" className="text-blue-600 underline">
               Faridabad Satta Result
             </Link>
             ,{" "} and  {" "}
-            <Link href="https://a7sattaking.co/gwalior" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/gwalior" className="text-blue-600 underline">
               Gwalior Satta Result
             </Link> {" "}
             to stay updated with different result timings. You can also follow {" "}
-            <Link href="https://a7sattaking.co/shri-lakshmi" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/shri-lakshmi" className="text-blue-600 underline">
               Shri Lakshmi Satta Result
             </Link>,{" "} and {" "}
-            <Link href="https://a7sattaking.co/agra-city" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/agra-city" className="text-blue-600 underline">
               Agra City Satta Result
             </Link>{" "}
             for additional updates throughout the day.

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { InfoSection } from "../Components/Home/FAQSection";
 
-const SITE_URL = process.env.SITE_URL || "https://a7sattaking.co";
+const SITE_URL = process.env.SITE_URL || "https://www.a7sattaking.co";
 
 export const metadata: Metadata = {
   title: "Contact A7 Satta King",

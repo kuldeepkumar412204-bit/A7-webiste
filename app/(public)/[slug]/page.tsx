@@ -61,7 +61,7 @@ interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
-const SITE_URL = process.env.SITE_URL || "https://a7sattaking.co"; // Default value if not set
+const SITE_URL = process.env.SITE_URL || "https://www.a7sattaking.co"; // Default value if not set
 
 // export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
 //   const { slug } = await params;

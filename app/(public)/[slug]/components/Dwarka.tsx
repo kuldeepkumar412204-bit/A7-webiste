@@ -173,7 +173,7 @@ export default function Dwarka() {
         heading: "Discover Additional Daily Satta Result Options",
         description: (
             <>
-                Along with checking Dwarka updates, users also explore games like <Link href="https://a7sattaking.co/disawar" className="text-blue-600 underline">
+                Along with checking Dwarka updates, users also explore games like <Link href="https://www.a7sattaking.co/disawar" className="text-blue-600 underline">
               Disawar Satta Result
             </Link>, <Link href="/shri-ganesh" className="text-blue-600 underline">Shri Ganesh Satta Result</Link>, and <Link href="/gali" className="text-blue-600 underline">Gali Satta Result</Link> to stay updated with different result timings. You can also follow <Link href="/raj-shree" className="text-blue-600 underline">Raj Shree Satta Result</Link> and <Link href="/udaipur-city" className="text-blue-600 underline">Udaipur City Satta Result</Link> for additional updates throughout the day.
             </>

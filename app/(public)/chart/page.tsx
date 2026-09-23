@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import SattaChartLinksGrid from "./SattaChartLinksGrid";
 
-const SITE_URL = process.env.SITE_URL || "https://a7sattaking.co";
+const SITE_URL = process.env.SITE_URL || "https://www.a7sattaking.co";
 
 export const metadata: Metadata = {
   title: "Satta King Chart 2026 | All Satta Charts & Results | A7 Satta King",

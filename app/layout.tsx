@@ -28,11 +28,11 @@ const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "A7 Satta King",
-  url: "https://a7sattaking.co/",
-  logo: "https://a7sattaking.co/logo.png",
+  url: "https://www.a7sattaking.co/",
+  logo: "https://www.a7sattaking.co/logo.png",
   description:
     "A7 Satta King provides latest satta king results, daily satta charts, matka updates, and historical records with real-time updates.",
-  sameAs: ["https://a7sattaking.co/"],
+  sameAs: ["https://www.a7sattaking.co/"],
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "customer support",
@@ -45,7 +45,7 @@ const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "A7 Satta King",
-  url: "https://a7sattaking.co/",
+  url: "https://www.a7sattaking.co/",
   description:
     "Check A7 Satta King latest results, daily satta charts, Matka updates, and records with real-time updates and game timings.",
   publisher: {
@@ -54,7 +54,7 @@ const websiteSchema = {
   },
   potentialAction: {
     "@type": "SearchAction",
-    target: "https://a7sattaking.co/?s={search_term_string}",
+    target: "https://www.a7sattaking.co/?s={search_term_string}",
     "query-input": "required name=search_term_string",
   },
 };

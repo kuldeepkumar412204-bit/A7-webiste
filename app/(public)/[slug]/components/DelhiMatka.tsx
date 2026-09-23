@@ -3,7 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.SITE_URL || "https://a7sattaking.co"),
+  metadataBase: new URL(process.env.SITE_URL || "https://www.a7sattaking.co"),
   title: "Delhi Matka Satta Results 2026 Today | Chart & Updates",
   description:
     "Check Delhi Matka Satta Results 2026 with daily updates, full charts, and history records on A7 Satta King.",

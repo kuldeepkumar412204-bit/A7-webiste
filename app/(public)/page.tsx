@@ -28,13 +28,13 @@ export const metadata: Metadata = {
     "Satta games India",
   ],
   alternates: {
-    canonical: "https://a7sattaking.co/",
+    canonical: "https://www.a7sattaking.co/",
   },
   openGraph: {
     title: "A7 Satta King Result | Latest Satta Charts, Matka Results & Updates",
     description:
       "Check A7 Satta King latest results, daily Satta charts, Matka updates, and records. Stay updated with real-time results and game timings.",
-    url: "https://a7sattaking.co/",
+    url: "https://www.a7sattaking.co/",
     siteName: "Your Website Name",
     type: "website",
     locale: "en_IN",
