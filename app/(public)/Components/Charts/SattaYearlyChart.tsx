@@ -63,7 +63,7 @@ export default function SattaYearlyChart() {
     (g) => g.slug.toLowerCase() === slug.toLowerCase()
   );
 
-  const gameName = gameData?.game || slug.toUpperCase().replace("-", " ");
+  const gameName = gameData?.game || slug.toUpperCase().replace(/-/g, " ");
 
   const headers = [
     String(selectedYear), "JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"
@@ -86,38 +86,8 @@ export default function SattaYearlyChart() {
     return row as ChartRow;
   });
 
-  // Auto redirect to home after 3 seconds when game not found
-  // useEffect(() => {
-  //   if (!gameData && !isLoading) {
-  //     const timer = setTimeout(() => {
-  //       router.push("/");
-  //     }, 3000);
-  //     return () => clearTimeout(timer);
-  //   }
-  // }, [gameData, isLoading, router]);
-
-  if (false && !gameData && !isLoading) {
-    return (
-      <div className="w-full min-h-[60vh] flex flex-col items-center justify-center bg-white p-6 text-center">
-        <div className="max-w-md">
-          <div className="text-6xl mb-4">🔍</div>
-          <h1 className="text-3xl font-bold text-gray-800 mb-2">Page Not Found</h1>
-          <p className="text-gray-600 mb-6">
-            The game &quot;{slug}&quot; you are looking for does not exist.
-          </p>
-          <p className="text-sm text-gray-500 mb-6">
-            Redirecting to home page in 3 seconds...
-          </p>
-          <button
-            onClick={() => router.push("/")}
-            className="px-6 py-3 bg-gradient-to-b from-[#FFA500] to-[#FFD200] text-black font-bold rounded-lg hover:opacity-90 transition-opacity"
-          >
-            Go to Home
-          </button>
-        </div>
-      </div>
-    );
-  }
+  // Unknown slugs never reach this component — app/(public)/[slug]/page.tsx
+  // resolves the slug against the active game list and calls notFound() first.
 
   return (
     <div className="w-full bg-white pb-10 select-none">
@@ -125,7 +95,7 @@ export default function SattaYearlyChart() {
       {/* Top Header Banner with exact Yellow-to-Orange Gradient */}
       <div className="w-full bg-gradient-to-b from-[#FFA500] to-[#FFD200] py-5 text-center border-y-2 border-black/90">
         <h2 className="text-black font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl tracking-wider uppercase">
-          {gameData ? gameName :  !isLoading ? 'undefined': ''} YEARLY CHART {selectedYear}
+          {gameName} YEARLY CHART {selectedYear}
         </h2>
 
         {/* Year Selector */}

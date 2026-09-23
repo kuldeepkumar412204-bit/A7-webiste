@@ -1,6 +1,8 @@
-import { Suspense } from "react";
+import { Suspense, cache } from "react";
 import type { ComponentType } from "react";
 import SattaYearlyChart from "../Components/Charts/SattaYearlyChart";
+import { connectDB } from "@/app/lib/mongodb";
+import Satta from "@/app/models/Satta";
 import SadarBazar, {
   metadata as sadarBazarMetadata,
 } from "./components/SadarBazar";
@@ -63,6 +65,20 @@ interface PageProps {
 
 const SITE_URL = process.env.SITE_URL || "https://www.a7sattaking.co"; // Default value if not set
 
+// Always resolve the slug against the live game list so a removed or renamed
+// game stops returning 200 immediately.
+export const dynamic = "force-dynamic";
+
+// Mirrors the filter used by /api/data — a slug only exists if it is backed by
+// an active game there. `cache` keeps generateMetadata and the page render to a
+// single query per request.
+// A DB failure is deliberately left to throw: "we cannot tell" must surface as a
+// 500, never as a 404, or an outage would deindex every market page.
+const getActiveGame = cache(async (slugKey: string) => {
+  await connectDB();
+  return Satta.findOne({ slug: slugKey, isActive: true }).select("name slug").lean();
+});
+
 // export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
 //   const { slug } = await params;
 //   const slugKey = String(slug).toLowerCase().trim();
@@ -117,7 +133,14 @@ export async function generateMetadata({
 
   const slugKey = String(slug).toLowerCase().trim();
 
-  console.log("SEO slug:", slugKey);
+  // Slugs with no backing game render notFound(), so keep them out of the index.
+  if (!(await getActiveGame(slugKey))) {
+    return {
+      title: "Page Not Found | A7 Satta King",
+      description: "The requested page could not be found.",
+      robots: { index: false, follow: false },
+    };
+  }
 
   const componentMetadata = componentMetadataMap[slugKey];
   const market = staticMarkets[slugKey];
@@ -184,12 +207,14 @@ export default async function page({ params }: PageProps) {
   const { slug } = await params;
   const slugKey = String(slug).toLowerCase().trim();
 
+  // The chart is the page — without a backing game there is nothing to show,
+  // so 404 rather than rendering an empty shell.
+  if (!(await getActiveGame(slugKey))) {
+    notFound();
+  }
+
   const Component = componentMap[slugKey];
   const market = staticMarkets[slugKey];
-
-  // if (!Component && !market) {
-  //   notFound();
-  // }
 
   return (
     <Suspense
