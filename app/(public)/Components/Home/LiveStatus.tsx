@@ -157,7 +157,7 @@ export default function LiveStatus() {
               <div key={game._id} className="text-[33px] font-semibold tracking-widest text-white mt-2 uppercase">
                 <div style={{ letterSpacing: "1px" }} className="pb-4">{game.name}</div>
 
-                {game.isUpcoming ? (
+                {game.isUpcoming || game.today === "--" || game.today === "WAIT" ? (
                   <div className="w-[60px] h-[60px] flex items-center justify-center mx-auto py-4">
                     <Image
                       src="/new.gif"
