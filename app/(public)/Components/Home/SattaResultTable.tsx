@@ -85,7 +85,7 @@ export default function SattaResultTable() {
 
               const timePassed = checkHasTimePassed(game.time);
 
-              if(game.game==='disawer') return null;
+              if (game.game === 'disawer') return null;
 
               return (
                 <div key={game?._id} className="flex items-stretch text-center">
@@ -113,32 +113,38 @@ export default function SattaResultTable() {
 
                   {/* Col 3: Today's Result */}
                   {/* Column 3: Today's Result */}
-<div className="w-[33%] p-[0.5rem] flex items-center justify-center border border-t-0 border-primary">
-  <div className="w-full text-black font-bold text-[22px] flex items-center justify-center">
-    {!timePassed ? (
-      /* 1. Time HAS NOT passed yet -> Always show GIF badge (hides result even if API returns it early) */
-      <div className="w-10 h-10 flex items-center justify-center">
-        <Image
-          src="/new.gif"
-          alt="WAIT"
-          width={40}
-          height={40}
-          unoptimized
-        />
-      </div>
-    ) : hasResult ? (
-      /* 2. Time HAS passed AND result exists -> Show the result */
-      <span className="text-black font-bold text-[22px] sm:text-xl">
-        {todayResult}
-      </span>
-    ) : (
-      /* 3. Time HAS passed BUT result is missing/WAIT -> Show fallback "--" */
-      <span className="font-extrabold text-[18px] tracking-wider">
-        --
-      </span>
-    )}
-  </div>
-</div>
+                  <div className="w-[33%] p-[0.5rem] flex items-center justify-center border border-t-0 border-primary">
+                    <div className="w-full text-black font-bold text-[22px] flex items-center justify-center">
+                      {!timePassed ? (
+                        /* 1. Time HAS NOT passed yet -> Always show GIF badge (hides result even if API returns it early) */
+                        <div className="w-10 h-10 flex items-center justify-center">
+                          <Image
+                            src="/new.gif"
+                            alt="WAIT"
+                            width={40}
+                            height={40}
+                            unoptimized
+                          />
+                        </div>
+                      ) : hasResult ? (
+                        /* 2. Time HAS passed AND result exists -> Show the result */
+                        <span className="text-black font-bold text-[22px] sm:text-xl">
+                          {todayResult}
+                        </span>
+                      ) : (
+                        /* 3. Time HAS passed BUT result is missing/WAIT -> Show fallback "--" */
+                        <div className="w-10 h-10 flex items-center justify-center">
+                          <Image
+                            src="/new.gif"
+                            alt="WAIT"
+                            width={40}
+                            height={40}
+                            unoptimized
+                          />
+                        </div>
+                      )}
+                    </div>
+                  </div>
                 </div>
               );
             })}
