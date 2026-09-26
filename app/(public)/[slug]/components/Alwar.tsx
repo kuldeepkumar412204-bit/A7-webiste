@@ -43,184 +43,99 @@ const Alwar: NextPage<Props> = ({ }) => {
     
     const infoSections = [
         {
-            heading: "Alwar Satta Result & Chart 2026",
-            description: (
-                <>
-                    <p>
-                        Looking for the latest updates for Alwar Satta Result in 2026? You are in the right place. A7 Satta King provides verified results, detailed charts, and historical records in a clear and structured format. The platform covers multiple Satta King and Matka games, making it easy for users to access all information in one place.
-                    </p>
-
-                    <p className="mt-3">
-                        Whether you want to check today’s result, understand number trends, or review past data, everything is updated regularly and presented in a simple, user-friendly format.
-                    </p>
-                </>
-            ),
-        },
-        {
-            heading: "What is Alwar Satta?",
-            description: (
-                <>
-                    <p>
-                        Alwar Satta is a number-based system followed by users who regularly check results and charts. Many people track daily updates to observe number movements and patterns over time.
-                    </p>
-
-                    <p className="mt-3">
-                        On A7 Satta King, all results are presented in a clean and easy-to-understand format. This allows users to quickly view updates without confusion and stay informed about daily changes.
-                    </p>
-                </>
-            ),
-        },
-        {
-            heading: "Alwar Satta Chart 2026 Explained",
-            description: (
-                <>
-                    <p>
-                        The Alwar Satta Chart 2026 acts as a complete record of previous results. It helps users analyze weekly, monthly, and yearly data to understand trends and number patterns.
-                    </p>
-
-                    <p className="mt-3">
-                        The chart is updated daily and includes historical records from previous years, allowing users to compare old and current results in one place. The layout is designed to be simple, making it easy to read on both mobile devices and desktops.
-                    </p>
-                </>
-            ),
-        },
-        {
-            heading: "Key Features of the Chart",
-            description: (
-                <ul className="list-disc pl-6 mt-4 space-y-2">
-                    <li>Daily updated results</li>
-                    <li>Complete historical data access</li>
-                    <li>Simple and clean layout</li>
-                    <li>Mobile and desktop friendly</li>
-                    <li>Easy comparison of past and current numbers</li>
-                </ul>
-            ),
-        },
-        {
-            heading: "Alwar Satta Result Today",
-            description: (
-                <>
-                    <p>
-                        If you are looking for today’s Alwar Satta Result, you can easily find it on this page. The result is published only after proper verification to ensure accuracy.
-                    </p>
-
-                    <p className="mt-3">
-                        Users can refresh the page to check the latest update. Along with results, important updates and highlights are also shared to keep users informed throughout the day.
-                    </p>
-                </>
-            ),
-        },
-        {
-            heading: "Alwar Satta History Chart",
-            description: (
-                <>
-                    <p>
-                        The history chart provides access to past results from previous years. This helps users understand long-term number patterns and identify repeated sequences.
-                    </p>
-
-                    <p className="mt-3">
-                        While many users review past data for reference, it is important to remember that previous results do not guarantee future outcomes. The chart is useful only for observation and general understanding.
-                    </p>
-                </>
-            ),
-        },
-        {
-            heading: "Why Users Follow Alwar Satta Updates",
-            description: (
-                <>
-                    <p>
-                        A7 Satta King is preferred by users because of its simple design and reliable updates. The platform is designed to provide information quickly without unnecessary complexity.
-                    </p>
-
-                    <ul className="list-disc pl-6 mt-4 space-y-2">
-                        <li>Fast and regular updates</li>
-                        <li>Easy-to-read charts</li>
-                        <li>Clear and organized layout</li>
-                        <li>Quick access to daily and historical data</li>
-                        <li>Smooth experience on all devices</li>
-                    </ul>
-                </>
-            ),
-        },
-        {
-            heading: "Stay Updated with Alwar Satta",
-            description: (
-                <>
-                    <p>
-                        A7 Satta King regularly shares updates related to daily results, chart changes, and important trends. All information is presented in a simple format so users can quickly understand the data.
-                    </p>
-
-                    <p className="mt-3">
-                        You can bookmark the page to stay updated and check results anytime without searching again.
-                    </p>
-                </>
-            ),
-        },
-        {
-            heading: "Explore More Satta games Along with Alwar",
-            description: (
-                <>
-                    Along with checking Alwar updates, users also explore games like <Link href="/delhi-darbar" className="text-blue-600 underline">Delhi Darbar Satta Result</Link>, <Link href="/mirzapur" className="text-blue-600 underline">Mirzapur Satta Result</Link>, and <Link href="/anmol-bazar" className="text-blue-600 underline">Anmol Bazar Satta Result</Link> to stay updated with different result timings. You can also follow <Link href="/karol-bagh" className="text-blue-600 underline">Karol Bagh Satta Result</Link> and <Link href="/new-ganga" className="text-blue-600 underline">New Ganga Satta Result</Link> for additional updates throughout the day.
-                </>
-            ),
-        },
-        {
-            heading: "Important Disclaimer",
+            heading: "Alwar Satta Result Today and 2026 Chart",
             description:
-                "A7 Satta King shares Alwar Satta Result and chart information strictly for informational purposes only. The platform does not promote or support any illegal activity. Users are advised to follow local laws and use the information at their own discretion.",
+                "This page carries today's Alwar number and the 2026 chart. Alwar falls in the busiest part of the evening timetable, so this page also shows the three other results declared in the same 20 minutes, in case you're checking more than one.",
+        },
+        {
+            heading: "Alwar Satta Result Time: 7:35 PM",
+            description: (
+                <>
+                    Alwar is an evening result. Open the page a few minutes after 7:35 PM to see today's number. If you check earlier, today's cell in the chart may still be empty. The day's result is also listed in the home page table alongside the other games.
+                </>
+            ),
+        },
+        {
+            heading: "Four Results in 20 Minutes",
+            description: (
+                <>
+                    <p className="mb-2">Between 7:20 PM and 7:40 PM, four results are declared one after another:</p>
+                    <ul className="list-disc list-inside space-y-1 mb-3">
+                        <li><Link href="/raj-shree" className="text-blue-600 underline">Raj Shree</Link>, 7:20 PM</li>
+                        <li><Link href="/udaipur-city" className="text-blue-600 underline">Udaipur City</Link>, 7:30 PM</li>
+                        <li><strong>Alwar, 7:35 PM</strong></li>
+                        <li><Link href="/ajmer" className="text-blue-600 underline">Ajmer</Link>, 7:40 PM</li>
+                    </ul>
+                    <p>This is the closest run of results on the <Link href="/" className="text-blue-600 underline">A7 Satta King</Link> timetable. If you follow several of these games, it's worth checking each page in this order rather than all at once, since Alwar's number isn't out until 5 minutes after Udaipur City's.</p>
+                </>
+            ),
+        },
+        {
+            heading: "Checking All Four in Order",
+            description:
+                "The practical order is: Raj Shree first at 7:20 PM, then Udaipur City at 7:30 PM, then this page for Alwar at 7:35 PM, then Ajmer at 7:40 PM. Because the gaps are 10, 5, and 5 minutes, refreshing a page too early will still show yesterday's number, not today's.",
+        },
+        {
+            heading: "Before and After This Cluster",
+            description: (
+                <>
+                    Before 7:20 PM, the last result is <Link href="/faridabad" className="text-blue-600 underline">Faridabad</Link> at 6:10 PM, over an hour earlier. After the cluster ends at 7:40 PM, there's a short gap until <Link href="/mandi-bazar" className="text-blue-600 underline">Mandi Bazar</Link> at 8:10 PM, followed by <Link href="/sialkot" className="text-blue-600 underline">Sialkot</Link> at 8:20 PM.
+                </>
+            ),
+        },
+        {
+            heading: "Alwar Chart 2026",
+            description:
+                "The chart has one cell for each day of each month. To find today's Alwar satta result, locate today's date in the left column and read across to this month's column. A cell that still shows the wait icon has no result yet, which is normal before 7:35 PM.\n\nBecause Udaipur City and Ajmer are declared so close to Alwar, check the page heading before reading a chart, so you know which game's cell you're looking at.",
+        },
+        {
+            heading: "September 2026 Snapshot",
+            description:
+                "September has been the most active month for Alwar so far this year, with results recorded for nearly every day from the 1st to the 24th. The number has ranged from 22 to 98 over that stretch, and no two days have shown the same result.",
+        },
+        {
+            heading: "Finding an Earlier Alwar Result",
+            description:
+                "For a past date, go to that date in the left column and move across to the month you want. Every day that has already passed this year stays in the chart, so you can look back through the year on this page. The numbers record what was declared and do not show what the next result will be.",
+        },
+        {
+            heading: "More Satta Game Results",
+            description: (
+                <>
+                    Along with Alwar, users on A7 Satta King also check <Link href="/raj-shree" className="text-blue-600 underline">Raj Shree Satta Results</Link>, <Link href="/udaipur-city" className="text-blue-600 underline">Udaipur City Satta Results</Link>, <Link href="/ajmer" className="text-blue-600 underline">Ajmer Satta Result</Link>, and <Link href="/sialkot" className="text-blue-600 underline">Sialkot Satta Results</Link>.
+                </>
+            ),
+        },
+        {
+            heading: "Disclaimer",
+            description:
+                "This page shows results and charts for information only. We do not promote or support gambling or any illegal activity. Please follow the laws that apply where you live.",
         },
     ];
 
     const faqItems = [
         {
-            question: "What is Alwar Satta?",
-            answer:
-                "Alwar Satta is a number-based system where users check daily results and review charts to understand number patterns.",
+            question: "What time is the Alwar satta result declared?",
+            answer: "At 7:35 PM.",
         },
         {
-            question: "Does A7 Satta King provide other Satta games?",
+            question: "Which games are declared just before and after Alwar?",
             answer:
-                "Yes, A7 Satta King provides results and charts for multiple Satta games on a single platform.",
+                "Udaipur City is declared at 7:30 PM before it, and Ajmer at 7:40 PM after it.",
         },
         {
-            question: "Is A7 Satta King reliable for results?",
+            question: "Where can I see today's Alwar result?",
             answer:
-                "Yes, the platform provides verified and accurate results along with updated charts.",
+                "In today's cell in the chart on this page. It also appears in the home page table.",
         },
         {
-            question: "Why is Alwar Satta popular?",
+            question: "How do I find an older Alwar result?",
             answer:
-                "It is popular because of daily updates, easy access to results, and availability of historical data.",
+                "Go to the date in the left column of the chart, then across to the month.",
         },
         {
-            question: "How often are results updated?",
-            answer:
-                "Results are updated daily after verification to ensure accuracy.",
-        },
-        {
-            question: "Does the platform provide tips or predictions?",
-            answer:
-                "No, only results and charts are shared for informational purposes.",
-        },
-        {
-            question: "Can I check results on mobile devices?",
-            answer:
-                "Yes, the website is fully mobile-friendly and works smoothly on all devices.",
-        },
-        {
-            question: "Are results updated daily?",
-            answer:
-                "Yes, all results and charts are updated every day.",
-        },
-        {
-            question: "Are previous charts available?",
-            answer:
-                "Yes, users can access old charts and historical records easily.",
-        },
-        {
-            question: "Where can I check today’s Alwar Satta Result?",
-            answer:
-                "You can check the latest result directly on A7 Satta King.",
+            question: "Does this page give tips or predictions?",
+            answer: "No. It shows results and charts for reference only.",
         },
     ];
 
