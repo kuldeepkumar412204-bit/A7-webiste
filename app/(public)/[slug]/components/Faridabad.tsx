@@ -36,175 +36,107 @@ export const metadata: Metadata = {
 export default function Faridabad() {
     const infoSections = [
         {
-            heading: "Faridabad Satta Result and Chart 2026 – Live and Updated",
+            heading: "Faridabad Satta Result Today and 2026 Chart",
+            description:
+                "This page carries today's Faridabad number and the 2026 chart, and it shows where Faridabad sits in the evening timetable, so you know what comes before it and how long you wait for the next result.",
+        },
+        {
+            heading: "Faridabad Satta Result Time: 6:10 PM",
             description: (
                 <>
-                    <p>
-                        Are you trying to find out the most recent information about the 2026
-                        Faridabad Satta Result? You've come to the correct spot. Clear results
-                        and organized chart data, including daily figures, patterns, and
-                        trends, are provided by the A7 Satta King.
-                    </p>
-
-                    <p className="mt-3">
-                        Because everything is well-organized and updated on a regular basis,
-                        you can easily examine records or check today's results.
-                    </p>
+                    Faridabad is an early evening result. Open the page a few minutes after 6:10 PM to see today's number. If you check earlier, today's cell in the chart may still be empty. You can also find the day's result in the <Link href="/" className="text-blue-600 underline">home page</Link> table, which lists every game together.
                 </>
             ),
         },
         {
-            heading: "What is Faridabad Satta?",
-            description:
-                "Users utilize the number-based Faridabad Satta system every day to monitor outcomes and spot trends. Verified results are given in an easy-to-understand style on A7 Satta King, which facilitates the understanding of number trends over time.",
-        },
-        {
-            heading: "Faridabad Satta Chart 2026 Guide",
+            heading: "The Last Result Before the Break",
             description: (
                 <>
-                    <p>
-                        The Faridabad Satta Chart 2026 presents historical data in an
-                        understandable manner. To identify trends, users can examine data on a
-                        weekly and monthly basis.
-                    </p>
-
-                    <p className="mt-3">
-                        For improved analysis, the graphic incorporates all previous records
-                        and is refreshed every day. Both desktop and mobile users can utilize
-                        it.
-                    </p>
-
-
+                    Faridabad is the last result of the early evening. After 6:10 PM, nothing is declared for 70 minutes, until <Link href="/raj-shree" className="text-blue-600 underline">Raj Shree</Link> arrives at 7:20 PM. That makes Faridabad the point where the early evening block ends and the wait for the later evening block begins.
                 </>
             ),
         },
         {
-            heading: "Features of Our Chart",
-            description: (
-                <ul className="list-disc pl-6 mt-4 space-y-2">
-                    <li>Results are updated daily.</li>
-                    <li>Full historical documentation</li>
-                    <li>Design that is mobile-friendly</li>
-                    <li>Layout that is readable and clear</li>
-                    <li>Simple navigation</li>
-                </ul>
-            )
-        },
-        {
-            heading: "Today’s Faridabad Satta Result",
-            description:
-                "After verification, the most recent Faridabad Satta Result is updated. Users can stay up to date with the most recent information by refreshing the site to view the results for today.",
-        },
-        {
-            heading: "Faridabad Satta History Chart",
-            description:
-                "The results from 2024 to 2026 are shown in the history chart, which aids users in comprehending numerical trends and recurring patterns throughout time.",
-        },
-        {
-            heading: "Why Choose A7 Satta King?",
+            heading: "What Comes Before Faridabad",
             description: (
                 <>
-                    <p>The A7 Satta King is recommended for:</p>
-
-                    <ul className="list-disc pl-6 mt-4 space-y-2">
-                        <li>Quick and frequent updates</li>
-                        <li>Clear and uncomplicated charts</li>
-                        <li>Simple information access</li>
-                        <li>Trustworthy information</li>
+                    Faridabad follows a short run of results. <Link href="/shri-ganesh" className="text-blue-600 underline">Shri Ganesh</Link> is declared at 4:45 PM, <Link href="/agra" className="text-blue-600 underline">Agra</Link> at 5:30 PM, and <Link href="/agra-city" className="text-blue-600 underline">Agra City</Link> at 5:35 PM. Faridabad comes 35 minutes after Agra City and 85 minutes after Shri Ganesh.
+                </>
+            ),
+        },
+        {
+            heading: "What Comes After Faridabad",
+            description: (
+                <>
+                    The evening block starts at 7:20 PM and moves quickly: <Link href="/raj-shree" className="text-blue-600 underline">Raj Shree</Link> at 7:20 PM, <Link href="/udaipur-city" className="text-blue-600 underline">Udaipur City</Link> at 7:30 PM, <Link href="/alwar" className="text-blue-600 underline">Alwar</Link> at 7:35 PM, and <Link href="/ajmer" className="text-blue-600 underline">Ajmer</Link> at 7:40 PM. Then come <Link href="/mandi-bazar" className="text-blue-600 underline">Mandi Bazar</Link> at 8:10 PM and <Link href="/sialkot" className="text-blue-600 underline">Sialkot</Link> at 8:20 PM.
+                </>
+            ),
+        },
+        {
+            heading: "The Evening in Order",
+            description: (
+                <>
+                    <p className="mb-2">Here is the run of results around Faridabad, in the order they are declared:</p>
+                    <ul className="list-disc list-inside space-y-1">
+                        <li>Shri Ganesh, 4:45 PM</li>
+                        <li>Agra, 5:30 PM</li>
+                        <li>Agra City, 5:35 PM</li>
+                        <li><strong>Faridabad, 6:10 PM</strong></li>
+                        <li>Raj Shree, 7:20 PM</li>
+                        <li>Udaipur City, 7:30 PM</li>
+                        <li>Alwar, 7:35 PM</li>
+                        <li>Ajmer, 7:40 PM</li>
                     </ul>
                 </>
             ),
         },
         {
-            heading: "How to Use Our Pages",
-            description: (
-                <>
-                    <p>Take these actions:</p>
-
-                    <ol className="list-decimal pl-6 mt-4 space-y-2">
-                        <li>Go to the A7 Satta King page for the Faridabad Satta Results.</li>
-                        <li>Check the outcome for today.</li>
-                        <li>See the chart</li>
-                        <li>Examine historical documents</li>
-                    </ol>
-                </>
-            ),
-        },
-        {
-            heading: "Stay Updated with Faridabad Satta News",
+            heading: "Faridabad Chart 2026",
             description:
-                "A7 Satta King shares updates related to charts, trends, and important information. Users can stay connected for regular updates.",
+                "The chart has one row per day and one column per month, so each day's result sits in a single cell. To find today's Faridabad satta result number, locate today's date in the left column and read across to this month. A cell that still shows the wait icon has no result yet, which is normal before 6:10 PM.",
         },
         {
-            heading: "Explore More Satta Results Along with Faridabad",
+            heading: "Finding an Earlier Faridabad Satta Result",
+            description:
+                "For a past date, go to that date in the left column and move across to the month you want. Every day that has passed this year remains in the chart, so you can look back through the year on this page. The numbers record what was declared and do not show what the next result will be.",
+        },
+        {
+            heading: "More Satta Game Results",
             description: (
                 <>
-                    Along with checking Faridabad updates, users also explore games like <Link href="/dehradun-city" className="text-blue-600 underline">Dehradun City Satta Result</Link>, <Link href="/daman" className="text-blue-600 underline">Daman Satta Result</Link>, and <Link href="/dwarka-city" className="text-blue-600 underline">Dwarka City Satta Result</Link> to stay updated with different result timings. You can also follow <Link href="/delhi-savera" className="text-blue-600 underline">Delhi Savera Satta Result</Link> and <Link href="/lakshmi-bajar" className="text-blue-600 underline">Lakshmi Bajar Satta Result</Link> for additional updates across the day.
+                    Along with Faridabad, users on A7 Satta King also check <Link href="/agra-city" className="text-blue-600 underline">Agra City Satta Result</Link>, <Link href="/agra" className="text-blue-600 underline">Agra Satta Result</Link>, <Link href="/raj-shree" className="text-blue-600 underline">Raj Shree Satta Results</Link>, and <Link href="/alwar" className="text-blue-600 underline">Alwar Satta Result</Link>.
                 </>
             ),
+        },
+        {
+            heading: "Disclaimer",
+            description:
+                "This page shows results and charts for information only. We do not promote or support gambling or any illegal activity. Please follow the laws that apply where you live.",
         },
     ];
 
     const faqItems = [
         {
-            question: "What is Faridabad Satta?",
-            answer:
-                "Faridabad Satta is a number-based system where users check daily results and review charts.",
+            question: "What time is the Faridabad satta result declared?",
+            answer: "At 6:10 PM.",
         },
         {
-            question: "How can I check today’s Faridabad Satta result?",
+            question: "Which games are declared just before and after Faridabad?",
             answer:
-                "You can check the latest Faridabad Satta Result on A7 Satta King.",
+                "Agra City is declared at 5:35 PM before it, and Raj Shree at 7:20 PM after it.",
         },
         {
-            question: "What is the result timing?",
-            answer:
-                "Results are usually announced at a fixed time, but timing may vary.",
+            question: "How long is the wait for the next result after Faridabad?",
+            answer: "70 minutes, until Raj Shree at 7:20 PM.",
         },
         {
-            question: "Is A7 Satta King reliable?",
+            question: "Where can I see today's Faridabad result?",
             answer:
-                "Yes, A7 Satta King provides accurate results with historical charts.",
+                "In today's cell in the chart on this page. It also appears in the home page table.",
         },
         {
-            question: "Can I view old charts?",
-            answer:
-                "Yes, previous charts and records are available.",
-        },
-        {
-            question: "How often are results updated?",
-            answer:
-                "Results are updated daily after verification.",
-        },
-        {
-            question: "Is registration required?",
-            answer:
-                "No, all results and charts are free to access.",
-        },
-        {
-            question: "Are tips or predictions provided?",
-            answer:
-                "No, only results and charts are shared.",
-        },
-        {
-            question: "Can I check results on mobile?",
-            answer:
-                "Yes, the website is mobile-friendly.",
-        },
-        {
-            question: "Are results updated daily?",
-            answer:
-                "Yes, results and charts are updated daily.",
-        },
-        {
-            question: "Why is it popular?",
-            answer:
-                "Due to daily updates and access to past records.",
-        },
-        {
-            question: "Are other Satta results available?",
-            answer:
-                "Yes, A7 Satta King provides multiple Satta game updates.",
+            question: "Does this page give tips or predictions?",
+            answer: "No. It shows results and charts for reference only.",
         },
     ];
 

@@ -47,167 +47,134 @@ export default function DelhiBazar() {
     // Main Content Blocks - styled like FAQSection
     const infoSections: InfoSection[] = [
         {
-            heading: "Delhi Bazar Satta Result Live 2026 | DB Chart – A7 Satta King",
+            heading: "Delhi Bazar Satta Result Today 2026 and Yearly Chart",
+            description:
+                "On this page, you can check today's Delhi Bazar result and the 2026 chart, see how Delhi Bazar sits among the other Delhi games, and find older records in one place instead of searching across several pages.\n\nThe chart lists every date of the year. Below it, you will find the result time, how to check today's result, how the Delhi games follow each other during the day, how to read the chart, and links to other games.",
+        },
+        {
+            heading: "Delhi Bazar Satta Result Time and Today's Result",
             description: (
                 <>
-                    <p>
-                        Hey there, Satta Matka game fans! Welcome to A7 Satta King, your
-                        reliable source for Delhi Bazar game information. We understand that
-                        users want fast and accurate updates. That’s why this Result and Chart
-                        2026 page is designed to be a one-stop destination.
-                    </p>
-
-                    <p className="mt-3">
-                        Here, you get quick live DB updates every day along with a complete
-                        record chart. There’s no need to visit multiple websites; this simple
-                        and organized page shows the latest numbers as well as older records
-                        in one place.
-                    </p>
+                    <p className="mb-3">The Delhi Satta Bazar result is declared at 3:15 PM. Plan to check the page shortly after that time. You can see the day's result on this page or in the <Link href="/" className="text-blue-600 underline">home page</Link> table, where all game results are listed.</p>
+                    <p>If you open the page before 3:15 PM, today's result may not be added yet. Refresh the page after the result time to see the new entry.</p>
                 </>
             ),
         },
         {
-            heading: "What’s Delhi Bazar Satta King About?",
-            description:
-                "This game's popularity stems from timely updates and easily comprehensible content. Everything pertaining to Delhi Bazar is prominently shown on A7 Satta King.com. The listing of results and the addition of new updates are readily visible to users.",
-        },
-        {
-            heading: "Delhi Bazar Result Today (LIVE)",
-            description:
-                "As soon as the results are official, they are released. Users can easily and quickly check the most recent winning number by seeing all changes on this page. The quick and easy-to-understand structure keeps you updated whether you are a frequent user or a first-time visitor.",
-        },
-        {
-            heading: "2026 Delhi Bazar Chart",
-            description:
-                "The 2026 chart on A7 Satta King is easy to read because all the dates are kept in the correct order. It enables users to see how results have changed over the course of the year by comparing recent updates with previous ones.",
-        },
-        {
-            heading: "History Chart of Delhi Bazar Results",
-            description:
-                "Older records are gathered in one location via the history chart. Users can quickly evaluate previous winning entries by looking at past numbers whenever necessary. This section is updated by A7 Satta King.com to ensure that the material is correct and clear.",
-        },
-        {
-            heading: "News and Updates about Delhi Bazar Satta King",
-            description:
-                "This page provides significant game-related news in addition to daily updates and charts. Details on timelines for updates and any modifications to listings are available. Anything that has an impact on the daily update is communicated here in an understandable and straightforward manner.",
-        },
-        {
-            heading: "Why Do Users Select A7 Satta King.com for Database Updates?",
+            heading: "How to Check Delhi Bazar Satta Result Today",
             description: (
                 <>
-                    <p>
-                        A7 Satta King.com's complete Delhi Bazar segment is designed for
-                        convenience and dependability.
-                    </p>
-
-                    <ul className="list-disc list-inside mt-3 space-y-2">
-                        <li>Clear and user-friendly layout.</li>
-                        <li>Fast page loading experience.</li>
-                        <li>Frequent result updates.</li>
-                        <li>Well-organized yearly charts.</li>
-                        <li>Easy navigation between pages.</li>
+                    <ol className="list-decimal list-inside space-y-1">
+                        <li>Open this page a few minutes after 3:15 PM.</li>
+                        <li>Find today's date in the chart. Dates run down the left side.</li>
+                        <li>Follow that row across to the column for the current month.</li>
+                        <li>The number in that cell is today's Delhi Bazar result.</li>
+                    </ol>
+                    <p className="mt-3">If the cell shows a wait icon, the result has not been added yet. Wait a few minutes and refresh the page.</p>
+                </>
+            ),
+        },
+        {
+            heading: "Delhi Games on A7 Satta King: Which Page Is Which",
+            description: (
+                <>
+                    <p className="mb-3">Several games on A7 Satta King have Delhi in their name, and all four are declared in the afternoon. This is the order in which they come during the day:</p>
+                    <ul className="list-disc list-inside space-y-1 mb-3">
+                        <li><strong>Delhi Savera:</strong> 12:40 PM</li>
+                        <li><strong>Delhi Darbar:</strong> 2:10 PM</li>
+                        <li><strong>Delhi Bazar:</strong> 3:15 PM</li>
+                        <li><strong>Delhi Matka:</strong> 3:40 PM</li>
                     </ul>
+                    <p className="mb-3">Delhi Savera comes first, well before the others. Delhi Bazar is the third of the four. It is declared 1 hour 5 minutes after Delhi Darbar and 25 minutes before Delhi Matka. If you are waiting for a Delhi result after 3 PM, Delhi Bazar is the first of the two that remain.</p>
+                    <p>Each of these games has its own page and its own yearly chart. The result on this page is for Delhi Bazar at 3:15 PM only. To check the others, open <Link href="/delhi-savera" className="text-blue-600 underline">Delhi Savera</Link>, <Link href="/delhi-darbar" className="text-blue-600 underline">Delhi Darbar</Link>, or <Link href="/delhi-matka" className="text-blue-600 underline">Delhi Matka</Link>.</p>
                 </>
             ),
         },
         {
-            heading: "How Can We Find Updates About Delhi Bazaar?",
-            description:
-                "Before being published, results and chart data are gathered from reliable public sources and thoroughly examined. Updates are promptly and explicitly posted after confirmation. This procedure aids A7 Satta King.com in keeping reliable and accurate records.",
-        },
-        {
-            heading: "Explore Other Satta games Along with Delhi Bazar",
+            heading: "Where Delhi Bazar Falls in the Day",
             description: (
                 <>
-                    Along with checking the daily Delhi Bazar updates, users also follow games like <Link href="/sadar-bazar" className="text-blue-600 underline">Sadar Bazar Satta Result</Link>, <Link href="/gwalior" className="text-blue-600 underline">Gwalior Satta Result</Link>, and <Link href="https://www.a7sattaking.co/disawar" className="text-blue-600 underline">
-              Disawar Satta Result
-            </Link> to stay updated with multiple results. You can also track <Link href="/faridabad" className="text-blue-600 underline">Faridabad Satta Result</Link> and <Link href="/gaziabad" className="text-blue-600 underline">Gaziabad Satta Result</Link> for additional daily updates across different time slots.
+                    <p className="mb-3">Delhi Bazar is an afternoon result. <Link href="/sadar-bazar" className="text-blue-600 underline">Sadar Bazar</Link> is declared earlier, at 1:40 PM, and <Link href="/gwalior" className="text-blue-600 underline">Gwalior</Link> at 2:40 PM, which is 35 minutes before Delhi Bazar. After Delhi Bazar and Delhi Matka, <Link href="/shri-ganesh" className="text-blue-600 underline">Shri Ganesh</Link> follows at 4:45 PM. Later games such as <Link href="/sialkot" className="text-blue-600 underline">Sialkot</Link>, at 8:20 PM, come in the evening.</p>
+                    <p>If you follow several games, checking them in this order lets you go through the day's results one after another without opening pages at the wrong time.</p>
+                </>
+            ),
+        },
+        {
+            heading: "Reading the Delhi Bazar Chart 2026",
+            description:
+                "The yearly chart is one grid: 31 date rows and 12 month columns. The 3:15 PM result goes into the row for that day and the column for that month, so by evening you should see today's number in its cell. You will find the steps for locating it in the \"How to Check\" section above, so here is what else the grid is good for.\n\nReading down a column shows you a single month from the 1st to the 31st. Reading along a row puts the same date from different months side by side. A cell that shows an icon rather than a number is still pending. That is normal for every date after today, and for today until the 3:15 PM result is in. Months that have not started yet will stay pending.",
+        },
+        {
+            heading: "Finding an Older Delhi Bazar Satta Result",
+            description:
+                "Suppose you missed yesterday's result, or you want the number from a date two months ago. You don't need to search anywhere else: go to that date's row, move to the month you want, and read the cell. Every day that has already passed this year stays in the grid, so the full run of results from January to today is in one place.\n\nThe chart is a reference for what was declared. It doesn't say anything about what the next result will be.",
+        },
+        {
+            heading: "What Happens After 3:15 PM",
+            description:
+                "The result is declared at 3:15 PM. After that, the number is added to the Delhi Bazar chart and appears in the home page table alongside the other games. That is why the page can look unchanged at 3:10 PM and different at 3:25 PM: nothing new is shown until the result is in. Delhi Matka is declared only 25 minutes later, so people who follow both often check this page first and Delhi Matka next.",
+        },
+        {
+            heading: "Games Declared After Delhi Bazar",
+            description: (
+                <>
+                    Once Delhi Bazar is done, the next results of the day are <Link href="/delhi-matka" className="text-blue-600 underline">Delhi Matka</Link> at 3:40 PM, <Link href="/shri-ganesh" className="text-blue-600 underline">Shri Ganesh</Link> at 4:45 PM, and <Link href="/agra" className="text-blue-600 underline">Agra</Link> at 5:30 PM. Results declared before Delhi Bazar include <Link href="/delhi-darbar" className="text-blue-600 underline">Delhi Darbar</Link> at 2:10 PM and <Link href="/sadar-bazar" className="text-blue-600 underline">Sadar Bazar</Link> at 1:40 PM.
                 </>
             ),
         },
         {
             heading: "Disclaimer",
-            description: (
-                <>
-                    <p className="mb-3">
-                        This website is provided for informational purposes only. We do not
-                        promote, support, or encourage any form of illegal gambling or betting
-                        activities. Users are advised to follow their local laws and
-                        regulations before engaging in any such activities.
-                    </p>
-
-                    <p>
-                        All results, charts, and information are shared for reference
-                        purposes only. We do not guarantee the accuracy or completeness of the
-                        data. By using this website, you agree that you do so at your own
-                        risk, and we are not responsible for any losses or legal issues.
-                    </p>
-                </>
-            ),
+            description:
+                "This page is for information only. We do not promote or support betting or gambling, and we do not give gaming advice or guarantee any outcome. Follow the laws that apply where you live. We are not responsible for any loss arising from the use of this information.",
         },
     ];
 
     // Accordion FAQs - styled like FAQSection
     const faqItems = [
         {
-            question: "What exactly is Delhi Bazar Satta?",
-            answer:
-                "Delhi Bazar Satta is a popular number-based game where users follow daily results and compare them with past charts to track changes over time.",
+            question: "What time is the Delhi Bazar result declared?",
+            answer: "The Delhi Bazar result is declared at 3:15 PM.",
         },
         {
-            question: "Do I need to register to check Delhi Bazar Satta results?",
-            answer:
-                "No, registration is not required. You can view all Delhi Bazar results and charts for free.",
+            question: "Which Delhi game is declared first?",
+            answer: "Delhi Savera, at 12:40 PM.",
         },
         {
-            question: "When are Delhi Bazar Satta results announced?",
+            question: "Is Delhi Bazar declared before Delhi Matka?",
             answer:
-                "Results are usually announced at a fixed time every day, but timings may vary. It’s best to check A7 Satta King regularly for updates.",
+                "Yes. Delhi Bazar is declared at 3:15 PM and Delhi Matka at 3:40 PM, 25 minutes later.",
         },
         {
-            question: "Is A7 Satta King a reliable source for Delhi Bazar results?",
+            question: "How long after Delhi Darbar is Delhi Bazar declared?",
             answer:
-                "Yes, A7 Satta King provides accurate and updated information, including results and historical charts.",
+                "Delhi Darbar is declared at 2:10 PM, so Delhi Bazar comes 1 hour and 5 minutes later.",
         },
         {
-            question: "Why is Delhi Bazar Satta so popular?",
+            question: "Where can I check today's Delhi Bazar result?",
             answer:
-                "It is popular because results are updated daily and users can access complete historical charts for comparison.",
+                "On this page, in the chart in the cell for today's date, or in the home page table.",
         },
         {
-            question: "Are there other Satta games available on A7 Satta King?",
-            answer:
-                "Yes, apart from Delhi Bazar, the platform also provides results and charts for many other Satta games.",
+            question: "Which game is declared right after Delhi Bazar?",
+            answer: "Delhi Matka, at 3:40 PM, 25 minutes later.",
         },
         {
-            question: "Where can I check today’s Delhi Bazar Satta result?",
-            answer:
-                "You can check the latest and most accurate Delhi Bazar results on A7 Satta King, where updates are posted regularly.",
+            question: "What is the next result after Delhi Matka?",
+            answer: "Shri Ganesh, at 4:45 PM.",
         },
         {
-            question: "Does A7 Satta King provide tips or predictions?",
+            question: "How do I read the Delhi Bazar chart?",
             answer:
-                "No, the platform only shares results and historical charts for reference. It does not provide predictions or guaranteed numbers.",
+                "Dates run down the left and months run across the top. A result sits where its date row meets its month column.",
         },
         {
-            question: "Can I check Delhi Bazar results on my mobile device?",
-            answer:
-                "Yes, the website is mobile-friendly, allowing you to easily check results on smartphones and tablets.",
+            question: "Does this page give tips or predictions?",
+            answer: "No. It only shows results and charts for reference.",
         },
         {
-            question: "Are Delhi Bazar results updated daily?",
+            question: "Can past results predict the next Delhi Bazar result?",
             answer:
-                "Yes, results and charts are updated daily to keep users informed with the latest information.",
-        },
-        {
-            question: "Can I view historical charts of Delhi Bazar Satta?",
-            answer:
-                "Yes, users can access past charts and records to review previous results.",
-        },
-        {
-            question: "When are Delhi Bazar results updated?",
-            answer:
-                "Results are updated daily after confirmation from reliable sources to ensure accuracy.",
+                "No. The chart is a record of what was declared and should not be treated as a prediction.",
         },
     ];
 

@@ -94,9 +94,9 @@ export default function SattaYearlyChart() {
 
       {/* Top Header Banner with exact Yellow-to-Orange Gradient */}
       <div className="w-full bg-gradient-to-b from-[#FFA500] to-[#FFD200] py-5 text-center border-y-2 border-black/90">
-        <h2 className="text-black font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl tracking-wider uppercase">
+        <h1 className="text-black font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl tracking-wider uppercase">
           {gameName} YEARLY CHART {selectedYear}
-        </h2>
+        </h1>
 
         {/* Year Selector */}
         {/* <div className="mt-3 flex justify-center items-center gap-2">

@@ -14,8 +14,20 @@ const links = [
 
 ];
 
+// Pages that have no H1 of their own, so the site title serves as it. Every
+// other public page (the per-game yearly chart pages, 404s) renders its own H1.
+const titleH1Paths = [
+  "/",
+  "/chart",
+  "/contact",
+  "/disclaimer",
+  "/privacy-policy",
+  "/terms-and-conditions",
+];
+
 export default function Navbar() {
     const pathname = usePathname();
+    const TitleTag = titleH1Paths.includes(pathname) ? "h1" : "h2";
   return (
     <>
 
@@ -79,9 +91,9 @@ export default function Navbar() {
           `}</style>
 
           <Link href={"/"}>
-            <h1 className="text-[27px] font-semibold tracking-tighter text-black uppercase animate-custom-fade">
+            <TitleTag className="text-[27px] font-semibold tracking-tighter text-black uppercase animate-custom-fade">
               A7 SATTA KING OFFICIAL
-            </h1>
+            </TitleTag>
           </Link>
         </div>
 

@@ -37,196 +37,86 @@ export default function Agra() {
 
     const infoSections = [
         {
-            heading: "Agra Satta Result and Chart 2026 – Live Updates",
-            description: (
-                <>
-                    <p>
-                        Looking for the latest updates related to Agra Satta Result in 2026?
-                        Welcome to A7 Satta King, a trusted platform for number-based updates,
-                        charts, and historical records. The website regularly updates numbers,
-                        patterns, and trends so users can stay informed. Whether you want to
-                        check today’s result or review older data, everything is organized and
-                        available in one place.
-                    </p>
-                </>
-            ),
-        },
-        {
-            heading: "What is Agra Satta?",
+            heading: "Agra Satta Result Today and 2026 Chart",
             description:
-                "Agra Satta is a number-based system that many users follow for daily updates and trend observation. On A7 Satta King, verified information is presented in a clear format, making it easy to understand how numbers change over time. It mainly focuses on observing number flow and patterns across different days.",
+                "This page carries today's Agra number and the 2026 chart. Because Agra City is declared only five minutes later, it also helps you tell the two games apart, so you don't read one result as the other.",
         },
         {
-            heading: "Agra Satta Chart 2026",
-            description: (
-                <>
-                    <p>
-                        The Agra Satta Chart 2026 works like a visual record of past results.
-                        It allows users to review data across weeks and months to identify
-                        noticeable trends. The chart is updated daily on A7 Satta King and
-                        provides complete historical data for better reference. It is designed
-                        for both mobile users and desktop viewers.
-                    </p>
-
-
-                </>
-            ),
-        },
-        {
-            heading: "Features of Our Agra Chart",
-            description: (
-                <ul className="list-disc pl-6 mt-4 space-y-2">
-                    <li>Daily updated numbers</li>
-                    <li>Complete history records</li>
-                    <li>Mobile-friendly design</li>
-                    <li>Clear and readable layout</li>
-                    <li>Simple and easy navigation</li>
-                </ul>
-            )
-        },
-        {
-            heading: "Today’s Agra Satta Result",
-            description: (
-                <>
-                    <p>
-                        Are you trying to find the Agra Satta Result for today? After
-                        verification, the most recent update is released. To view the most
-                        recent number, users can reload the page.
-                    </p>
-
-                    <p className="mt-3">
-                        To keep users informed, significant updates about developments and
-                        trends are also published.
-                    </p>
-                </>
-            ),
-        },
-        {
-            heading: "Agra Satta History Chart",
+            heading: "Agra Satta Result Time: 5:30 PM",
             description:
-                "Results from prior years, spanning data from 1 Jan 2026 to the present, are included in the history chart. It offers a long-term perspective of trends and aids users in comprehending how statistics have changed over time.",
+                "Agra is an evening result. Open this page a little after 5:30 PM to see today's number. If you check earlier, today's cell in the chart may still be empty. The day's result is also listed in the home page table alongside the other games.",
         },
         {
-            heading: "Why Track Agra Updates on A7 Satta King?",
+            heading: "Agra and Agra City: Two Separate Games",
             description: (
                 <>
-                    <p>Many consumers favor the A7 Satta King due to:</p>
-
-                    <ul className="list-disc pl-6 mt-4 space-y-2">
-                        <li>Quick and frequent updates</li>
-                        <li>Simple-to-read charts</li>
-                        <li>Easy navigation</li>
-                        <li>Trustworthy data</li>
-                        <li>Both novices and seasoned users can utilize the platform.</li>
+                    <p className="mb-3">Agra and <Link href="/agra-city" className="text-blue-600 underline">Agra City</Link> are different games. Each has its own result, its own chart, and its own page. Their names are close, and so are their times: Agra is declared at 5:30 PM and Agra City at 5:35 PM.</p>
+                    <p className="mb-2">Here is how to avoid mixing them up:</p>
+                    <ul className="list-disc list-inside space-y-1 mb-3">
+                        <li><strong>Check the page heading.</strong> This page is for Agra. The Agra City page has its own heading.</li>
+                        <li><strong>Check the time.</strong> A number that appears at 5:30 PM belongs to Agra, and one at 5:35 PM to Agra City.</li>
+                        <li><strong>Don't compare the two charts cell by cell.</strong> They are separate records, so the same date can hold a different number in each.</li>
                     </ul>
+                    <p>If you follow both, check this page first and the <Link href="/agra-city" className="text-blue-600 underline">Agra City page</Link> five minutes later.</p>
                 </>
             ),
         },
         {
-            heading: "How to Use Our Pages",
+            heading: "Where Agra Falls in the Evening",
             description: (
-                <ol className="list-decimal pl-6 space-y-2">
-                    <li>Go to A7 Satta King's Agra Satta Result page.</li>
-                    <li>View the updated result for today.</li>
-                    <li>Check out the trends on the chart.</li>
-                    <li>Look over the section on history.</li>
-                    <li>The procedure is easy to use and quick.</li>
-                </ol>
+                <>
+                    <p className="mb-3">Agra comes after a quiet stretch. <Link href="/shri-ganesh" className="text-blue-600 underline">Shri Ganesh</Link> is declared at 4:45 PM, and nothing else is declared until Agra arrives 45 minutes later. Agra City follows five minutes after Agra, and <Link href="/faridabad" className="text-blue-600 underline">Faridabad</Link> comes at 6:10 PM, 40 minutes after Agra City.</p>
+                    <p>Later in the evening, the next block starts at 7:20 PM with <Link href="/raj-shree" className="text-blue-600 underline">Raj Shree</Link>. So Agra opens the early evening, and there is a gap of more than an hour between Faridabad and the next result.</p>
+                </>
             ),
         },
         {
-            heading: "Stay Connected",
+            heading: "Agra Chart 2026",
             description:
-                "A7 Satta King frequently provides updates, chart modifications, and crucial information understandably. To keep up with daily trends and outcomes, bookmark the page.",
+                "The chart holds one cell per day for each month. To read today's Agra result, find the row for today's date, then the column for this month. An empty or waiting cell means the result has not been added yet.\n\nBecause Agra City is declared so soon after, make sure you are looking at the Agra chart and not the Agra City one. The heading at the top of the page tells you which it is.",
         },
         {
-            heading: "Explore More Satta games Along with Agra",
+            heading: "Looking Up an Earlier Agra Result",
+            description:
+                "If you need a result from a previous date, find that date in the chart and follow it across to the month you want. Days that have already passed this year stay in the chart. The numbers record what was declared. They do not show what the next result will be.",
+        },
+        {
+            heading: "More Satta Game Results",
             description: (
                 <>
-                    Along with checking Agra updates, users also explore games like <Link href="/udaipur-city" className="text-blue-600 underline">Udaipur City Satta Result</Link>, <Link href="/raj-shree" className="text-blue-600 underline">Raj Shree Satta Result</Link>, and <Link href="/ajmer" className="text-blue-600 underline">Ajmer Satta Result</Link> to stay updated with different result timings. You can also follow <Link href="/mandi-bazar" className="text-blue-600 underline">Mandi Bazar Satta Result</Link> and <Link href="/sialkot" className="text-blue-600 underline">Sialkot Satta Result</Link> for additional updates throughout the day.
+                    Along with Agra, users on A7 Satta King also check <Link href="/agra-city" className="text-blue-600 underline">Agra City Satta Result</Link>, <Link href="/shri-ganesh" className="text-blue-600 underline">Shri Ganesh Satta Result</Link>, <Link href="/faridabad" className="text-blue-600 underline">Faridabad Satta Result</Link>, and <Link href="/raj-shree" className="text-blue-600 underline">Raj Shree Satta Results</Link>.
                 </>
             ),
         },
         {
             heading: "Disclaimer",
-            description: (
-                <>
-                    <p>
-                        For informational purposes solely, A7 Satta King disseminates publicly
-                        accessible data about the Agra Satta and charts. No illicit conduct is
-                        encouraged or supported by the platform.
-                    </p>
-
-                    <p className="mt-3">
-                        Users must abide by local rules and ordinances. Every piece of
-                        information is given exactly as it is, and users use it at their own
-                        risk.
-                    </p>
-                </>
-            ),
+            description:
+                "This page shows results and charts for reference only. It does not promote gambling or any illegal activity and gives no advice or guarantee. Please follow the laws that apply in your area.",
         },
     ];
 
     const faqItems = [
         {
-            question: "What is Agra Satta?",
-            answer:
-                "Agra Satta is a number-based system followed daily by users to check results and review past charts for trends.",
+            question: "What time is the Agra result declared?",
+            answer: "At 5:30 PM.",
         },
         {
-            question: "Where can I find today’s Agra Satta result?",
+            question: "Is Agra the same as Agra City?",
             answer:
-                "You can check the latest and verified Agra Satta result on A7 Satta King.",
+                "No. They are separate games with their own results, charts, and pages. Agra is declared at 5:30 PM and Agra City at 5:35 PM.",
         },
         {
-            question: "What time is the Agra Satta result announced?",
-            answer:
-                "The result is usually announced at a fixed time daily. However, timing may vary, so users should check A7 Satta King for updates.",
+            question: "Which is declared first, Agra or Agra City?",
+            answer: "Agra, five minutes earlier.",
         },
         {
-            question: "Why is Agra Satta popular among users?",
+            question: "Where can I see today's Agra result?",
             answer:
-                "Agra Satta is popular due to daily result updates, its long history, and access to previous records for analysis.",
+                "In today's cell in the chart on this page. It also appears in the home page table.",
         },
         {
-            question: "Can I view old Agra Satta charts?",
-            answer:
-                "Yes, users can view previous charts and records on A7 Satta King.",
-        },
-        {
-            question: "Does A7 Satta King offer other Satta game results?",
-            answer:
-                "Yes, A7 Satta King provides results and charts for many popular Satta games.",
-        },
-        {
-            question: "Is registration required to check results?",
-            answer:
-                "No, registration is not required. All results and charts are free to access.",
-        },
-        {
-            question: "Are Agra Satta results updated daily?",
-            answer:
-                "Yes, all Agra results and charts are updated daily.",
-        },
-        {
-            question: "Can I check Agra results on mobile?",
-            answer:
-                "Yes, A7 Satta King is mobile-friendly, allowing easy access on smartphones and tablets.",
-        },
-        {
-            question: "Does A7 Satta King provide tips or predictions?",
-            answer:
-                "No, A7 Satta King only shares results and charts for informational purposes.",
-        },
-        {
-            question: "Is A7 Satta King reliable for Agra Satta results?",
-            answer:
-                "Yes, A7 Satta King provides accurate results along with historical charts.",
-        },
-        {
-            question: "How often are Agra results updated?",
-            answer:
-                "Agra results are updated daily once verified information becomes available.",
+            question: "Does this page give tips or predictions?",
+            answer: "No. It shows results and charts for reference only.",
         },
     ];
 

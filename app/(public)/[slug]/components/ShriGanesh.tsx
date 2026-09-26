@@ -39,154 +39,104 @@ export default function ShriGanesh() {
     const infoSections = [
         {
             heading: "Shri Ganesh Satta Result and Chart 2026",
+            description:
+                "This page carries today's number and the 2026 chart, along with a guide to where Shri Ganesh sits in the day's timetable, so you know when to check and which result comes next.\n\nIf you follow more than one game on A7 Satta King, the timing matters as much as the number. The sections below show what is declared just before Shri Ganesh, what follows it, and how to look up a result from an earlier date.",
+        },
+        {
+            heading: "Shri Ganesh Result Time: 4:45 PM",
+            description:
+                "Shri Ganesh is a late afternoon result. Open the page a few minutes after 4:45 PM to see today's number. Before that time, today's cell in the chart may still be empty. You can also find the day's result in the home page table, which lists every game together.",
+        },
+        {
+            heading: "Where Shri Ganesh Sits in the Day's Timetable",
             description: (
                 <>
-                    <p>
-                        <strong>Important Disclaimer:</strong>  For the sole purpose of pleasure, this website, A7-satta.com, disseminates public information about game results and charts. No illicit conduct is supported or encouraged by us. Always abide by the laws in your area. You are free to use the information as you see fit.        </p>
-
-                    <p className="mt-3">
-                        Are you trying to find out the most recent information about the Shri Ganesh game? A7 Satta King is where you are. Here, we make daily results and chart updates for 2026 easily accessible, enabling visitors to follow trends and remain informed without difficulty.
-
-                    </p>
+                    Counting every game on the A7 Satta King timetable, Shri Ganesh is the 14th result of the day. Thirteen games are declared before it, starting with <Link href="/delhi-savera" className="text-blue-600 underline">Delhi Savera</Link> at 12:40 PM, and fifteen come after it, ending with <Link href="/gali" className="text-blue-600 underline">Gali</Link> at 11:50 PM. That puts Shri Ganesh close to the middle of the day, about four hours after the first result and seven hours before the last.
                 </>
             ),
         },
         {
-            heading: "What’s Shri Ganesh Satta?",
-            description:
-                "Many individuals enjoy playing this well-liked number-based game on a daily basis. In order to monitor numerical trends over time, users frequently review the results. The confirmed daily result is presented understandably on our platform.",
-        },
-        {
-            heading: "Shri Ganesh Satta Result  Chart 2026 Guide",
-            description:
-                "The 2026 chart lists past results month by month, much like a record book. Users can see how numbers change over time by looking through prior entries. To guarantee accuracy, A7-satta.com updates its history chart every day.",
-        },
-        {
-            heading: "Interesting Features of Our Chart",
+            heading: "The Busy Stretch Before Shri Ganesh",
             description: (
                 <>
-
-                    <ul className="list-disc pl-6 mt-4 space-y-2">
-                        <li>Results are updated daily.</li>
-                        <li>Availability of historical data</li>
-                        <li>layout that is mobile-friendly</li>
-                        <li>Simple trend visibility</li>
-                        <li>Quick and easy navigation</li>
-                    </ul>
+                    <p className="mb-3">The stretch just before Shri Ganesh is the busiest part of the timetable. <Link href="/delhi-bazar" className="text-blue-600 underline">Delhi Bazar</Link> is declared at 3:15 PM, <Link href="/new-ganga" className="text-blue-600 underline">New Ganga</Link> at 3:30 PM, <Link href="/delhi-matka" className="text-blue-600 underline">Delhi Matka</Link> at 3:40 PM, <Link href="/jaipur-matka" className="text-blue-600 underline">Jaipur Matka</Link> at 3:45 PM and <Link href="/shri-lakshmi" className="text-blue-600 underline">Shri Lakshmi</Link> at 3:50 PM. Five results fall inside 35 minutes.</p>
+                    <p>After that, the schedule goes quiet for 55 minutes, until Shri Ganesh arrives at 4:45 PM.</p>
                 </>
             ),
         },
         {
-            heading: "Today's Shri Ganesh Satta Result",
+            heading: "The Quiet Stretch Around 4:45 PM",
             description:
-                "The validated update for today is directly available on this page. For example, the outcome is available following confirmation on December 16, 2026. To view the most recent information, reload the page. For user awareness, any relevant news or updates are also conveyed.",
+                "Shri Ganesh is the only result declared between 3:50 PM and 5:30 PM. If you have been working through the afternoon games one by one, this is the pause in the middle, and Shri Ganesh is what ends it. The next result, Agra, comes 45 minutes later.",
         },
         {
-            heading: "Shri Ganesh Satta Result History Chart",
-            description:
-                "Older results are shown in a chronological fashion in the history chart. Viewing data from 2021 to 2026 allows users to see which numbers show up more frequently over time.",
-        },
-        {
-            heading: "Why Use A7 Satta King?",
-            description:
-                "Many users rely on A7 Satta King for timely updates, clear information, and clean charts. The platform is made to be dependable and simple to use, regardless of your level of experience.",
-        },
-        {
-            heading: "How to Check Shri Ganesh Satta Result",
+            heading: "What Follows Shri Ganesh",
             description: (
                 <>
-                    <p>Take these easy steps:</p>
-
-                    <ol className="list-decimal pl-6 space-y-2 my-2">
-                        <li>Go to A7-satta.com's Shri Ganesh page.</li>
-                        <li>Check out the update for today.</li>
-                        <li>Examine the annual chart.</li>
-                        <li>Look over the section on history.</li>
-                    </ol>
-                    <p>That's it, simple and fast.</p>
+                    <Link href="/agra" className="text-blue-600 underline">Agra</Link> is declared at 5:30 PM, followed by <Link href="/agra-city" className="text-blue-600 underline">Agra City</Link> at 5:35 PM and <Link href="/faridabad" className="text-blue-600 underline">Faridabad</Link> at 6:10 PM. After that, there is a gap until 7:20 PM, when the evening block begins: <Link href="/raj-shree" className="text-blue-600 underline">Raj Shree</Link> at 7:20 PM, <Link href="/udaipur-city" className="text-blue-600 underline">Udaipur City</Link> at 7:30 PM, <Link href="/alwar" className="text-blue-600 underline">Alwar</Link> at 7:35 PM, and <Link href="/ajmer" className="text-blue-600 underline">Ajmer</Link> at 7:40 PM.
                 </>
             ),
         },
         {
-            heading: "Shree Ganesh Satta News",
+            heading: "Shri Ganesh Chart 2026",
             description:
-                "We also publish news on the latest updates and modifications. To remain updated, bookmark the page. Are you prepared to look at the chart or see the most recent update? Check out A7-satta.com right now.",
+                "Think of the chart as a calendar of results. Each row is a day of the month, each column is a month, and each filled cell holds the number declared for that day. Once the 4:45 PM result is added, today's cell is filled and the ones after it are still open.\n\nA cell that still shows the wait icon has no result yet. That makes it a quick way to see how far the year has come.",
         },
         {
-            heading: "Explore More Satta Games Along with Shri Ganesh",
+            heading: "Finding an Earlier Shri Ganesh Result",
+            description:
+                "To check a past day, go to its date in the left column, then move across to the month you want. Every day that has already passed this year stays in the chart, so you can go back through the year without leaving the page. The numbers are a record of what was declared and do not show what comes next.",
+        },
+        {
+            heading: "More Satta Game Results",
             description: (
                 <>
-                    Along with checking Shri Ganesh updates, users also explore games like <Link href="/agra" className="text-blue-600 underline">Agra Satta Result</Link>, <Link href="/alwar" className="text-blue-600 underline">Alwar Satta Result</Link>, and <Link href="/dwarka" className="text-blue-600 underline">Dwarka Satta Result</Link> to stay updated on different result times. You can also follow <Link href="/new-ganga" className="text-blue-600 underline">New Ganga Satta Result</Link> and <Link href="/jaipur-matka" className="text-blue-600 underline">Jaipur Matka Satta Result</Link> for additional updates throughout the day.
+                    Along with Shri Ganesh, users on A7 Satta King also check <Link href="/shri-lakshmi" className="text-blue-600 underline">Shri Lakshmi Satta Result</Link>, <Link href="/agra" className="text-blue-600 underline">Agra Satta Result</Link>, <Link href="/delhi-matka" className="text-blue-600 underline">Delhi Matka Satta Results</Link>, and <Link href="/faridabad" className="text-blue-600 underline">Faridabad Satta Result</Link>.
                 </>
             ),
         },
         {
             heading: "Disclaimer",
             description:
-                "A7 Satta King provides Shri Ganesh Satta Result and chart information for general and informational purposes only. We do not promote or support any illegal activity or gambling. Users should follow local laws and use the information at their own risk.",
+                "This page shows results and charts for information only. We do not promote or support gambling or any illegal activity. Please follow the laws that apply in your area.",
         },
     ];
 
     const faqItems = [
         {
-            question: "What is Shri Ganesh Satta?",
-            answer:
-                "Many people play the number-based game Shri Ganesh Satta, checking daily results and consulting past charts for guidance.",
+            question: "What time is the Shri Ganesh result declared?",
+            answer: "At 4:45 PM.",
         },
         {
-            question: "Where can I find today’s Shri Ganesh Satta Result?",
-            answer:
-                "As soon as the Shri Ganesh Satta Result are updated, you can check them at A7 Satta King. Throughout the day, the platform offers frequent updates.",
+            question: "Which result comes right before Shri Ganesh?",
+            answer: "Shri Lakshmi, at 3:50 PM.",
         },
         {
-            question: "What time are Shri Ganesh Satta results announced?",
-            answer:
-                "Results are typically released every day at a predetermined time. It is advised to frequently check A7 Satta King for changes, the timing may change.",
+            question: "Which result comes right after Shri Ganesh?",
+            answer: "Agra, at 5:30 PM, 45 minutes later.",
         },
         {
-            question: "Is A7 Satta King a reliable site for Shri Ganesh Satta results?",
+            question: "Are any other games declared between 3:50 PM and 5:30 PM?",
             answer:
-                "Yes, A7 Satta King is regarded as a trustworthy site for seeing past charts and Shri Ganesh Satta results.",
+                "No. On the A7 Satta King timetable, Shri Ganesh is the only one in that window.",
         },
         {
-            question: "Can I view previous charts for Shri Ganesh Satta?",
-            answer:
-                "In order to examine historical outcomes, customers can access previous charts and records on A7 Satta King.",
+            question: "How many games are declared before Shri Ganesh?",
+            answer: "Thirteen, starting with Delhi Savera at 12:40 PM.",
         },
         {
-            question: "How often are Shri Ganesh Satta results updated?",
+            question: "Where can I check today's Shri Ganesh result?",
             answer:
-                "As soon as verifiable information is available, Shri Ganesh results are uploaded on A7 Satta King every day.",
+                "On this page, in today's cell in the chart, or in the home page table.",
         },
         {
-            question: "Do I need to register to view results?",
+            question: "How do I find an older Shri Ganesh result?",
             answer:
-                "On A7 Satta King, all Shri Ganesh Satta charts and results are free.",
+                "Go to the date in the left column of the chart, then across to the month.",
         },
         {
-            question: "Does A7 Satta King provide tips or predictions?",
-            answer:
-                "A7 Satta King concentrates on offering precise outcomes and historical charts. This data can be reviewed by users for their own comprehension.",
-        },
-        {
-            question: "Can I check Shri Ganesh results on mobile?",
-            answer:
-                "The website is responsive, making it simple for visitors to view results on tablets and smartphones.",
-        },
-        {
-            question: "When are results posted on A7 Satta King?",
-            answer:
-                "Charts and results are uploaded every day as soon as confirmed data becomes available.",
-        },
-        {
-            question: "Why is Shri Ganesh Satta popular among users?",
-            answer:
-                "It is well-liked since results are updated every day, historical charts are accessible, and previous records are easily accessible.",
-        },
-        {
-            question: "Does A7 Satta King provide other Satta game results?",
-            answer:
-                "Yes, A7 Satta King offers charts and updates for a number of other Satta games besides Shri Ganesh Satta.",
+            question: "Does this page give tips or predictions?",
+            answer: "No. It shows results and charts for reference only.",
         },
     ];
 

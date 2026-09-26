@@ -45,133 +45,127 @@ export default function Gwalior() {
   // Main Content Blocks - styled like FAQSection
   const infoSections: InfoSection[] = [
     {
-      heading: "GWALIOR Satta Result and Full Chart 2026: Your Reliable Info Site",
+      heading: "Gwalior Satta Result and Yearly Chart 2026",
       description:
-        "Welcome to A7 Satta King, where you can find the latest updates and information related to the number game. If you are looking for quick results, previous records, and updated charts, you are at the right place. We share the latest results and charts in a simple and easy-to-understand format, helping users check the information without any confusion. We aim to provide clear and useful updates for everyone.",
+        "Gwalior is an early afternoon game. On this page, you can check today's Gwalior Satta Result, the 2026 chart, and older records in one place, instead of searching across several pages.\n\nThe chart lists every date of the year. Below it, you will find the result time, how to check today's result, how to read the chart, how results are updated, and links to other games you may follow.",
     },
     {
-      heading: "Gwalior News and Today's Result",
+      heading: "Gwalior Satta Result Time and Today's Result",
       description: (
         <>
-          <p>
-            All look for rapid updates, and we ensure that the latest information gets shared when needed. After the update is available, today's result is added and can be checked while waiting for the update. The website is easy to use, and results and charts are easily found.
-          </p>
-          <p className="mt-3 font-semibold">Please see the latest update here:</p>
-          <ul className="list-disc list-inside mt-2 space-y-1">
-            <li>Today's Result: Chart page</li>
-            <li>Result Time: 2:20 PM</li>
-          </ul>
-          <p className="mt-3">
-            We know how important timely updates are, and we always strive to share with you as much information as we can, as quickly as possible.
-          </p>
+          <p className="mb-3">The Gwalior result is declared at 2:20 PM. Plan to check the page shortly after that time. You can see the day's result on this Gwalior page or in the <Link href="/" className="text-blue-600 underline">home page</Link> table, where all game results are listed.</p>
+          <p>If you open the page before 2:20 PM, today's result may not be added yet. Refresh the page after the result time to see the new entry.</p>
         </>
       ),
     },
     {
-      heading: "Gwalior Chart 2026",
-      description:
-        "The 2026 chart maintains an annual record of the numbers for each day. It enables users to easily review previous results and understand previous updates. For those who like to study old data, these charts can be a useful source of information.",
-    },
-    {
-      heading: "Why check the chart?",
+      heading: "Gwalior Result Time Compared With Other Games",
       description: (
         <>
-          <h3 className="font-semibold mb-2">Check Previous Trends:</h3>
-          <p className="mb-3">Old results can be viewed on the chart, and numbers can be seen as they change over time.</p>
-          <h3 className="font-semibold mb-2">Study Past Records:</h3>
-          <p className="mb-3">A large number of users review earlier records, in search of duplicate numbers and to learn about previous patterns.</p>
-          <h3 className="font-semibold mb-2">Easy-to-Read Records:</h3>
-          <p className="mb-3">The well-organized charts have the advantage of being easy to look at and compare information from the past.</p>
-          <p>A7 Satta King updates the yearly chart periodically with the latest information to maintain the clarity of records and ease of access.</p>
+          Gwalior comes shortly after <Link href="/sadar-bazar" className="text-blue-600 underline">Sadar Bazar</Link>, whose result is declared at 1:40 PM, and well before <Link href="/sialkot" className="text-blue-600 underline">Sialkot</Link>, which is declared at about 8:20 PM. If you follow several games, this gives you an idea of the order in which results appear during the day.
         </>
       ),
     },
     {
-      heading: "How the Gwalior System Works",
+      heading: "How to Check Gwalior Satta Result Today",
       description: (
         <>
-          <p className="mb-3">This is a lottery type game, but played with numbers. It has been played for many years and now it's available in a quick and convenient online format.</p>
-          <p className="mb-3">The users select numbers like a single digit, a pair or any other combination and wait for the official result. If the selected number is the same as the announced number, it will be regarded as a winning number.</p>
-          <p className="font-semibold mb-2">The work of a Result Processor:</p>
-          <ul className="list-disc list-inside space-y-2 mb-4">
-            <li><strong>Number Selection:</strong> Picks numbers in his/her own way, method, or preference.</li>
-            <li><strong>Result Draw:</strong> The result is read out at the fixed time, via the official process.</li>
-            <li><strong>Result Update:</strong> The new winning number is added to the site, making it easy for the users to check the new winning number.</li>
-            <li><strong>Chart Update:</strong> The output is also merged with the past results and graphed for reference.</li>
-          </ul>
-          <p className="mb-3">For this section, it's all about our focus: simple and clear information. We are dedicated to offering a seamless service and transparency:</p>
-          <ul className="list-disc list-inside space-y-2">
-            <li><strong>Experience:</strong> Users are able to readily access information thanks to regular updates and maintained records.</li>
-            <li><strong>Clear Information:</strong> Simple presentation of results, charts, and previous records.</li>
-            <li><strong>Accuracy:</strong> Information is correctly reviewed before updates are disseminated.</li>
-            <li><strong>Reliable Updates:</strong> Users are only added with available and confirmed information.</li>
-          </ul>
+          <ol className="list-decimal list-inside space-y-1">
+            <li>Open this page a few minutes after 2:20 PM.</li>
+            <li>Find today's date in the chart. Dates run down the left side.</li>
+            <li>Follow that row across to the column for the current month.</li>
+            <li>The number in that cell is today's Gwalior result.</li>
+          </ol>
+          <p className="mt-3">If the cell shows a wait icon, the result has not been added yet. Wait a few minutes and refresh the page. You can also check the table at <Link href="/" className="text-blue-600 underline">home page</Link>, which lists the day's results for all games.</p>
         </>
       ),
     },
     {
-      heading: "What You Get From Our Data",
-      description:
-        "Daily GWALIOR Satta Result:\nPlease refer to the updated numbers when they become available.\n\nComplete GWALIOR Satta Result Charts:\nSee the annual chart for 2026, including the complete history.\n\nPrevious Records:\nReview previous results to see trends and past numbers.\n\nEasy Access:\nThe website is easy to navigate from cell phones and desktops.",
-    },
-    {
-      heading: "Final Thoughts and Next Steps",
-      description:
-        "Need to view the 2026 results and charts? Check the GWALIOR Satta Result and record of A7 Satta King for the latest results. You can view previous records whenever needed, check the latest updates, and save the page for later reference.",
-    },
-    {
-      heading: "Stay Updated with Late Night Satta Games",
+      heading: "Why Check the Gwalior Chart?",
       description: (
         <>
-          For final updates of the day, users follow <Link href="/dehradun-city" className="text-blue-600 underline">Dehradun City Satta Result</Link> and <Link href="/daman" className="text-blue-600 underline">Daman Satta Result</Link>. Many also track <Link href="https://www.a7sattaking.co/disawar" className="text-blue-600 underline">
-              Disawar Satta Result
-            </Link> to complete the full-day result cycle.
+          <p className="mb-3">The 2026 chart is a record of the Gwalior results by date. Dates 1 to 31 run down the left side and the months run across the top. Each result sits where its date row meets its month column.</p>
+          <p className="mb-3">A wait icon means that date's result has not been added yet. This can be a date that has not happened yet, or a result that has not been added. Months at the start of the year may have fewer entries than the current month.</p>
+          <h3 className="mb-3"><span className="font-bold">Look Up a Specific Date:</span> Find what was declared on any date already recorded this year, including days you missed. This is useful when you want to confirm a result rather than rely on memory.</h3>
+          <h3 className="mb-3"><span className="font-bold">Compare Months:</span> Read across a row to compare the same date in different months, or read down a column to see one full month at a glance.</h3>
+          <h3 className="mb-3"><span className="font-bold">Keep a Record:</span> Older entries stay in place, so the year's record remains complete, and you can return to it at any time.</h3>
+          <p>The chart is a record of what was declared. It is not a prediction of future results, and earlier numbers do not show what the next result will be.</p>
+        </>
+      ),
+    },
+    {
+      heading: "How Gwalior Results Are Updated",
+      description: (
+        <>
+          <h3 className="mb-3"><span className="font-bold">Result Declared:</span> The Gwalior result is declared at 2:20 PM.</h3>
+          <h3 className="mb-3"><span className="font-bold">Result Added:</span> After it is declared, the result is added to this page and to the home page table.</h3>
+          <h3><span className="font-bold">Chart Updated:</span> The new result is added to the yearly chart, and older entries stay as they are. If you correct a result, the chart updates.</h3>
+        </>
+      ),
+    },
+    {
+      heading: "What You Can Find on This Page",
+      description: (
+        <>
+          <h3 className="mb-3"><span className="font-bold">Daily Gwalior Satta Result:</span> Today's result, added after 2:20 PM.</h3>
+          <h3 className="mb-3"><span className="font-bold">Gwalior Satta Chart 2026:</span> The yearly chart with every recorded date.</h3>
+          <h3 className="mb-3"><span className="font-bold">Previous Records:</span> Earlier results so that you can review past dates.</h3>
+          <h3><span className="font-bold">Mobile and Desktop:</span> The page works on phones and desktops, and the chart scrolls sideways on smaller screens.</h3>
+        </>
+      ),
+    },
+    {
+      heading: "More Satta Game Results",
+      description: (
+        <>
+          Along with Gwalior, users on A7 Satta King also check <Link href="/sadar-bazar" className="text-blue-600 underline">Sadar Bazar Satta Result</Link>, <Link href="/gali" className="text-blue-600 underline">Gali Satta Result</Link>, <Link href="/delhi-bazar" className="text-blue-600 underline">Delhi Bazar Satta Result</Link>, and <Link href="/gaziabad" className="text-blue-600 underline">Ghaziabad Satta Result</Link>. Each game has its own page with its own result time and yearly chart.
         </>
       ),
     },
     {
       heading: "Quick Disclaimer",
       description:
-        "A7 Satta King does not share all results and details of charts for anything but general information and reference. This activity is designed to be played on a random basis, and we are not encouraging people to play; we cannot guarantee outcomes or provide any gaming advice in relation to the game. Users must abide by local rules and regulations. The information on this site is for the user's use at their own risk.",
+        "This page is for information only. We do not promote or support betting or gambling, and we do not give gaming advice or guarantee any outcome. Follow the laws that apply where you live. We are not responsible for any loss arising from the use of this information.",
     },
   ];
 
   // Accordion FAQs - styled like FAQSection
   const faqItems = [
     {
-      question: "What is Gwalior Satta?",
-      answer:
-        "Gwalior Satta is a number-based game where users check results, charts, and previous records related to Gwalior results.",
+      question: "What time is the Gwalior result declared?",
+      answer: "The Gwalior result is declared at 2:20 PM.",
     },
     {
-      question: "How can I check Gwalior Satta results?",
+      question: "Where can I check today's Gwalior result?",
       answer:
-        "You can check the latest Gwalior Satta results by visiting the result page where updates and charts are available.",
+        "On this page, in the chart in the cell for today's date, or in the home page table.",
     },
     {
-      question: "Are old Gwalior Satta charts available?",
+      question: "Why does today's cell show a wait icon?",
       answer:
-        "Yes, previous charts and old result records can be viewed to check past numbers and updates.",
+        "A wait icon means that date's result has not been added yet. Check again after 2:20 PM.",
     },
     {
-      question: "When are Gwalior Satta results updated?",
-      answer:
-        "Results are updated after the latest information is available on the website.",
+      question: "Can I see old Gwalior results?",
+      answer: "Yes. Earlier dates stay in the yearly chart on this page.",
     },
     {
-      question: "Can I check Gwalior Satta results on mobile?",
+      question: "How do I read the Gwalior chart?",
       answer:
-        "Yes, the website can be opened on mobile phones, making it easy to check results anytime.",
+        "Dates run down the left and months run across the top. A result sits where its date row meets its month column.",
     },
     {
-      question: "Why do users check Gwalior Satta charts?",
-      answer:
-        "Many users view charts to look at previous records and understand past result information.",
+      question: "Is the Gwalior Satta Result declared before or after Sadar Bazar?",
+      answer: "After. Sadar Bazar is declared at 1:40 PM and Gwalior at 2:20 PM.",
     },
     {
-      question: "Is Gwalior Satta result information available for free?",
+      question: "Can I check Gwalior results on my phone?",
+      answer: "Yes. The page works on mobile phones and desktops.",
+    },
+    {
+      question: "Can past results predict the next Gwalior result?",
       answer:
-        "Yes, result updates and chart information can be accessed online without any charge.",
+        "No. The chart is a record of what was declared and should not be treated as a prediction.",
     },
   ];
   const faqSchema = {
