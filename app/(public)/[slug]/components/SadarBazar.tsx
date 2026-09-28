@@ -111,10 +111,10 @@ export default function SadarBazar() {
             question: "What time is the Sadar Bazar satta result declared?",
             answer: "The result is declared at 1:40 PM.",
         },
-        {
-            question: "Is Sadar Bazar a night game?",
-            answer: "Yes. Its result comes out after midnight, at 1:40 PM.",
-        },
+        // {
+        //     question: "Is Sadar Bazar a night game?",
+        //     answer: "Yes. Its result comes out after midnight, at 1:40 PM.",
+        // },
         {
             question: "Where can I check today's Sadar Bazar result?",
             answer:
