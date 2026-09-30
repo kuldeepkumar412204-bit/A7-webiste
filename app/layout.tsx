@@ -69,11 +69,12 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
     >
-  
+      <head>
+
       </head>
       <body className="min-h-full flex flex-col bg-slate-950 text-slate-100 selection:bg-indigo-500 selection:text-white">
 
-       {/* Load Google Analytics */}
+        {/* Load Google Analytics */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=G-3KLXLCKFNV`}
           strategy="afterInteractive"
