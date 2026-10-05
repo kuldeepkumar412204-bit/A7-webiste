@@ -3,10 +3,11 @@
 import { fetchKhaiwal } from "@/app/lib/results";
 import { useQuery } from "@tanstack/react-query";
 
-export default function KhaiwalGrid() {
+export default function KhaiwalGrid({ initialData }: { initialData?: any[] }) {
   const { data: khaiwalData = [], isLoading: apiIsLoading, error: apiError } = useQuery({
     queryKey: ["khaiwal-api", "khaiwal-api"],
     queryFn: fetchKhaiwal,
+    initialData, // server-rendered data (SEO)
     staleTime: 1000 * 60 * 5, // 5 minutes
   });
 

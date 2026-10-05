@@ -1,13 +1,14 @@
 'use client';
-import { fetchContact } from "@/app/lib/contact";
+import { fetchContact, type ContactData } from "@/app/lib/contact";
 import { useQuery } from "@tanstack/react-query";
 import WhatsAppButton from "../Global/WhatsppBtn";
 import TelegramButton from "../Global/TelegramButton";
 
-export default function CTA(){
+export default function CTA({ initialData }: { initialData?: ContactData }){
     const { data } = useQuery({
         queryKey: ["contact", "A79PYR47"],
         queryFn:  () => fetchContact("A79PYR47"),
+        initialData, // server-rendered data (SEO)
         staleTime: 1000 * 60 * 5, // 5 minutes
       });
     return (

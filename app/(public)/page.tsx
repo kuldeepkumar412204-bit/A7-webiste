@@ -10,6 +10,17 @@ import WeeklyResultsSection from "./Components/Home/WeeklyResultsSection";
 import CTA from "./Components/Home/CTA";
 
 import type { Metadata } from "next";
+import {
+  getDailyData,
+  getMonthlyData,
+  getSattaGames,
+  getKhaiwals,
+  getContact,
+} from "@/app/lib/homeData";
+import { buildLiveStatus, type LiveStatusState } from "@/app/lib/liveStatus";
+
+// Results change through the day, so render on every request (data is in the HTML for SEO)
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "A7 Satta King | Satta Charts, Matka Result & Updates",
@@ -47,26 +58,37 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Home() {
+export default async function Home() {
+  const [dailyData, monthlyData, sattaGames, khaiwals, communityContact, ctaContact] =
+    await Promise.all([
+      getDailyData(),
+      getMonthlyData(),
+      getSattaGames(),
+      getKhaiwals(),
+      getContact("A7CHAN0ANI"),
+      getContact("A79PYR47"),
+    ]);
 
-
-  const handleRefresh = () => {
-    window.location.reload();
-  };
+  let liveState: LiveStatusState | undefined;
+  try {
+    liveState = dailyData ? buildLiveStatus(dailyData) : undefined;
+  } catch {
+    liveState = undefined; // client poller will fill it in
+  }
 
   return (
     <div className="flex flex-col min-h-screen bg-white text-black selection:bg-[#ffd200] selection:text-black">
 
       {/* 3. LIVE STATUS BLOCK (Black background) */}
-      <LiveStatus />
+      <LiveStatus initialState={liveState} />
 
-      <CommunityLinks />
+      <CommunityLinks initialData={communityContact} />
 
-      <KhaiwalGrid />
+      <KhaiwalGrid initialData={khaiwals} />
 
-      <SattaResultTable />
+      <SattaResultTable initialData={dailyData} />
 
-      <CTA />
+      <CTA initialData={ctaContact} />
       <main className="mx-auto mt-[5px] flex-grow w-full flex flex-col gap-10">
 
         {/* 8. DOUBLE HISTORIC RESULT CHART GRID */}
@@ -82,9 +104,9 @@ export default function Home() {
             </div>
 
           </div>
-          <SattaChartSearch />
+          <SattaChartSearch initialGames={sattaGames} />
 
-          <WeeklyResultsSection />
+          <WeeklyResultsSection initialData={monthlyData} />
 
         </section>
         {/* 9. SEO TEXT WITH SOLID YELLOW HEADER */}

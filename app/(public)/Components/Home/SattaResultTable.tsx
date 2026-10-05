@@ -53,10 +53,11 @@ const checkHasTimePassed = (time?: string): boolean => {
   return currentMinutes >= targetMinutes;
 };
 
-export default function SattaResultTable() {
+export default function SattaResultTable({ initialData }: { initialData?: any[] }) {
   const { data: satta = [] } = useQuery({
     queryKey: ["satta", "daily"],
     queryFn: fetchDailyData,
+    initialData, // server-rendered data (SEO); still polls every 30s
     staleTime: 0,
     refetchInterval: 30 * 1000,
   });

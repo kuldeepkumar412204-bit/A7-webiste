@@ -1,6 +1,6 @@
 'use client';
 
-import { fetchContact } from "@/app/lib/contact";
+import { fetchContact, type ContactData } from "@/app/lib/contact";
 import { useQuery } from "@tanstack/react-query";
 import React from "react";
 import { FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
@@ -8,10 +8,11 @@ import WhatsAppButton from "../Global/WhatsppBtn";
 import TelegramButton from "../Global/TelegramButton";
 
 
-export default function CommunityLinks() {
+export default function CommunityLinks({ initialData }: { initialData?: ContactData }) {
    const { data } = useQuery({
     queryKey: ["contact", "A7CHAN0ANI"],
     queryFn:  () => fetchContact("A7CHAN0ANI"),
+    initialData, // server-rendered data (SEO)
     staleTime: 1000 * 60 * 5, // 5 minutes
   });
   console.log(data)

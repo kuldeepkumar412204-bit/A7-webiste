@@ -1,4 +1,4 @@
-interface ContactData {
+export interface ContactData {
   _id: string;
   referenceId: string;
   name: string;

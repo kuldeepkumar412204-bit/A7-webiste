@@ -26,7 +26,7 @@ const fetchMonthlyResults = async (): Promise<MonthlyGameRow[]> => {
   return json.data;
 };
 
-export default function MonthlyResultsSection() {
+export default function MonthlyResultsSection({ initialData }: { initialData?: MonthlyGameRow[] }) {
   // Determine date metrics for labels
   const currentISTDate = new Date(new Date().toLocaleString("en-US", { timeZone: "Asia/Kolkata" }));
   const selectedMonth = currentISTDate.toLocaleString("en-US", { month: "long" });
@@ -37,6 +37,7 @@ export default function MonthlyResultsSection() {
   const { data: allGames = [], isLoading, isError, error } = useQuery<MonthlyGameRow[]>({
     queryKey: ["monthlyResults"],
     queryFn: fetchMonthlyResults,
+    initialData, // server-rendered data (SEO)
     staleTime: 1000 * 60 * 5, // Keep data fresh for 5 minutes
   });
 

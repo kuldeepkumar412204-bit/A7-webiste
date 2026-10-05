@@ -1,11 +1,11 @@
 'use client';
 import React, { useCallback, useEffect, useState } from "react";
 
-export default function SattaChartSearch() {
+export default function SattaChartSearch({ initialGames }: { initialGames?: any[] }) {
   const [selectedGame, setSelectedGame] = useState("DAMAN");
   const [selectedYear, setSelectedYear] = useState("2026");
 
-    const [games, setGames] = useState<any[]>([]);
+    const [games, setGames] = useState<any[]>(initialGames ?? []);
     const [loading, setLoading] = useState(false);
 
 
@@ -23,8 +23,9 @@ export default function SattaChartSearch() {
     }, []);
   
     useEffect(() => {
-      fetchGames();
-    }, [fetchGames]);
+      // Already rendered on the server; only fetch if SSR data is missing
+      if (!initialGames) fetchGames();
+    }, [fetchGames, initialGames]);
 
   const handleSearchSubmit = (e: React.FormEvent) => {
     e.preventDefault();

@@ -1,61 +1,14 @@
 'use client';
 
-import { GameRow } from "@/app/lib/satta";
+import { buildLiveStatus, type GameLiveStatus, type LiveStatusState } from "@/app/lib/liveStatus";
 import Image from "next/image";
 import { useEffect, useState, useCallback } from "react";
 
-interface GameLiveStatus {
-  _id: string;
-  name: string;
-  today: string;
-  time: string;
-  minutes: number;
-  isUpcoming?: boolean;
-
-}
-
-// Convert "1:40 PM" to minutes past midnight
-// Convert time strings (e.g., "1:40 PM", "12:40pm", "2 PM") to minutes past midnight
-const parseTimeToMinutes = (timeStr: string): number => {
-  if (!timeStr) return 0;
-
-  // Clean string and standardize casing
-  const cleanTime = timeStr.trim().toUpperCase().replace(/\s+/g, " ");
-  const isPM = cleanTime.includes("PM");
-  const isAM = cleanTime.includes("AM");
-
-  // Extract digits and split into hours and minutes
-  const numericPart = cleanTime.replace(/[^0-9:]/g, "").trim();
-  const parts = numericPart.split(":");
-
-  let hours = parseInt(parts[0], 10) || 0;
-  let minutes = parts[1] ? parseInt(parts[1], 10) || 0 : 0;
-
-  // 12-hour clock conversion
-  if (isPM && hours < 12) hours += 12;
-  if (isAM && hours === 12) hours = 0;
-
-  return hours * 60 + minutes;
-};
-
-// Add near parseTimeToMinutes
-const getISTMinutesNow = (): number => {
-  const parts = new Intl.DateTimeFormat("en-US", {
-    timeZone: "Asia/Kolkata",
-    hour: "2-digit",
-    minute: "2-digit",
-    hour12: false,
-  }).formatToParts(new Date());
-
-  const hour = parseInt(parts.find(p => p.type === "hour")?.value || "0", 10);
-  const minute = parseInt(parts.find(p => p.type === "minute")?.value || "0", 10);
-  return hour * 60 + minute;
-};
-
-export default function LiveStatus() {
+export default function LiveStatus({ initialState }: { initialState?: LiveStatusState }) {
   const [currentTime, setCurrentTime] = useState("");
-  const [latestGames, setLatestGames] = useState<GameLiveStatus[]>([]);
-  const [disawarResult, setDisawarResult] = useState();
+  // Seeded from the server render (SEO); polling below keeps it live
+  const [latestGames, setLatestGames] = useState<GameLiveStatus[]>(initialState?.latestGames ?? []);
+  const [disawarResult, setDisawarResult] = useState(initialState?.disawarResult);
   // Live Clock Display
   // Replace the clock useEffect to force IST instead of local browser tz
   useEffect(() => {
@@ -92,44 +45,9 @@ export default function LiveStatus() {
       const responseData = await res.json();
       const rawData = responseData.data || responseData;
 
-      setDisawarResult(rawData.find((item:any)=>item.game==="disawer").result);
-      // console.log("disawarResult", rawData.find((item:any)=>item.game==="disawer").result);
-
-      if (Array.isArray(rawData)) {
-        // 1. Process all items
-        const processedGames = rawData.map((item: any) => {
-          const gameTime = item.time;
-          const gameMinutes = parseTimeToMinutes(gameTime);
-          const results = Array.isArray(item.result) ? item.result : [];
-          const today = results[1] && results[1] !== "WAIT" && results[1] !== "--" ? results[1] : "--";
-
-          // in the map inside processedGames:
-          return {
-            _id: item._id || item.game,
-            name: (item.game || item.name || "").toUpperCase(),
-            today,
-            time: gameTime,
-            minutes: gameMinutes,
-          };
-        });
-
-        // In fetchLiveGames, replace steps 2-3:
-        const nowMinutes = getISTMinutesNow();
-
-        // Games due within the next 10 minutes, not yet resulted
-        const upcomingGames = processedGames.filter(
-          (g) => g.minutes > nowMinutes && g.minutes <= nowMinutes + 10
-        );
-
-        if (upcomingGames.length > 0) {
-          upcomingGames.sort((a, b) => a.minutes - b.minutes);
-          setLatestGames(upcomingGames.slice(0, 2).map((g) => ({ ...g, isUpcoming: true })));
-        } else {
-          const pastGames = processedGames.filter((g) => g.minutes <= nowMinutes);
-          pastGames.sort((a, b) => b.minutes - a.minutes);
-          setLatestGames(pastGames.slice(0, 2).map((g) => ({ ...g, isUpcoming: false })));
-        }
-      }
+      const live = buildLiveStatus(rawData);
+      setDisawarResult(live.disawarResult);
+      setLatestGames(live.latestGames);
     } catch (err) {
       console.error("API error:", err);
     }
