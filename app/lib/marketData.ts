@@ -3,7 +3,13 @@
 import { connectDB } from "@/app/lib/mongodb";
 import Satta from "@/app/models/Satta";
 import Result from "@/app/models/Results";
-import { getISTMidnightUTC, getISTDateLabels, utcToISTDateLabel } from "@/app/lib/ist";
+import {
+  getISTMidnightUTC,
+  getISTDateLabels,
+  utcToISTDateLabel,
+  getISTYearBoundsUTC,
+  MONTHS,
+} from "@/app/lib/ist";
 
 // ─── Shared helpers ────────────────────────────────────────────────────────────
 
@@ -184,4 +190,91 @@ export async function buildMonthlyData(games: any[]) {
       }),
     };
   });
+}
+
+// ─── Yearly ───────────────────────────────────────────────────────────────────
+export async function buildYearlyData(games: any[], year: number) {
+  const { start, end } = getISTYearBoundsUTC(year);
+
+  const rows = await Result.find({
+    drawDate: { $gte: start, $lte: end },
+    status: "published",
+  })
+    .select("sattaId drawDate result")
+    .lean();
+
+  const byGame = new Map<string, Record<string, Record<number, string>>>();
+
+  games.forEach((game) => {
+    const id = game._id.toString();
+    const initialMonths: Record<string, Record<number, string>> = {};
+    MONTHS.forEach((mName) => {
+      initialMonths[mName] = {};
+      for (let day = 1; day <= 31; day++) {
+        initialMonths[mName][day] = "-";
+      }
+    });
+    byGame.set(id, initialMonths);
+  });
+
+  for (const r of rows) {
+    const id = r.sattaId.toString();
+    const gameEntry = byGame.get(id);
+    if (!gameEntry) continue;
+
+    const istDate = new Date(r.drawDate.getTime() + 5.5 * 60 * 60 * 1000);
+    const monthName = MONTHS[istDate.getUTCMonth()];
+    const day = istDate.getUTCDate();
+
+    if (gameEntry[monthName]) {
+      gameEntry[monthName][day] = r.result;
+    }
+  }
+
+  const nowIST = new Date(
+    new Date().toLocaleString("en-US", { timeZone: "Asia/Kolkata" })
+  );
+
+  const currentYear = nowIST.getFullYear();
+  const currentMonthIdx = nowIST.getMonth();
+  const currentMonthName = MONTHS[currentMonthIdx];
+  const currentDay = nowIST.getDate();
+
+  const data = games.map((game) => {
+    const id = game._id.toString();
+    const months = byGame.get(id)!;
+
+    if (year === currentYear) {
+      if (!hasResultTimePassed(game.resultTime)) {
+        if (months[currentMonthName]) {
+          months[currentMonthName][currentDay] = "-";
+        }
+      }
+
+      for (let d = currentDay + 1; d <= 31; d++) {
+        if (months[currentMonthName]) {
+          months[currentMonthName][d] = "-";
+        }
+      }
+
+      for (let mIdx = currentMonthIdx + 1; mIdx < 12; mIdx++) {
+        const futureMonthName = MONTHS[mIdx];
+        for (let d = 1; d <= 31; d++) {
+          if (months[futureMonthName]) {
+            months[futureMonthName][d] = "-";
+          }
+        }
+      }
+    }
+
+    return {
+      game: game.name,
+      slug: game.slug,
+      time: formatTime12(game.resultTime),
+      year,
+      months,
+    };
+  });
+
+  return data;
 }

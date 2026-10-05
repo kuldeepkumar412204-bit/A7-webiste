@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
 import SattaChartLinksGrid from "./SattaChartLinksGrid";
+import { getDailyData } from "@/app/lib/homeData";
+
+// Render per request so the chart links (active games) are in the HTML for SEO
+export const dynamic = "force-dynamic";
 
 const SITE_URL = process.env.SITE_URL || "https://www.a7sattaking.co";
 
@@ -72,6 +76,7 @@ export const metadata: Metadata = {
   category: "Entertainment",
 };
 
-export default function ChartPage() {
-  return <SattaChartLinksGrid />;
+export default async function ChartPage() {
+  const dailyData = await getDailyData();
+  return <SattaChartLinksGrid initialData={dailyData} />;
 }

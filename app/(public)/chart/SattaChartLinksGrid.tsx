@@ -4,7 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 import Link from "next/link";
 import React from "react";
 
-export default function SattaChartLinksGrid() {
+export default function SattaChartLinksGrid({ initialData }: { initialData?: any[] }) {
   const charts = [
     { name: "DAMAN SATTA KING CHART 2026", isActive: false },
     { name: "KAROL BAGH SATTA KING CHART 2026", isActive: false },
@@ -46,6 +46,7 @@ export default function SattaChartLinksGrid() {
   } = useQuery({
     queryKey: ["satta", "daily"],
     queryFn: fetchDailyData,
+    initialData, // server-rendered data (SEO)
     staleTime: 1000 * 60 * 5, // 5 minutes
   });
 

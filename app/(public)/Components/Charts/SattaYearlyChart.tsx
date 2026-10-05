@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { useParams, useSearchParams, useRouter } from "next/navigation";
-import { fetchAllYearlyData } from "@/app/lib/satta";
+import { fetchAllYearlyData, type AllYearlyDataResponse } from "@/app/lib/satta";
 
 interface ChartRow {
   day: number;
@@ -21,7 +21,7 @@ interface ChartRow {
   dec: string;
 }
 
-export default function SattaYearlyChart() {
+export default function SattaYearlyChart({ initialData }: { initialData?: AllYearlyDataResponse }) {
   const params = useParams();
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -54,6 +54,8 @@ export default function SattaYearlyChart() {
   const { data: responseData, isLoading, error } = useQuery({
     queryKey: ["allYearlyData", selectedYear],
     queryFn: () => fetchAllYearlyData(selectedYear),
+    // Server-rendered data (SEO), only for the year it was rendered for
+    initialData: initialData?.year === selectedYear ? initialData : undefined,
     refetchInterval: 30000, // Auto refresh every 30 seconds
     staleTime: 10000,       // Cache fresh time 10 seconds
   });

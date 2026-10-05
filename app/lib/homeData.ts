@@ -1,4 +1,4 @@
-// Server-side data loaders for the home page (SSR for SEO).
+// Server-side data loaders for public pages (SSR for SEO).
 // Each loader returns the same JSON shape as its API route, or undefined on
 // failure so the client components fall back to fetching it themselves.
 
@@ -12,11 +12,13 @@ import {
   getSortedActiveGames,
   buildDailyData,
   buildMonthlyData,
+  buildYearlyData,
 } from "@/app/lib/marketData";
 import type { ContactData } from "@/app/lib/contact";
+import type { AllYearlyDataResponse } from "@/app/lib/satta";
 import type { MonthlyGameRow } from "@/app/(public)/Components/Home/WeeklyResultsSection";
 
-// One games query per request, shared by the daily + monthly loaders
+// One games query per request, shared by the daily/monthly/yearly loaders
 const getGames = cache(getSortedActiveGames);
 
 // Mongo docs (ObjectId, Date) -> plain JSON, exactly like the API response
@@ -43,6 +45,15 @@ export const getMonthlyData = () =>
   safe<MonthlyGameRow[]>("monthly", async () => {
     const { sortedGames } = await getGames();
     return buildMonthlyData(sortedGames);
+  });
+
+// GET /api/data?range=yearly&year=YYYY (full response, as the client caches it)
+export const getAllYearlyData = (year: number) =>
+  safe<AllYearlyDataResponse>("yearly", async () => {
+    if (isNaN(year) || year < 2000 || year > 2100) throw new Error("Invalid year");
+    const { games } = await getGames();
+    const data = games.length === 0 ? [] : await buildYearlyData(games, year);
+    return { success: true, range: "yearly", year, data };
   });
 
 // GET /api/satta

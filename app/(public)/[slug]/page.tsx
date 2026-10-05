@@ -3,6 +3,7 @@ import type { ComponentType } from "react";
 import SattaYearlyChart from "../Components/Charts/SattaYearlyChart";
 import { connectDB } from "@/app/lib/mongodb";
 import Satta from "@/app/models/Satta";
+import { getAllYearlyData } from "@/app/lib/homeData";
 import SadarBazar, {
   metadata as sadarBazarMetadata,
 } from "./components/SadarBazar";
@@ -61,6 +62,7 @@ const componentMetadataMap: Record<string, Metadata> = {
 
 interface PageProps {
   params: Promise<{ slug: string }>;
+  searchParams: Promise<{ year?: string | string[] }>;
 }
 
 const SITE_URL = process.env.SITE_URL || "https://www.a7sattaking.co"; // Default value if not set
@@ -203,8 +205,9 @@ export async function generateMetadata({
   };
 }
 
-export default async function page({ params }: PageProps) {
+export default async function page({ params, searchParams }: PageProps) {
   const { slug } = await params;
+  const { year: yearParam } = await searchParams;
   const slugKey = String(slug).toLowerCase().trim();
 
   // The chart is the page — without a backing game there is nothing to show,
@@ -216,6 +219,11 @@ export default async function page({ params }: PageProps) {
   const Component = componentMap[slugKey];
   const market = staticMarkets[slugKey];
 
+  // Same year the chart picks (?year=, else current year), rendered on the server for SEO
+  const yearQuery = Array.isArray(yearParam) ? yearParam[0] : yearParam;
+  const year = yearQuery ? parseInt(yearQuery, 10) : new Date().getFullYear();
+  const yearlyData = await getAllYearlyData(year);
+
   return (
     <Suspense
       fallback={
@@ -225,7 +233,7 @@ export default async function page({ params }: PageProps) {
         </div>
       }
     >
-      <SattaYearlyChart />
+      <SattaYearlyChart initialData={yearlyData} />
       {Component ? (
         <Component />
       ) : market ? (
