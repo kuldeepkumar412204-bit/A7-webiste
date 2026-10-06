@@ -2,6 +2,8 @@ import React from "react";
 import { Metadata } from "next";
 import FAQSection from "./FAQSection";
 import Link from "next/link";
+import type { LatestResult } from "@/app/lib/homeData";
+import { formatDrawDate } from "./formatDrawDate";
 
 export const metadata: Metadata = {
     title: "Sadar Bazar Satta Result 2026 Today | Chart & Updates",
@@ -42,7 +44,10 @@ interface InfoSection {
 
 
 
-export default function SadarBazar() {
+export default function SadarBazar({ latest }: { latest?: LatestResult | null }) {
+    const latestText = latest
+        ? `Last chart update: ${formatDrawDate(latest.drawDate)}, ${latest.time} IST\nLatest available result: ${latest.result} (${formatDrawDate(latest.drawDate)})\nStatus: ${latest.isToday ? "Updated" : "Waiting for today's result"}`
+        : "Latest available result: Not available yet\nStatus: Waiting for result";
 
     // Main Content Blocks - styled like FAQSection
     const infoSections: InfoSection[] = [
@@ -50,6 +55,10 @@ export default function SadarBazar() {
             heading: "Sadar Bazar Satta Results and Yearly Chart",
             description:
                 "Sadar Bazar is a daily game, and its result is declared in the early afternoon at 1:40 PM. A new Sadar Bazar Satta Result is added to this page every day, so you can check today's result, the 2026 chart, and older records in one place instead of searching across several pages.\n\nThe chart at the top of the page lists every date of the year. Below it, you will find the result time, how to read the chart, how to look up past results, and links to other games you may follow.",
+        },
+        {
+            heading: "Latest Sadar Bazar Result",
+            description: latestText,
         },
         {
             heading: "Sadar Bazar Result Time",
@@ -64,6 +73,11 @@ export default function SadarBazar() {
             heading: "How to Check Sadar Bazar Satta Result Today?",
             description:
                 "Open this page and find today's date in the chart. Look along the row for that date to the column for the current month. The number in that cell is today's result. If the cell shows a wait icon, that date's result has not been added yet, so check again after 1:40 PM.",
+        },
+        {
+            heading: "About This Sadar Bazar Chart",
+            description:
+                "The Sadar Bazar chart provides a year-wise record of Sadar Bazar results in one place. It is organized by date and month, making it easier to find a result for a specific day or compare results across different months. The chart is updated as new results are added, while previous entries remain available for checking historical records. You can use the chart to view today's available result, check results from earlier dates, and review the yearly Sadar Bazar result history without searching through separate pages.",
         },
         {
             heading: "How to Read the Sadar Bazar Satta Chart 2026?",
@@ -111,10 +125,10 @@ export default function SadarBazar() {
             question: "What time is the Sadar Bazar satta result declared?",
             answer: "The result is declared at 1:40 PM.",
         },
-        // {
-        //     question: "Is Sadar Bazar a night game?",
-        //     answer: "Yes. Its result comes out after midnight, at 1:40 PM.",
-        // },
+        {
+            question: "Is Sadar Bazar a night game?",
+            answer: "No. The Sadar Bazar result is declared in the afternoon at 1:40 PM.",
+        },
         {
             question: "Where can I check today's Sadar Bazar result?",
             answer:

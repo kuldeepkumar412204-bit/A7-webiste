@@ -1,5 +1,7 @@
 import FAQSection from "./FAQSection";
 import Link from "next/link";
+import type { LatestResult } from "@/app/lib/homeData";
+import { formatDrawDate } from "./formatDrawDate";
 
 import type { Metadata } from "next";
 
@@ -34,13 +36,19 @@ export const metadata: Metadata = {
     },
 };
 
-export default function ShriGanesh() {
+export default function ShriGanesh({ latest }: { latest?: LatestResult | null }) {
 
     const infoSections = [
         {
             heading: "Shri Ganesh Satta Result and Chart 2026",
             description:
-                "This page carries today's number and the 2026 chart, along with a guide to where Shri Ganesh sits in the day's timetable, so you know when to check and which result comes next.\n\nIf you follow more than one game on A7 Satta King, the timing matters as much as the number. The sections below show what is declared just before Shri Ganesh, what follows it, and how to look up a result from an earlier date.",
+                "Check today's Shri Ganesh result and the 2026 yearly chart in one place. This page also shows where Shri Ganesh falls in the day's timetable, including the results immediately before and after it, so you can quickly find the result you are looking for.\n\nIf you follow more than one game on A7 Satta King, the timing matters as much as the number. The sections below show what is declared just before Shri Ganesh, what follows it, and how to look up a result from an earlier date.",
+        },
+        {
+            heading: "Latest Shri Ganesh Satta Result",
+            description: latest
+                ? `Last chart update: ${formatDrawDate(latest.drawDate)}, ${latest.time} IST\nLatest available result: ${latest.result} (${formatDrawDate(latest.drawDate)})\nStatus: ${latest.isToday ? "Updated" : "Waiting for today's result"}`
+                : "Latest available result: Not available yet\nStatus: Waiting for result",
         },
         {
             heading: "Shri Ganesh Result Time: 4:45 PM",

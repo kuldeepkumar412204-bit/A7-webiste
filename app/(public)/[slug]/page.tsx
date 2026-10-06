@@ -3,7 +3,7 @@ import type { ComponentType } from "react";
 import SattaYearlyChart from "../Components/Charts/SattaYearlyChart";
 import { connectDB } from "@/app/lib/mongodb";
 import Satta from "@/app/models/Satta";
-import { getAllYearlyData } from "@/app/lib/homeData";
+import { getAllYearlyData, getLatestResult, type LatestResult } from "@/app/lib/homeData";
 import SadarBazar, {
   metadata as sadarBazarMetadata,
 } from "./components/SadarBazar";
@@ -32,7 +32,7 @@ import { Metadata } from "next";
 import StaticMarketPage from "./components/StaticMarketPage";
 import { notFound } from "next/navigation";
 
-const componentMap: Record<string, ComponentType> = {
+const componentMap: Record<string, ComponentType<{ latest?: LatestResult | null }>> = {
   "sadar-bazar": SadarBazar,
   gwalior: Gwalior,
   "delhi-bazar": DelhiBazar,
@@ -222,7 +222,10 @@ export default async function page({ params, searchParams }: PageProps) {
   // Same year the chart picks (?year=, else current year), rendered on the server for SEO
   const yearQuery = Array.isArray(yearParam) ? yearParam[0] : yearParam;
   const year = yearQuery ? parseInt(yearQuery, 10) : new Date().getFullYear();
-  const yearlyData = await getAllYearlyData(year);
+  const [yearlyData, latest] = await Promise.all([
+    getAllYearlyData(year),
+    Component ? getLatestResult(slugKey) : undefined,
+  ]);
 
   return (
     <Suspense
@@ -235,7 +238,7 @@ export default async function page({ params, searchParams }: PageProps) {
     >
       <SattaYearlyChart initialData={yearlyData} />
       {Component ? (
-        <Component />
+        <Component latest={latest} />
       ) : market ? (
         <StaticMarketPage market={market} />
       ) : null}

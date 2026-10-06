@@ -1,6 +1,8 @@
 import { NextPage } from 'next'
 import FAQSection from './FAQSection';
 import Link from "next/link";
+import type { LatestResult } from "@/app/lib/homeData";
+import { formatDrawDate } from "./formatDrawDate";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -36,16 +38,22 @@ export const metadata: Metadata = {
 };
 
 interface Props {
-
+    latest?: LatestResult | null;
 }
 
-const Alwar: NextPage<Props> = ({ }) => {
+const Alwar: NextPage<Props> = ({ latest }) => {
     
     const infoSections = [
         {
             heading: "Alwar Satta Result Today and 2026 Chart",
             description:
                 "This page carries today's Alwar number and the 2026 chart. Alwar falls in the busiest part of the evening timetable, so this page also shows the three other results declared in the same 20 minutes, in case you're checking more than one.",
+        },
+        {
+            heading: "New Alwar Satta Result",
+            description: latest
+                ? `Last chart update: ${formatDrawDate(latest.drawDate)}, ${latest.time} IST\nLatest available result: ${latest.result} (${formatDrawDate(latest.drawDate)})\nStatus: ${latest.isToday ? "Updated" : "Waiting for today's result"}`
+                : "Latest available result: Not available yet\nStatus: Waiting for result",
         },
         {
             heading: "Alwar Satta Result Time: 7:35 PM",

@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import FAQSection from "./FAQSection";
+import type { LatestResult } from "@/app/lib/homeData";
+import { formatDrawDate } from "./formatDrawDate";
 
 export const metadata: Metadata = {
   title: "Gwalior Satta Result 2026 Today | Chart & Daily Updates",
@@ -40,7 +42,7 @@ interface InfoSection {
 }
 
 
-export default function Gwalior() {
+export default function Gwalior({ latest }: { latest?: LatestResult | null }) {
 
   // Main Content Blocks - styled like FAQSection
   const infoSections: InfoSection[] = [
@@ -48,6 +50,12 @@ export default function Gwalior() {
       heading: "Gwalior Satta Result and Yearly Chart 2026",
       description:
         "Gwalior is an early afternoon game. On this page, you can check today's Gwalior Satta Result, the 2026 chart, and older records in one place, instead of searching across several pages.\n\nThe chart lists every date of the year. Below it, you will find the result time, how to check today's result, how to read the chart, how results are updated, and links to other games you may follow.",
+    },
+    {
+      heading: "Latest Gwalior Satta Result",
+      description: latest
+        ? `Last chart update: ${formatDrawDate(latest.drawDate)}, ${latest.time} IST\nLatest available result: ${latest.result} (${formatDrawDate(latest.drawDate)})\nStatus: ${latest.isToday ? "Updated" : "Waiting for today's result"}`
+        : "Latest available result: Not available yet\nStatus: Waiting for result",
     },
     {
       heading: "Gwalior Satta Result Time and Today's Result",

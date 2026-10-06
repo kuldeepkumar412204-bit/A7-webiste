@@ -1,5 +1,7 @@
 import FAQSection from "./FAQSection";
 import Link from "next/link";
+import type { LatestResult } from "@/app/lib/homeData";
+import { formatDrawDate } from "./formatDrawDate";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -29,7 +31,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Gahaziabad() {
+export default function Gahaziabad({ latest }: { latest?: LatestResult | null }) {
   const infoSections = [
     {
       heading: "Gaziabad Satta Result Today and 2026 Chart",
@@ -40,6 +42,12 @@ export default function Gahaziabad() {
           </p>
         </>
       ),
+    },
+    {
+      heading: "Latest Gaziabad Satta Result",
+      description: latest
+        ? `Last chart update: ${formatDrawDate(latest.drawDate)}, ${latest.time} IST\nLatest available result: ${latest.result} (${formatDrawDate(latest.drawDate)})\nStatus: ${latest.isToday ? "Updated" : "Waiting for today's result"}`
+        : "Latest available result: Not available yet\nStatus: Waiting for result",
     },
     {
       heading: "Gaziabad Satta Result Time: 9:50 PM",

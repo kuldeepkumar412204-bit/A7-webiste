@@ -2,6 +2,8 @@ import React from "react";
 import { Metadata } from "next";
 import Link from "next/link";
 import FAQSection from "./FAQSection";
+import type { LatestResult } from "@/app/lib/homeData";
+import { formatDrawDate } from "./formatDrawDate";
 
 export const metadata: Metadata = {
     title: "Delhi Bazar Satta Result Live 2026 | Chart & Updates",
@@ -43,7 +45,7 @@ interface InfoSection {
 }
 
 
-export default function DelhiBazar() {
+export default function DelhiBazar({ latest }: { latest?: LatestResult | null }) {
     // Main Content Blocks - styled like FAQSection
     const infoSections: InfoSection[] = [
         {
@@ -98,6 +100,12 @@ export default function DelhiBazar() {
                     <p>If you follow several games, checking them in this order lets you go through the day's results one after another without opening pages at the wrong time.</p>
                 </>
             ),
+        },
+        {
+            heading: "New Delhi Bazar Satta Result",
+            description: latest
+                ? `Last chart update: ${formatDrawDate(latest.drawDate)}, ${latest.time} IST\nLatest available result: ${latest.result} (${formatDrawDate(latest.drawDate)})\nStatus: ${latest.isToday ? "Updated" : "Waiting for today's result"}`
+                : "Latest available result: Not available yet\nStatus: Waiting for result",
         },
         {
             heading: "Reading the Delhi Bazar Chart 2026",
@@ -169,7 +177,7 @@ export default function DelhiBazar() {
         },
         {
             question: "Does this page give tips or predictions?",
-            answer: "No. It only shows results and charts for reference.",
+            answer: "No. It shows results and charts for reference only.",
         },
         {
             question: "Can past results predict the next Delhi Bazar result?",

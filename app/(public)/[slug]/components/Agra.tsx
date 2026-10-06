@@ -1,5 +1,7 @@
 import FAQSection from "./FAQSection";
 import Link from "next/link";
+import type { LatestResult } from "@/app/lib/homeData";
+import { formatDrawDate } from "./formatDrawDate";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -33,13 +35,19 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Agra() {
+export default function Agra({ latest }: { latest?: LatestResult | null }) {
 
     const infoSections = [
         {
             heading: "Agra Satta Result Today and 2026 Chart",
             description:
                 "This page carries today's Agra number and the 2026 chart. Because Agra City is declared only five minutes later, it also helps you tell the two games apart, so you don't read one result as the other.",
+        },
+        {
+            heading: "New Agra Satta Result",
+            description: latest
+                ? `Last chart update: ${formatDrawDate(latest.drawDate)}, ${latest.time} IST\nLatest available result: ${latest.result} (${formatDrawDate(latest.drawDate)})\nStatus: ${latest.isToday ? "Updated" : "Waiting for today's result"}`
+                : "Latest available result: Not available yet\nStatus: Waiting for result",
         },
         {
             heading: "Agra Satta Result Time: 5:30 PM",
