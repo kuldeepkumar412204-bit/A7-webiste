@@ -4,6 +4,9 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import QueryProvider from "./providers/QueryProvider";
 import Script from "next/script";
+import Footer from "./components/Footer";
+import RefreshButton from "./(public)/Components/Global/RefreshButton";
+import ScrollToTop from "./(public)/Components/Global/ScrollToTop";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -105,9 +108,13 @@ export default function RootLayout({
             __html: JSON.stringify(websiteSchema),
           }}
         />
+        <Navbar />
         <QueryProvider>
           {children}
         </QueryProvider>
+        <Footer />
+        <RefreshButton/>
+      <ScrollToTop/>
       </body>
     </html>
   );

@@ -51,11 +51,82 @@ export default function FAQSection() {
     },
     {
       heading: "Games Covered on A7 Satta King",
-      description:
-        (
-          <>
-            A7 Satta King provides thorough details about every well-known Satta game that Satta players regularly play. For several well-known Satta games, including <a href="https://www.a7sattaking.co/sadar-bazar" className="internal-link">Sadar Bazar</a>, <a href="https://www.a7sattaking.co/gwalior" className="internal-link">Gwalior Satta</a>, Satta King Disawar, A7 Satta, <a href="https://www.a7sattaking.co/delhi-bazar" className="internal-link">Delhi Bazar</a>, <a href="https://www.a7sattaking.co/delhi-matka" className="internal-link">Delhi Matka</a>, <a href="https://www.a7sattaking.co/gali-satta" className="internal-link">Gali Satta</a>, and <a href="https://www.a7sattaking.co/shri-ganesh" className="internal-link">Shri Ganesh</a>, players can access the most recent Satta charts and results. Regional updates for <a href="https://www.a7sattaking.co/agra" className="internal-link">Agra Satta</a>, <a href="https://www.a7sattaking.co/faridabad" className="internal-link">Faridabad Satta</a>, <a href="https://www.a7sattaking.co/alwar" className="internal-link">Alwar Satta</a>, <a href="https://www.a7sattaking.co/gaziabad" className="internal-link">Ghaziabad Satta</a>, A7 Satta, and <a href="https://www.a7sattaking.co/dwarka" className="internal-link">Dwarka Satta</a> are also available on the website.</>
-        ),
+      description: (
+        <>
+          A7 Satta King provides thorough details about every well-known Satta
+          game that Satta players regularly play. For several well-known Satta
+          games, including{" "}
+          <a
+            href="https://www.a7sattaking.co/sadar-bazar"
+            className="internal-link"
+          >
+            Sadar Bazar
+          </a>
+          ,{" "}
+          <a
+            href="https://www.a7sattaking.co/gwalior"
+            className="internal-link"
+          >
+            Gwalior Satta
+          </a>
+          , Satta King Disawar, A7 Satta,{" "}
+          <a
+            href="https://www.a7sattaking.co/delhi-bazar"
+            className="internal-link"
+          >
+            Delhi Bazar
+          </a>
+          ,{" "}
+          <a
+            href="https://www.a7sattaking.co/delhi-matka"
+            className="internal-link"
+          >
+            Delhi Matka
+          </a>
+          ,{" "}
+          <a
+            href="https://www.a7sattaking.co/gali-satta"
+            className="internal-link"
+          >
+            Gali Satta
+          </a>
+          , and{" "}
+          <a
+            href="https://www.a7sattaking.co/shri-ganesh"
+            className="internal-link"
+          >
+            Shri Ganesh
+          </a>
+          , players can access the most recent Satta charts and results.
+          Regional updates for{" "}
+          <a href="https://www.a7sattaking.co/agra" className="internal-link">
+            Agra Satta
+          </a>
+          ,{" "}
+          <a
+            href="https://www.a7sattaking.co/faridabad"
+            className="internal-link"
+          >
+            Faridabad Satta
+          </a>
+          ,{" "}
+          <a href="https://www.a7sattaking.co/alwar" className="internal-link">
+            Alwar Satta
+          </a>
+          ,{" "}
+          <a
+            href="https://www.a7sattaking.co/gaziabad"
+            className="internal-link"
+          >
+            Ghaziabad Satta
+          </a>
+          , A7 Satta, and{" "}
+          <a href="https://www.a7sattaking.co/dwarka" className="internal-link">
+            Dwarka Satta
+          </a>{" "}
+          are also available on the website.
+        </>
+      ),
     },
     {
       heading: "How to play A7 Satta King games?",
@@ -201,6 +272,14 @@ export default function FAQSection() {
   ];
 
   return (
+    <>
+
+    {/* FAQ Schema Script Injection */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqItems) }}
+      />
+
     <div className="w-full bg-white my-[16px] text-[16px]">
       <div className="w-full flex flex-col">
         {/* Render Main Content Blocks */}
@@ -269,10 +348,11 @@ export default function FAQSection() {
 
                     {/* Accordion Content Box */}
                     <div
-                      className={`transition-all duration-300 ease-in-out overflow-hidden ${isOpen
+                      className={`transition-all duration-300 ease-in-out overflow-hidden ${
+                        isOpen
                           ? "max-h-[500px] border-t border-gray-100"
                           : "max-h-0"
-                        }`}
+                      }`}
                     >
                       <div className="p-4 bg-white text-gray-800 text-xs sm:text-sm md:text-base leading-relaxed">
                         {item.answer}
@@ -286,5 +366,6 @@ export default function FAQSection() {
         </div>
       </div>
     </div>
+    </>
   );
 }
