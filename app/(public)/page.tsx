@@ -23,9 +23,9 @@ import { buildLiveStatus, type LiveStatusState } from "@/app/lib/liveStatus";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "A7 Satta King | Satta Charts, Matka Result & Updates",
+  title: "A7 Satta King | Today's Sadar Bazar Games Live Result 2026",
   description:
-    "Check A7 Satta King latest results, daily Satta charts, Matka updates, and records. Stay updated with real-time results and game timings.",
+    "A7 Satta King is famous for Sadar Bazar and popular Satta games. Check today’s live results and the latest 2026 updates.",
   keywords: [
     "A7 Satta",
     "A7 Satta King",
