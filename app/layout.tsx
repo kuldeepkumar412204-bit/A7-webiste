@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import QueryProvider from "./providers/QueryProvider";
 import Script from "next/script";
 import Footer from "./components/Footer";
+import HideOnAdmin from "./components/HideOnAdmin";
 import RefreshButton from "./(public)/Components/Global/RefreshButton";
 import ScrollToTop from "./(public)/Components/Global/ScrollToTop";
 
@@ -108,11 +109,15 @@ export default function RootLayout({
             __html: JSON.stringify(websiteSchema),
           }}
         />
-        <Navbar />
+        <HideOnAdmin>
+          <Navbar />
+        </HideOnAdmin>
         <QueryProvider>
           {children}
         </QueryProvider>
-        <Footer />
+        <HideOnAdmin>
+          <Footer />
+        </HideOnAdmin>
         <RefreshButton/>
       <ScrollToTop/>
       </body>
