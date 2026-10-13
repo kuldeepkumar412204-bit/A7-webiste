@@ -25,6 +25,8 @@ export default function GameListPage() {
   // Static View Filtering States: 'all' | '1' | '2'
   const [selectedTableFilter, setSelectedTableFilter] = useState<"all" | "1" | "2">("all");
 
+  const [selectedSourceFilter, setSelectedSourceFilter] = useState<"all" | "API" | "MANUAL">("all");
+
   const [deleteTarget, setDeleteTarget] = useState<ISatta | null>(null);
   const [deleting, setDeleting] = useState(false);
   const [toast, setToast] = useState<{ type: "success" | "error"; text: string } | null>(null);
@@ -74,12 +76,15 @@ export default function GameListPage() {
       g.name.toLowerCase().includes(search.toLowerCase()) ||
       g.slug.toLowerCase().includes(search.toLowerCase());
 
+    const matchesSource =
+      selectedSourceFilter === "all" || (g.source || "MANUAL") === selectedSourceFilter;
+
     if (selectedTableFilter === "all") {
-      return matchesSearch;
+      return matchesSearch && matchesSource;
     }
 
     // Check tableNo matching criteria string representations safely
-    return matchesSearch && String(g.tableNo) === selectedTableFilter;
+    return matchesSearch && matchesSource && String(g.tableNo) === selectedTableFilter;
   });
 
   return (
@@ -148,35 +153,25 @@ export default function GameListPage() {
           </button>
         </div>
 
-        {/* Static Segmented Controls Tabs for quick Client-Side filtration */}
-        <div className="flex bg-gray-100 p-1 rounded-xl self-start md:self-auto border border-gray-200">
-          <button
-            onClick={() => setSelectedTableFilter("all")}
-            className={`px-3 py-2 text-xs font-semibold rounded-lg transition-all ${selectedTableFilter === "all"
-                ? "bg-white text-gray-800 shadow-sm"
-                : "text-gray-500 hover:text-gray-800"
-              }`}
+        <div className="flex flex-wrap gap-3 self-start md:self-auto">
+          <select
+            value={selectedSourceFilter}
+            onChange={(e) => setSelectedSourceFilter(e.target.value as "all" | "API" | "MANUAL")}
+            className="px-3 py-2 text-sm border border-gray-300 rounded-xl bg-white text-gray-700 outline-none focus:border-[#e11d48] focus:ring-2 focus:ring-[#e11d48]/20"
           >
-            All Tables
-          </button>
-          <button
-            onClick={() => setSelectedTableFilter("1")}
-            className={`px-3 py-2 text-xs font-semibold rounded-lg transition-all ${selectedTableFilter === "1"
-                ? "bg-white text-gray-800 shadow-sm"
-                : "text-gray-500 hover:text-gray-800"
-              }`}
+            <option value="all">All Sources</option>
+            <option value="API">API</option>
+            <option value="MANUAL">Manual</option>
+          </select>
+          <select
+            value={selectedTableFilter}
+            onChange={(e) => setSelectedTableFilter(e.target.value as "all" | "1" | "2")}
+            className="px-3 py-2 text-sm border border-gray-300 rounded-xl bg-white text-gray-700 outline-none focus:border-[#e11d48] focus:ring-2 focus:ring-[#e11d48]/20"
           >
-            Table 1
-          </button>
-          <button
-            onClick={() => setSelectedTableFilter("2")}
-            className={`px-3 py-2 text-xs font-semibold rounded-lg transition-all ${selectedTableFilter === "2"
-                ? "bg-white text-gray-800 shadow-sm"
-                : "text-gray-500 hover:text-gray-800"
-              }`}
-          >
-            Table 2
-          </button>
+            <option value="all">All Tables</option>
+            <option value="1">Table 1</option>
+            <option value="2">Table 2</option>
+          </select>
         </div>
       </div>
 
@@ -196,7 +191,7 @@ export default function GameListPage() {
           <div className="py-16 text-center text-gray-400">
             <p className="text-lg font-medium">No games found</p>
             <p className="text-sm mt-1">
-              {search || selectedTableFilter !== "all"
+              {search || selectedTableFilter !== "all" || selectedSourceFilter !== "all"
                 ? "Try adjusting your filters or query parameters."
                 : "Add your first satta game."}
             </p>
@@ -212,6 +207,7 @@ export default function GameListPage() {
                   <th className="px-5 py-3.5 text-xs font-semibold text-gray-500 uppercase tracking-wider">
                     <div className="flex items-center gap-1"><Clock size={12} /> Result Time (IST)</div>
                   </th>
+                  <th className="px-5 py-3.5 text-xs font-semibold text-gray-500 uppercase tracking-wider">Source</th>
                   <th className="px-5 py-3.5 text-xs font-semibold text-gray-500 uppercase tracking-wider">Table Assignment</th>
                   <th className="px-5 py-3.5 text-xs font-semibold text-gray-500 uppercase tracking-wider">Order</th>
                   <th className="px-5 py-3.5 text-xs font-semibold text-gray-500 uppercase tracking-wider">Status</th>
@@ -234,6 +230,15 @@ export default function GameListPage() {
                     <td className="px-5 py-4">
                       <span className="font-semibold text-[#e11d48]">
                         {formatTime12(game.resultTime)}
+                      </span>
+                    </td>
+                    <td className="px-5 py-4 whitespace-nowrap">
+                      <span
+                        className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold uppercase tracking-wider font-mono ${
+                          game.source === "API" ? "bg-rose-100 text-rose-700" : "bg-slate-100 text-slate-700"
+                        }`}
+                      >
+                        {game.source || "MANUAL"}
                       </span>
                     </td>
                     <td className="px-5 py-4">
