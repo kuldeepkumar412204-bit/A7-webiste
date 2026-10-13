@@ -28,10 +28,30 @@ export async function syncAllGameResults() {
       console.warn("External API fetch failed:", apiErr);
     }
 
+    // Debug: log raw API payload around the 12:05 AM and 12:15 AM IST checkpoints
+    const istParts = new Intl.DateTimeFormat("en-GB", {
+      timeZone: "Asia/Kolkata",
+      hour: "2-digit",
+      minute: "2-digit",
+      hourCycle: "h23",
+    }).formatToParts(new Date());
+    const istHour = Number(istParts.find((p) => p.type === "hour")?.value);
+    const istMinute = Number(istParts.find((p) => p.type === "minute")?.value);
+    if (istHour === 0 && ((istMinute >= 5 && istMinute < 10) || (istMinute >= 15 && istMinute < 20))) {
+      console.log(
+        `[sync-debug] API fetch at IST 00:${String(istMinute).padStart(2, "0")} (${apiData.length} items):`,
+        JSON.stringify(apiData)
+      );
+    }
+
     const allGames = await Satta.find({ isActive: true });
 
-    // Target calendar day in IST
-    const todayStr = new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Kolkata" });
+    // Target day in IST. The day rolls over at 12:15 AM (not 12:00) so late
+    // results (e.g. Gali at ~12:08 AM) still belong to the previous day.
+    const DAY_START_OFFSET_MS = 15 * 60 * 1000;
+    const todayStr = new Date(Date.now() - DAY_START_OFFSET_MS).toLocaleDateString("en-CA", {
+      timeZone: "Asia/Kolkata",
+    });
     const drawDate = new Date(`${todayStr}T00:00:00.000Z`);
 
     for (const game of allGames) {
