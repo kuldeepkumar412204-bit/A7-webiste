@@ -80,7 +80,7 @@ export default function RootLayout({
 
         {/* Load Google Analytics */}
         <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=G-3KLXLCKFNV`}
+          src={`https://www.googletagmanager.com/gtag/js?id=G-TB8TCZMG95`}
           strategy="afterInteractive"
         />
 
@@ -92,9 +92,10 @@ export default function RootLayout({
             window.gtag = gtag;
 
             gtag('js', new Date());
-            gtag('config', 'G-3KLXLCKFNV');
+            gtag('config', 'G-TB8TCZMG95');
           `}
         </Script>
+
 
         <script
           type="application/ld+json"
@@ -118,8 +119,8 @@ export default function RootLayout({
         <HideOnAdmin>
           <Footer />
         </HideOnAdmin>
-        <RefreshButton/>
-      <ScrollToTop/>
+        <RefreshButton />
+        <ScrollToTop />
       </body>
     </html>
   );
