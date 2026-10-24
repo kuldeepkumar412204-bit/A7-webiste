@@ -127,7 +127,7 @@ export async function PUT(
             id,
             update,
             {
-                new: true,
+                returnDocument: "after",
                 runValidators: true,
             }
         ).lean();

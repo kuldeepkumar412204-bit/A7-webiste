@@ -56,7 +56,7 @@ export async function PATCH(req: NextRequest, { params }: Params) {
           isActive: body.isActive,
         },
       },
-      { new: true, runValidators: true }
+      { returnDocument: "after", runValidators: true }
     ).lean();
 
     if (!contact) {

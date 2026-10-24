@@ -63,7 +63,7 @@ export async function PATCH(req: NextRequest, { params }: Params) {
     const updatedResult = await Result.findByIdAndUpdate(
       id,
       { $set: updateData },
-      { new: true, runValidators: true }
+      { returnDocument: "after", runValidators: true }
     ).populate("sattaId", "name slug resultTime source");
 
     if (!updatedResult) {
