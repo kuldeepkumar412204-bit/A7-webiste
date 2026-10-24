@@ -19,13 +19,33 @@ const apiPostData = {
 export async function syncAllGameResults() {
   try {
     let apiData: ApiMarketItem[] = [];
+    let apiOk = false;
+    const startedAt = Date.now();
+    const stats = { updated: 0, kept: 0, overridden: 0, unmatched: 0 };
     try {
       const response = await axios.post(API_URL, apiPostData, { timeout: 10000 });
       if (response.data?.results?.status) {
         apiData = response.data.results.data || [];
+        apiOk = apiData.length > 0;
       }
-    } catch (apiErr) {
-      console.warn("External API fetch failed:", apiErr);
+      if (apiOk) {
+        // One compact line per sync: every market's value as the API sent it
+        console.log(
+          `[sync] API ok HTTP ${response.status} in ${Date.now() - startedAt}ms, ${apiData.length} items, expiry ${response.data?.expiry ?? "n/a"}:`,
+          apiData.map((i) => `${i.name}=${i.result || i.jodi || "--"}`).join(", ")
+        );
+      } else {
+        console.error(
+          `[sync] API returned no usable data (HTTP ${response.status}):`,
+          JSON.stringify(response.data)?.slice(0, 300)
+        );
+      }
+    } catch (apiErr: any) {
+      console.error(
+        `[sync] External API fetch failed after ${Date.now() - startedAt}ms: ${apiErr?.code ?? ""} HTTP ${apiErr?.response?.status ?? "n/a"} ${apiErr?.message ?? apiErr}`,
+        "| creds set:",
+        { API_KEY: !!process.env.API_KEY, DOMAIN_KEY: !!process.env.DOMAIN_KEY, API_DOMAIN: process.env.API_DOMAIN }
+      );
     }
 
     // Debug: log raw API payload around the 12:05 AM and 12:15 AM IST checkpoints
@@ -61,15 +81,37 @@ export async function syncAllGameResults() {
 
         // 2. IF ADMIN EDITED THIS DAY'S RESULT: Skip API sync for today!
         if (existingRecord?.isOverridden) {
-          console.log(`Skipping sync for ${game.name}: Admin overridden for ${todayStr}`);
+          stats.overridden++;
           continue;
         }
 
-        // 3. Otherwise, fetch raw API value and overwrite DB unconditionally
+        // 3. API down/empty: never touch stored results
+        if (!apiOk) continue;
+
         const matchedItem = apiData.find(
           (item) => item.name === game.apiName || item.name === game.name?.toLocaleUpperCase()
         );
+        if (!matchedItem) {
+          stats.unmatched++;
+          console.warn(`[sync] No API item matched for "${game.name}" (apiName: ${game.apiName})`);
+        }
         const rawVal = (matchedItem?.result || matchedItem?.jodi || "--").trim();
+
+        // 4. Never replace a saved numeric result with a placeholder (WAIT / -- / empty)
+        const isNumeric = (v?: string) => !!v && /^\d+$/.test(v);
+        if (isNumeric(existingRecord?.result) && !isNumeric(rawVal)) {
+          stats.kept++;
+          console.warn(
+            `[sync] Keeping ${game.name}=${existingRecord!.result}; API sent "${rawVal}"`
+          );
+          continue;
+        }
+
+        // Log only real changes (DB value -> new value)
+        if (existingRecord?.result !== (rawVal || "--")) {
+          stats.updated++;
+          console.log(`[sync] ${game.name}: ${existingRecord?.result ?? "(none)"} -> ${rawVal || "--"}`);
+        }
 
         await Results.findOneAndUpdate(
           { sattaId: game._id, drawDate },
@@ -82,7 +124,7 @@ export async function syncAllGameResults() {
               isOverridden: false, // Default state for API updates
             },
           },
-          { upsert: true, new: true }
+          { upsert: true, returnDocument: "after" }
         );
       } else {
         // MANUAL GAME LOGIC
@@ -100,6 +142,10 @@ export async function syncAllGameResults() {
         }
       }
     }
+
+    console.log(
+      `[sync] done in ${Date.now() - startedAt}ms for ${todayStr}: apiOk=${apiOk} updated=${stats.updated} kept=${stats.kept} adminOverridden=${stats.overridden} unmatched=${stats.unmatched}`
+    );
   } catch (error) {
     console.error("Error executing full result sync:", error);
   }
