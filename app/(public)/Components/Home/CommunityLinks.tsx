@@ -22,8 +22,9 @@ export default function CommunityLinks({ initialData }: { initialData?: ContactD
 
         {/* WHATSAPP ROW */}
         <div className="w-full bg-[#ffd200] border border-dashed border-red-500 p-[1.5rem] text-center ">
-          <p className="text-primary font-bold text-[14px] mb-[0.2rem] uppercase tracking-tight max-w-7xl mx-auto leading-relaxed">
-            NOW WHATSAPP PLAYERS CAN ALSO JOIN OUR WHATSAPP CHANNEL TO GET RESULTS QUICKLY AND RECEIVE SUPERFAST RESULTS.
+          <p className="text-primary py-1 font-bold text-[14px] mb-[0.2rem] uppercase tracking-tight max-w-7xl mx-auto leading-relaxed">
+            {/* NOW WHATSAPP PLAYERS CAN ALSO JOIN OUR WHATSAPP CHANNEL TO GET RESULTS QUICKLY AND RECEIVE SUPERFAST RESULTS. */}
+            अब टेलीग्राम के खिलाड़ी भी जल्दी परिणाम पाने और सुपरफास्ट परिणाम प्राप्त करने के लिए हमारे टेलीग्राम चैनल से जुड़ सकते हैं।
           </p>
           <div className="flex justify-center">
             <WhatsAppButton value={data?.whatsappNumberOrUrl}/>
@@ -32,8 +33,9 @@ export default function CommunityLinks({ initialData }: { initialData?: ContactD
         
         {/* TELEGRAM ROW */}
         <div className="w-full bg-secondary border border-dashed border-red-500  p-[1.5rem] text-center">
-          <p className="text-primary font-bold text-[14px] mb-[0.2rem] uppercase tracking-tight max-w-7xl mx-auto leading-relaxed">
-            NOW TELEGRAM PLAYERS CAN ALSO JOIN OUR TELEGRAM CHANNEL TO GET RESULTS QUICKLY AND RECEIVE SUPERFAST RESULTS.
+          <p className="text-primary py-1 font-bold text-[14px] mb-[0.2rem] uppercase tracking-tight max-w-7xl mx-auto leading-relaxed">
+            {/* NOW TELEGRAM PLAYERS CAN ALSO JOIN OUR TELEGRAM CHANNEL TO GET RESULTS QUICKLY AND RECEIVE SUPERFAST RESULTS. */}
+            अब टेलीग्राम के खिलाड़ी भी जल्दी परिणाम पाने और सुपरफास्ट परिणाम प्राप्त करने के लिए हमारे टेलीग्राम चैनल से जुड़ सकते हैं।
           </p>
           <div className="flex justify-center">
             <TelegramButton value={data?.telegramLink}/>
