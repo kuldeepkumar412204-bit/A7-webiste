@@ -61,132 +61,137 @@ export const staticMarkets: Record<string, Market> = {
     },
     sections: [
       {
-        heading: "Karol Bagh Satta Results - Latest Update, Today's Result & Chart Details",
+        heading: "Karol Bagh Satta Results – नवीनतम जानकारी, आज का परिणाम और चार्ट का विवरण",
         description: (
           <>
             <p>
-              If you want quick access to Karol Bagh Satta Results, this page brings together the latest updates, past records, and important information in a simple format. Users can easily check the Karol Bagh Satta Results today or browse older data without any confusion.
+              अगर आप Karol Bagh Satta Results की जानकारी जल्दी पाना चाहते हैं, तो इस पेज पर नवीनतम जानकारी, पुराने रिकॉर्ड और महत्वपूर्ण विवरण आसान भाषा में एक साथ दिए गए हैं। आप बिना किसी परेशानी के आज का Karol Bagh Satta Results देख सकते हैं या पुराने आँकड़ों की जानकारी प्राप्त कर सकते हैं।
+
             </p>
             <p className="mt-3">
-              Karol Bagh is a frequently followed game in the daily Satta cycle. Due to its regular timing and steady interest among users, it continues to be one of the commonly searched results. On <Link href="https://www.a7sattaking.co/" className="text-blue-600 underline">
-                A7 Satta King</Link>, you can stay informed with updated numbers and charts in one place.
+             Karol Bagh दैनिक सट्टा चक्र में नियमित रूप से देखा जाने वाला खेल है। अपने नियमित समय और लोगों की लगातार रुचि के कारण, इसके परिणाम अक्सर खोजे जाते हैं। <Link href="https://www.a7sattaking.co/" className="text-blue-600 underline">
+                A7 Satta King</Link>पर आप एक ही जगह अपडेट किए गए अंकों और चार्ट की जानकारी प्राप्त कर सकते हैं।
+
             </p>
           </>
         ),
       },
       {
-        heading: "What is Karol Bagh Satta Results?",
+        heading: "Karol Bagh Satta Results क्या है?",
         description:
           (<>
             <p>
-              Karol Bagh Satta Results refer to the daily outcome declared for the Karol Bagh game within the Satta King system. These results are announced at a set time each day, making it easy for users to track updates regularly.
+              Karol Bagh Satta Results, Satta King व्यवस्था के अंतर्गत Karol Bagh खेल के लिए घोषित किए जाने वाले दैनिक परिणाम हैं। ये परिणाम हर दिन एक निश्चित समय पर घोषित किए जाते हैं, जिससे लोग नियमित रूप से इनकी जानकारी प्राप्त कर सकते हैं।
+
             </p>
             <p className="mt-3">
-              Through <Link href="https://www.a7sattaking.co/" className="text-blue-600 underline">
-                A7 Satta King</Link>, users can view the most recent result along with historical data. Its consistent updates make it a regular part of many users’ daily checks.
+              <Link href="https://www.a7sattaking.co/" className="text-blue-600 underline">
+                A7 Satta King</Link>के माध्यम से लोग नवीनतम परिणाम के साथ पुराने आँकड़े भी देख सकते हैं। नियमित रूप से मिलने वाली जानकारी के कारण, कई लोग इसे अपनी दैनिक जाँच का हिस्सा मानते हैं।
+
             </p>
           </>),
       },
       {
-        heading: "Karol Bagh Satta Results Today",
+        heading: "आज का Karol Bagh Satta Results",
         description: (
           <>
-            <p>Karol Bagh Satta Results today are typically released in the afternoon. Many users visit the page before the official time to ensure they don’t miss the latest update.</p>
+            <p>आज के Karol Bagh Satta Results आमतौर पर दोपहर में जारी किए जाते हैं। कई लोग नवीनतम जानकारी पाने से चूक न जाएँ, इसलिए आधिकारिक समय से पहले ही इस पेज पर आते हैं।</p>
 
             <ul className="list-disc pl-6 mt-3 space-y-2">
 
               <li className="font-bold text-black">
-                Result Time: Around 1:35 PM
+                परिणाम का समय: लगभग 1:35 PM
               </li>
             </ul>
             <p className="mt-3">
-              The page is updated on a regular basis so users can access fresh information as soon as it becomes available.
-
+              इस पेज को नियमित रूप से अपडेट किया जाता है, ताकि नई जानकारी उपलब्ध होते ही आप उसे देख सकें।
             </p>
           </>
         ),
       },
       {
-        heading: "Karol Bagh Result Chart & Previous Data",
+        heading: "Karol Bagh परिणाम चार्ट और पुराने आँकड़े",
         description: (
           <>
             <p>
-              Apart from daily updates, users often check earlier records to stay informed. The Karol Bagh Satta chart section provides access to previous outcomes, helping users review number patterns over time.
+              दैनिक जानकारी के अलावा, लोग पुराने रिकॉर्ड भी देखते हैं ताकि उन्हें पिछले परिणामों की जानकारी मिल सके। Karol Bagh Satta चार्ट अनुभाग में पुराने परिणाम उपलब्ध हैं, जिनकी मदद से समय के साथ अंकों के क्रम की जानकारी देखी जा सकती है।
             </p>
             <p>
-              By using the chart, users can:
+              चार्ट की मदद से आप:
             </p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-              <li>Review past results easily</li>
-              <li>Track number sequences</li>
-              <li>Compare daily changes</li>
-              <li>Keep a record of earlier outcomes</li>
+              <li>पुराने परिणाम आसानी से देख सकते हैं</li>
+              <li>अंकों के क्रम का रिकॉर्ड रख सकते हैं</li>
+              <li>दैनिक बदलावों की तुलना कर सकते हैं</li>
+              <li>पहले घोषित किए गए परिणामों का रिकॉर्ड रख सकते हैं</li>
             </ul>
           </>
         ),
       },
       {
-        heading: "Why is Karol Bagh game Widely Followed?",
+        heading: "Karol Bagh का खेल लोकप्रिय क्यों है?",
         description: (
           <>
-            <p>Karol Bagh Satta Results are searched frequently because of the market’s regular schedule and reliable updates. Its fixed timing makes it convenient for users to include in their daily routine.</p>
-            <p>Key reasons for its popularity:</p>
+            <p>Karol Bagh Satta Results को इसके नियमित समय और लगातार मिलने वाली जानकारी के कारण अक्सर खोजा जाता है। इसका निश्चित समय लोगों के लिए इसे अपनी दैनिक दिनचर्या में शामिल करना आसान बनाता है।
+</p>
+            <p>इसकी लोकप्रियता के प्रमुख कारण:</p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-              <li>Regular daily announcements</li>
-              <li>Predictable Satta Result Timing</li>
-              <li>Simple online access</li>
-              <li>Strong user interest</li>
+              <li>नियमित रूप से दैनिक परिणामों की घोषणा</li>
+              <li>सट्टा परिणाम का निश्चित समय</li>
+              <li>ऑनलाइन आसानी से जानकारी उपलब्ध होना</li>
+              <li>लोगों की अधिक रुचि</li>
             </ul>
           </>
         ),
       },
       {
-        heading: "Try These Other Satta Games Today",
+        heading: "आज के अन्य सट्टा खेलों के परिणाम देखें",
         description: (
           <p>
-            While checking the Karol Bagh Satta Results, many users on A7 Satta King also explore other games such as{" "}
+            Karol Bagh Satta Results देखने के साथ-साथ, A7 Satta King पर कई लोग अन्य खेलों के परिणाम भी देखते हैं, जैसे{" "}
             <Link href="/gali" className="text-blue-600 underline">
               Gail Satta Result
             </Link>
             ,{" "}
-           <Link href="https://www.a7sattaking.co/disawar" className="text-blue-600 underline">
+            <Link href="https://www.a7sattaking.co/disawar" className="text-blue-600 underline">
               Disawar Satta Result
             </Link>
             ,{" "}
             <Link href="https://www.a7sattaking.co/agra-city" className="text-blue-600 underline">
               Agra City Satta Result
             </Link>
-            , and{" "}
+            , और{" "}
             <Link href="https://www.a7sattaking.co/ajmer" className="text-blue-600 underline">
               Ajmer Satta Result
-            </Link>
-            to keep track of multiple updates throughout the day.
+            </Link>, 
+           ताकि पूरे दिन के कई परिणामों की जानकारी रख सकें।
+
           </p>
         ),
       },
       {
-        heading: "How to Check Karol Bagh Satta Results?",
+        heading: "Karol Bagh Satta Results कैसे देखें?",
         description: (
           <>
-            <p>To check the latest result, follow these Easy steps:</p>
+            <p>नवीनतम परिणाम देखने के लिए इन आसान चरणों का पालन करें:</p>
             <ol className="list-decimal pl-6 mt-3 space-y-2">
-              <li>Open This Page Before Result Timing</li>
-              <li>Refresh the page around 1:35 PM</li>
-              <li>Check the updated Karol Bagh number</li>
-              <li>Scroll down to view charts and other details</li>
+              <li>परिणाम घोषित होने के समय से पहले इस पेज को खोलें।</li>
+              <li>लगभग 1:35 PM पर पेज को दोबारा खोलें।</li>
+              <li>अपडेट किया गया Karol Bagh अंक देखें।</li>
+              <li>चार्ट और अन्य विवरण देखने के लिए नीचे जाएँ।</li>
             </ol>
           </>
         ),
       },
       {
-        heading: "Disclaimer",
+        heading: "अस्वीकरण",
         description: (
           <>
             <p>
-              This page is created only for informational use. We do not support or promote any gambling or betting activities. The Karol Bagh Satta Results provided here are based on publicly available sources.
+             यह पेज केवल जानकारी देने के उद्देश्य से बनाया गया है। हम किसी भी प्रकार की जुआ या सट्टेबाजी गतिविधि का समर्थन या प्रचार नहीं करते हैं। यहाँ दिए गए Karol Bagh Satta Results सार्वजनिक रूप से उपलब्ध स्रोतों पर आधारित हैं।
             </p>
             <p className="mt-3">
-              Users should follow their local laws and guidelines. We are not responsible for any loss or consequences resulting from the use of this information.
+              लोगों को अपने स्थानीय कानूनों और दिशा-निर्देशों का पालन करना चाहिए। इस जानकारी के उपयोग से होने वाले किसी भी नुकसान या परिणाम के लिए हम जिम्मेदार नहीं हैं।
             </p>
           </>
         ),
@@ -194,27 +199,27 @@ export const staticMarkets: Record<string, Market> = {
     ],
     faqs: [
       {
-        question: "What is Karol Bagh Satta Results?",
-        answer: "Karol Bagh Satta Results show the daily outcome of the Karol Bagh market, which users can check online for quick updates.",
+        question: "Karol Bagh Satta Results क्या है?",
+        answer: "Karol Bagh Satta Results, Karol Bagh बाज़ार के दैनिक परिणामों की जानकारी देते हैं, जिन्हें लोग जल्दी जानकारी पाने के लिए ऑनलाइन देख सकते हैं।",
       },
       {
-        question: "When is the Karol Bagh result announced?",
+        question: "Karol Bagh का परिणाम कब घोषित किया जाता है?",
         answer:
-          "The result is generally declared at around 1:35 PM.",
+          "परिणाम आमतौर पर दोपहर लगभग 1:35 PM पर घोषित किया जाता है।",
       },
       {
-        question: "Where can I check Karol Bagh Satta Results today?",
-        answer: "You can view the latest updates on A7 Satta King for accurate and timely information.",
+        question: "आज का Karol Bagh Satta Results कहाँ देख सकते हैं?",
+        answer: "सही और समय पर जानकारी पाने के लिए आप A7 Satta King पर नवीनतम जानकारी देख सकते हैं।",
       },
       {
-        question: "Are Karol Bagh results updated every day?",
+        question: "क्या Karol Bagh के परिणाम हर दिन अपडेट होते हैं?",
         answer:
-          "Yes, results are updated daily as per the fixed schedule.",
+          "हाँ, निर्धारित समय-सारणी के अनुसार परिणाम हर दिन अपडेट किए जाते हैं।",
       },
       {
-        question: "Is chart data available for Karol Bagh?",
+        question: "क्या Karol Bagh के लिए चार्ट के आँकड़े उपलब्ध हैं?",
         answer:
-          "Yes, previous results and chart records are available for users to review.",
+          "हाँ, पुराने परिणाम और चार्ट रिकॉर्ड देखने के लिए उपलब्ध हैं।",
       },
     ],
   },
@@ -240,107 +245,91 @@ export const staticMarkets: Record<string, Market> = {
     },
     sections: [
       {
-        heading: "Anmol Bazar Satta Result – Today Update, Chart & Complete Guide",
+        heading: "Anmol Bazar Satta Result – आज की जानकारी, चार्ट और पूरी मार्गदर्शिका",
         description: (
           <>
             <p>
-              If you are looking for fresh updates on Anmol Bazar Satta Result, this page
-              provides all the important details in a simple and organized format. From the
-              latest results to historical chart data, everything is available here so
-              users can quickly check the Anmol Bazar Satta Result today without any
-              difficulty.
+              अगर आप Anmol Bazar Satta Result की नई जानकारी खोज रहे हैं, तो इस पेज पर सभी महत्वपूर्ण विवरण आसान और व्यवस्थित तरीके से दिए गए हैं। नवीनतम परिणामों से लेकर पुराने चार्ट के आँकड़ों तक, सभी जानकारी यहाँ उपलब्ध है, ताकि आप बिना किसी परेशानी के आज का Anmol Bazar Satta Result जल्दी देख सकें।
             </p>
             <p className="mt-3">
-              Anmol Bazar is one of the regularly tracked games in the Satta cycle. Due to
-              its consistent timing and steady interest, many users follow it along with
-              other daily results. On A7 Satta King, users can easily stay informed with
-              updated numbers and records.
+              Anmol Bazar, सट्टा चक्र में नियमित रूप से देखे जाने वाले खेलों में से एक है। इसके निश्चित समय और लोगों की लगातार रुचि के कारण, कई लोग अन्य दैनिक परिणामों के साथ इसके परिणाम भी देखते हैं। A7 Satta King पर आप अपडेट किए गए अंकों और पुराने रिकॉर्ड की जानकारी आसानी से प्राप्त कर सकते हैं।
+
             </p>
           </>
         ),
       },
       {
-        heading: "What is Anmol Bazar Satta Result?",
+        heading: "Anmol Bazar Satta Result क्या है?",
         description: (
           <>
             <p>
-              Anmol Bazar Satta Result refers to the daily result declared for the Anmol
-              Bazar game within the Satta King system. The outcome is announced at a fixed
-              time, making it convenient for users to check updates regularly.
+              Anmol Bazar Satta Result, Satta King व्यवस्था के अंतर्गत Anmol Bazar खेल के लिए घोषित किया जाने वाला दैनिक परिणाम है। यह परिणाम एक निश्चित समय पर घोषित किया जाता है, जिससे लोग नियमित रूप से इसकी जानकारी आसानी से प्राप्त कर सकते हैं।
             </p>
             <p className="mt-3">
-              On A7 Satta King, users can view the latest result along with past records and
-              chart information. This helps users stay updated and review previous data
-              without confusion.
+              A7 Satta King पर लोग नवीनतम परिणाम के साथ पुराने रिकॉर्ड और चार्ट की जानकारी भी देख सकते हैं। इससे लोगों को बिना किसी परेशानी के नई जानकारी प्राप्त करने और पिछले आँकड़ों को देखने में मदद मिलती है।
+
             </p>
           </>
         ),
       },
       {
-        heading: "Anmol Bazar Satta Result Today",
+        heading: "आज का Anmol Bazar Satta Result",
         description: (
           <>
             <p>
-              The Anmol Bazar Satta Result today is usually announced during the afternoon
-              hours. Many users visit the page around the expected time to catch the latest
-              update as soon as it is released.
+              आज का Anmol Bazar Satta Result आमतौर पर दोपहर के समय घोषित किया जाता है। कई लोग नवीनतम जानकारी जारी होते ही देखने के लिए संभावित समय के आसपास इस पेज पर आते हैं।
             </p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
 
               <li className="font-bold text-black">
-                Expected Result Time: Around 2:00 PM
+                संभावित परिणाम का समय: लगभग 2:00 PM
               </li>
             </ul>
             <p className="mt-3">
-              The page is refreshed frequently to ensure users receive updated information
-              without delay.
+              इस पेज को बार-बार अपडेट किया जाता है, ताकि लोगों को बिना किसी देरी के नई जानकारी मिल सके।
             </p>
           </>
         ),
       },
       {
-        heading: "Anmol Bazar Chart & Previous Results",
+        heading: "Anmol Bazar चार्ट और पुराने परिणाम",
         description: (
           <>
             <p>
-              For those interested in earlier data, the Anmol Bazar Satta chart section
-              provides access to previous results. This allows users to review number
-              history and stay informed about past outcomes.
+             पुराने आँकड़ों में रुचि रखने वाले लोगों के लिए Anmol Bazar Satta चार्ट अनुभाग में पिछले परिणाम देखने की सुविधा उपलब्ध है। इससे लोग अंकों का पुराना रिकॉर्ड देख सकते हैं और पहले घोषित किए गए परिणामों की जानकारी प्राप्त कर सकते हैं।
             </p>
-            <p className="mt-3">Using the chart, users can:</p>
+            <p className="mt-3">चार्ट की मदद से आप:</p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-              <li>Check earlier results easily</li>
-              <li>Maintain a record of past numbers</li>
-              <li>Compare today’s updates with previous results</li>
-              <li>Analyze result trends over time</li>
+              <li>पुराने परिणाम आसानी से देख सकते हैं</li>
+              <li>पिछले अंकों का रिकॉर्ड रख सकते हैं</li>
+              <li>आज की जानकारी की तुलना पुराने परिणामों से कर सकते हैं</li>
+              <li>समय के साथ परिणामों के रुझान को समझ सकते हैं</li>
             </ul>
           </>
         ),
       },
       {
-        heading: "Why Do Users Follow Anmol Bazar Satta Result?",
+        heading: "लोग Anmol Bazar Satta Result क्यों देखते हैं?",
         description: (
           <>
             <p>
-              Anmol Bazar Satta Result is searched regularly because of its fixed timing and
-              reliable updates. Many users include it in their daily routine to stay
-              informed about ongoing results.
+              Anmol Bazar Satta Result को इसके निश्चित समय और नियमित रूप से मिलने वाली जानकारी के कारण अक्सर खोजा जाता है। कई लोग परिणामों की जानकारी रखने के लिए इसे अपनी दैनिक दिनचर्या में शामिल करते हैं।
             </p>
-            <p className="mt-3">Main reasons include:</p>
+            <p className="mt-3">इसके मुख्य कारण हैं:</p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-              <li>Daily availability of results</li>
-              <li>Consistent schedule</li>
-              <li>Easy access online</li>
-              <li>Regular user engagement</li>
+              <li>हर दिन परिणामों की उपलब्धता</li>
+              <li>नियमित समय-सारणी</li>
+              <li>ऑनलाइन आसानी से जानकारी मिलना</li>
+              <li>लोगों की लगातार रुचि</li>
             </ul>
           </>
         ),
       },
       {
-        heading: "Browse Other Exciting Satta Game Options",
+        heading: "अन्य लोकप्रिय सट्टा खेलों के विकल्प देखें",
         description: (
           <p>
-            While checking the Anmol Bazar Satta Result, users on A7 Satta King also follow other games like {" "}
+            Anmol Bazar Satta Result देखने के साथ-साथ, A7 Satta King पर लोग अन्य खेलों के परिणाम भी देखते हैं, जैसे {" "}
             <Link href="https://www.a7sattaking.co/delhi-darbar" className="text-blue-600 underline">
               Delhi Darbar Satta Result
             </Link>,
@@ -357,38 +346,33 @@ export const staticMarkets: Record<string, Market> = {
             <Link href="https://www.a7sattaking.co/mirzapur" className="text-blue-600 underline">
               Mirzapur Satta Result
             </Link> {" "}
-            to stay updated with multiple results throughout the day.
-
+            , ताकि पूरे दिन के कई परिणामों की जानकारी मिलती रहे।
           </p>
         ),
       },
       {
-        heading: "How to Check Anmol Bazar Satta Result?",
+        heading: "Anmol Bazar Satta Result कैसे देखें?",
         description: (
           <>
-            <p>To check the latest result, follow these steps:</p>
+            <p>नवीनतम परिणाम देखने के लिए इन चरणों का पालन करें:</p>
             <ol className="list-decimal pl-6 mt-3 space-y-2">
-              <li>Open the page before the expected time</li>
-              <li>Refresh the page around 2:00 PM</li>
-              <li>Check the updated Anmol Bazar number</li>
-              <li>Scroll down to view charts and related details</li>
+              <li>संभावित समय से पहले यह पेज खोलें।</li>
+              <li>लगभग 2:00 PM पर पेज को दोबारा खोलें।</li>
+              <li>अपडेट किया गया Anmol Bazar अंक देखें।</li>
+              <li>चार्ट और संबंधित जानकारी देखने के लिए नीचे जाएँ।</li>
             </ol>
           </>
         ),
       },
       {
-        heading: "Disclaimer",
+        heading: "अस्वीकरण",
         description: (
           <>
             <p>
-              This content is shared for informational purposes only. We do not support or
-              promote any kind of betting or gambling activities. The Anmol Bazar Satta
-              Result provided here is based on publicly available sources.
+              यह सामग्री केवल जानकारी देने के उद्देश्य से साझा की गई है। हम किसी भी प्रकार की सट्टेबाजी या जुए की गतिविधियों का समर्थन या प्रचार नहीं करते हैं। यहाँ दिया गया Anmol Bazar Satta Result सार्वजनिक रूप से उपलब्ध स्रोतों पर आधारित है।
             </p>
             <p className="mt-3">
-              Users are advised to follow their local laws and regulations. We are not
-              responsible for any loss or consequences arising from the use of this
-              information.
+              लोगों को सलाह दी जाती है कि वे अपने स्थानीय कानूनों और नियमों का पालन करें। इस जानकारी के उपयोग से होने वाले किसी भी नुकसान या परिणाम के लिए हम जिम्मेदार नहीं हैं।
             </p>
           </>
         ),
@@ -396,26 +380,26 @@ export const staticMarkets: Record<string, Market> = {
     ],
     faqs: [
       {
-        question: "What is Anmol Bazar Satta Result?",
+        question: "Anmol Bazar Satta Result क्या है?",
         answer:
-          "Anmol Bazar Satta Result shows the daily outcome of the Anmol Bazar market, which users can check online for updates.",
+          "Anmol Bazar Satta Result, Anmol Bazar बाज़ार के दैनिक परिणाम की जानकारी देता है, जिसे लोग नई जानकारी पाने के लिए ऑनलाइन देख सकते हैं।",
       },
       {
-        question: "What is the timing of Anmol Bazar Satta Result?",
-        answer: "The result is generally announced at around 2:00 PM.",
+        question: "Anmol Bazar Satta Result का समय क्या है?",
+        answer: "परिणाम आमतौर पर दोपहर लगभग 2:00 PM पर घोषित किया जाता है।",
       },
       {
-        question: "Where can I check Anmol Bazar Satta Result today?",
+        question: "आज का Anmol Bazar Satta Result कहाँ देख सकते हैं?",
         answer:
-          "You can find the latest updates on A7 Satta King for quick and accurate information.",
+          "जल्दी और सही जानकारी पाने के लिए आप A7 Satta King पर नवीनतम जानकारी देख सकते हैं।",
       },
       {
-        question: "Is the result updated daily?",
-        answer: "Yes, the result is updated every day according to the fixed schedule.",
+        question: "क्या परिणाम हर दिन अपडेट होता है?",
+        answer: "हाँ, निर्धारित समय-सारणी के अनुसार परिणाम हर दिन अपडेट किया जाता है।",
       },
       {
-        question: "Can I check old Anmol Bazar results?",
-        answer: "Yes, users can access chart data to review previous results.",
+        question: "क्या मैं Anmol Bazar के पुराने परिणाम देख सकता हूँ?",
+        answer: "हाँ, पिछले परिणाम देखने के लिए लोग चार्ट के आँकड़ों तक पहुँच सकते हैं।",
       },
     ],
   },
@@ -1882,91 +1866,82 @@ export const staticMarkets: Record<string, Market> = {
     },
     sections: [
       {
-        heading: "Delhi Savera Satta Result – Today Fast Update, Chart & Live Results",
+        heading: "Delhi Savera Satta Result – आज का तेज अपडेट, चार्ट और लाइव परिणाम",
         description: (
           <>
             <p>
-              If you are looking for the latest Delhi Savera Satta Result, you are in the
-              right place. This page is specially created to provide fast, accurate, and
-              easy-to-check updates of the Delhi Savera result today, along with chart
-              records and other important Satta markets.
+              अगर आप नवीनतम Delhi Savera Satta Result देखना चाहते हैं, तो आप सही जगह पर हैं। यह पेज Delhi Savera result today के तेज, सटीक और आसानी से चेक किए जा सकने वाले अपडेट देने के लिए विशेष रूप से बनाया गया है। इसके साथ ही यहाँ आपको चार्ट के रिकॉर्ड और अन्य महत्वपूर्ण सट्टा बाजारों की जानकारी भी मिलेगी।
             </p>
             <p className="mt-3">
-              Delhi Savera is one of the most popular morning games in the Satta King
-              market. Due to its early timing, users search for quick and reliable result
-              updates. Here, you will find daily results, old charts, and information about
-              other running games without any confusion.
+              Delhi Savera, Satta King बाजार के सबसे लोकप्रिय सुबह के खेलों में से एक है। सुबह के समय होने के कारण, यूजर्स जल्दी और भरोसेमंद रिजल्ट अपडेट खोजते हैं। यहाँ आपको दैनिक परिणाम, पुराने चार्ट और अन्य चल रहे खेलों की जानकारी बिना किसी परेशानी के मिलेगी।
             </p>
           </>
         ),
       },
       {
-        heading: "What is Delhi Savera Satta Result?",
+        heading: "Delhi Savera Satta Result क्या है?",
         description:
           (<>
-            The Delhi Savera Satta Result refers to the early morning result of the Delhi-based Satta market. “Savera” means morning, and this result is usually announced at the start of the day. On             <Link href="https://www.a7sattaking.co/" className="text-blue-600 underline">
-              A7 Satta King</Link>, users can check the latest Delhi Savera result quickly along with updated charts and daily records. Many users visit regularly to stay informed about the latest numbers and ongoing trends.</>),
+            Delhi Savera Satta Result का मतलब दिल्ली के सट्टा बाजार का सुबह के समय घोषित होने वाला परिणाम है। “Savera” का अर्थ सुबह होता है और यह परिणाम आमतौर पर दिन की शुरुआत में घोषित किया जाता है।          <Link href="https://www.a7sattaking.co/" className="text-blue-600 underline">
+              A7 Satta King</Link>पर यूजर्स अपडेट किए गए चार्ट और दैनिक रिकॉर्ड के साथ नवीनतम Delhi Savera result जल्दी चेक कर सकते हैं। कई यूजर्स नवीनतम नंबरों और चल रहे रुझानों की जानकारी पाने के लिए नियमित रूप से इस पेज पर आते हैं।
+          </>),
       },
       {
-        heading: "Delhi Savera Satta Result Today",
+        heading: "Delhi Savera Satta Result आज",
         description: (
           <>
-            <p>The Delhi Savera Satta Result is declared daily around:</p>
+            <p>Delhi Savera Satta Result हर दिन लगभग इस समय घोषित किया जाता है:</p>
             <p className="pl-4 font-bold ">
-              Time: 12:40 PM
+              समय: 12:40 PM
             </p>
             <p className="mt-3">
-              Users usually check the result before and after the declared time, so this
-              page is updated regularly to ensure you get the latest result without delay.
+              यूजर्स आमतौर पर घोषित समय से पहले और बाद में परिणाम चेक करते हैं। इसलिए इस पेज को नियमित रूप से अपडेट किया जाता है, ताकि आपको बिना देरी के नवीनतम परिणाम मिल सके।
+
             </p>
           </>
         ),
       },
       {
-        heading: "Delhi Savera Satta Chart (Old Results Record)",
+        heading: "Delhi Savera Satta Chart (पुराने परिणामों का रिकॉर्ड)",
         description: (
           <>
             <p>
-              Along with today’s update, users also prefer checking previous results. The
-              Delhi Savera Satta chart helps in:
+              आज के अपडेट के साथ, यूजर्स पुराने परिणाम भी चेक करना पसंद करते हैं। Delhi Savera Satta chart इन कामों में मदद करता है:
             </p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-              <li>Checking past results easily</li>
-              <li>Understanding number trends</li>
-              <li>Comparing daily outcomes</li>
-              <li>Maintaining result history</li>
+              <li>पुराने परिणाम आसानी से चेक करना</li>
+              <li>नंबरों के रुझानों को समझना</li>
+              <li>रोजाना के परिणामों की तुलना करना</li>
+              <li>परिणामों का पुराना रिकॉर्ड बनाए रखना</li>
             </ul>
             <p className="mt-3">
-              Having access to old charts makes it easier for users to stay informed and
-              track Satta result patterns over time.
+              पुराने चार्ट उपलब्ध होने से यूजर्स को जानकारी प्राप्त करने और समय के साथ सट्टा परिणामों के रुझानों का रिकॉर्ड देखने में आसानी होती है।
             </p>
           </>
         ),
       },
       {
-        heading: "Why is Delhi Savera Result Popular?",
+        heading: "Delhi Savera Result लोकप्रिय क्यों है?",
         description: (
           <>
-            <p>Delhi Savera is widely searched because:</p>
+            <p>Delhi Savera को अधिक सर्च किए जाने के मुख्य कारण हैं:</p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-              <li>It is one of the first results of the day</li>
-              <li>High user interest in morning games</li>
-              <li>Regular and fixed timing</li>
-              <li>Connected with multiple Satta markets</li>
+              <li>यह दिन के शुरुआती परिणामों में से एक है।</li>
+              <li>सुबह के खेलों में यूजर्स की अधिक रुचि रहती है।</li>
+              <li>इसका समय नियमित और तय रहता है।</li>
+              <li>यह कई सट्टा बाजारों से जुड़ा हुआ है।</li>
             </ul>
             <p className="mt-3">
-              Because of these reasons, Delhi Savera Satta Result remains one of the top
-              keywords searched daily.
+             इन्हीं कारणों से Delhi Savera Satta Result रोजाना सर्च किए जाने वाले प्रमुख keywords में से एक बना हुआ है।
             </p>
           </>
         ),
       },
       {
-        heading: "Explore Other Satta Games",
+        heading: "अन्य Satta Games देखें",
         description: (
           <p>
-            Along with checking the daily Delhi Savera Satta Result, users on A7 Satta King
-            also follow other popular games like{" "}
+            रोजाना Delhi Savera Satta Result चेक करने के साथ, A7 Satta King पर यूजर्स{" "}
             <Link href="/gwalior" className="text-blue-600 underline">
               Gwalior Satta Result
             </Link>
@@ -1982,41 +1957,38 @@ export const staticMarkets: Record<string, Market> = {
             <Link href="/alwar" className="text-blue-600 underline">
               Alwar Satta Result
             </Link>
-            , and{" "}
+            , और {" "}
             <Link href="/dwarka" className="text-blue-600 underline">
               Dwarka Satta Result
             </Link>
-            . These games are searched regularly, and many users prefer checking multiple
-            results together to stay updated throughout the day.
+            . जैसे अन्य लोकप्रिय खेलों के परिणाम भी देखते हैं। इन खेलों को नियमित रूप से सर्च किया जाता है और कई यूजर्स दिनभर के अपडेट पाने के लिए एक साथ कई परिणाम चेक करना पसंद करते हैं।
+
           </p>
         ),
       },
       {
-        heading: "How to Check Delhi Savera Satta Result?",
+        heading: "Delhi Savera Satta Result कैसे चेक करें?",
         description: (
           <>
-            <p>Follow these simple steps:</p>
+            <p>इन आसान तरीकों को अपनाएं:</p>
             <ol className="list-decimal pl-6 mt-3 space-y-2">
-              <li>Visit this page before 12:40 PM</li>
-              <li>Refresh the page at result time</li>
-              <li>Check the updated Delhi Savera number</li>
-              <li>View past results easily</li>
+              <li>दोपहर 12:40 PM से पहले इस पेज पर आएं।</li>
+              <li>परिणाम के तय समय पर पेज को रिफ्रेश करें।</li>
+              <li>अपडेट किया गया Delhi Savera नंबर चेक करें।</li>
+              <li>पुराने परिणाम आसानी से देखें।</li>
             </ol>
           </>
         ),
       },
       {
-        heading: "Disclaimer",
+        heading: "कानूनी अस्वीकरण",
         description: (
           <>
             <p>
-              This content is provided only for informational purposes. We do not promote
-              or support any form of betting or gambling. The Delhi Savera Satta Result and
-              other related information are shared based on publicly available data.
+             यह जानकारी केवल सामान्य जानकारी देने के उद्देश्य से उपलब्ध कराई गई है। हम किसी भी प्रकार की सट्टेबाजी या जुए को बढ़ावा या समर्थन नहीं देते हैं। Delhi Savera Satta Result और इससे जुड़ी अन्य जानकारी सार्वजनिक रूप से उपलब्ध डेटा के आधार पर साझा की जाती है।
             </p>
             <p className="mt-3">
-              Users are advised to follow their local laws and regulations. We are not
-              responsible for any loss or damage caused by the use of this information.
+              यूजर्स को सलाह दी जाती है कि वे अपने क्षेत्र में लागू कानूनों और नियमों का पालन करें। इस जानकारी के उपयोग से होने वाले किसी भी नुकसान या क्षति के लिए हम जिम्मेदार नहीं हैं।
             </p>
           </>
         ),
@@ -2024,27 +1996,27 @@ export const staticMarkets: Record<string, Market> = {
     ],
     faqs: [
       {
-        question: "What is Delhi Savera Satta Result time?",
-        answer: "The result is usually declared at 12:40 PM daily.",
+        question: "Delhi Savera Satta Result का समय क्या है?",
+        answer: "परिणाम आमतौर पर हर दिन दोपहर 12:40 PM पर घोषित किया जाता है।",
       },
       {
-        question: "Where can I check Delhi Savera result today?",
+        question: "आज का Delhi Savera result कहां चेक कर सकते हैं?",
         answer:
-          "You can check the latest Delhi Savera Satta Result today on this page for fast updates.",
+          "आप तेज अपडेट के लिए इसी पेज पर आज का नवीनतम Delhi Savera Satta Result चेक कर सकते हैं।",
       },
       {
-        question: "Is Delhi Savera result updated daily?",
-        answer: "Yes, the result is updated every day as per the official timing.",
+        question: "क्या Delhi Savera result रोजाना अपडेट किया जाता है?",
+        answer: "हाँ, परिणाम हर दिन आधिकारिक समय के अनुसार अपडेट किया जाता है।",
       },
       {
-        question: "Can I check old Delhi Savera charts?",
+        question: "क्या मैं पुराने Delhi Savera charts चेक कर सकता हूं?",
         answer:
-          "Yes, you can access previous results through the Delhi Savera chart section.",
+          "हाँ, आप Delhi Savera chart सेक्शन के माध्यम से पिछले परिणाम देख सकते हैं।",
       },
       {
-        question: "What other games are available besides Delhi Savera?",
+        question: "Delhi Savera के अलावा और कौन से खेल उपलब्ध हैं?",
         answer:
-          "You can also check games like Gali, Faridabad, Ghaziabad, Sadar Bazar, Jaipur Matka, and more.",
+          "आप Gali, Faridabad, Ghaziabad, Sadar Bazar, Jaipur Matka और अन्य खेलों के परिणाम भी चेक कर सकते हैं।.",
       },
     ],
   },
@@ -2059,112 +2031,96 @@ export const staticMarkets: Record<string, Market> = {
     },
     sections: [
       {
-        heading: "Lakshmi Bajar Satta Result – Today's Result, Chart & Complete Information",
+        heading: "Lakshmi Bajar Satta Result – आज का परिणाम, चार्ट और पूरी जानकारी",
         description: (
           <>
             <p>
-              If you are searching for the latest Lakshmi Bajar Satta Result, this page
-              provides complete and easy-to-understand information. From daily updates to
-              old charts, everything is available in one place so users can quickly check
-              the Lakshmi Bajar Satta Result today without any confusion.
+              अगर आप नवीनतम Lakshmi Bajar Satta Result खोज रहे हैं, तो इस पेज पर आपको पूरी और आसानी से समझ आने वाली जानकारी मिलेगी। रोज़ाना के परिणामों से लेकर पुराने चार्ट तक, सभी जानकारी एक ही जगह उपलब्ध है, ताकि आप बिना किसी परेशानी के आज का Lakshmi Bajar Satta Result जल्दी देख सकें।
             </p>
             <p className="mt-3">
-              Lakshmi Bajar is one of the regularly followed Satta markets, and many users
-              track its results along with other daily games. Due to its consistent timing
-              and popularity, it is searched frequently by users who want quick updates.
+              Lakshmi Bajar नियमित रूप से देखे जाने वाले सट्टा बाज़ारों में से एक है। कई लोग अन्य दैनिक खेलों के साथ इसके परिणामों पर भी नज़र रखते हैं। इसके नियमित समय और लोकप्रियता के कारण, जल्दी जानकारी पाने के इच्छुक लोग इसे अक्सर खोजते हैं।
             </p>
           </>
         ),
       },
       {
-        heading: "What is Lakshmi Bajar Satta Result?",
+        heading: "Lakshmi Bajar Satta Result क्या है?",
         description: (
           <>
             <p>
-              The Lakshmi Bajar Satta Result is a popular game in the Satta King cycle
-              where results are announced daily at a fixed time. On <Link href="https://www.a7sattaking.co/" className="text-blue-600 underline">A7 Satta King</Link>, users can
-              easily check the latest Lakshmi Bajar result along with chart records and
-              other important game updates.
+              Lakshmi Bajar Satta Result, Satta King चक्र का एक लोकप्रिय खेल है, जिसके परिणाम हर दिन एक निश्चित समय पर घोषित किए जाते हैं। <Link href="https://www.a7sattaking.co/" className="text-blue-600 underline">A7 Satta King</Link>पर आप आसानी से नवीनतम Lakshmi Bajar परिणाम के साथ पुराने चार्ट और अन्य महत्वपूर्ण खेलों की जानकारी भी देख सकते हैं।
             </p>
-            <p className="mt-3">This game is known for:</p>
+            <p className="mt-3">यह खेल इन विशेषताओं के लिए जाना जाता है:</p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-              <li>Regular daily result updates</li>
-              <li>Consistent user interest</li>
-              <li>Connection with other Satta markets</li>
-              <li>Easy access to charts and past data</li>
+              <li>नियमित रूप से दैनिक परिणामों की जानकारी</li>
+              <li>लोगों की लगातार रुचि</li>
+              <li>अन्य सट्टा बाज़ारों से जुड़ाव</li>
+              <li>चार्ट और पुराने आँकड़ों तक आसान पहुँच</li>
             </ul>
             <p className="mt-3">
-              Many users visit daily to stay updated with the Lakshmi Bajar Satta Result and
-              track previous outcomes.
+              कई लोग Lakshmi Bajar Satta Result की जानकारी पाने और पिछले परिणामों पर नज़र रखने के लिए रोज़ाना इस पेज पर आते हैं।
             </p>
           </>
         ),
       },
       {
-        heading: "Lakshmi Bajar Satta Result Today",
+        heading: "आज का Lakshmi Bajar Satta Result",
         description: (
           <>
             <p>
-              The Lakshmi Bajar Satta Result is usually declared in the afternoon, and users
-              start checking updates before the official time.
+              Lakshmi Bajar Satta Result आमतौर पर दोपहर में घोषित किया जाता है और लोग आधिकारिक समय से पहले ही परिणाम की जानकारी देखना शुरू कर देते हैं।
             </p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
 
               <li className="font-bold text-black">
-                Expected Result Time: Around 1:40 PM
+                संभावित परिणाम का समय: लगभग 1:40 PM
               </li>
             </ul>
             <p className="mt-3">
-              This page is updated regularly so users can get fast and accurate information
-              without delay.
+              यह पेज नियमित रूप से अपडेट किया जाता है, ताकि आपको बिना देरी के तेज़ और सही जानकारी मिल सके।
             </p>
           </>
         ),
       },
       {
-        heading: "Lakshmi Bajar Satta Chart (Old Results)",
+        heading: "Lakshmi Bajar Satta Chart (पुराने परिणामों का रिकॉर्ड)",
         description: (
           <>
             <p>
-              The Lakshmi Bajar Satta Result chart helps users check previous results and
-              understand patterns over time. Many users prefer looking at old data to
-              compare daily numbers and stay informed.
+              Lakshmi Bajar Satta Result चार्ट की मदद से आप पिछले परिणाम देख सकते हैं और समय के साथ अंकों के क्रम को समझ सकते हैं। कई लोग दैनिक अंकों की तुलना करने और जानकारी रखने के लिए पुराने आँकड़े देखना पसंद करते हैं।
             </p>
-            <p className="mt-3">Benefits of checking the chart:</p>
+            <p className="mt-3">चार्ट देखने के फायदे:</p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-              <li>Easily check past Satta results</li>
-              <li>Track number history</li>
-              <li>Compare daily Satta updates easily</li>
-              <li>Stay consistent with records</li>
+              <li>पुराने सट्टा परिणाम आसानी से देख सकते हैं</li>
+              <li>अंकों का पुराना रिकॉर्ड देख सकते हैं</li>
+              <li>दैनिक सट्टा परिणामों की आसानी से तुलना कर सकते हैं</li>
+              <li>परिणामों का रिकॉर्ड व्यवस्थित रख सकते हैं</li>
             </ul>
           </>
         ),
       },
       {
-        heading: "Why Do Users Search for Lakshmi Bajar Satta Daily?",
+        heading: "लोग रोज़ Lakshmi Bajar Satta क्यों खोजते हैं?",
         description: (
           <>
             <p>
-              The popularity of Lakshmi Bajar Satta Result comes from its regular schedule
-              and user demand. It is one of the games that users often follow along with
-              other major games.
+              Lakshmi Bajar Satta Result की लोकप्रियता इसके नियमित समय और लोगों की माँग के कारण है। यह उन खेलों में से एक है, जिन्हें लोग अक्सर अन्य प्रमुख खेलों के साथ देखते हैं।
             </p>
-            <p className="mt-3">Reasons include:</p>
+            <p className="mt-3">इसके प्रमुख कारण हैं:</p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-              <li>Daily Satta result availability</li>
-              <li>Fixed timing for daily results</li>
-              <li>Easy accessibility online</li>
-              <li>High search demand</li>
+              <li>दैनिक सट्टा परिणामों की उपलब्धता</li>
+              <li>रोज़ाना परिणामों का निश्चित समय</li>
+              <li>ऑनलाइन जानकारी आसानी से उपलब्ध होना</li>
+              <li>इसे खोजने वालों की अधिक संख्या</li>
             </ul>
           </>
         ),
       },
       {
-        heading: "Explore Additional Satta Games & Results",
+        heading: "अन्य सट्टा खेलों और परिणामों की जानकारी देखें",
         description: (
           <p>
-            Along with checking the daily Lakshmi Bajar Satta Result, users on A7 Satta King
-            also follow other popular games like{" "}
+            दैनिक Lakshmi Bajar Satta Result देखने के साथ-साथ, A7 Satta King पर लोग अन्य लोकप्रिय खेलों के परिणाम भी देखते हैं, जैसे{" "}
             <Link href="/delhi-savera" className="text-blue-600 underline">
               Delhi Savera Satta Result
             </Link>
@@ -2180,40 +2136,38 @@ export const staticMarkets: Record<string, Market> = {
             <Link href="/faridabad" className="text-blue-600 underline">
               Faridabad Satta Result
             </Link>
-            , and{" "}
+            , और{" "}
             <Link href="/gaziabad" className="text-blue-600 underline">
               Gaziabad Satta Result
             </Link>{" "}
-            to stay updated with multiple results throughout the day.
+            ताकि पूरे दिन के कई परिणामों की जानकारी एक साथ मिलती रहे।
           </p>
         ),
       },
       {
-        heading: "How to Check Lakshmi Bajar Satta Result?",
+        heading: "Lakshmi Bajar Satta Result कैसे देखें?",
         description: (
           <>
-            <p>To check the latest result:</p>
+            <p>नवीनतम परिणाम देखने के लिए:</p>
             <ol className="list-decimal pl-6 mt-3 space-y-2">
-              <li>Visit in advance before results go live</li>
-              <li>Refresh around the expected time</li>
-              <li>View the updated Lakshmi Bajar result</li>
-              <li>Scroll for the chart and other game updates</li>
+              <li>परिणाम जारी होने से पहले इस पेज पर आएँ।</li>
+              <li>संभावित समय के आसपास पेज को दोबारा खोलें।</li>
+              <li>अपडेट किया गया Lakshmi Bajar परिणाम देखें।</li>
+              <li>चार्ट और अन्य खेलों की जानकारी के लिए नीचे जाएँ।</li>
             </ol>
           </>
         ),
       },
       {
-        heading: "Disclaimer",
+        heading: "अस्वीकरण",
         description: (
           <>
             <p>
-              This content is provided only for informational purposes. We do not promote
-              or support any form of betting or gambling. The Lakshmi Bajar Satta Result and
-              related information are shared based on publicly available data.
+              यह सामग्री केवल जानकारी देने के उद्देश्य से प्रस्तुत की गई है। हम किसी भी प्रकार की सट्टेबाजी या जुए को बढ़ावा नहीं देते और न ही उसका समर्थन करते हैं। Lakshmi Bajar Satta Result और इससे जुड़ी जानकारी सार्वजनिक रूप से उपलब्ध आँकड़ों के आधार पर साझा की जाती है।
+
             </p>
             <p className="mt-3">
-              Users are advised to follow their local laws and regulations. We are not
-              responsible for any loss or damage caused by the use of this information.
+              लोगों को सलाह दी जाती है कि वे अपने स्थानीय कानूनों और नियमों का पालन करें। इस जानकारी के उपयोग से होने वाले किसी भी नुकसान या क्षति के लिए हम जिम्मेदार नहीं हैं।
             </p>
           </>
         ),
@@ -2221,27 +2175,27 @@ export const staticMarkets: Record<string, Market> = {
     ],
     faqs: [
       {
-        question: "What is Lakshmi Bajar Satta Result?",
+        question: "Lakshmi Bajar Satta Result क्या है?",
         answer:
-          "The Lakshmi Bajar Satta Result is the daily result of the Lakshmi Bajar market, which users can check on A7 Satta King for quick updates.",
+          "Lakshmi Bajar Satta Result, Lakshmi Bajar बाज़ार का दैनिक परिणाम है, जिसे लोग जल्दी जानकारी पाने के लिए A7 Satta King पर देख सकते हैं।",
       },
       {
-        question: "What is the timing of Lakshmi Bajar Satta Result?",
-        answer: "The result is usually announced around 1:40 PM.",
+        question: "Lakshmi Bajar Satta Result का समय क्या है?",
+        answer: "परिणाम आमतौर पर दोपहर लगभग 1:40 PM पर घोषित किया जाता है।",
       },
       {
-        question: "Where can I check Lakshmi Bajar Satta Result today?",
+        question: "आज का Lakshmi Bajar Satta Result कहाँ देख सकते हैं?",
         answer:
-          "You can check the latest updates on A7 Satta King for fast and accurate results.",
+          "तेज़ और सही परिणामों की जानकारी के लिए आप A7 Satta King पर नवीनतम जानकारी देख सकते हैं।",
       },
       {
-        question: "Is Lakshmi Bajar result updated daily?",
-        answer: "Yes, the result is updated every day based on the game schedule.",
+        question: "क्या Lakshmi Bajar का परिणाम रोज़ अपडेट होता है?",
+        answer: "हाँ, खेल के निर्धारित कार्यक्रम के अनुसार परिणाम हर दिन अपडेट किया जाता है।",
       },
       {
-        question: "Can I check Lakshmi Bajar old charts?",
+        question: "क्या मैं Lakshmi Bajar के पुराने चार्ट देख सकता हूँ?",
         answer:
-          "Yes, previous results and charts are available for users to track past data.",
+          "हाँ, पिछले आँकड़ों को देखने के लिए पुराने परिणाम और चार्ट उपलब्ध हैं।",
       },
     ],
   },
