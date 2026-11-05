@@ -20,7 +20,8 @@ export default function FAQSection(
                 {/* FAQ Main Yellow Header */}
                 <div className="w-full bg-[#ffd200] py-3.5 px-4 text-center border-b border-black/10">
                     <h2 className="text-black font-bold text-sm sm:text-lg md:text-xl tracking-wide uppercase">
-                        Frequently Asked Questions
+                        {/* Frequently Asked Questions */}
+                        अक्सर पूछे जाने वाले प्रश्न
                     </h2>
                 </div>
 
