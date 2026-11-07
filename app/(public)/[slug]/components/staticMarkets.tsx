@@ -772,88 +772,88 @@ export const staticMarkets: Record<string, Market> = {
     },
     sections: [
       {
-        heading: "Raj Shree Satta Results - Today's Result, Live Update & Chart Info",
+        heading: "राज श्री सट्टा रिजल्ट - आज का रिजल्ट, लाइव अपडेट और चार्ट की जानकारी",
         description: (
           <>
             <p>
-              If you want the latest Raj Shree Satta Results, this page brings all updates in a simple and well-structured format. From today’s result to earlier chart records, everything is arranged so users can quickly check the Raj Shree Satta Results today without any difficulty.
+              अगर आप Raj Shree Satta Results के ताजा अपडेट देखना चाहते हैं, तो यह पेज आपको सभी जानकारी आसान और व्यवस्थित तरीके से देता है। आज के रिजल्ट से लेकर पुराने चार्ट रिकॉर्ड तक, यहां सब कुछ इस तरह दिया गया है कि आप बिना किसी परेशानी के Raj Shree Satta Results today देख सकें।
             </p>
             <p className="mt-3">
-              Raj Shree is a widely followed game in the daily Satta cycle. Because of its fixed timing and regular updates, many users include it in their daily tracking routine. On A7 Satta King, you can easily find the latest Raj Shree result along with past data in one place.
+              राज श्री दैनिक सट्टा चक्र में काफी लोकप्रिय गेम है। इसके तय समय और नियमित अपडेट के कारण कई लोग इसे अपनी रोजाना की जानकारी में शामिल करते हैं। A7 Satta King पर आप एक ही जगह राज श्री का ताजा रिजल्ट और पुराना डेटा आसानी से देख सकते हैं।
             </p>
           </>
         ),
       },
       {
-        heading: "What is Raj Shree Satta Results?",
+        heading: "Raj Shree Satta Results क्या है?",
         description: (
           <>
             <p>
-              Raj Shree Satta Results refer to the daily declared outcome of the Raj Shree game within the Satta King system. The result is released at a scheduled time every day, making it convenient for users to stay updated.
+              Raj Shree Satta Results का मतलब सट्टा किंग सिस्टम के अंतर्गत राज श्री गेम के रोजाना घोषित होने वाले परिणाम से है। इसका रिजल्ट हर दिन तय समय पर जारी किया जाता है, जिससे लोगों को अपडेट रहना आसान होता है।
             </p>
             <p className="mt-3">
-              On <Link href={"https://www.a7sattaking.co/"} className="text-blue-600 underline">A7 Satta King</Link>, users can check the most recent result along with previous records and chart details, helping them track both current and historical data without switching platforms.
+              <Link href={"https://www.a7sattaking.co/"} className="text-blue-600 underline">A7 Satta King</Link> पर आप सबसे नया रिजल्ट, पुराने रिकॉर्ड और चार्ट की जानकारी देख सकते हैं। इससे आपको अलग-अलग वेबसाइट पर जाने की जरूरत नहीं पड़ती और आप मौजूदा तथा पुराने डेटा को एक ही जगह देख सकते हैं।
             </p>
           </>
         ),
       },
       {
-        heading: "Raj Shree Satta Results Today",
+        heading: "आज का Raj Shree Satta Results",
         description: (
           <>
             <p>
-              Raj Shree Satta Results today are generally announced in the evening. Many users visit the page before the expected time so they can view the latest update as soon as it is released.
+              Raj Shree Satta Results today आमतौर पर शाम के समय घोषित किया जाता है। कई लोग तय समय से पहले ही इस पेज पर आते हैं, ताकि रिजल्ट जारी होते ही उन्हें नया अपडेट मिल सके।
             </p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-
               <li className="font-bold text-black">
-                Expected Result Time: Around 7:20 PM
+                अनुमानित रिजल्ट का समय: लगभग 7:20 PM
               </li>
             </ul>
             <p className="mt-3">
-              The page is updated regularly to ensure users receive accurate and timely information.
+              लोगों तक सही और समय पर जानकारी पहुंचाने के लिए इस पेज को नियमित रूप से अपडेट किया जाता है।
             </p>
           </>
         ),
       },
       {
-        heading: "Raj Shree Chart & Previous Results",
+        heading: "राज श्री चार्ट और पुराने रिजल्ट",
         description: (
           <>
             <p>
-              For users who want to explore earlier outcomes, the Raj Shree Satta chart section provides access to past results. This helps in reviewing number history and staying informed about previous updates.
+              जो लोग पुराने परिणाम देखना चाहते हैं, उनके लिए Raj Shree Satta चार्ट सेक्शन में पिछले रिजल्ट की जानकारी उपलब्ध है। इससे पुराने नंबरों का रिकॉर्ड देखने और पहले के अपडेट की जानकारी रखने में मदद मिलती है।
             </p>
-            <p className="mt-3">With the help of chart data, users can:</p>
+            <p className="mt-3">चार्ट के डेटा की मदद से आप:</p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-              <li>View Earlier Results Anytime</li>
-              <li>Track and Manage Number Records</li>
-              <li>Check Daily Changes in Results</li>
-              <li>Understand Trends Over Time</li>
+              <li>किसी भी समय पुराने रिजल्ट देख सकते हैं</li>
+              <li>नंबरों के रिकॉर्ड को देख और व्यवस्थित रख सकते हैं</li>
+              <li>रिजल्ट में रोजाना होने वाले बदलाव देख सकते हैं</li>
+              <li>समय के साथ आने वाले रुझानों को समझ सकते हैं</li>
             </ul>
           </>
         ),
       },
       {
-        heading: "Reasons Behind Raj Shree Satta Results Popularity",
+        heading: "Raj Shree Satta Results की लोकप्रियता के कारण",
         description: (
           <>
             <p>
-              Raj Shree Satta Results are frequently searched because of their consistent schedule and reliable updates. Many users include this game in their daily routine along with other results.            </p>
-            <p className="mt-3">Some main reasons include:</p>
+              Raj Shree Satta Results को नियमित समय और लगातार मिलने वाले अपडेट के कारण अक्सर खोजा जाता है। कई लोग दूसरे रिजल्ट के साथ इस गेम को भी अपनी रोजाना की जानकारी में शामिल करते हैं।
+            </p>
+            <p className="mt-3">इसके कुछ मुख्य कारण हैं:</p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-              <li>Get Daily Result Announcements on Time</li>
-              <li>Results at a Fixed and Reliable Time</li>
-              <li>Quick and Simple Online Accessibility</li>
-              <li>Ongoing User Engagement and Interaction</li>
+              <li>रोजाना रिजल्ट की घोषणा समय पर मिलना</li>
+              <li>एक तय और नियमित समय पर रिजल्ट आना</li>
+              <li>ऑनलाइन आसानी से और जल्दी जानकारी मिलना</li>
+              <li>लोगों की लगातार भागीदारी और जुड़ाव</li>
             </ul>
           </>
         ),
       },
       {
-        heading: "Browse Different Satta Games",
+        heading: "अन्य सट्टा गेम के बारे में जानें",
         description: (
           <p>
-            While checking the Raj Shree Satta Results, users on A7 Satta King also follow games like{" "}
+            Raj Shree Satta Results देखने के साथ A7 Satta King पर लोग{" "}
             <Link href="https://www.a7sattaking.co/shri-ganesh" className="text-blue-600 underline">
               Shri Ganesh Satta Result
             </Link>
@@ -865,37 +865,37 @@ export const staticMarkets: Record<string, Market> = {
             <Link href="https://www.a7sattaking.co/jaipur-matka" className="text-blue-600 underline">
               Jaipur Matka Satta Result
             </Link>
-            , and{" "}
+            , और{" "}
             <Link href="https://www.a7sattaking.co/dwarka" className="text-blue-600 underline">
               Dwarka Satta Result
             </Link>{" "}
-            to stay updated with multiple results throughout the day.
+            जैसे गेम के रिजल्ट भी देखते हैं, ताकि पूरे दिन के अलग-अलग रिजल्ट की जानकारी मिलती रहे।
           </p>
         ),
       },
       {
-        heading: "How to Check Raj Shree Satta Results?",
+        heading: "Raj Shree Satta Results कैसे देखें?",
         description: (
           <>
-            <p>To check the latest result, follow these steps:</p>
+            <p>नया रिजल्ट देखने के लिए इन आसान चरणों का पालन करें:</p>
             <ol className="list-decimal pl-6 mt-3 space-y-2">
-              <li>Check the Page Before Results Are Out</li>
-              <li>Refresh the page around 7:20 PM</li>
-              <li>Check the updated Raj Shree number</li>
-              <li>Scroll further to view charts and additional details</li>
+              <li>रिजल्ट जारी होने से पहले पेज खोलें</li>
+              <li>लगभग 7:20 PM पर पेज को दोबारा रिफ्रेश करें</li>
+              <li>अपडेट किया गया राज श्री नंबर देखें</li>
+              <li>चार्ट और अन्य जानकारी देखने के लिए नीचे स्क्रॉल करें</li>
             </ol>
           </>
         ),
       },
       {
-        heading: "Disclaimer",
+        heading: "अस्वीकरण",
         description: (
           <>
             <p>
-              This content is intended only for informational purposes. We do not encourage or support any form of betting or gambling activity. The Raj Shree Satta Results shared here are based on publicly available information.
+              यह सामग्री केवल जानकारी देने के उद्देश्य से तैयार की गई है। हम किसी भी प्रकार की सट्टेबाजी या जुए की गतिविधि को प्रोत्साहित या समर्थन नहीं करते हैं। यहां दी गई Raj Shree Satta Results की जानकारी सार्वजनिक रूप से उपलब्ध स्रोतों पर आधारित है।
             </p>
             <p className="mt-3">
-              Users should follow their local laws and regulations. We are not responsible for any loss or consequences resulting from the use of this information.
+              उपयोगकर्ताओं को अपने स्थानीय कानूनों और नियमों का पालन करना चाहिए। इस जानकारी के उपयोग से होने वाले किसी भी नुकसान या परिणाम के लिए हम जिम्मेदार नहीं हैं।
             </p>
           </>
         ),
@@ -903,29 +903,26 @@ export const staticMarkets: Record<string, Market> = {
     ],
     faqs: [
       {
-        question: "What is Raj Shree Satta Results?",
+        question: "Raj Shree Satta Results क्या है?",
         answer:
-          "Raj Shree Satta Results show the daily outcome of the Raj Shree market, which users can check online for updates.",
+          "Raj Shree Satta Results में राज श्री मार्केट का रोजाना का परिणाम दिखाया जाता है, जिसे लोग अपडेट के लिए ऑनलाइन देख सकते हैं।",
       },
       {
-        question: "What is the timing of Raj Shree Satta Results?",
-        answer:
-          "The result is generally announced at around 7:20 PM.",
+        question: "Raj Shree Satta Results का समय क्या है?",
+        answer: "इसका रिजल्ट आमतौर पर लगभग 7:20 PM पर घोषित किया जाता है।",
       },
       {
-        question: "Where can I check Raj Shree Satta Results today?",
+        question: "आज का Raj Shree Satta Results कहां देख सकते हैं?",
         answer:
-          "You can find the latest Raj Shree Satta Results updates on A7 Satta King for quick and reliable information.",
+          "आप जल्दी और भरोसेमंद जानकारी के लिए A7 Satta King पर Raj Shree Satta Results के ताजा अपडेट देख सकते हैं।",
       },
       {
-        question: "Is Raj Shree result updated daily?",
-        answer:
-          "Yes, the Raj Shree result is updated every day according to the fixed schedule.",
+        question: "क्या Raj Shree का रिजल्ट रोजाना अपडेट होता है?",
+        answer: "हां, तय समय के अनुसार Raj Shree का रिजल्ट हर दिन अपडेट किया जाता है।",
       },
       {
-        question: "Can I check old Raj Shree results?",
-        answer:
-          "Yes, previous Raj Shree results are available in the chart section for reference.",
+        question: "क्या मैं Raj Shree के पुराने रिजल्ट देख सकता हूं?",
+        answer: "हां, पुराने Raj Shree रिजल्ट संदर्भ के लिए चार्ट सेक्शन में उपलब्ध हैं।",
       },
     ],
   },
@@ -940,93 +937,90 @@ export const staticMarkets: Record<string, Market> = {
     },
     sections: [
       {
-        heading: "Udaipur City Satta Results – Today Update, Live Result & Chart Details",
+        heading: "उदयपुर सिटी सट्टा रिजल्ट – आज का अपडेट, लाइव रिजल्ट और चार्ट की जानकारी",
         description: (
           <>
             <p>
-              If you want the latest Udaipur City Satta Results, this page brings all the important updates in a clear and organized format. From today’s result to earlier chart records, everything is available here so users can quickly check the Udaipur City Satta Results today without any confusion.
+              अगर आप Udaipur City Satta Results के ताजा अपडेट देखना चाहते हैं, तो इस पेज पर आपको सभी जरूरी जानकारी साफ और व्यवस्थित तरीके से मिलेगी। आज के रिजल्ट से लेकर पुराने चार्ट रिकॉर्ड तक, यहां सब कुछ उपलब्ध है, ताकि आप बिना किसी परेशानी के Udaipur City Satta Results today देख सकें।
             </p>
             <p className="mt-3">
-              Udaipur City is one of the regularly tracked games in the daily Satta cycle. Because of its fixed timing and regular updates, many users follow it daily along with other results. On A7 Satta King, you can easily access the latest Udaipur City result along with previous data in one place.
+              उदयपुर सिटी दैनिक सट्टा चक्र में नियमित रूप से देखे जाने वाले गेम में से एक है। इसके तय समय और नियमित अपडेट के कारण कई लोग दूसरे रिजल्ट के साथ इसे भी रोजाना देखते हैं। A7 Satta King पर आप उदयपुर सिटी का ताजा रिजल्ट और पुराना डेटा एक ही जगह आसानी से देख सकते हैं।
             </p>
           </>
         ),
       },
       {
-        heading: "What are Udaipur City Satta Results?",
+        heading: "Udaipur City Satta Results क्या है?",
         description: (
           <>
             <p>
-              Udaipur City Satta Results refer to the daily announced outcome of the Udaipur City game within the Satta King system. The result is released at a set time every day, making it simple for users to stay updated regularly.
+              Udaipur City Satta Results का मतलब सट्टा किंग सिस्टम के अंतर्गत उदयपुर सिटी गेम के रोजाना घोषित होने वाले परिणाम से है। इसका रिजल्ट हर दिन एक तय समय पर जारी किया जाता है, जिससे लोगों को नियमित रूप से अपडेट रहना आसान होता है।
             </p>
             <p className="mt-3">
-              On <Link href="https://www.a7sattaking.co" className="text-blue-600 underline">
+              <Link href="https://www.a7sattaking.co" className="text-blue-600 underline">
                 A7 Satta King
-              </Link>, users can check the current result as well as earlier records and chart history, helping them track both recent and past data without any hassle.
-
+              </Link> पर आप मौजूदा रिजल्ट के साथ पुराने रिकॉर्ड और चार्ट का इतिहास भी देख सकते हैं। इससे आपको बिना किसी परेशानी के नए और पुराने डेटा की जानकारी मिल जाती है।
             </p>
           </>
         ),
       },
       {
-        heading: "Udaipur City Satta Results Today",
+        heading: "आज का Udaipur City Satta Results",
         description: (
           <>
             <p>
-              Udaipur City Satta Results today are generally declared in the evening. Many users visit the page around the expected time to view the latest update as soon as it is published.
+              Udaipur City Satta Results today आमतौर पर शाम के समय घोषित किया जाता है। कई लोग नया अपडेट जारी होते ही देखने के लिए तय समय के आसपास इस पेज पर आते हैं।
             </p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-
               <li className="font-bold text-black">
-                Expected Result Time: Around 7:30 PM
+                अनुमानित रिजल्ट का समय: लगभग 7:30 PM
               </li>
             </ul>
             <p className="mt-3">
-              The page is refreshed regularly so users can get accurate and timely updates without delay.
+              लोगों तक सही और समय पर जानकारी पहुंचाने के लिए इस पेज को नियमित रूप से अपडेट किया जाता है।
             </p>
           </>
         ),
       },
       {
-        heading: "Udaipur City Chart & Previous Results",
+        heading: "उदयपुर सिटी चार्ट और पुराने रिजल्ट",
         description: (
           <>
             <p>
-              For users who want to review earlier outcomes, the Udaipur City Satta chart section provides access to past results. This helps in tracking number history and staying informed about previous updates.
-
+              जो लोग पुराने परिणाम देखना चाहते हैं, उनके लिए Udaipur City Satta चार्ट सेक्शन में पिछले रिजल्ट की जानकारी उपलब्ध है। इससे नंबरों का पुराना रिकॉर्ड देखने और पहले के अपडेट की जानकारी रखने में मदद मिलती है।
             </p>
-            <p className="mt-3">With chart data, users can:</p>
+            <p className="mt-3">चार्ट के डेटा की मदद से आप:</p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-              <li>Quick Access to Old Results</li>
-              <li>Stay Updated with Number Records</li>
-              <li>Compare Today’s Updates with Past Results</li>
-              <li>Track Trends Over Time</li>
+              <li>पुराने रिजल्ट आसानी से देख सकते हैं</li>
+              <li>नंबरों के रिकॉर्ड की जानकारी रख सकते हैं</li>
+              <li>आज के अपडेट की पुराने रिजल्ट से तुलना कर सकते हैं</li>
+              <li>समय के साथ आने वाले रुझानों को देख सकते हैं</li>
             </ul>
           </>
         ),
       },
       {
-        heading: "What Makes Udaipur City Satta Results Popular",
+        heading: "Udaipur City Satta Results की लोकप्रियता के कारण",
         description: (
           <>
             <p>
-              Udaipur City Satta Results are frequently searched because of their consistent timing and regular updates. Many users include this game in their daily routine along with other results.
+              Udaipur City Satta Results को इसके नियमित समय और लगातार मिलने वाले अपडेट के कारण अक्सर खोजा जाता है। कई लोग दूसरे रिजल्ट के साथ इस गेम को भी अपनी रोजाना की जानकारी में शामिल करते हैं।
             </p>
-            <p className="mt-3">Some key reasons include:</p>
+            <p className="mt-3">इसके कुछ मुख्य कारण हैं:</p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-              <li>Daily Results Available Online</li>
-              <li>Fixed and Predictable Result Timing</li>
-              <li>Simple Online Platform Access</li>
-              <li>Continuous User Engagement in Daily Results</li>
+              <li>रोजाना के रिजल्ट ऑनलाइन उपलब्ध होना</li>
+              <li>रिजल्ट का तय और अनुमानित समय</li>
+              <li>ऑनलाइन प्लेटफॉर्म पर आसानी से जानकारी मिलना</li>
+              <li>रोजाना के रिजल्ट में लोगों की लगातार भागीदारी</li>
             </ul>
           </>
         ),
       },
       {
-        heading: "Explore Additional Satta Game Choices",
+        heading: "अन्य सट्टा गेम के विकल्प देखें",
         description: (
           <p>
-            While checking the Udaipur City Satta Results, users on A7 Satta King also follow games like{" "}
+            Udaipur City Satta Results देखने के साथ A7 Satta King पर लोग{" "}
             <Link href="https://www.a7sattaking.co/agra" className="text-blue-600 underline">
               Agra City Satta Results
             </Link>
@@ -1038,37 +1032,37 @@ export const staticMarkets: Record<string, Market> = {
             <Link href="https://www.a7sattaking.co/mandi-bazar" className="text-blue-600 underline">
               Mandi Bazar Satta Result
             </Link>
-            , and{" "}
+            , और{" "}
             <Link href="https://www.a7sattaking.co/delhi-savera" className="text-blue-600 underline">
               Delhi Savera Satta Result
             </Link>{" "}
-            to stay updated with multiple results across the day.
+            जैसे गेम के रिजल्ट भी देखते हैं, ताकि पूरे दिन के अलग-अलग रिजल्ट की जानकारी मिलती रहे।
           </p>
         ),
       },
       {
-        heading: "How to Check Udaipur City Satta Results?",
+        heading: "Udaipur City Satta Results कैसे देखें?",
         description: (
           <>
-            <p>To check the latest result, follow these steps:</p>
+            <p>नया रिजल्ट देखने के लिए इन आसान चरणों का पालन करें:</p>
             <ol className="list-decimal pl-6 mt-3 space-y-2">
-              <li>Visit Early Before Result Time</li>
-              <li>Refresh the page around 7:30 PM</li>
-              <li>Check the updated Udaipur City number</li>
-              <li>View Charts and Additional Info Below</li>
+              <li>रिजल्ट के समय से पहले पेज पर जाएं</li>
+              <li>लगभग 7:30 PM पर पेज को दोबारा रिफ्रेश करें</li>
+              <li>अपडेट किया गया उदयपुर सिटी नंबर देखें</li>
+              <li>नीचे दिए गए चार्ट और अन्य जानकारी देखें</li>
             </ol>
           </>
         ),
       },
       {
-        heading: "Disclaimer",
+        heading: "अस्वीकरण",
         description: (
           <>
             <p>
-              This content is intended only for informational purposes. We do not encourage or support any form of betting or gambling activity. The Udaipur City Satta Results shared here are based on publicly available information.
+              यह सामग्री केवल जानकारी देने के उद्देश्य से तैयार की गई है। हम किसी भी प्रकार की सट्टेबाजी या जुए की गतिविधि को प्रोत्साहित या समर्थन नहीं करते हैं। यहां दी गई Udaipur City Satta Results की जानकारी सार्वजनिक रूप से उपलब्ध स्रोतों पर आधारित है।
             </p>
             <p className="mt-3">
-              Users should follow their local laws and regulations. We are not responsible for any loss or consequences resulting from the use of this information.
+              उपयोगकर्ताओं को अपने स्थानीय कानूनों और नियमों का पालन करना चाहिए। इस जानकारी के उपयोग से होने वाले किसी भी नुकसान या परिणाम के लिए हम जिम्मेदार नहीं हैं।
             </p>
           </>
         ),
@@ -1076,29 +1070,26 @@ export const staticMarkets: Record<string, Market> = {
     ],
     faqs: [
       {
-        question: "What is Udaipur City Satta Results?",
+        question: "Udaipur City Satta Results क्या है?",
         answer:
-          "Udaipur City Satta Results show the daily outcome of the Udaipur City market, which users can check online for updates.",
+          "Udaipur City Satta Results में उदयपुर सिटी मार्केट का रोजाना का परिणाम दिखाया जाता है, जिसे लोग अपडेट के लिए ऑनलाइन देख सकते हैं।",
       },
       {
-        question: "What is the timing of Udaipur City Satta Results?",
-        answer:
-          "The result is generally announced at around 7:30 PM.",
+        question: "Udaipur City Satta Results का समय क्या है?",
+        answer: "इसका रिजल्ट आमतौर पर लगभग 7:30 PM पर घोषित किया जाता है।",
       },
       {
-        question: "Where can I check Udaipur City Satta Results today?",
+        question: "आज का Udaipur City Satta Results कहां देख सकते हैं?",
         answer:
-          "You can find the latest Udaipur City Satta Results updates on A7 Satta King for quick and reliable information.",
+          "आप जल्दी और भरोसेमंद जानकारी के लिए A7 Satta King पर Udaipur City Satta Results के ताजा अपडेट देख सकते हैं।",
       },
       {
-        question: "Is Udaipur City result updated daily?",
-        answer:
-          "Yes, the Udaipur City result is updated every day according to the fixed schedule.",
+        question: "क्या Udaipur City का रिजल्ट रोजाना अपडेट होता है?",
+        answer: "हां, तय समय के अनुसार Udaipur City का रिजल्ट हर दिन अपडेट किया जाता है।",
       },
       {
-        question: "Can I check old Udaipur City results?",
-        answer:
-          "Yes, previous Udaipur City results are available in the chart section for reference.",
+        question: "क्या मैं Udaipur City के पुराने रिजल्ट देख सकता हूं?",
+        answer: "हां, पुराने Udaipur City रिजल्ट संदर्भ के लिए चार्ट सेक्शन में उपलब्ध हैं।",
       },
     ],
   },
@@ -1123,94 +1114,90 @@ export const staticMarkets: Record<string, Market> = {
     },
     sections: [
       {
-        heading: "Mandi Bazar Satta Results - Today Result, Latest Update & Chart Details",
+        heading: "मंडी बाजार सट्टा रिजल्ट - आज का रिजल्ट, ताजा अपडेट और चार्ट की जानकारी",
         description: (
           <>
             <p>
-              If you are looking for the latest Mandi Bazar Satta Results, this page presents all updates in a simple and well-structured way. From today’s result to earlier chart records, everything is arranged so users can quickly check the Mandi Bazar Satta Results today without any confusion.
+              अगर आप Mandi Bazar Satta Results के ताजा अपडेट देखना चाहते हैं, तो इस पेज पर आपको सभी जानकारी आसान और व्यवस्थित तरीके से मिलेगी। आज के रिजल्ट से लेकर पुराने चार्ट रिकॉर्ड तक, यहां सब कुछ इस तरह दिया गया है कि आप बिना किसी परेशानी के Mandi Bazar Satta Results today देख सकें।
             </p>
             <p className="mt-3">
-              Mandi Bazar is a regularly tracked game in the daily Satta cycle, especially during evening hours. Due to its fixed timing and steady updates, many users follow it daily along with other markets. On A7 Satta King, you can easily access the latest Mandi Bazar result along with previous data in one place.
+              मंडी बाजार दैनिक सट्टा चक्र में नियमित रूप से देखे जाने वाला गेम है, खासकर शाम के समय। इसके तय समय और लगातार मिलने वाले अपडेट के कारण कई लोग दूसरे मार्केट के साथ इसका रिजल्ट भी रोजाना देखते हैं। A7 Satta King पर आप मंडी बाजार का ताजा रिजल्ट और पुराना डेटा एक ही जगह आसानी से देख सकते हैं।
             </p>
           </>
         ),
       },
       {
-        heading: "What is Mandi Bazar Satta Results?",
+        heading: "Mandi Bazar Satta Results क्या है?",
         description: (
           <>
             <p>
-              Mandi Bazar Satta Results refer to the daily declared outcome of the Mandi Bazar game within the Satta King system. The result is announced at a scheduled time each day, making it convenient for users to stay updated regularly.
-
+              Mandi Bazar Satta Results का मतलब सट्टा किंग सिस्टम के अंतर्गत मंडी बाजार गेम के रोजाना घोषित होने वाले परिणाम से है। इसका रिजल्ट हर दिन एक तय समय पर जारी किया जाता है, जिससे लोगों को नियमित रूप से अपडेट रहना आसान होता है।
             </p>
             <p className="mt-3">
-              On <Link href="https://www.a7sattaking.co" className="text-blue-600 underline">
+              <Link href="https://www.a7sattaking.co" className="text-blue-600 underline">
                 A7 Satta King
-              </Link>, users can check the current result as well as past records and chart details, helping them track both recent and previous updates without any hassle.
-
+              </Link> पर आप मौजूदा रिजल्ट के साथ पुराने रिकॉर्ड और चार्ट की जानकारी भी देख सकते हैं। इससे आपको बिना किसी परेशानी के नए और पुराने अपडेट की जानकारी मिल जाती है।
             </p>
           </>
         ),
       },
       {
-        heading: "Mandi Bazar Satta Results Today",
+        heading: "आज का Mandi Bazar Satta Results",
         description: (
           <>
             <p>
-              Mandi Bazar Satta Results today are generally released in the evening. Many users visit the page around the expected time to view the latest update as soon as it is announced.
+              Mandi Bazar Satta Results today आमतौर पर शाम के समय जारी किया जाता है। कई लोग नया अपडेट घोषित होते ही देखने के लिए तय समय के आसपास इस पेज पर आते हैं।
             </p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-
               <li className="font-bold text-black">
-                Expected Result Time: Around 8:10 PM
+                अनुमानित रिजल्ट का समय: लगभग 8:10 PM
               </li>
             </ul>
             <p className="mt-3">
-              The page is refreshed frequently so users can get accurate and timely updates without delay.
+              लोगों तक सही और समय पर जानकारी पहुंचाने के लिए इस पेज को नियमित रूप से अपडेट किया जाता है।
             </p>
           </>
         ),
       },
       {
-        heading: "Mandi Bazar Chart & Previous Results",
+        heading: "मंडी बाजार चार्ट और पुराने रिजल्ट",
         description: (
           <>
             <p>
-              For users who want to explore earlier outcomes, the Mandi Bazar Satta chart section provides access to past results. This helps in tracking number history and staying informed about previous data.
-
+              जो लोग पुराने परिणाम देखना चाहते हैं, उनके लिए Mandi Bazar Satta चार्ट सेक्शन में पिछले रिजल्ट की जानकारी उपलब्ध है। इससे नंबरों का पुराना रिकॉर्ड देखने और पहले के डेटा की जानकारी रखने में मदद मिलती है।
             </p>
-            <p className="mt-3">With chart access, users can:</p>
+            <p className="mt-3">चार्ट की मदद से आप:</p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-              <li>View Historical Results Easily</li>
-              <li>Maintain number history records</li>
-              <li>Compare Daily Performance and Changes</li>
-              <li>Study Patterns in Daily Results</li>
+              <li>पुराने रिजल्ट आसानी से देख सकते हैं</li>
+              <li>नंबरों का पुराना रिकॉर्ड रख सकते हैं</li>
+              <li>रोजाना के परिणाम और उनमें होने वाले बदलावों की तुलना कर सकते हैं</li>
+              <li>दैनिक रिजल्ट में आने वाले पैटर्न को समझ सकते हैं</li>
             </ul>
           </>
         ),
       },
       {
-        heading: "Why Mandi Bazar Satta Results Attract Users",
+        heading: "Mandi Bazar Satta Results लोगों को क्यों आकर्षित करता है?",
         description: (
           <>
             <p>
-              Mandi Bazar Satta Results are widely searched due to their consistent schedule and regular updates. Many users include this game in their daily tracking routine along with other results.
+              Mandi Bazar Satta Results को इसके नियमित समय और लगातार मिलने वाले अपडेट के कारण अक्सर खोजा जाता है। कई लोग दूसरे रिजल्ट के साथ इस गेम को भी अपनी रोजाना की जानकारी में शामिल करते हैं।
             </p>
-            <p className="mt-3">Some key reasons include:</p>
+            <p className="mt-3">इसके कुछ मुख्य कारण हैं:</p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-              <li>Regular Daily Result Availability</li>
-              <li>No Delay - Fixed Result Timing</li>
-              <li>One-Click Online Accessibility</li>
-              <li>Growing User Engagement Over Time</li>
+              <li>रोजाना रिजल्ट की नियमित उपलब्धता</li>
+              <li>बिना देरी के तय समय पर रिजल्ट मिलना</li>
+              <li>एक क्लिक में ऑनलाइन जानकारी उपलब्ध होना</li>
+              <li>समय के साथ लोगों की बढ़ती भागीदारी</li>
             </ul>
           </>
         ),
       },
       {
-        heading: "Explore All Satta Games in One Place",
+        heading: "सभी सट्टा गेम की जानकारी एक ही जगह देखें",
         description: (
           <p>
-            While checking the Mandi Bazar Satta Results, users on A7 Satta King also follow games like{" "}
+            Mandi Bazar Satta Results देखने के साथ A7 Satta King पर लोग{" "}
             <Link href="https://www.a7sattaking.co/agra-city" className="text-blue-600 underline">
               Agra City Satta Result
             </Link>
@@ -1222,37 +1209,37 @@ export const staticMarkets: Record<string, Market> = {
             <Link href="https://www.a7sattaking.co/raj-shree" className="text-blue-600 underline">
               Raj Shree Satta Results
             </Link>
-            , and{" "}
+            , और{" "}
             <Link href="https://www.a7sattaking.co/alwar" className="text-blue-600 underline">
               Alwar Satta Result
             </Link>{" "}
-            to stay updated with multiple results throughout the day.
+            जैसे गेम के रिजल्ट भी देखते हैं, ताकि पूरे दिन के अलग-अलग रिजल्ट की जानकारी मिलती रहे।
           </p>
         ),
       },
       {
-        heading: "How to Check Mandi Bazar Satta Results?",
+        heading: "Mandi Bazar Satta Results कैसे देखें?",
         description: (
           <>
-            <p>To check the latest result, follow these steps:</p>
+            <p>नया रिजल्ट देखने के लिए इन आसान चरणों का पालन करें:</p>
             <ol className="list-decimal pl-6 mt-3 space-y-2">
-              <li>Stay Updated - Visit Before Results</li>
-              <li>Refresh the page around 8:10 PM</li>
-              <li>Check the updated Mandi Bazar number</li>
-              <li>Check Charts and Insights by Scrolling</li>
+              <li>अपडेट रहने के लिए रिजल्ट से पहले पेज पर जाएं</li>
+              <li>लगभग 8:10 PM पर पेज को दोबारा रिफ्रेश करें</li>
+              <li>अपडेट किया गया मंडी बाजार नंबर देखें</li>
+              <li>चार्ट और अन्य जानकारी देखने के लिए नीचे स्क्रॉल करें</li>
             </ol>
           </>
         ),
       },
       {
-        heading: "Disclaimer",
+        heading: "अस्वीकरण",
         description: (
           <>
             <p>
-              This content is intended only for informational purposes. We do not encourage or support any form of betting or gambling activity. The Mandi Bazar Satta Results shared here are based on publicly available information.
+              यह सामग्री केवल जानकारी देने के उद्देश्य से तैयार की गई है। हम किसी भी प्रकार की सट्टेबाजी या जुए की गतिविधि को प्रोत्साहित या समर्थन नहीं करते हैं। यहां दी गई Mandi Bazar Satta Results की जानकारी सार्वजनिक रूप से उपलब्ध स्रोतों पर आधारित है।
             </p>
             <p className="mt-3">
-              Users should follow their local laws and regulations. We are not responsible for any loss or consequences resulting from the use of this information.
+              उपयोगकर्ताओं को अपने स्थानीय कानूनों और नियमों का पालन करना चाहिए। इस जानकारी के उपयोग से होने वाले किसी भी नुकसान या परिणाम के लिए हम जिम्मेदार नहीं हैं।
             </p>
           </>
         ),
@@ -1260,29 +1247,26 @@ export const staticMarkets: Record<string, Market> = {
     ],
     faqs: [
       {
-        question: "What is Mandi Bazar Satta Results?",
+        question: "Mandi Bazar Satta Results क्या है?",
         answer:
-          "Mandi Bazar Satta Results show the daily outcome of the Mandi Bazar market, which users can check online for updates.",
+          "Mandi Bazar Satta Results में मंडी बाजार मार्केट का रोजाना का परिणाम दिखाया जाता है, जिसे लोग अपडेट के लिए ऑनलाइन देख सकते हैं।",
       },
       {
-        question: "What is the timing of Mandi Bazar Satta Results?",
-        answer:
-          "The result is generally announced at around 8:10 PM.",
+        question: "Mandi Bazar Satta Results का समय क्या है?",
+        answer: "इसका रिजल्ट आमतौर पर लगभग 8:10 PM पर घोषित किया जाता है।",
       },
       {
-        question: "Where can I check Mandi Bazar Satta Results today?",
+        question: "आज का Mandi Bazar Satta Results कहां देख सकते हैं?",
         answer:
-          "You can find the latest updates on A7 Satta King for quick and reliable information.",
+          "आप जल्दी और भरोसेमंद जानकारी के लिए A7 Satta King पर इसके ताजा अपडेट देख सकते हैं।",
       },
       {
-        question: "Is Mandi Bazar result updated daily?",
-        answer:
-          "Yes, it is updated every day according to the fixed schedule.",
+        question: "क्या मंडी बाजार का रिजल्ट रोजाना अपडेट होता है?",
+        answer: "हां, तय समय के अनुसार इसका रिजल्ट हर दिन अपडेट किया जाता है।",
       },
       {
-        question: "Can I check old Mandi Bazar results?",
-        answer:
-          "Yes, previous results are available in the chart section for reference.",
+        question: "क्या मैं मंडी बाजार के पुराने रिजल्ट देख सकता हूं?",
+        answer: "हां, पुराने रिजल्ट संदर्भ के लिए चार्ट सेक्शन में उपलब्ध हैं।",
       },
     ],
   },
@@ -1297,93 +1281,90 @@ export const staticMarkets: Record<string, Market> = {
     },
     sections: [
       {
-        heading: "Sialkot Satta Results – Today Update, Latest Numbers & Chart Records",
+        heading: "सियालकोट सट्टा रिजल्ट – आज का अपडेट, ताजा नंबर और चार्ट रिकॉर्ड ",
         description: (
           <>
             <p>
-              If you are trying to find the most recent Sialkot Satta Results, this page brings all updates in a structured and user-friendly way. You can quickly view the Sialkot Satta Results today, along with past data and important details, without any confusion or delay.
-            </p>
+              अगर आप Sialkot Satta Results के सबसे नए अपडेट देखना चाहते हैं, तो इस पेज पर आपको सभी जानकारी व्यवस्थित और आसान तरीके से मिलेगी। आप बिना किसी परेशानी या देरी के Sialkot Satta Results today के साथ पुराने डेटा और जरूरी जानकारी भी आसानी से देख सकते हैं।            </p>
             <p className="mt-3">
-              Sialkot is a regularly followed evening game in the daily Satta cycle. Due to its fixed timing and consistent updates, many users include it in their daily result tracking. On A7 Satta King, you can check the latest Sialkot result along with previous records in one place.
+              सियालकोट दैनिक सट्टा चक्र में शाम के समय देखे जाने वाला नियमित गेम है। इसके तय समय और लगातार मिलने वाले अपडेट के कारण कई लोग इसे अपने रोजाना के रिजल्ट रिकॉर्ड में शामिल करते हैं। A7 Satta King पर आप सियालकोट का ताजा रिजल्ट और पुराने रिकॉर्ड एक ही जगह देख सकते हैं।
             </p>
           </>
         ),
       },
       {
-        heading: "What are Sialkot Satta Results?",
+        heading: "Sialkot Satta Results क्या है?",
         description: (
           <>
             <p>
-              Sialkot Satta Results are the daily outcomes declared for the Sialkot game under the Satta King system. These results are announced at a specific time every day, making it easier for users to follow updates regularly.
-
+              Sialkot Satta Results सट्टा किंग सिस्टम के अंतर्गत सियालकोट गेम के रोजाना घोषित होने वाले परिणाम हैं। ये रिजल्ट हर दिन एक निश्चित समय पर जारी किए जाते हैं, जिससे लोगों को नियमित रूप से अपडेट देखना आसान होता है।
             </p>
             <p className="mt-3">
-              On <Link href="https://www.a7sattaking.co" className="text-blue-600 underline">
+              <Link href="https://www.a7sattaking.co" className="text-blue-600 underline">
                 A7 Satta King
-              </Link>, users can access both the latest result and historical data. This helps in staying updated with current numbers while also reviewing earlier records conveniently.
+              </Link>पर आप ताजा रिजल्ट के साथ पुराना डेटा भी देख सकते हैं। इससे आपको मौजूदा नंबरों की जानकारी रखने और पुराने रिकॉर्ड देखने में आसानी होती है।
             </p>
           </>
         ),
       },
       {
-        heading: "Sialkot Satta Results Today",
+        heading: "आज का Sialkot Satta Results",
         description: (
           <>
             <p>
-              The Sialkot Satta Results today are usually declared during the evening session. Many users check the page around the scheduled time to catch the latest update as soon as it is published.
+              Sialkot Satta Results today आमतौर पर शाम के समय घोषित किए जाते हैं। कई लोग नया अपडेट जारी होते ही देखने के लिए तय समय के आसपास इस पेज पर आते हैं।
             </p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
 
               <li className="font-bold text-black">
-                Result Time: Approximately 8:20 PM
+                रिजल्ट का समय: लगभग 8:20 PM
               </li>
             </ul>
             <p className="mt-3">
-              The page is updated on a regular basis to ensure that users receive fresh and accurate information without delay.
+              लोगों तक नई और सही जानकारी पहुंचाने के लिए इस पेज को नियमित रूप से अपडेट किया जाता है।
             </p>
           </>
         ),
       },
       {
-        heading: "Sialkot Result Chart & Old Records",
+        heading: "सियालकोट रिजल्ट चार्ट और पुराने रिकॉर्ड",
         description: (
           <>
             <p>
-              For users who want to explore previous outcomes, the Sialkot chart section provides detailed records. This allows users to stay informed about earlier numbers and maintain a proper tracking system.
-
+              जो लोग पुराने परिणाम देखना चाहते हैं, उनके लिए सियालकोट चार्ट सेक्शन में विस्तृत रिकॉर्ड उपलब्ध हैं। इससे लोग पुराने नंबरों की जानकारी रख सकते हैं और उन्हें व्यवस्थित तरीके से देख सकते हैं।
             </p>
-            <p className="mt-3">With the help of the chart, users can:</p>
+            <p className="mt-3">चार्ट की मदद से आप:</p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-              <li>Go through old result entries</li>
-              <li>Keep track of number sequences</li>
-              <li>Review daily performance</li>
-              <li>Maintain consistent data records</li>
+              <li>पुराने रिजल्ट रिकॉर्ड देख सकते हैं</li>
+              <li>नंबरों के क्रम की जानकारी रख सकते हैं</li>
+              <li>रोजाना के परिणामों की समीक्षा कर सकते हैं</li>
+              <li>डेटा का नियमित रिकॉर्ड रख सकते हैं</li>
             </ul>
           </>
         ),
       },
       {
-        heading: "Why Sialkot Satta Results Get High Attention?",
+        heading: "Sialkot Satta Results पर लोगों का अधिक ध्यान क्यों रहता है?",
         description: (
           <>
             <p>
-              Sialkot Satta Results are widely followed because of their reliable timing and daily availability. Many users prefer this game as part of their routine updates.
+              Sialkot Satta Results को इसके नियमित समय और रोजाना उपलब्ध होने वाले अपडेट के कारण काफी लोग देखते हैं। कई लोग इस गेम को अपनी रोजाना की जानकारी में शामिल करते हैं।
             </p>
-            <p className="mt-3">Reasons behind its popularity include:</p>
+            <p className="mt-3">इसकी लोकप्रियता के कुछ मुख्य कारण हैं:</p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-              <li>Regular daily result updates</li>
-              <li>Fixed announcement timing</li>
-              <li>Quick online availability</li>
-              <li>Ongoing user interest</li>
+              <li>रोजाना नियमित रिजल्ट अपडेट</li>
+              <li>रिजल्ट घोषित होने का तय समय</li>
+              <li>ऑनलाइन जल्दी जानकारी उपलब्ध होना</li>
+              <li>लोगों की लगातार रुचि</li>
             </ul>
           </>
         ),
       },
       {
-        heading: "Check More Satta Game Results",
+        heading: "अन्य सट्टा गेम के रिजल्ट भी देखे",
         description: (
           <p>
-            Along with Sialkot Satta Results, users on A7 Satta King also check other games like{" "}
+            Sialkot Satta Results के साथ A7 Satta King पर लोग{" "}
             <Link href="https://www.a7sattaking.co/new-ganga" className="text-blue-600 underline">
               New Ganga Satta Results, ,
             </Link>
@@ -1395,37 +1376,38 @@ export const staticMarkets: Record<string, Market> = {
             <Link href="https://www.a7sattaking.co/udaipur-city" className="text-blue-600 underline">
               Udaipur City Satta Results
             </Link>
-            , and{" "}
+            , और{" "}
             <Link href="https://www.a7sattaking.co/raj-shree" className="text-blue-600 underline">
               Raj Shree Satta Results
             </Link>{" "}
-            to stay updated with multiple results throughout the day.
+            जैसे दूसरे गेम के रिजल्ट भी देखते हैं, ताकि पूरे दिन के अलग-अलग रिजल्ट की जानकारी मिलती रहे।
+
           </p>
         ),
       },
       {
-        heading: "Steps to Check Sialkot Satta Results",
+        heading: "Sialkot Satta Results कैसे देखें?",
         description: (
           <>
-            <p>To view the latest result, you can follow these simple steps:</p>
+            <p>नया रिजल्ट देखने के लिए आप इन आसान चरणों का पालन कर सकते हैं:</p>
             <ol className="list-decimal pl-6 mt-3 space-y-2">
-              <li>Open the page before the expected result time</li>
-              <li>Refresh the page near 8:20 PM</li>
-              <li>Check the updated Sialkot result</li>
-              <li>Scroll down to explore charts and past data</li>
+              <li>रिजल्ट के अनुमानित समय से पहले पेज खोलें</li>
+              <li>लगभग 8:20 PM पर पेज को रिफ्रेश करें</li>
+              <li>अपडेट किया गया सियालकोट रिजल्ट देखें</li>
+              <li>चार्ट और पुराने डेटा की जानकारी के लिए नीचे स्क्रॉल करें</li>
             </ol>
           </>
         ),
       },
       {
-        heading: "Disclaimer",
+        heading: "अस्वीकरण",
         description: (
           <>
             <p>
-              This page is created only for informational purposes. We do not promote or support any form of betting or gambling activity. The Sialkot Satta Results shared here are based on publicly available data.
+              यह पेज केवल जानकारी देने के उद्देश्य से तैयार किया गया है। हम किसी भी प्रकार की सट्टेबाजी या जुए की गतिविधि को बढ़ावा या समर्थन नहीं देते हैं। यहां दी गई Sialkot Satta Results की जानकारी सार्वजनिक रूप से उपलब्ध डेटा पर आधारित है।
             </p>
             <p className="mt-3">
-              Users are advised to follow their local laws and regulations. We are not responsible for any loss or issues arising from the use of this information.
+              उपयोगकर्ताओं को अपने स्थानीय कानूनों और नियमों का पालन करने की सलाह दी जाती है। इस जानकारी के उपयोग से होने वाले किसी भी नुकसान या समस्या के लिए हम जिम्मेदार नहीं हैं।
             </p>
           </>
         ),
@@ -1433,29 +1415,29 @@ export const staticMarkets: Record<string, Market> = {
     ],
     faqs: [
       {
-        question: "What are Sialkot Satta Results?",
+        question: "Sialkot Satta Results क्या है?",
         answer:
-          "Sialkot Satta Results display the daily outcome of the Sialkot market, available online for users to check updates.",
+          "Sialkot Satta Results में सियालकोट मार्केट का रोजाना का परिणाम दिखाया जाता है, जिसे लोग अपडेट देखने के लिए ऑनलाइन देख सकते हैं।",
       },
       {
-        question: "When are Sialkot Satta Results announced?",
+        question: "Sialkot Satta Results कब घोषित किए जाते हैं?",
         answer:
-          "They are generally declared around 8:20 PM.",
+          "ये आमतौर पर लगभग 8:20 PM पर घोषित किए जाते हैं।",
       },
       {
-        question: "Where can I check Sialkot Satta Results today?",
+        question: "आज का Sialkot Satta Results कहां देख सकते हैं?",
         answer:
-          "You can check them on A7 Satta King for the latest updates.",
+          "आप ताजा अपडेट देखने के लिए A7 Satta King पर इन्हें देख सकते हैं।",
       },
       {
-        question: "Are Sialkot results updated every day?",
+        question: "क्या सियालकोट के रिजल्ट हर दिन अपडेट होते हैं?",
         answer:
-          "Yes, the results are updated daily as per the fixed schedule.",
+          "हां, तय समय के अनुसार रिजल्ट हर दिन अपडेट किए जाते हैं।",
       },
       {
-        question: "Is previous data available for Sialkot results?",
+        question: "क्या सियालकोट रिजल्ट का पुराना डेटा उपलब्ध है?",
         answer:
-          "Yes, users can access earlier results through the chart section.",
+          "हां, उपयोगकर्ता चार्ट सेक्शन के माध्यम से पुराने रिजल्ट देख सकते हैं।",
       },
     ],
   },
@@ -1500,94 +1482,92 @@ export const staticMarkets: Record<string, Market> = {
     },
     sections: [
       {
-        heading: "Dehradun City Satta Result - Today Live Update, Night Timing & Chart Data",
+        heading: "Dehradun City Satta Result - आज का लाइव अपडेट, रात का समय और चार्ट डेटा",
         description: (
           <>
             <p>
-              If you want the most recent Dehradun City Satta Result, this page helps you access all updates quickly and clearly. From today’s result to older chart records, everything is arranged in a simple way so you can check the Dehradun City Satta Result today without any delay.
-
+              अगर आप सबसे नया Dehradun City Satta Result देखना चाहते हैं, तो यह पेज आपको सभी अपडेट जल्दी और आसानी से देखने में मदद करता है। आज के परिणाम से लेकर पुराने चार्ट रिकॉर्ड तक, यहाँ सारी जानकारी सरल तरीके से दी गई है, ताकि आप बिना किसी देरी के Dehradun City Satta Result today देख सकें।
             </p>
             <p className="mt-3">
-              Dehradun City is a late-night game in the Satta cycle and is followed by users who track results till the final hours of the day. Because of its fixed schedule and regular updates, it continues to be a frequently searched result. On <strong>A7 Satta King</strong>, you can view the latest numbers along with previous data in one place.
+              Dehradun City, सट्टा चक्र का देर रात आने वाला गेम है। इसे वे लोग फॉलो करते हैं जो दिन के आखिरी समय तक परिणामों पर नज़र रखते हैं। तय समय और नियमित अपडेट के कारण इसे अक्सर खोजा जाता है। A7 Satta King पर आप नवीनतम नंबरों के साथ पिछला डेटा भी एक ही जगह देख सकते हैं।
             </p>
           </>
         ),
       },
       {
-        heading: "What is Dehradun City Satta Result?",
+        heading: "Dehradun City Satta Result क्या है?",
         description: (
           <>
             <p>
-              Dehradun City Satta Result is the daily outcome declared for the Dehradun City game under the Satta King system. The result is announced at a specific time each day, allowing users to stay updated with consistent timing.
+              Dehradun City Satta Result, सट्टा किंग सिस्टम के अंतर्गत Dehradun City गेम का रोज़ घोषित होने वाला परिणाम है। इसका परिणाम हर दिन एक निश्चित समय पर घोषित किया जाता है, जिससे उपयोगकर्ता नियमित समय पर अपडेट रह सकते हैं।
             </p>
             <p className="mt-3">
-              On <Link href="https://www.a7sattaking.co" className="text-blue-600 underline">
+              <Link href="https://www.a7sattaking.co" className="text-blue-600 underline">
                 A7 Satta King
-              </Link>, users can easily check the latest result along with earlier records and chart details. This makes it simple to track both current and past information without visiting multiple pages.
+              </Link>पर उपयोगकर्ता आसानी से नवीनतम परिणाम के साथ पुराने रिकॉर्ड और चार्ट की जानकारी भी देख सकते हैं। इससे मौजूदा और पिछली जानकारी देखने के लिए अलग-अलग पेज पर जाने की जरूरत नहीं पड़ती।
 
             </p>
           </>
         ),
       },
       {
-        heading: "Dehradun City Satta Result Today",
+        heading: "Dehradun City Satta Result आज",
         description: (
           <>
             <p>
-              The Dehradun City Satta Result today is usually declared during the night session. Many users visit the page shortly before the expected time to catch the latest update as soon as it is released.
+              Dehradun City Satta Result today आमतौर पर रात के सत्र में घोषित किया जाता है। कई उपयोगकर्ता नया अपडेट जारी होते ही देखने के लिए तय समय से कुछ देर पहले इस पेज पर आते हैं।
             </p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
 
               <li className="font-bold text-black">
-                Result Time: Approximately 9:40 PM
+                परिणाम का समय: लगभग 9:40 PM
               </li>
             </ul>
             <p className="mt-3">
-              The page is updated frequently to ensure users receive the newest result without delay.
+              उपयोगकर्ताओं तक नया परिणाम बिना देरी के पहुँचाने के लिए इस पेज को नियमित रूप से अपडेट किया जाता है।
             </p>
           </>
         ),
       },
       {
-        heading: "Dehradun City Result Chart & Past Data",
+        heading: "Dehradun City परिणाम चार्ट और पुराना डेटा",
         description: (
           <>
             <p>
-              For those who want to review previous outcomes, the Dehradun City chart section provides access to historical records. This helps users keep track of earlier numbers and maintain consistent data.
+              जो लोग पिछले परिणामों को देखना चाहते हैं, उनके लिए Dehradun City चार्ट सेक्शन में पुराने रिकॉर्ड उपलब्ध हैं। इससे उपयोगकर्ता पहले के नंबरों पर नज़र रख सकते हैं और डेटा को व्यवस्थित रख सकते हैं।
             </p>
-            <p className="mt-3">Using the chart, users can:</p>
+            <p className="mt-3">चार्ट की मदद से उपयोगकर्ता:</p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-              <li>Review older result entries</li>
-              <li>Keep a record of number sequences</li>
-              <li>Compare updates from different days</li>
-              <li>Stay organized with past data</li>
+              <li>पुराने परिणामों की जानकारी देख सकते हैं</li>
+              <li>नंबरों के क्रम का रिकॉर्ड रख सकते हैं</li>
+              <li>अलग-अलग दिनों के अपडेट की तुलना कर सकते हैं</li>
+              <li>पुराने डेटा को व्यवस्थित रख सकते हैं</li>
             </ul>
           </>
         ),
       },
       {
-        heading: "Why is Dehradun City Result Widely Checked?",
+        heading: "Dehradun City परिणाम नियमित रूप से क्यों देखे जाते हैं?",
         description: (
           <>
             <p>
-              Dehradun City Satta Result is followed regularly because of its fixed timing and reliable updates. Many users include it in their daily tracking routine along with other markets.
-            </p>
-            <p className="mt-3">Key factors include:</p>
+              Dehradun City Satta Result को इसके तय समय और नियमित अपडेट के कारण लगातार देखा जाता है। कई उपयोगकर्ता इसे अन्य बाजारों के साथ अपनी रोज़ की जानकारी देखने की दिनचर्या में शामिल करते हैं।            </p>
+            <p className="mt-3">इसके मुख्य कारण हैं:</p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-              <li>Consistent Daily Result Announcements</li>
-              <li>Daily Results Announced Regularly</li>
-              <li>Timely Daily Result Updates</li>
-              <li>Reliable Daily Announcements</li>
-              <li>Scheduled Daily Result Announcements</li>
+              <li>हर दिन नियमित रूप से परिणाम घोषित होना</li>
+              <li>रोज़ाना परिणामों की नियमित घोषणा</li>
+              <li>समय पर परिणामों के अपडेट मिलना</li>
+              <li>नियमित परिणामों की जानकारी</li>
+              <li>तय समय पर परिणामों की घोषणा</li>
             </ul>
           </>
         ),
       },
       {
-        heading: "Check More games on A7 Satta King",
+        heading: "A7 Satta King पर अन्य गेम भी देखें",
         description: (
           <p>
-            Along with Dehradun City Satta Result, users also explore results like{" "}
+            Dehradun City Satta Result के साथ, उपयोगकर्ता{" "}
             <Link href="https://www.a7sattaking.co/dwarka-city" className="text-blue-600 underline">
               Dwarka City Satta Result
             </Link>
@@ -1599,37 +1579,37 @@ export const staticMarkets: Record<string, Market> = {
             <Link href="https://www.a7sattaking.co/mandi-bazar" className="text-blue-600 underline">
               Mandi Bazar Satta Results
             </Link>
-            , and{" "}
+            , और{" "}
             <Link href="https://www.a7sattaking.co/ajmer" className="text-blue-600 underline">
               Ajmer Satta Result
             </Link>{" "}
-            to stay updated with multiple games throughout the day.
+            जैसे परिणाम भी देखते हैं, ताकि दिनभर कई गेम के अपडेट प्राप्त कर सकें।
           </p>
         ),
       },
       {
-        heading: "How to View Dehradun City Satta Result",
+        heading: "Dehradun City Satta Result कैसे देखें?",
         description: (
           <>
-            <p>To check the latest result, follow these simple steps:</p>
+            <p>नवीनतम परिणाम देखने के लिए इन आसान चरणों का पालन करें:</p>
             <ol className="list-decimal pl-6 mt-3 space-y-2">
-              <li>Visit the page in advance before result time</li>
-              <li>Reload the page close to result announcement</li>
-              <li>Check the latest Dehradun City number</li>
-              <li>Explore past records and chart details by scrolling</li>
+              <li>परिणाम आने के समय से पहले पेज पर जाएँ</li>
+              <li>परिणाम घोषित होने के समय के करीब पेज को दोबारा लोड करें</li>
+              <li>नवीनतम Dehradun City नंबर देखें</li>
+              <li>नीचे स्क्रॉल करके पुराने रिकॉर्ड और चार्ट की जानकारी देखें</li>
             </ol>
           </>
         ),
       },
       {
-        heading: "Disclaimer",
+        heading: "अस्वीकरण",
         description: (
           <>
             <p>
-              This page is intended only for informational use. We do not promote or support any form of betting or gambling. The Dehradun City Satta Result shown here is based on publicly available information.
+              यह पेज केवल जानकारी देने के उद्देश्य से बनाया गया है। हम किसी भी प्रकार की सट्टेबाजी या जुए को बढ़ावा नहीं देते और न ही उसका समर्थन करते हैं। यहाँ दिखाया गया Dehradun City Satta Result सार्वजनिक रूप से उपलब्ध जानकारी पर आधारित है।
             </p>
             <p className="mt-3">
-              Users should follow their local rules and regulations. We are not responsible for any loss or consequences resulting from the use of this content.
+              उपयोगकर्ताओं को अपने स्थानीय नियमों और कानूनों का पालन करना चाहिए। इस सामग्री के उपयोग से होने वाले किसी भी नुकसान या परिणाम के लिए हम जिम्मेदार नहीं हैं।
             </p>
           </>
         ),
@@ -1637,29 +1617,29 @@ export const staticMarkets: Record<string, Market> = {
     ],
     faqs: [
       {
-        question: "What is Dehradun City Satta Result?",
+        question: "Dehradun City Satta Result क्या है?",
         answer:
-          "It is the daily declared result of the Dehradun City game that users can check online for updates.",
+          "यह Dehradun City गेम का रोज़ घोषित होने वाला परिणाम है, जिसे उपयोगकर्ता ऑनलाइन अपडेट के लिए देख सकते हैं।",
       },
       {
-        question: "When is Dehradun City Satta Result announced?",
+        question: "Dehradun City Satta Result कब घोषित किया जाता है?",
         answer:
-          "It is generally announced around 9:40 PM.",
+          "यह आमतौर पर रात 9:40 PM के आसपास घोषित किया जाता है।",
       },
       {
-        question: "Where can I check Dehradun City Satta Result today?",
+        question: "मैं आज का Dehradun City Satta Result कहाँ देख सकता हूँ?",
         answer:
-          "You can check it on A7 Satta King for quick and updated information.",
+          "आप जल्दी और नई जानकारी पाने के लिए इसे A7 Satta King पर देख सकते हैं।",
       },
       {
-        question: "Is the result available every day?",
+        question: "क्या परिणाम हर दिन उपलब्ध होता है?",
         answer:
-          "Yes, the result is updated daily based on the fixed timing.",
+          "हाँ, तय समय के अनुसार परिणाम रोज़ अपडेट किया जाता है।",
       },
       {
-        question: "Can I see previous Dehradun City results?",
+        question: "क्या मैं Dehradun City के पुराने परिणाम देख सकता हूँ?",
         answer:
-          "Yes, chart data is available to review earlier results.",
+          "हाँ, पुराने परिणाम देखने के लिए चार्ट डेटा उपलब्ध है।",
       },
     ],
   },
@@ -1674,93 +1654,91 @@ export const staticMarkets: Record<string, Market> = {
     },
     sections: [
       {
-        heading: "Daman Satta Result – Night Update, Today's Number & Chart Records",
+        heading: "Daman Satta Result – रात का अपडेट, आज का नंबर और चार्ट रिकॉर्ड",
         description: (
           <>
             <p>
-              If you are looking for the latest Daman Satta Result, this page provides all updates in a clean and easy format. From today’s result to previous chart data, everything is arranged so users can quickly access the Daman Satta Result today without any delay.
+              अगर आप नवीनतम Daman Satta Result देखना चाहते हैं, तो यह पेज आपको सभी अपडेट साफ और आसान तरीके से उपलब्ध कराता है। आज के परिणाम से लेकर पुराने चार्ट डेटा तक, यहाँ सब कुछ इस तरह व्यवस्थित किया गया है कि उपयोगकर्ता बिना किसी देरी के Daman Satta Result today देख सकें।
             </p>
             <p className="mt-3">
-              Daman is a popular late-night game in the Satta cycle, followed by users who track results till the end of the day. Due to its fixed schedule and consistent updates, it remains one of the most searched night results. On <strong>A7 Satta King</strong>, you can check the latest Daman result along with past records in one place.
+              Daman, सट्टा चक्र का एक लोकप्रिय देर रात का गेम है, जिसे वे उपयोगकर्ता फॉलो करते हैं जो दिन के अंत तक परिणामों पर नज़र रखते हैं। अपने तय समय और लगातार अपडेट के कारण यह रात के सबसे अधिक खोजे जाने वाले परिणामों में शामिल है। <strong>A7 Satta King</strong> पर आप नवीनतम Daman परिणाम के साथ पुराने रिकॉर्ड भी एक ही जगह देख सकते हैं।
             </p>
           </>
         ),
       },
       {
-        heading: "Daman Satta Result Today",
+        heading: "Daman Satta Result आज",
         description: (
           <>
             <p>
-              Daman Satta Result refers to the daily outcome declared for the Daman game within the Satta King system. The result is announced at a specific time each day, allowing users to follow updates easily.
+              Daman Satta Result, सट्टा किंग सिस्टम के अंतर्गत Daman गेम का रोज़ घोषित होने वाला परिणाम है। यह परिणाम हर दिन एक निश्चित समय पर घोषित किया जाता है, जिससे उपयोगकर्ता आसानी से अपडेट देख सकते हैं।
             </p>
             <p className="mt-3">
-              On <Link href="https://www.a7sattaking.co" className="text-blue-600 underline">
+              <Link href="https://www.a7sattaking.co" className="text-blue-600 underline">
                 A7 Satta King
-              </Link>, users can view both the current result and earlier records. This helps in staying updated with complete information without needing multiple sources.
-
-
+              </Link>{" "}
+              पर उपयोगकर्ता मौजूदा परिणाम के साथ पुराने रिकॉर्ड भी देख सकते हैं। इससे कई अलग-अलग स्रोतों पर जाने की जरूरत के बिना पूरी जानकारी प्राप्त करने और अपडेट रहने में मदद मिलती है।
             </p>
           </>
         ),
       },
       {
-        heading: "Daman Satta Result Today",
+        heading: "Daman Satta Result आज",
         description: (
           <>
             <p>
-              The Daman Satta Result today is usually announced during the late-night session. Many users check the page around the expected time to catch the latest update as soon as it is released.
+              Daman Satta Result today आमतौर पर देर रात के सत्र में घोषित किया जाता है। कई उपयोगकर्ता नया अपडेट जारी होते ही देखने के लिए अनुमानित समय के आसपास इस पेज पर आते हैं।
             </p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-
               <li className="font-bold text-black">
-                Result Time: Approximately 9:50 PM
+                परिणाम का समय: लगभग 9:50 PM
               </li>
             </ul>
             <p className="mt-3">
-              The page is updated frequently to ensure users receive accurate and timely information.
+              उपयोगकर्ताओं तक सही और समय पर जानकारी पहुँचाने के लिए इस पेज को नियमित रूप से अपडेट किया जाता है।
             </p>
           </>
         ),
       },
       {
-        heading: "Daman Result Chart & Old Data",
+        heading: "Daman परिणाम चार्ट और पुराना डेटा",
         description: (
           <>
             <p>
-              For users interested in earlier outcomes, the Daman chart section provides access to past records. This helps in tracking number history and reviewing previous results in a simple way.
+              जो उपयोगकर्ता पुराने परिणामों में रुचि रखते हैं, उनके लिए Daman चार्ट सेक्शन में पिछले रिकॉर्ड उपलब्ध हैं। इससे नंबरों का इतिहास देखने और पुराने परिणामों की सरल तरीके से समीक्षा करने में मदद मिलती है।
             </p>
-            <p className="mt-3">With the chart, users can:</p>
+            <p className="mt-3">चार्ट की मदद से उपयोगकर्ता:</p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-              <li>Review earlier result entries</li>
-              <li>Keep track of number patterns</li>
-              <li>Compare results across days</li>
-              <li>Maintain organized records</li>
+              <li>पुराने परिणामों की जानकारी देख सकते हैं</li>
+              <li>नंबरों के क्रम पर नज़र रख सकते हैं</li>
+              <li>अलग-अलग दिनों के परिणामों की तुलना कर सकते हैं</li>
+              <li>रिकॉर्ड को व्यवस्थित रख सकते हैं</li>
             </ul>
           </>
         ),
       },
       {
-        heading: "Why is Daman Satta Result Widely Followed?",
+        heading: "Daman Satta Result को नियमित रूप से क्यों देखा जाता है?",
         description: (
           <>
             <p>
-              Daman Satta Result is searched regularly because of its late timing and consistent updates. Many users include it in their daily tracking routine along with other markets.
+              Daman Satta Result को इसके देर रात के समय और लगातार अपडेट के कारण नियमित रूप से खोजा जाता है। कई उपयोगकर्ता इसे अन्य बाजारों के साथ अपनी रोज़ की जानकारी देखने की दिनचर्या में शामिल करते हैं।
             </p>
-            <p className="mt-3">Main reasons include:</p>
+            <p className="mt-3">इसके मुख्य कारण हैं:</p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-              <li>Regular daily announcements</li>
-              <li>Fixed late-night timing</li>
-              <li>Easy Access via Online Platforms</li>
-              <li>Growing Search Demand Over Time</li>
+              <li>रोज़ाना नियमित रूप से परिणाम घोषित होना</li>
+              <li>देर रात का तय समय</li>
+              <li>ऑनलाइन प्लेटफॉर्म के माध्यम से आसान पहुँच</li>
+              <li>समय के साथ खोज में बढ़ती रुचि</li>
             </ul>
           </>
         ),
       },
       {
-        heading: "Check More Satta game Results",
+        heading: "A7 Satta King पर अन्य सट्टा गेम के परिणाम देखें",
         description: (
           <p>
-            Along with Daman Satta Result, users on A7 Satta King also check games like{" "}
+            Daman Satta Result के साथ, A7 Satta King पर उपयोगकर्ता{" "}
             <Link href="https://www.a7sattaking.co/dehradun-city" className="text-blue-600 underline">
               Dehradun City Satta Result
             </Link>
@@ -1772,37 +1750,37 @@ export const staticMarkets: Record<string, Market> = {
             <Link href="https://www.a7sattaking.co/sialkot" className="text-blue-600 underline">
               Sialkot Satta Results
             </Link>
-            , and{" "}
+            , और{" "}
             <Link href="https://www.a7sattaking.co/mandi-bazar" className="text-blue-600 underline">
               Mandi Bazar Satta Results
             </Link>{" "}
-            to stay updated across multiple results throughout the day.
+            जैसे गेम के परिणाम भी देखते हैं, ताकि दिनभर कई परिणामों के अपडेट प्राप्त कर सकें।
           </p>
         ),
       },
       {
-        heading: "How to View Daman Satta Result",
+        heading: "Daman Satta Result कैसे देखें?",
         description: (
           <>
-            <p>To check the latest result, follow these simple steps:</p>
+            <p>नवीनतम परिणाम देखने के लिए इन आसान चरणों का पालन करें:</p>
             <ol className="list-decimal pl-6 mt-3 space-y-2">
-              <li>Open the Page Before the result announcement</li>
-              <li>Refresh the page near 9:50 PM</li>
-              <li>Check the updated Daman number</li>
-              <li>Scroll down for the chart and previous data</li>
+              <li>परिणाम घोषित होने से पहले पेज खोलें</li>
+              <li>रात 9:50 PM के आसपास पेज को दोबारा लोड करें</li>
+              <li>अपडेट किया गया Daman नंबर देखें</li>
+              <li>चार्ट और पुराने डेटा के लिए नीचे स्क्रॉल करें</li>
             </ol>
           </>
         ),
       },
       {
-        heading: "Disclaimer",
+        heading: "अस्वीकरण",
         description: (
           <>
             <p>
-              This page is intended only for informational purposes. We do not encourage or support any form of betting or gambling. The Daman Satta Result shared here is based on publicly available information.
+              यह पेज केवल जानकारी देने के उद्देश्य से बनाया गया है। हम किसी भी प्रकार की सट्टेबाजी या जुए को प्रोत्साहित नहीं करते और न ही उसका समर्थन करते हैं। यहाँ साझा किया गया Daman Satta Result सार्वजनिक रूप से उपलब्ध जानकारी पर आधारित है।
             </p>
             <p className="mt-3">
-              Users should follow their local laws and regulations. We are not responsible for any loss or consequences resulting from the use of this content.
+              उपयोगकर्ताओं को अपने स्थानीय कानूनों और नियमों का पालन करना चाहिए। इस सामग्री के उपयोग से होने वाले किसी भी नुकसान या परिणाम के लिए हम जिम्मेदार नहीं हैं।
             </p>
           </>
         ),
@@ -1810,29 +1788,29 @@ export const staticMarkets: Record<string, Market> = {
     ],
     faqs: [
       {
-        question: "What is Daman Satta Result?",
+        question: "Daman Satta Result क्या है?",
         answer:
-          "It is the daily declared result of the Daman market, available online for users to check updates.",
+          "यह Daman बाजार का रोज़ घोषित होने वाला परिणाम है, जिसे उपयोगकर्ता अपडेट देखने के लिए ऑनलाइन देख सकते हैं।",
       },
       {
-        question: "When is Daman Satta Result announced?",
+        question: "Daman Satta Result कब घोषित किया जाता है?",
         answer:
-          "It is generally announced around 9:50 PM.",
+          "यह आमतौर पर रात 9:50 PM के आसपास घोषित किया जाता है।",
       },
       {
-        question: "Where can I check Daman Satta Result today?",
+        question: "मैं आज का Daman Satta Result कहाँ देख सकता हूँ?",
         answer:
-          "You can check it on A7 Satta King for the latest updates.",
+          "आप नवीनतम अपडेट के लिए इसे A7 Satta King पर देख सकते हैं।",
       },
       {
-        question: "Is the Daman result updated daily?",
+        question: "क्या Daman का परिणाम रोज़ अपडेट होता है?",
         answer:
-          "Yes, the result is updated every day as per the fixed timing.",
+          "हाँ, तय समय के अनुसार परिणाम हर दिन अपडेट किया जाता है।",
       },
       {
-        question: "Can I see previous Daman results?",
+        question: "क्या मैं Daman के पुराने परिणाम देख सकता हूँ?",
         answer:
-          "Yes, chart records are available to review earlier results.",
+          "हाँ, पुराने परिणामों की जानकारी देखने के लिए चार्ट रिकॉर्ड उपलब्ध हैं।",
       },
     ],
   },
@@ -2363,90 +2341,88 @@ export const staticMarkets: Record<string, Market> = {
     },
     sections: [
       {
-        heading: "Agra City Satta Result - Today Result, Live Update & Chart Details",
+        heading: "Agra City Satta Result - आज का परिणाम, लाइव अपडेट और चार्ट की जानकारी",
         description: (
           <>
             <p>
-              If you want the latest updates on Agra City Satta Result, this page is designed to present everything in a clear and structured way. From today’s result to older chart data, all details are available here so users can quickly check the Agra City Satta Result today without any confusion.
+              यदि आप Agra City Satta Result के नवीनतम अपडेट चाहते हैं, तो यह पेज सभी जानकारी को स्पष्ट और व्यवस्थित तरीके से प्रस्तुत करने के लिए तैयार किया गया है। आज के परिणाम से लेकर पुराने चार्ट के आंकड़ों तक, यहां सभी विवरण उपलब्ध हैं, ताकि आप बिना किसी परेशानी के आज का Agra City Satta Result जल्दी देख सकें।
             </p>
             <p className="mt-3">
-              Agra City is a regularly tracked game in the daily Satta cycle. Because of its fixed timing and continuous updates, many users follow it along with other results. On A7 Satta King, you can easily access the latest numbers and previous records in one place.
+              Agra City दैनिक सट्टा क्रम में नियमित रूप से देखा जाने वाला खेल है। इसके निश्चित समय और लगातार मिलने वाले अपडेट के कारण कई लोग अन्य परिणामों के साथ इसे भी देखते हैं। A7 Satta King पर आप एक ही जगह नवीनतम नंबर और पुराने रिकॉर्ड आसानी से देख सकते हैं।
             </p>
           </>
         ),
       },
       {
-        heading: "What is Agra City Satta Result?",
+        heading: "Agra City Satta Result क्या है?",
         description: (
           <>
             <p>
-              Agra City Satta Result is the daily outcome declared for the Agra City game within the Satta King system. The result is announced at a specific time each day, making it simple for users to stay updated on a regular basis.
+              Agra City Satta Result, सट्टा किंग प्रणाली के अंतर्गत Agra City खेल के प्रतिदिन घोषित होने वाले परिणाम को दर्शाता है। परिणाम हर दिन एक निश्चित समय पर घोषित किया जाता है, जिससे लोग नियमित रूप से इसकी जानकारी प्राप्त कर सकते हैं।
             </p>
             <p className="mt-3">
-              On A7 Satta King, users can check the most recent result along with historical data and chart records, helping them track both current and past updates easily.
-
+              A7 Satta King पर लोग नवीनतम परिणाम के साथ पुराने आंकड़े और चार्ट रिकॉर्ड भी देख सकते हैं। इससे वर्तमान और पिछले अपडेट की जानकारी आसानी से प्राप्त की जा सकती है।
             </p>
           </>
         ),
       },
       {
-        heading: "Agra City Satta Result Today",
+        heading: "आज का Agra City Satta Result",
         description: (
           <>
             <p>
-              The Agra City Satta Result today is usually announced in the evening hours. Many users visit the page before the expected time so they can view the update as soon as it is released.
+              आज का Agra City Satta Result आमतौर पर शाम के समय घोषित किया जाता है। कई लोग अपेक्षित समय से पहले इस पेज पर आते हैं, ताकि परिणाम जारी होते ही वे नया अपडेट देख सकें।
             </p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-
               <li className="font-bold text-black">
-                Expected Result Time: Around 5:35 PM
+                परिणाम का संभावित समय: लगभग 5:35 PM
               </li>
             </ul>
             <p className="mt-3">
-              The page is refreshed regularly to ensure users receive the latest and most accurate information without delay.
+              लोगों तक बिना देरी के नवीनतम और सटीक जानकारी पहुंचाने के लिए इस पेज को नियमित रूप से अपडेट किया जाता है।
             </p>
           </>
         ),
       },
       {
-        heading: "Agra City Chart & Previous Results",
+        heading: "Agra City चार्ट और पुराने परिणाम",
         description: (
           <>
             <p>
-              For users interested in earlier data, the Agra City Satta chart section provides access to previous results. This helps in reviewing number history and staying informed about past outcomes.
+              पुराने आंकड़ों में रुचि रखने वाले लोगों के लिए Agra City Satta चार्ट सेक्शन में पिछले परिणाम उपलब्ध हैं। इससे पुराने नंबरों का रिकॉर्ड देखने और पिछले परिणामों की जानकारी प्राप्त करने में मदद मिलती है।
             </p>
-            <p className="mt-3">Using the chart, users can:</p>
+            <p className="mt-3">चार्ट की मदद से लोग:</p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-              <li>Check previous results quickly</li>
-              <li>Keep a record of number history</li>
-              <li>Compare daily updates</li>
-              <li>Track patterns over time</li>
+              <li>पिछले परिणाम जल्दी देख सकते हैं</li>
+              <li>नंबरों का पुराना रिकॉर्ड रख सकते हैं</li>
+              <li>रोजाना के अपडेट की तुलना कर सकते हैं</li>
+              <li>समय के साथ होने वाले बदलावों को देख सकते हैं</li>
             </ul>
           </>
         ),
       },
       {
-        heading: "Why is Agra City Satta Result Famous?",
+        heading: "Agra City Satta Result प्रसिद्ध क्यों है?",
         description: (
           <>
             <p>
-              Agra City Satta Result is frequently searched due to its consistent schedule and regular updates. Many users include it in their daily tracking routine along with other markets.
+              Agra City Satta Result को नियमित समय और लगातार मिलने वाले अपडेट के कारण अक्सर खोजा जाता है। कई लोग इसे अन्य बाजारों के साथ अपनी रोजाना की जानकारी देखने की दिनचर्या में शामिल करते हैं।
             </p>
-            <p className="mt-3">Some key reasons include:</p>
+            <p className="mt-3">इसके कुछ मुख्य कारण हैं:</p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-              <li>Daily result availability</li>
-              <li>Fixed and predictable timing</li>
-              <li>Easy access through online platforms</li>
-              <li>Ongoing user engagement</li>
+              <li>रोजाना परिणाम उपलब्ध होना</li>
+              <li>निश्चित और अनुमानित समय</li>
+              <li>ऑनलाइन प्लेटफॉर्म के माध्यम से आसान पहुंच</li>
+              <li>लोगों की लगातार रुचि</li>
             </ul>
           </>
         ),
       },
       {
-        heading: "Explore Other Satta Games",
+        heading: "अन्य सट्टा खेल देखें",
         description: (
           <p>
-            While checking the Agra City Satta Result, users on A7 Satta King also follow games like{" "}
+            Agra City Satta Result देखते समय, A7 Satta King पर लोग दिनभर के कई परिणामों की जानकारी पाने के लिए{" "}
             <Link href="https://www.a7sattaking.co/gwalior" className="text-blue-600 underline">
               Gwalior Satta Result
             </Link>
@@ -2458,37 +2434,37 @@ export const staticMarkets: Record<string, Market> = {
             <Link href="https://www.a7sattaking.co/faridabad" className="text-blue-600 underline">
               Faridabad Satta Result
             </Link>
-            , and{" "}
+            , और{" "}
             <Link href="https://www.a7sattaking.co/sialkot" className="text-blue-600 underline">
               Sialkot Satta Result
             </Link>{" "}
-            to stay updated with multiple results throughout the day.
+            जैसे खेलों के परिणाम भी देखते हैं।
           </p>
         ),
       },
       {
-        heading: "How to Check Agra City Satta Result?",
+        heading: "Agra City Satta Result कैसे देखें?",
         description: (
           <>
-            <p>To check the latest result, follow these steps:</p>
+            <p>नवीनतम परिणाम देखने के लिए इन चरणों का पालन करें:</p>
             <ol className="list-decimal pl-6 mt-3 space-y-2">
-              <li>Check Updates Before the Result Time</li>
-              <li>Refresh the page around 5:35 PM</li>
-              <li>Check the updated Agra City number</li>
-              <li>Scroll further to explore charts and additional details</li>
+              <li>परिणाम के समय से पहले अपडेट देखें</li>
+              <li>लगभग 5:35 PM पर पेज को दोबारा लोड करें</li>
+              <li>अपडेट किया गया Agra City नंबर देखें</li>
+              <li>चार्ट और अतिरिक्त जानकारी देखने के लिए नीचे स्क्रॉल करें</li>
             </ol>
           </>
         ),
       },
       {
-        heading: "Disclaimer",
+        heading: "अस्वीकरण",
         description: (
           <>
             <p>
-              This content is provided for informational purposes only. We do not promote or support any type of betting or gambling activity. The Agra City Satta Result shared here is based on publicly available information.
+              यह सामग्री केवल जानकारी देने के उद्देश्य से साझा की गई है। हम किसी भी प्रकार की सट्टेबाजी या जुए की गतिविधि को बढ़ावा या समर्थन नहीं देते हैं। यहां साझा किया गया Agra City Satta Result सार्वजनिक रूप से उपलब्ध जानकारी पर आधारित है।
             </p>
             <p className="mt-3">
-              Users should follow their local laws and regulations. We are not responsible for any loss or consequences resulting from the use of this information.
+              लोगों को अपने स्थानीय कानूनों और नियमों का पालन करना चाहिए। इस जानकारी के उपयोग से होने वाले किसी भी नुकसान या उसके परिणाम के लिए हम जिम्मेदार नहीं हैं।
             </p>
           </>
         ),
@@ -2496,29 +2472,27 @@ export const staticMarkets: Record<string, Market> = {
     ],
     faqs: [
       {
-        question: "What is Agra City Satta Result?",
+        question: "Agra City Satta Result क्या है?",
         answer:
-          "Agra City Satta Result refers to the daily outcome of the Agra City market, which users can check online for updates.",
+          "Agra City Satta Result, Agra City बाजार के दैनिक परिणाम को दर्शाता है, जिसे लोग अपडेट देखने के लिए ऑनलाइन देख सकते हैं।",
       },
       {
-        question: "What is the timing of Agra City Satta Result?",
-        answer:
-          "The result is typically announced at around 5:35 PM.",
+        question: "Agra City Satta Result का समय क्या है?",
+        answer: "परिणाम आमतौर पर लगभग 5:35 PM पर घोषित किया जाता है।",
       },
       {
-        question: "Where can I check Agra City Satta Result today?",
+        question: "आज का Agra City Satta Result कहां देख सकते हैं?",
         answer:
-          "You can find the latest Agra City Satta Result updates on A7 Satta King for accurate and timely information.",
+          "आप सटीक और समय पर जानकारी के लिए A7 Satta King पर Agra City Satta Result के नवीनतम अपडेट देख सकते हैं।",
       },
       {
-        question: "Is Agra City result updated daily?",
+        question: "क्या Agra City का परिणाम रोजाना अपडेट होता है?",
         answer:
-          "Yes, the Agra City result is updated every day according to the scheduled result time.",
+          "हां, निर्धारित परिणाम समय के अनुसार Agra City का परिणाम हर दिन अपडेट किया जाता है।",
       },
       {
-        question: "Can I check old Agra City results?",
-        answer:
-          "Yes, chart records are available for users to review previous Agra City results.",
+        question: "क्या मैं Agra City के पुराने परिणाम देख सकता हूं?",
+        answer: "हां, पुराने Agra City परिणाम देखने के लिए चार्ट रिकॉर्ड उपलब्ध हैं।",
       },
     ],
   },
@@ -2532,93 +2506,92 @@ export const staticMarkets: Record<string, Market> = {
     },
     sections: [
       {
-        heading: "Ajmer Satta Result – Today's Result, Live Updates & Chart Records",
+        heading: "अजमेर सट्टा रिजल्ट – आज का रिजल्ट, लाइव अपडेट और चार्ट रिकॉर्ड",
         description: (
           <>
             <p>
-              If you want the latest Ajmer Satta Result, this page offers all the updates in a clear and user-friendly format. From today’s result to earlier chart records, everything is arranged so users can quickly check the Ajmer Satta Result today without any difficulty.
+              अगर आप Ajmer Satta Result के ताजा अपडेट देखना चाहते हैं, तो इस पेज पर आपको सभी जानकारी आसान और उपयोगकर्ता के अनुकूल तरीके से मिलेगी। आज के रिजल्ट से लेकर पुराने चार्ट रिकॉर्ड तक, यहां सब कुछ व्यवस्थित किया गया है, ताकि आप बिना किसी परेशानी के Ajmer Satta Result today देख सकें।
             </p>
             <p className="mt-3">
-              Ajmer is a commonly followed game in the daily Satta cycle. Due to its fixed timing and regular updates, many users track it along with other markets. On A7 Satta King, you can easily find the latest Ajmer result along with previous data in one place.
+              अजमेर दैनिक सट्टा चक्र में आमतौर पर देखा जाने वाला गेम है। इसके तय समय और नियमित अपडेट के कारण कई लोग दूसरे मार्केट के साथ इसका रिजल्ट भी देखते हैं। A7 Satta King पर आप अजमेर का ताजा रिजल्ट और पुराना डेटा एक ही जगह आसानी से देख सकते हैं।
             </p>
           </>
         ),
       },
       {
-        heading: "What is Ajmer Satta Result?",
+        heading: "Ajmer Satta Result क्या है?",
         description: (
           <>
             <p>
-              Ajmer Satta Result refers to the daily declared outcome of the Ajmer game within the Satta King system. The result is announced at a set time each day, making it convenient for users to stay updated regularly.
+              Ajmer Satta Result का मतलब सट्टा किंग सिस्टम के अंतर्गत अजमेर गेम के रोजाना घोषित होने वाले परिणाम से है। इसका रिजल्ट हर दिन एक तय समय पर जारी किया जाता है, जिससे लोगों को नियमित रूप से अपडेट रहना आसान होता है।
             </p>
             <p className="mt-3">
-              On <Link href="https://www.a7sattaking.co" className="text-blue-600 underline">
+              <Link href="https://www.a7sattaking.co" className="text-blue-600 underline">
                 A7 Satta King
-              </Link>, users can check the latest result along with earlier records and chart details, helping them keep track of both current and past updates without confusion.
+              </Link> पर आप सबसे नया रिजल्ट, पुराने रिकॉर्ड और चार्ट की जानकारी देख सकते हैं। इससे आपको बिना किसी परेशानी के मौजूदा और पुराने अपडेट की जानकारी मिल जाती है।
             </p>
           </>
         ),
       },
       {
-        heading: "Ajmer Satta Result Today",
+        heading: "आज का Ajmer Satta Result",
         description: (
           <>
             <p>
-              Ajmer Satta Result today is usually released in the evening. Many users visit the page around the expected time to view the most recent update as soon as it is available.
+              Ajmer Satta Result today आमतौर पर शाम के समय जारी किया जाता है। कई लोग नया अपडेट उपलब्ध होते ही देखने के लिए तय समय के आसपास इस पेज पर आते हैं।
             </p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-
               <li className="font-bold text-black">
-                Expected Result Time: Around 7:40 PM
+                अनुमानित रिजल्ट का समय: लगभग 7:40 PM
               </li>
             </ul>
             <p className="mt-3">
-              The page is refreshed frequently so users can access accurate and timely information without delay.
+              लोगों तक सही और समय पर जानकारी पहुंचाने के लिए इस पेज को नियमित रूप से अपडेट किया जाता है।
             </p>
           </>
         ),
       },
       {
-        heading: "Ajmer Chart & Previous Results",
+        heading: "अजमेर चार्ट और पुराने रिजल्ट",
         description: (
           <>
             <p>
-              For users who want to review earlier outcomes, the Ajmer Satta chart section provides access to past results. This helps in tracking number history and staying informed about previous data.
+              जो लोग पुराने परिणाम देखना चाहते हैं, उनके लिए Ajmer Satta चार्ट सेक्शन में पिछले रिजल्ट की जानकारी उपलब्ध है। इससे नंबरों का पुराना रिकॉर्ड देखने और पहले के डेटा की जानकारी रखने में मदद मिलती है।
             </p>
-            <p className="mt-3">With chart access, users can:</p>
+            <p className="mt-3">चार्ट की मदद से आप:</p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-              <li>Easily Check Previous Results</li>
-              <li>Maintain a record of number history</li>
-              <li>Easy Daily Updates Comparison</li>
-              <li>Analyze Long-Term Trends</li>
+              <li>पुराने रिजल्ट आसानी से देख सकते हैं</li>
+              <li>नंबरों का पुराना रिकॉर्ड रख सकते हैं</li>
+              <li>रोजाना के अपडेट की आसानी से तुलना कर सकते हैं</li>
+              <li>लंबे समय के रुझानों को समझ सकते हैं</li>
             </ul>
           </>
         ),
       },
       {
-        heading: "Why is Ajmer Satta Result Popular?",
+        heading: "Ajmer Satta Result की लोकप्रियता के कारण",
         description: (
           <>
             <p>
-              Ajmer Satta Result is widely searched because of its consistent schedule and easy availability. Many users include this game in their daily tracking routine along with other results.
+              Ajmer Satta Result को इसके नियमित समय और आसानी से उपलब्ध होने वाली जानकारी के कारण अक्सर खोजा जाता है। कई लोग दूसरे रिजल्ट के साथ इस गेम को भी अपनी रोजाना की जानकारी में शामिल करते हैं।
             </p>
-            <p className="mt-3">A few key reasons include:</p>
+            <p className="mt-3">इसके कुछ मुख्य कारण हैं:</p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-              <li>Reliable Daily Result Announcements</li>
-              <li>Reliable and Consistent Timing</li>
-              <li>Hassle-Free Online Access Anytime</li>
-              <li>Ongoing User Engagement and Activity</li>
+              <li>रोजाना रिजल्ट की भरोसेमंद घोषणा</li>
+              <li>नियमित और तय समय पर रिजल्ट मिलना</li>
+              <li>किसी भी समय आसानी से ऑनलाइन जानकारी मिलना</li>
+              <li>लोगों की लगातार भागीदारी और गतिविधि</li>
             </ul>
           </>
         ),
       },
       {
-        heading: "More Satta Games You Should Know",
+        heading: "अन्य सट्टा गेम जिनके बारे में आपको जानना चाहिए",
         description: (
           <p>
-            While checking the Ajmer Satta Result, users on A7 Satta King also follow games like{" "}
+            Ajmer Satta Result देखने के साथ A7 Satta King पर लोग{" "}
             <Link href="https://www.a7sattaking.co/udaipur-city" className="text-blue-600 underline">
-              Udaipur City Satta Results,
+              Udaipur City Satta Results
             </Link>
             ,{" "}
             <Link href="https://www.a7sattaking.co/raj-shree" className="text-blue-600 underline">
@@ -2628,37 +2601,37 @@ export const staticMarkets: Record<string, Market> = {
             <Link href="https://www.a7sattaking.co/agra-city" className="text-blue-600 underline">
               Agra City Satta Result
             </Link>
-            , and{" "}
+            , और{" "}
             <Link href="https://www.a7sattaking.co/shri-lakshmi" className="text-blue-600 underline">
               Shri Lakshmi Satta Result
             </Link>{" "}
-            to stay updated with multiple results throughout the day.
+            जैसे गेम के रिजल्ट भी देखते हैं, ताकि पूरे दिन के अलग-अलग रिजल्ट की जानकारी मिलती रहे।
           </p>
         ),
       },
       {
-        heading: "How to Check Ajmer Satta Result?",
+        heading: "Ajmer Satta Result कैसे देखें?",
         description: (
           <>
-            <p>To check the latest result, follow these steps:</p>
+            <p>नया रिजल्ट देखने के लिए इन आसान चरणों का पालन करें:</p>
             <ol className="list-decimal pl-6 mt-3 space-y-2">
-              <li>Access the Page Before Result Updates</li>
-              <li>Refresh the page around 7:40 PM</li>
-              <li>Check the updated Ajmer number</li>
-              <li>Scroll to Access Charts and Extra Details</li>
+              <li>रिजल्ट अपडेट होने से पहले पेज खोलें</li>
+              <li>लगभग 7:40 PM पर पेज को दोबारा रिफ्रेश करें</li>
+              <li>अपडेट किया गया अजमेर नंबर देखें</li>
+              <li>चार्ट और अन्य जानकारी देखने के लिए नीचे स्क्रॉल करें</li>
             </ol>
           </>
         ),
       },
       {
-        heading: "Disclaimer",
+        heading: "अस्वीकरण",
         description: (
           <>
             <p>
-              This content is intended only for informational purposes. We do not encourage or support any form of betting or gambling activity. The Ajmer Satta Result shared here is based on publicly available information.
+              यह सामग्री केवल जानकारी देने के उद्देश्य से तैयार की गई है। हम किसी भी प्रकार की सट्टेबाजी या जुए की गतिविधि को प्रोत्साहित या समर्थन नहीं करते हैं। यहां दिया गया Ajmer Satta Result सार्वजनिक रूप से उपलब्ध जानकारी पर आधारित है।
             </p>
             <p className="mt-3">
-              Users should follow their local laws and regulations. We are not responsible for any loss or consequences resulting from the use of this information.
+              उपयोगकर्ताओं को अपने स्थानीय कानूनों और नियमों का पालन करना चाहिए। इस जानकारी के उपयोग से होने वाले किसी भी नुकसान या परिणाम के लिए हम जिम्मेदार नहीं हैं।
             </p>
           </>
         ),
@@ -2666,29 +2639,26 @@ export const staticMarkets: Record<string, Market> = {
     ],
     faqs: [
       {
-        question: "What is Ajmer Satta Result?",
+        question: "Ajmer Satta Result क्या है?",
         answer:
-          "Ajmer Satta Result shows the daily outcome of the Ajmer market, which users can check online for updates.",
+          "Ajmer Satta Result में अजमेर मार्केट का रोजाना का परिणाम दिखाया जाता है, जिसे लोग अपडेट के लिए ऑनलाइन देख सकते हैं।",
       },
       {
-        question: "What is the timing of Ajmer Satta Result?",
-        answer:
-          "The result is generally announced at around 7:40 PM.",
+        question: "Ajmer Satta Result का समय क्या है?",
+        answer: "इसका रिजल्ट आमतौर पर लगभग 7:40 PM पर घोषित किया जाता है।",
       },
       {
-        question: "Where can I check Ajmer Satta Result today?",
+        question: "आज का Ajmer Satta Result कहां देख सकते हैं?",
         answer:
-          "You can find the latest updates on A7 Satta King for quick and reliable information.",
+          "आप जल्दी और भरोसेमंद जानकारी के लिए A7 Satta King पर इसके ताजा अपडेट देख सकते हैं।",
       },
       {
-        question: "Is Ajmer result updated daily?",
-        answer:
-          "Yes, it is updated every day according to the fixed schedule.",
+        question: "क्या अजमेर का रिजल्ट रोजाना अपडेट होता है?",
+        answer: "हां, तय समय के अनुसार इसका रिजल्ट हर दिन अपडेट किया जाता है।",
       },
       {
-        question: "Can I check old Ajmer results?",
-        answer:
-          "Yes, previous results are available in the chart section for reference.",
+        question: "क्या मैं अजमेर के पुराने रिजल्ट देख सकता हूं?",
+        answer: "हां, पुराने रिजल्ट संदर्भ के लिए चार्ट सेक्शन में उपलब्ध हैं।",
       },
     ],
   },
@@ -2702,93 +2672,91 @@ export const staticMarkets: Record<string, Market> = {
     },
     sections: [
       {
-        heading: "Dwarka City Satta Result – Today Result, Live Updates & Chart Details",
+        heading: "Dwarka City Satta Result – आज का परिणाम, लाइव अपडेट और चार्ट की जानकारी",
         description: (
           <>
             <p>
-              If you want the latest Dwarka City Satta Result, this page brings all updates in a neat and easy-to-follow format. From the current result to earlier chart records, everything is available here so users can quickly check the Dwarka City Satta Result today without any confusion.
-
+              अगर आप नवीनतम Dwarka City Satta Result देखना चाहते हैं, तो यह पेज आपको सभी अपडेट साफ और आसान तरीके से उपलब्ध कराता है। मौजूदा परिणाम से लेकर पुराने चार्ट रिकॉर्ड तक, यहाँ सब कुछ उपलब्ध है, ताकि उपयोगकर्ता बिना किसी परेशानी के आज का Dwarka City Satta Result जल्दी देख सकें।
             </p>
             <p className="mt-3">
-              Dwarka City is a frequently followed game in the Satta cycle, especially during the late hours. Because of its fixed schedule and regular updates, many users include it in their daily tracking. On <strong>A7 Satta King</strong>, you can find the latest Dwarka City result along with past data and chart details in one place.
+              Dwarka City, सट्टा चक्र में अक्सर देखा जाने वाला गेम है, खासकर देर रात के समय। अपने तय समय और नियमित अपडेट के कारण कई उपयोगकर्ता इसे अपनी रोज़ की जानकारी देखने की दिनचर्या में शामिल करते हैं। <strong>A7 Satta King</strong> पर आप नवीनतम Dwarka City परिणाम के साथ पुराना डेटा और चार्ट की जानकारी भी एक ही जगह देख सकते हैं।
             </p>
           </>
         ),
       },
       {
-        heading: "What is Dwarka City Satta Result?",
+        heading: "Dwarka City Satta Result क्या है?",
         description: (
           <>
             <p>
-              Dwarka City Satta Result is the daily declared outcome of the Dwarka City game within the Satta King system. The result is released at a specific time each day, making it easy for users to stay updated regularly.
+              Dwarka City Satta Result, सट्टा किंग सिस्टम के अंतर्गत Dwarka City गेम का रोज़ घोषित होने वाला परिणाम है। यह परिणाम हर दिन एक निश्चित समय पर जारी किया जाता है, जिससे उपयोगकर्ता नियमित रूप से अपडेट रह सकते हैं।
             </p>
             <p className="mt-3">
-              On <Link href="https://www.a7sattaking.co" className="text-blue-600 underline">
+              <Link href="https://www.a7sattaking.co" className="text-blue-600 underline">
                 A7 Satta King
-              </Link>, users can check both the latest result and earlier records, helping them keep track of ongoing and previous updates without any difficulty.
-
+              </Link>{" "}
+              पर उपयोगकर्ता नवीनतम परिणाम के साथ पुराने रिकॉर्ड भी देख सकते हैं। इससे मौजूदा और पिछले अपडेट की जानकारी आसानी से मिल जाती है।
             </p>
           </>
         ),
       },
       {
-        heading: "Dwarka City Satta Result Today",
+        heading: "Dwarka City Satta Result आज",
         description: (
           <>
             <p>
-              Dwarka City Satta Result today is generally announced at night. Many users visit the page around the expected time so they can view the latest update as soon as it is published.
+              Dwarka City Satta Result today आमतौर पर रात में घोषित किया जाता है। कई उपयोगकर्ता नया अपडेट जारी होते ही देखने के लिए अनुमानित समय के आसपास इस पेज पर आते हैं।
             </p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-
               <li className="font-bold text-black">
-                Expected Result Time: Around 9:35 PM
+                अनुमानित परिणाम का समय: लगभग 9:35 PM
               </li>
             </ul>
             <p className="mt-3">
-              The page is updated at regular intervals to ensure users get the most recent and accurate information.
+              उपयोगकर्ताओं तक सबसे नई और सही जानकारी पहुँचाने के लिए इस पेज को नियमित अंतराल पर अपडेट किया जाता है।
             </p>
           </>
         ),
       },
       {
-        heading: "Dwarka City Chart & Previous Results",
+        heading: "Dwarka City चार्ट और पिछले परिणाम",
         description: (
           <>
             <p>
-              For users who want to explore earlier data, the Dwarka City Satta chart section provides access to past results. This helps in reviewing number history and staying informed about previous outcomes.
+              जो उपयोगकर्ता पुराने डेटा को देखना चाहते हैं, उनके लिए Dwarka City Satta चार्ट सेक्शन में पिछले परिणाम उपलब्ध हैं। इससे नंबरों के पुराने रिकॉर्ड की समीक्षा करने और पहले के परिणामों की जानकारी रखने में मदद मिलती है।
             </p>
-            <p className="mt-3">With chart data, users can:</p>
+            <p className="mt-3">चार्ट डेटा की मदद से उपयोगकर्ता:</p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-              <li>Access earlier result entries quickly</li>
-              <li>Keep track of number sequences</li>
-              <li>Evaluate daily changes</li>
-              <li>Stay informed with historical data</li>
+              <li>पुराने परिणामों की जानकारी जल्दी देख सकते हैं</li>
+              <li>नंबरों के क्रम पर नज़र रख सकते हैं</li>
+              <li>रोज़ाना होने वाले बदलावों को देख सकते हैं</li>
+              <li>पुराने डेटा की जानकारी रख सकते हैं</li>
             </ul>
           </>
         ),
       },
       {
-        heading: "Why is Dwarka City Satta Result Popular?",
+        heading: "Dwarka City Satta Result लोकप्रिय क्यों है?",
         description: (
           <>
             <p>
-              Dwarka City Satta Result is commonly searched because of its consistent timing and reliable updates. Many users follow this game daily along with other results.
+              Dwarka City Satta Result को इसके नियमित समय और लगातार मिलने वाले अपडेट के कारण अक्सर खोजा जाता है। कई उपयोगकर्ता अन्य परिणामों के साथ इस गेम को भी रोज़ देखते हैं।
             </p>
-            <p className="mt-3">Some key reasons include:</p>
+            <p className="mt-3">इसके कुछ मुख्य कारण हैं:</p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-              <li>Regular daily announcements</li>
-              <li>Fixed timing schedule</li>
-              <li>Easy availability on online platforms</li>
-              <li>Continuous interest among users</li>
+              <li>रोज़ाना नियमित रूप से परिणाम घोषित होना</li>
+              <li>परिणाम का तय समय</li>
+              <li>ऑनलाइन प्लेटफॉर्म पर आसानी से उपलब्ध होना</li>
+              <li>उपयोगकर्ताओं की लगातार रुचि</li>
             </ul>
           </>
         ),
       },
       {
-        heading: "Explore a few Other Satta Games",
+        heading: "कुछ अन्य सट्टा गेम भी देखें",
         description: (
           <p>
-            While checking the Dwarka City Satta Result, users on A7 Satta King also follow games like{" "}
+            Dwarka City Satta Result देखते समय, A7 Satta King पर उपयोगकर्ता{" "}
             <Link href="https://www.a7sattaking.co/sialkot" className="text-blue-600 underline">
               Sialkot Satta Results
             </Link>
@@ -2800,37 +2768,37 @@ export const staticMarkets: Record<string, Market> = {
             <Link href="https://www.a7sattaking.co/gali" className="text-blue-600 underline">
               Gali Satta Result
             </Link>
-            , and{" "}
+            , और{" "}
             <Link href="https://www.a7sattaking.co/udaipur-city" className="text-blue-600 underline">
               Udaipur City Satta Results
             </Link>{" "}
-            to stay updated with multiple results throughout the day.
+            जैसे गेम भी देखते हैं, ताकि दिनभर कई परिणामों के अपडेट प्राप्त कर सकें।
           </p>
         ),
       },
       {
-        heading: "How to Check Dwarka City Satta Result?",
+        heading: "Dwarka City Satta Result कैसे देखें?",
         description: (
           <>
-            <p>To check the latest result, follow these steps:</p>
+            <p>नवीनतम परिणाम देखने के लिए इन चरणों का पालन करें:</p>
             <ol className="list-decimal pl-6 mt-3 space-y-2">
-              <li>Open the page before the scheduled time</li>
-              <li>Reload the page near 9:35 PM</li>
-              <li>View the latest Dwarka City number</li>
-              <li>Go through charts and related sections for more details</li>
+              <li>तय समय से पहले पेज खोलें</li>
+              <li>रात 9:35 PM के आसपास पेज को दोबारा लोड करें</li>
+              <li>नवीनतम Dwarka City नंबर देखें</li>
+              <li>अधिक जानकारी के लिए चार्ट और संबंधित सेक्शन देखें</li>
             </ol>
           </>
         ),
       },
       {
-        heading: "Disclaimer",
+        heading: "अस्वीकरण",
         description: (
           <>
             <p>
-              This content is intended only for informational purposes. We do not encourage or support any type of betting or gambling activity. The Dwarka City Satta Result shared here is based on publicly available information.
+              यह सामग्री केवल जानकारी देने के उद्देश्य से प्रस्तुत की गई है। हम किसी भी प्रकार की सट्टेबाजी या जुए की गतिविधि को प्रोत्साहित नहीं करते और न ही उसका समर्थन करते हैं। यहाँ साझा किया गया Dwarka City Satta Result सार्वजनिक रूप से उपलब्ध जानकारी पर आधारित है।
             </p>
             <p className="mt-3">
-              Users should follow their local laws and regulations. We are not responsible for any loss or consequences resulting from the use of this information.
+              उपयोगकर्ताओं को अपने स्थानीय कानूनों और नियमों का पालन करना चाहिए। इस जानकारी के उपयोग से होने वाले किसी भी नुकसान या परिणाम के लिए हम जिम्मेदार नहीं हैं।
             </p>
           </>
         ),
@@ -2838,29 +2806,29 @@ export const staticMarkets: Record<string, Market> = {
     ],
     faqs: [
       {
-        question: "What is Dwarka City Satta Result?",
+        question: "Dwarka City Satta Result क्या है?",
         answer:
-          "Dwarka City Satta Result shows the daily outcome of the Dwarka City market, which users can check online for updates.",
+          "Dwarka City Satta Result, Dwarka City बाजार का रोज़ घोषित होने वाला परिणाम है, जिसे उपयोगकर्ता अपडेट देखने के लिए ऑनलाइन देख सकते हैं।",
       },
       {
-        question: "What is the timing of Dwarka City Satta Result?",
+        question: "Dwarka City Satta Result का समय क्या है?",
         answer:
-          "The result is generally declared at around 9:35 PM.",
+          "यह परिणाम आमतौर पर रात 9:35 PM के आसपास घोषित किया जाता है।",
       },
       {
-        question: "Where can I check Dwarka City Satta Result today?",
+        question: "मैं आज का Dwarka City Satta Result कहाँ देख सकता हूँ?",
         answer:
-          "You can find the latest updates on A7 Satta King for accurate and timely information.",
+          "सही और समय पर जानकारी पाने के लिए आप नवीनतम अपडेट A7 Satta King पर देख सकते हैं।",
       },
       {
-        question: "Is Dwarka City result updated daily?",
+        question: "क्या Dwarka City का परिणाम रोज़ अपडेट होता है?",
         answer:
-          "Yes, it is updated every day according to the fixed schedule.",
+          "हाँ, तय समय के अनुसार इसे हर दिन अपडेट किया जाता है।",
       },
       {
-        question: "Can I check old Dwarka City results?",
+        question: "क्या मैं Dwarka City के पुराने परिणाम देख सकता हूँ?",
         answer:
-          "Yes, previous results are available in the chart section for reference.",
+          "हाँ, पुराने परिणाम संदर्भ के लिए चार्ट सेक्शन में उपलब्ध हैं।",
       },
     ],
   },
@@ -3043,92 +3011,90 @@ export const staticMarkets: Record<string, Market> = {
     },
     sections: [
       {
-        heading: "Shri Lakshmi Satta Result – Today Update, Live Result & Chart Record",
+        heading: "Shri Lakshmi Satta Result – आज का अपडेट, लाइव परिणाम और चार्ट रिकॉर्ड",
         description: (
           <>
             <p>
-              If you want the latest Shri Lakshmi Satta Result, this page delivers all updates in a clear and user-friendly format. From today’s result to previous chart history, everything is arranged so users can quickly check the Shri Lakshmi Satta Result today without any confusion.
+              यदि आप Shri Lakshmi Satta Result की नवीनतम जानकारी चाहते हैं, तो यह पेज आपको सभी अपडेट स्पष्ट और आसान तरीके से उपलब्ध कराता है। आज के परिणाम से लेकर पुराने चार्ट रिकॉर्ड तक, यहां सभी जानकारी व्यवस्थित की गई है, ताकि आप बिना किसी परेशानी के आज का Shri Lakshmi Satta Result जल्दी देख सकें।
             </p>
             <p className="mt-3">
-              Shri Lakshmi is a regularly followed game in the daily Satta cycle. Due to its fixed timing and steady updates, many users track it along with other markets. On <strong>A7 Satta King</strong>, you can easily find the latest results along with past records.
+              Shri Lakshmi दैनिक सट्टा क्रम में नियमित रूप से देखा जाने वाला खेल है। इसके निश्चित समय और लगातार मिलने वाले अपडेट के कारण कई लोग अन्य बाजारों के साथ इसे भी देखते हैं। <strong>A7 Satta King</strong> पर आप नवीनतम परिणामों के साथ पुराने रिकॉर्ड भी आसानी से देख सकते हैं।
             </p>
           </>
         ),
       },
       {
-        heading: "What is Shri Lakshmi Satta Result?",
+        heading: "Shri Lakshmi Satta Result क्या है?",
         description: (
           <>
             <p>
-              Shri Lakshmi Satta Result refers to the daily declared outcome of the Shri Lakshmi game within the Satta King system. The result is announced at a specific time each day, making it convenient for users to stay updated regularly.
+              Shri Lakshmi Satta Result, सट्टा किंग प्रणाली के अंतर्गत Shri Lakshmi खेल के प्रतिदिन घोषित होने वाले परिणाम को दर्शाता है। परिणाम हर दिन एक निश्चित समय पर घोषित किया जाता है, जिससे लोग नियमित रूप से अपडेट रह सकते हैं।
             </p>
             <p className="mt-3">
-              On <Link href="https://www.a7sattaking.co" className="text-blue-600 underline">
+              <Link href="https://www.a7sattaking.co" className="text-blue-600 underline">
                 A7 Satta King
-              </Link>, users can view the latest result as well as previous data and chart records, helping them track both current and past information in one place.
-
+              </Link> पर लोग नवीनतम परिणाम के साथ पुराने आंकड़े और चार्ट रिकॉर्ड भी देख सकते हैं। इससे एक ही जगह वर्तमान और पुराने परिणामों की जानकारी प्राप्त करना आसान हो जाता है।
             </p>
           </>
         ),
       },
       {
-        heading: "Shri Lakshmi Satta Result Today",
+        heading: "आज का Shri Lakshmi Satta Result",
         description: (
           <>
             <p>
-              The Shri Lakshmi Satta Result today is usually declared in the afternoon. Many users visit the page before the scheduled time to ensure they don’t miss the latest update.
+              आज का Shri Lakshmi Satta Result आमतौर पर दोपहर में घोषित किया जाता है। कई लोग नवीनतम अपडेट देखने से न चूकें, इसलिए निर्धारित समय से पहले इस पेज पर आते हैं।
             </p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-
               <li className="font-bold text-black">
-                Expected Result Time: Around 3:50 PM
+                परिणाम का संभावित समय: लगभग 3:50 PM
               </li>
             </ul>
             <p className="mt-3">
-              The page is updated frequently so users can access accurate and timely information as soon as the result is available.
+              परिणाम उपलब्ध होते ही लोगों तक सटीक और समय पर जानकारी पहुंचाने के लिए इस पेज को नियमित रूप से अपडेट किया जाता है।
             </p>
           </>
         ),
       },
       {
-        heading: "Shri Lakshmi Chart & Previous Results",
+        heading: "Shri Lakshmi चार्ट और पुराने परिणाम",
         description: (
           <>
             <p>
-              For users who want to review earlier data, the Shri Lakshmi Satta chart section provides access to past results. This helps in tracking number history and understanding previous outcomes.
+              पुराने आंकड़ों को देखना चाहने वाले लोगों के लिए Shri Lakshmi Satta चार्ट सेक्शन में पिछले परिणाम उपलब्ध हैं। इससे पुराने नंबरों का रिकॉर्ड देखने और पिछले परिणामों को समझने में मदद मिलती है।
             </p>
-            <p className="mt-3">With the help of chart data, users can:</p>
+            <p className="mt-3">चार्ट के आंकड़ों की मदद से लोग:</p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-              <li>Access past results easily</li>
-              <li>Maintain number records</li>
-              <li>Analyze and Compare Daily Results</li>
-              <li>Observe patterns over time</li>
+              <li>पिछले परिणाम आसानी से देख सकते हैं</li>
+              <li>नंबरों का रिकॉर्ड रख सकते हैं</li>
+              <li>रोजाना के परिणामों का विश्लेषण और तुलना कर सकते हैं</li>
+              <li>समय के साथ होने वाले बदलावों को देख सकते हैं</li>
             </ul>
           </>
         ),
       },
       {
-        heading: "Why is Shri Lakshmi Satta Result Popular?",
+        heading: "Shri Lakshmi Satta Result लोकप्रिय क्यों है?",
         description: (
           <>
             <p>
-              Shri Lakshmi Satta Result is widely searched because of its consistent schedule and regular updates. Many users include it in their daily tracking routine along with other markets.
+              Shri Lakshmi Satta Result को नियमित समय और लगातार मिलने वाले अपडेट के कारण अक्सर खोजा जाता है। कई लोग इसे अन्य बाजारों के साथ अपनी दैनिक जानकारी देखने की दिनचर्या में शामिल करते हैं।
             </p>
-            <p className="mt-3">Some key reasons include:</p>
+            <p className="mt-3">इसके कुछ मुख्य कारण हैं:</p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-              <li>Latest Daily Result Announcements Here</li>
-              <li>Fixed Result Timing You Can Rely On</li>
-              <li>Easy online access</li>
-              <li>Continuous User Interest in Daily Results</li>
+              <li>यहां रोजाना के नवीनतम परिणामों की जानकारी मिलना</li>
+              <li>परिणाम का निश्चित समय, जिस पर भरोसा किया जा सकता है</li>
+              <li>ऑनलाइन आसानी से जानकारी उपलब्ध होना</li>
+              <li>दैनिक परिणामों में लोगों की लगातार रुचि</li>
             </ul>
           </>
         ),
       },
       {
-        heading: "More Satta Games You Should Know",
+        heading: "अन्य सट्टा खेलों के बारे में जानें",
         description: (
           <p>
-            While checking the Shri Lakshmi Satta Result, users on A7 Satta King also follow games like{" "}
+            Shri Lakshmi Satta Result देखते समय, A7 Satta King पर लोग दिनभर के कई परिणामों की जानकारी पाने के लिए{" "}
             <Link href="https://www.a7sattaking.co/delhi-bazar" className="text-blue-600 underline">
               Delhi Bazar Satta Result
             </Link>
@@ -3140,37 +3106,37 @@ export const staticMarkets: Record<string, Market> = {
             <Link href="https://www.a7sattaking.co/raj-shree" className="text-blue-600 underline">
               Raj Shree Satta Result
             </Link>
-            , and{" "}
+            , और{" "}
             <Link href="https://www.a7sattaking.co/dwarka-city" className="text-blue-600 underline">
               Dwarka City Satta Result
             </Link>{" "}
-            to stay updated with multiple results throughout the day.
+            जैसे खेलों के परिणाम भी देखते हैं।
           </p>
         ),
       },
       {
-        heading: "How to Check Shri Lakshmi Satta Result?",
+        heading: "Shri Lakshmi Satta Result कैसे देखें?",
         description: (
           <>
-            <p>To check the latest result, follow these steps:</p>
+            <p>नवीनतम परिणाम देखने के लिए इन चरणों का पालन करें:</p>
             <ol className="list-decimal pl-6 mt-3 space-y-2">
-              <li>Access the Page Before Result Announcement</li>
-              <li>Refresh the page around 3:50 PM</li>
-              <li>Check the updated Shri Lakshmi number</li>
-              <li>Scroll further to view charts and related details</li>
+              <li>परिणाम घोषित होने से पहले पेज खोलें</li>
+              <li>लगभग 3:50 PM पर पेज को दोबारा लोड करें</li>
+              <li>अपडेट किया गया Shri Lakshmi नंबर देखें</li>
+              <li>चार्ट और संबंधित जानकारी देखने के लिए नीचे स्क्रॉल करें</li>
             </ol>
           </>
         ),
       },
       {
-        heading: "Disclaimer",
+        heading: "अस्वीकरण",
         description: (
           <>
             <p>
-              This content is intended only for informational purposes. We do not encourage or support any form of betting or gambling activity. The Shri Lakshmi Satta Result shared here is based on publicly available information.
+              यह सामग्री केवल जानकारी देने के उद्देश्य से साझा की गई है। हम किसी भी प्रकार की सट्टेबाजी या जुए की गतिविधि को प्रोत्साहित या समर्थन नहीं करते हैं। यहां साझा किया गया Shri Lakshmi Satta Result सार्वजनिक रूप से उपलब्ध जानकारी पर आधारित है।
             </p>
             <p className="mt-3">
-              Users should follow their local laws and regulations. We are not responsible for any loss or consequences resulting from the use of this information.
+              लोगों को अपने स्थानीय कानूनों और नियमों का पालन करना चाहिए। इस जानकारी के उपयोग से होने वाले किसी भी नुकसान या उसके परिणाम के लिए हम जिम्मेदार नहीं हैं।
             </p>
           </>
         ),
@@ -3178,29 +3144,28 @@ export const staticMarkets: Record<string, Market> = {
     ],
     faqs: [
       {
-        question: "What is Shri Lakshmi Satta Result?",
+        question: "Shri Lakshmi Satta Result क्या है?",
         answer:
-          "Shri Lakshmi Satta Result shows the daily outcome of the Shri Lakshmi market, which users can check online for updates.",
+          "Shri Lakshmi Satta Result, Shri Lakshmi बाजार के दैनिक परिणाम को दर्शाता है, जिसे लोग अपडेट देखने के लिए ऑनलाइन देख सकते हैं।",
       },
       {
-        question: "What is the timing of Shri Lakshmi Satta Result?",
-        answer:
-          "The result is generally announced at around 3:50 PM.",
+        question: "Shri Lakshmi Satta Result का समय क्या है?",
+        answer: "परिणाम आमतौर पर लगभग 3:50 PM पर घोषित किया जाता है।",
       },
       {
-        question: "Where can I check Shri Lakshmi Satta Result today?",
+        question: "आज का Shri Lakshmi Satta Result कहां देख सकते हैं?",
         answer:
-          "You can find the latest Shri Lakshmi Satta Result updates on A7 Satta King for quick and reliable information.",
+          "आप त्वरित और भरोसेमंद जानकारी के लिए A7 Satta King पर Shri Lakshmi Satta Result के नवीनतम अपडेट देख सकते हैं।",
       },
       {
-        question: "Is Shri Lakshmi result updated daily?",
+        question: "क्या Shri Lakshmi का परिणाम रोजाना अपडेट होता है?",
         answer:
-          "Yes, the Shri Lakshmi result is updated every day according to the scheduled result time.",
+          "हां, निर्धारित परिणाम समय के अनुसार Shri Lakshmi का परिणाम हर दिन अपडेट किया जाता है।",
       },
       {
-        question: "Can I check old Shri Lakshmi results?",
+        question: "क्या मैं Shri Lakshmi के पुराने परिणाम देख सकता हूं?",
         answer:
-          "Yes, previous Shri Lakshmi results are available in the chart section for reference.",
+          "हां, पुराने Shri Lakshmi परिणाम संदर्भ के लिए चार्ट सेक्शन में उपलब्ध हैं।",
       },
     ],
   },
