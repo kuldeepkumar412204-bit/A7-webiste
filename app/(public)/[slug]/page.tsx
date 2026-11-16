@@ -1,4 +1,5 @@
 import { Suspense, cache } from "react";
+import type { AllYearlyDataResponse } from "@/app/lib/satta";
 import type { ComponentType } from "react";
 import SattaYearlyChart from "../Components/Charts/SattaYearlyChart";
 import { connectDB } from "@/app/lib/mongodb";
@@ -32,7 +33,7 @@ import { Metadata } from "next";
 import StaticMarketPage from "./components/StaticMarketPage";
 import { notFound } from "next/navigation";
 
-const componentMap: Record<string, ComponentType<{ latest?: LatestResult | null }>> = {
+const componentMap: Record<string, ComponentType<{ latest?: LatestResult | null; initialData?: AllYearlyDataResponse }>> = {
   "sadar-bazar": SadarBazar,
   gwalior: Gwalior,
   "delhi-bazar": DelhiBazar,
@@ -238,7 +239,7 @@ export default async function page({ params, searchParams }: PageProps) {
     >
       <SattaYearlyChart initialData={yearlyData} />
       {Component ? (
-        <Component latest={latest} />
+        <Component latest={latest} initialData={yearlyData} />
       ) : market ? (
         <StaticMarketPage market={market} />
       ) : null}
