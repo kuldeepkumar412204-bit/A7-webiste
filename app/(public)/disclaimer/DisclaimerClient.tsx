@@ -1,85 +1,127 @@
+import Link from "next/link";
+
 export default function DisclaimerClient() {
   return (
     <>
       <div className="bg-[linear-gradient(180deg,_#ff9000,_#ffe400)] border-b border-b-black border-t-[2px] border-t-black text-black py-[20px]">
         <h2 className="text-[calc(1.375rem+1.5vw)] min-[1200px]:text-[2.5rem] text-center uppercase font-bold">
-          disclaimer
+          अस्वीकरण (Disclaimer)
         </h2>
       </div>
       <div>
         <div className="max-w-[700px] mx-auto text-[20px] font-normal p-[1rem]">
           <p className="mb-10">
-            Welcome to the a7sattaking.co website. Before using or accessing any
-            information on this site, please read and understand the following
-            disclaimer
-          </p>
-          <h2 className="text-[calc(1.325rem+0.9vw)] lg:text-[2rem]">
-            Accuracy of Information
-          </h2>
-
-          <p className="mb-10">
-            The information provided on this website is for general
-            informational purposes only. While we strive to keep the information
-            up to date and accurate, we make no representations or warranties of
-            any kind, express or implied, about the completeness, accuracy,
-            reliability, suitability, or availability concerning the website or
-            the information, products, services, or related graphics contained
-            on the website for any purpose. Any reliance you place on such
-            information is therefore strictly at your own risk.
+            a7sattaking.co वेबसाइट पर आपका स्वागत है। इस साइट की किसी भी जानकारी
+            का उपयोग करने या उस तक पहुँचने से पहले, कृपया निम्नलिखित अस्वीकरण
+            (Disclaimer) को ध्यानपूर्वक पढ़ें और समझें।
           </p>
 
           <h2 className="text-[calc(1.325rem+0.9vw)] lg:text-[2rem]">
-            Not Legal Advice
+            जानकारी की सटीकता
           </h2>
           <p className="mb-10">
-            This website does not provide any legal advice. The content is for
-            informational purposes only and should not be considered as legal,
-            financial, or professional advice. Users are encouraged to seek
-            appropriate professional advice for their specific circumstances.
+            इस वेबसाइट पर प्रदान की गई जानकारी केवल सामान्य जानकारी के उद्देश्य
+            से है। हालांकि हम जानकारी को अद्यतन (अप-टू-डेट) और सटीक रखने का पूरा
+            प्रयास करते हैं, लेकिन हम वेबसाइट या किसी भी उद्देश्य के लिए वेबसाइट
+            पर मौजूद जानकारी, उत्पादों, सेवाओं या संबंधित ग्राफिक्स की पूर्णता,
+            सटीकता, विश्वसनीयता, उपयुक्तता या उपलब्धता के बारे में किसी भी
+            प्रकार का कोई स्पष्ट या निहित प्रतिनिधित्व या वारंटी नहीं देते हैं।
+            ऐसी किसी भी जानकारी पर आपका भरोसा पूरी तरह से आपके अपने जोखिम पर
+            होगा।
           </p>
 
           <h2 className="text-[calc(1.325rem+0.9vw)] lg:text-[2rem]">
-            Third-Party Links
+            कानूनी सलाह नहीं
           </h2>
-          <p className="mb-6">
-            From our website, you can visit other websites through hyperlinks
-            provided. While we strive to provide only quality links to useful
-            and ethical websites, we have no control over the content and nature
-            of these sites. The inclusion of any links does not necessarily
-            imply a recommendation or endorse the views expressed within them.
+          <p className="mb-10">
+            यह वेबसाइट किसी भी प्रकार की कानूनी सलाह प्रदान नहीं करती है। यहां
+            दी गई सामग्री केवल सामान्य जानकारी के उद्देश्य से है और इसे कानूनी,
+            वित्तीय या पेशेवर सलाह के रूप में नहीं माना जाना चाहिए। उपयोगकर्ताओं
+            को अपनी विशिष्ट परिस्थितियों के लिए उचित पेशेवर सलाह लेने की सलाह दी
+            जाती है।
           </p>
+
           <h2 className="text-[calc(1.325rem+0.9vw)] lg:text-[2rem]">
-            Personal Responsibility
+            थर्ड-पार्टी लिंक्स
           </h2>
           <p className="mb-6">
-            The use of the information on this website is entirely at your own
-            risk. It is your responsibility to ensure that any products,
-            services, or information available through this website meet your
-            specific requirements. We shall not be liable for any loss or
-            damage, including without limitation, indirect or consequential loss
-            or damage, or any loss or damage whatsoever arising from the use of
-            this website.
+            हमारी वेबसाइट पर दिए गए हाइपरलिंक के माध्यम से आप अन्य वेबसाइटों पर
+            जा सकते हैं। हालांकि हम उपयोगी और नैतिक वेबसाइटों के लिए केवल
+            गुणवत्तापूर्ण लिंक प्रदान करने का प्रयास करते हैं, लेकिन उन साइटों
+            की सामग्री और प्रकृति पर हमारा कोई नियंत्रण नहीं है। किसी भी लिंक को
+            शामिल करने का अर्थ यह नहीं है कि हम उन वेबसाइटों पर व्यक्त विचारों
+            की सिफारिश या समर्थन करते हैं।
           </p>
+
+          <h2 className="text-[calc(1.325rem+0.9vw)] lg:text-[2rem]">
+            व्यक्तिगत जिम्मेदारी
+          </h2>
+          <p className="mb-6">
+            इस वेबसाइट पर मौजूद जानकारी का उपयोग पूरी तरह से आपके अपने जोखिम पर
+            है। यह सुनिश्चित करना आपकी अपनी जिम्मेदारी है कि इस वेबसाइट के
+            माध्यम से उपलब्ध कोई भी उत्पाद, सेवा या जानकारी आपकी विशिष्ट
+            आवश्यकताओं को पूरा करती है या नहीं। इस वेबसाइट के उपयोग से उत्पन्न
+            होने वाले किसी भी नुकसान या क्षति—जिसमें बिना किसी सीमा के
+            अप्रत्यक्ष या परिणामी नुकसान शामिल है—के लिए हम उत्तरदायी नहीं
+            होंगे।
+          </p>
+
+          <h2 className="text-[calc(1.325rem+0.9vw)] lg:text-[2rem] mt-10 mb-3">
+            Satta Matka के जोखिम और कानूनी नियम
+          </h2>
+          <p className="mb-6">
+            Satta Matka जुए से जुड़ी गतिविधियों में शामिल है, जिसमें आर्थिक
+            जोखिम और कानूनी प्रतिबंध हो सकते हैं। जुए से संबंधित कानून अलग-अलग
+            राज्यों और क्षेत्रों में भिन्न हो सकते हैं। इसलिए किसी भी संबंधित
+            गतिविधि को देखने या उसमें भाग लेने से पहले लागू कानूनी नियमों की
+            जानकारी प्राप्त करना आवश्यक है।
+          </p>
+          <p className="mb-6">
+            A7 Satta King पर प्रकाशित जानकारी केवल सामान्य जानकारी के उद्देश्य
+            से प्रदान की जाती है। पुराने चार्ट, नंबर और पहले प्रकाशित किए गए
+            रिजल्ट को किसी भी गारंटीड परिणाम या वित्तीय सलाह के रूप में नहीं
+            समझना चाहिए।
+          </p>
+          <p className="mb-10">
+            वेबसाइट के उपयोग से संबंधित अधिक जानकारी के लिए विजिटर्स हमारी{" "}
+            <Link
+              href="/terms-and-conditions"
+              className="font-semibold text-[#b85d00] underline underline-offset-4 hover:text-black transition-colors"
+            >
+              Terms and Conditions
+            </Link>{" "}
+            पढ़ सकते हैं। इसके अलावा, वेबसाइट के उपयोग की सीमाओं और नियमों को
+            समझने के लिए{" "}
+            <Link
+              href="/disclaimer"
+              className="font-semibold text-[#b85d00] underline underline-offset-4 hover:text-black transition-colors"
+            >
+              Website Disclaimer
+            </Link>{" "}
+            भी देख सकते हैं।
+          </p>
+
           <h3 className="text-[calc(1.3rem+0.6vw)] lg:text-[1.75rem]">
-            Consent
+            सहमति (Consent)
           </h3>
           <p className="mb-6">
-            By using this website, you hereby consent to our disclaimer and
-            agree to its terms.
+            इस वेबसाइट का उपयोग करके, आप हमारे अस्वीकरण (Disclaimer) के प्रति
+            अपनी सहमति देते हैं और इसकी शर्तों को स्वीकार करते हैं।
           </p>
+
           <h3 className="text-[calc(1.3rem+0.6vw)] lg:text-[1.75rem]">
-            {" "}
-            Contact Information
+            संपर्क जानकारी
           </h3>
           <p className="mb-6">
-            If you have any questions or concerns regarding this disclaimer,
-            please feel free to contact us at mail@a7sattaking.co.
+            यदि इस अस्वीकरण के संबंध में आपके कोई प्रश्न या चिंताएं हैं, तो
+            कृपया बेझिझक हमसे mail@a7sattaking.co पर संपर्क करें।
           </p>
+
           <p className="mb-4">
             <strong>
               <em>
-                Thank you for taking the time to read our disclaimer. We hope
-                you find our website informative and useful.
+                हमारा अस्वीकरण पढ़ने के लिए समय निकालने हेतु धन्यवाद। हमें आशा
+                है कि आपको हमारी वेबसाइट जानकारीपूर्ण और उपयोगी लगेगी।
               </em>
             </strong>
           </p>

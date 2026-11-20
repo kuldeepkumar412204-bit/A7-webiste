@@ -211,6 +211,47 @@ export default function Agra({ latest }: { latest?: LatestResult | null }) {
         "यदि आप किसी पिछली तारीख का रिजल्ट देखना चाहते हैं, तो चार्ट में उस तारीख को खोजें और संबंधित महीने के कॉलम में उसका नंबर देखें। इस साल की बीती हुई तारीखों के रिजल्ट चार्ट में उपलब्ध रहते हैं। इनमें पहले घोषित किए गए नंबरों का रिकॉर्ड दिया जाता है। ये नंबर आने वाले रिजल्ट की भविष्यवाणी नहीं करते हैं।",
     },
     {
+      heading: "अलग-अलग Satta Matka मार्केट और उनके गेम फॉर्मेट",
+      description: (
+        <>
+          <p className="mb-3">
+            Satta Matka में कई अलग-अलग मार्केट शामिल हैं, जिनमें से प्रत्येक की पहचान उसके अपने नाम और रिजल्ट रिकॉर्ड्स से होती है। अलग-अलग मार्केट के नामों और उनके विशेष फॉर्मेट के बीच अंतर को समझने से पाठकों को यह पहचानने में मदद मिलती है कि वे किस प्रकार की जानकारी देख रहे हैं।
+          </p>
+          <p className="mb-3">
+            विजिटर्स अन्य मार्केट से जुड़ी जानकारी प्राप्त करने के लिए{" "}
+            <Link href="/delhi-matka" className="text-blue-600 underline">
+              Delhi Matka
+            </Link>
+            ,{" "}
+            <Link href="/disawer" className="text-blue-600 underline">
+              Disawer
+            </Link>
+            ,{" "}
+            <Link href="/delhi-darbar" className="text-blue-600 underline">
+              Delhi Darbar
+            </Link>
+            ,{" "}
+            <Link href="/ajmer" className="text-blue-600 underline">
+              Ajmer
+            </Link>
+            ,{" "}
+            <Link href="/raj-shree" className="text-blue-600 underline">
+              Raj Shree
+            </Link>
+            ,{" "}
+            <Link href="/dwarka-city" className="text-blue-600 underline">
+              Dwarka City
+            </Link>{" "}
+            और{" "}
+            <Link href="/udaipur-city" className="text-blue-600 underline">
+              Udaipur City
+            </Link>{" "}
+            के पेज भी देख सकते हैं। इन सभी पेजों पर संबंधित मार्केट के नाम के अनुसार उपलब्ध जानकारी और रिकॉर्ड्स देखे जा सकते हैं।
+          </p>
+        </>
+      ),
+    },
+    {
       heading: "अन्य Satta Game Results",
       description: (
         <>

@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import DisclaimerClient from "./DisclaimerClient";
 
 export const metadata: Metadata = {
-  title: "Disclaimer | A7 Satta King",
+  title: "अस्वीकरण (Disclaimer) | A7 Satta King",
   description:
-    "Read the A7 Satta King disclaimer covering information accuracy, third-party links, personal responsibility, legal advice, and website usage.",
+    "जानकारी की सटीकता, थर्ड-पार्टी लिंक्स, व्यक्तिगत जिम्मेदारी, कानूनी नियम और वेबसाइट के उपयोग से संबंधित A7 Satta King का अस्वीकरण (Disclaimer) पढ़ें।",
   alternates: {
     canonical: "https://www.a7sattaking.co/disclaimer",
   },
@@ -15,18 +15,18 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    title: "Disclaimer | A7 Satta King",
+    title: "अस्वीकरण (Disclaimer) | A7 Satta King",
     description:
-      "Read the A7 Satta King disclaimer and important information regarding website usage.",
+      "A7 Satta King का अस्वीकरण (Disclaimer) और वेबसाइट के उपयोग से संबंधित महत्वपूर्ण जानकारी पढ़ें।",
     url: "https://www.a7sattaking.co/disclaimer",
     siteName: "A7 Satta King",
-    locale: "en_IN",
+    locale: "hi_IN",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Disclaimer | A7 Satta King",
+    title: "अस्वीकरण (Disclaimer) | A7 Satta King",
     description:
-      "Read the A7 Satta King disclaimer and important information regarding website usage.",
+      "A7 Satta King का अस्वीकरण (Disclaimer) और वेबसाइट के उपयोग से संबंधित महत्वपूर्ण जानकारी पढ़ें।",
   },
 };
 

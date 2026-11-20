@@ -362,6 +362,65 @@ export default function SadarBazar({
             </div>
           ))}
 
+          {/* 9. SEO TEXT WITH SOLID YELLOW HEADER */}
+          <section className="w-full flex flex-col border-t-2 border-b border-black bg-white">
+            <div className="w-full bg-gradient-to-b from-[#ff9000] to-[#ffe400] border-b border-black text-black py-[18px] px-4">
+              <h2 className="text-[calc(1.3rem+.6vw)] font-semibold text-black tracking-wide text-center leading-[1.3]">
+                Satta Matka का विकास और पुराने मार्केट रिकॉर्ड्स का महत्व
+              </h2>
+            </div>
+
+            <div className="max-w-8xl mx-auto px-4 sm:px-6 py-6 flex flex-col gap-4 text-[20px] leading-relaxed text-neutral-900">
+              <p>
+                Satta Matka का भारत की नंबर आधारित गेमिंग संस्कृति में लंबा
+                इतिहास रहा है। समय के साथ इस सिस्टम से जुड़े अलग-अलग मार्केट के
+                नाम लोगों के बीच लोकप्रिय हुए। Sadar Bazar भी ऐसा ही एक मार्केट
+                है, जिसके पुराने रिकॉर्ड्स की चर्चा अन्य प्रसिद्ध मार्केट के साथ
+                की जाती है।
+              </p>
+              <p>
+                पारंपरिक फॉर्मेट में पिछले कुछ वर्षों के दौरान कई बदलाव आए हैं,
+                खासकर इंटरनेट आधारित सूचना प्लेटफॉर्म के बढ़ने के बाद। पहले लोग
+                जानकारी प्राप्त करने के लिए स्थानीय स्रोतों और अन्य माध्यमों पर
+                निर्भर रहते थे। आज वेबसाइट्स मार्केट से जुड़ी जानकारी को अलग-अलग
+                पेजों पर व्यवस्थित करती हैं, जिससे पुराने रिकॉर्ड्स को देखना और
+                समझना आसान हो गया है।
+              </p>
+              <p>
+                A7 Satta King पर विजिटर्स अलग-अलग मार्केट सेक्शन की जानकारी
+                प्राप्त कर सकते हैं, जिनमें Sadar Bazar,{" "}
+                <Link
+                  href="/lakshmi-bajar"
+                  className="font-semibold text-[#006ab1] underline decoration-2 underline-offset-4 hover:text-black transition-colors"
+                >
+                  Lakshmi Bajar
+                </Link>{" "}
+                और{" "}
+                <Link
+                  href="/delhi-bazar"
+                  className="font-semibold text-[#006ab1] underline decoration-2 underline-offset-4 hover:text-black transition-colors"
+                >
+                  Delhi Bazar
+                </Link>{" "}
+                शामिल हैं। प्रत्येक सेक्शन की अपनी अलग मार्केट पहचान और जानकारी
+                है।
+              </p>
+              <p>
+                पुराने रिकॉर्ड्स पाठकों को यह समझने में मदद कर सकते हैं कि पहले
+                प्रकाशित किए गए रिजल्ट किस तरह प्रस्तुत किए जाते हैं। हालांकि,
+                पुराने रिजल्ट भविष्य के परिणामों की गारंटी नहीं देते। विजिटर्स
+                अलग-अलग मार्केट के रिकॉर्ड्स की व्यवस्था को समझने के लिए{" "}
+                <Link
+                  href="/chart"
+                  className="font-semibold text-[#006ab1] underline decoration-2 underline-offset-4 hover:text-black transition-colors"
+                >
+                  Satta King Chart
+                </Link>{" "}
+                भी देख सकते हैं।
+              </p>
+            </div>
+          </section>
+
           {/* --- FREQUENTLY ASKED QUESTIONS (ACCORDION SECTION) --- */}
           <FAQSection faqItems={faqItems} />
         </div>

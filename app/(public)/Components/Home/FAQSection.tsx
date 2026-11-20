@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
 
 export interface InfoSection {
   heading: string;
@@ -454,6 +455,34 @@ export default function FAQSection() {
           </div> */}
             </>
           ))}
+
+            {/* 9. SEO TEXT WITH SOLID YELLOW HEADER */}
+        <section className="w-full flex flex-col border-t-2 border-b border-black bg-white">
+          <div className="w-full bg-gradient-to-b from-[#ff9000] to-[#ffe400] border-b border-black text-black py-[18px] px-4">
+            <h2 className="text-[calc(1.3rem+.6vw)] font-semibold text-black tracking-wide text-center leading-[1.3]">
+              Satta Matka का इतिहास और रिजल्ट रिकॉर्ड्स को समझना
+            </h2>
+          </div>
+
+          <div className="max-w-8xl mx-auto px-4 sm:px-6 py-6 flex flex-col gap-4 text-[20px] leading-relaxed text-neutral-900">
+            <p>
+              Satta Matka की शुरुआत 1960 के दशक में मुंबई से हुई थी। धीरे-धीरे यह एक नंबर आधारित गेम के रूप में विकसित हुआ। इसका इतिहास कॉटन मार्केट के भावों के अनुमान से जुड़ा हुआ है, जो बाद में अलग-अलग नंबर फॉर्मेट और रिजल्ट सिस्टम में बदल गया। समय के साथ यह गेम भारत के विभिन्न क्षेत्रों में लोकप्रिय हो गया।
+            </p>
+            <p>
+              Satta Matka के इतिहास और इसके पारंपरिक फॉर्मेट को समझना उन पाठकों के लिए उपयोगी है जो इसके बारे में जानकारी प्राप्त करना चाहते हैं। इसके अलावा, विजिटर्स हमारे{" "}
+              <Link
+                href="/chart"
+                className="font-semibold text-[#b85d00] underline decoration-2 underline-offset-4 hover:text-black transition-colors"
+              >
+                Satta King Chart
+              </Link>{" "}
+              पर जाकर पुराने रिकॉर्ड्स और उपलब्ध रिजल्ट की जानकारी भी देख सकते हैं।
+            </p>
+            <p>
+              A7 Satta King Sadar Bazar, Gwalior, Delhi Bazar और अन्य लिस्टेड मार्केट से संबंधित जानकारी प्रदान करता है। पाठक उपलब्ध रिकॉर्ड्स और अन्य जानकारी देखने के लिए संबंधित रीजनल मार्केट के पेज पर जा सकते हैं।
+            </p>
+          </div>
+        </section>
 
           {/* --- FREQUENTLY ASKED QUESTIONS (ACCORDION SECTION) --- */}
           <div className="w-full">
