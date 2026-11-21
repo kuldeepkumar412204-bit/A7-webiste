@@ -35,156 +35,6 @@ export const metadata: Metadata = {
 };
 
 export default function Dwarka() {
-  //     const infoSections = [
-  //     {
-  //         heading: "Dwarka Satta Result & Chart 2026 – Live Updates",
-  //         description: (
-  //             <>
-  //                 <p>
-  //                     Welcome to A7 Satta King, your trusted platform for checking Dwarka Satta Result and chart updates for 2026. Here, users can access verified results, daily updates, and structured chart data in a clear and easy-to-understand format.
-  //                 </p>
-
-  //                 <p className="mt-3">
-  //                     The platform provides complete historical records from 1 January 2026 till today, allowing users to track number movements, review patterns, and stay updated without confusion. Whether you are checking today’s result or analyzing past data, everything is available in one place.
-  //                 </p>
-  //             </>
-  //         ),
-  //     },
-  //     {
-  //         heading: "What is Dwarka Satta?",
-  //         description: (
-  //             <>
-  //                 <p>
-  //                     Dwarka Satta is part of the larger Satta Matka network, which includes popular games such as Gali, Disawar, and Faridabad. Each game has its own result timing and user base.
-  //                 </p>
-
-  //                 <p className="mt-3">
-  //                     Many users follow Dwarka Satta daily to check results and observe number patterns. On A7 Satta King, all results are presented in a simple format so users can easily understand updates and track changes over time.
-  //                 </p>
-  //             </>
-  //         ),
-  //     },
-  //     {
-  //         heading: "Dwarka Satta Result Timing",
-  //         description: (
-  //             <>
-  //                 <p>
-  //                     Dwarka Satta results are generally released at a fixed time every day. Based on historical patterns, results are usually announced between 10:10 PM and 10:15 PM.
-  //                 </p>
-
-  //                 <p className="mt-3">
-  //                     However, timing may vary slightly depending on updates, so users are advised to check regularly for the latest information.
-  //                 </p>
-  //             </>
-  //         ),
-  //     },
-  //     {
-  //         heading: "Dwarka Satta Result Today",
-  //         description: (
-  //             <>
-  //                 <p>
-  //                     Users looking for today’s Dwarka Satta Result can easily find the latest update on this page. Results are published only after proper verification to ensure accuracy.
-  //                 </p>
-
-  //                 <p className="mt-3">
-  //                     Simply refresh the page to check the newest result along with related updates and highlights.
-  //                 </p>
-  //             </>
-  //         ),
-  //     },
-  //     {
-  //         heading: "Dwarka Satta Chart 2026",
-  //         description: (
-  //             <>
-  //                 <p>
-  //                     The Dwarka Satta Chart 2026 provides a structured view of daily results from January 1, 2026 to the present date. It helps users review number movements over time.
-  //                 </p>
-
-  //                 <p className="mt-3">
-  //                     Monthly charts summarize how results changed during a specific period, making it easier to understand variations and patterns.
-  //                 </p>
-  //             </>
-  //         ),
-  //     },
-  //     {
-  //         heading: "Monthly & Yearly Chart Insights",
-  //         description: (
-  //             <>
-  //                 <p>
-  //                     Monthly and yearly charts offer a broader understanding of number frequency and trends.
-  //                 </p>
-
-  //                 <ul className="list-disc pl-6 mt-4 space-y-2">
-  //                     <li>Monthly charts show short-term movement</li>
-  //                     <li>Yearly charts help track long-term patterns</li>
-  //                     <li>Users can compare data across different time periods</li>
-  //                 </ul>
-  //                 <p className="mt-3">
-
-  //                     These insights help users observe how numbers repeat or change over time.
-  //                 </p>
-  //             </>
-  //         ),
-  //     },
-  //     {
-  //         heading: "Why Users Track Dwarka Satta History",
-  //         description: (
-  //             <>
-  //                 <p>
-  //                     Users follow historical data for better understanding and observation.
-  //                 </p>
-  //                 <p className="mt-3 font-bold">
-  //                     Key reasons include:
-
-  //                 </p>
-
-  //                 <ul className="list-disc pl-6 mt-4 space-y-2">
-  //                     <li>Complete chart data from January 2026 to the present</li>
-  //                     <li>Easy identification of number patterns</li>
-  //                     <li>Access to multiple game updates in one place</li>
-  //                     <li>Simple and structured data for analysis</li>
-  //                 </ul>
-  //             </>
-  //         ),
-  //     },
-  //     {
-  //         heading: "Why Choose A7 Satta King",
-  //         description: (
-  //             <>
-  //                 <p>A7 Satta King is preferred for:</p>
-
-  //                 <ul className="list-disc pl-6 mt-4 space-y-2">
-  //                     <li>Fast and verified result updates</li>
-  //                     <li>Clean and easy-to-read charts</li>
-  //                     <li>Mobile-friendly interface</li>
-  //                     <li>Smooth navigation and user experience</li>
-  //                     <li>Access to multiple Satta markets</li>
-  //                 </ul>
-  //             </>
-  //         ),
-  //     },
-  //     {
-  //         heading: "Stay Updated with Dwarka Satta News",
-  //         description:
-  //             "A7 Satta King regularly shares updates related to chart changes, trends, and daily results. Users can stay connected to get the latest information quickly and easily.",
-  //     },
-  //     {
-  //         heading: "Discover Additional Daily Satta Result Options",
-  //         description: (
-  //             <>
-  //                 Along with checking Dwarka updates, users also explore games like <Link href="https://www.a7sattaking.co/disawar" className="text-blue-600 underline">
-  //               Disawar Satta Result
-  //             </Link>, <Link href="/shri-ganesh" className="text-blue-600 underline">Shri Ganesh Satta Result</Link>, and <Link href="/gali" className="text-blue-600 underline">Gali Satta Result</Link> to stay updated with different result timings. You can also follow <Link href="/raj-shree" className="text-blue-600 underline">Raj Shree Satta Result</Link> and <Link href="/udaipur-city" className="text-blue-600 underline">Udaipur City Satta Result</Link> for additional updates throughout the day.
-  //             </>
-  //         ),
-  //     },
-  //     {
-  //         heading: "Important Disclaimer",
-  //         description:
-  //             "A7 Satta King provides Dwarka Satta Result and chart information for informational purposes only. The platform does not promote any illegal activity. Users should follow local laws and use the information at their own risk.",
-  //     },
-  // ];
-
   const infoSections = [
     {
       heading: "Dwarka Satta Result & Chart 2026 – लाइव अपडेट",
@@ -223,6 +73,29 @@ export default function Dwarka() {
             आसान फॉर्मेट में दिखाए जाते हैं, जिससे यूजर्स अपडेट को आसानी से समझ
             सकते हैं और समय के साथ होने वाले बदलावों को ट्रैक कर सकते हैं।
           </p>
+        </>
+      ),
+    },
+    {
+      heading: "Satta Matka नेटवर्क में अलग-अलग मार्केट की भूमिका",
+      description: (
+        <>
+          Satta Matka नेटवर्क में प्रत्येक मार्केट की अपनी अलग पहचान होती है।
+          कुछ मार्केट अपने क्षेत्रीय नामों से जाने जाते हैं, जबकि कुछ की पहचान
+          उनके दैनिक रिजल्ट शेड्यूल से होती है। Dwarka के अलावा{" "}
+          <Link href="/delhi-bazar" className="text-blue-600 underline">
+            Delhi Bazar Satta Result
+          </Link>
+          ,{" "}
+          <Link href="/gwalior" className="text-blue-600 underline">
+            Gwalior Satta Result
+          </Link>{" "}
+          और{" "}
+          <Link href="/karol-bagh" className="text-blue-600 underline">
+            Karol Bagh Satta Result
+          </Link>{" "}
+          जैसे मार्केट के लिए भी अलग पेज उपलब्ध हैं। इन पेजों पर संबंधित मार्केट
+          के रिजल्ट और पुराने रिकॉर्ड की जानकारी देखी जा सकती है।
         </>
       ),
     },
@@ -304,6 +177,30 @@ export default function Dwarka() {
       ),
     },
     {
+      heading: "पुराने मार्केट रिकॉर्ड को देखने के अलग तरीके",
+      description: (
+        <>
+          किसी भी मार्केट के पुराने रिकॉर्ड को समझने के लिए उसकी तारीख और उपलब्ध
+          डेटा को सही क्रम में देखना जरूरी है। अलग-अलग मार्केट के पेजों पर
+          पुराने रिजल्ट को व्यवस्थित रूप में प्रस्तुत किया जाता है। उदाहरण के
+          लिए,{" "}
+          <Link href="/faridabad" className="text-blue-600 underline">
+            Faridabad Satta Result
+          </Link>
+          ,{" "}
+          <Link href="/alwar" className="text-blue-600 underline">
+            Alwar Satta Result
+          </Link>{" "}
+          और{" "}
+          <Link href="/gaziabad" className="text-blue-600 underline">
+            Gaziabad Satta Result
+          </Link>{" "}
+          के पेजों पर संबंधित मार्केट की जानकारी उपलब्ध है। इससे पाठक अलग-अलग
+          मार्केट के रिकॉर्ड को स्वतंत्र रूप से देख सकते हैं।
+        </>
+      ),
+    },
+    {
       heading: "यूजर्स Dwarka Satta का पुराना रिकॉर्ड क्यों देखते हैं?",
       description: (
         <>
@@ -342,6 +239,33 @@ export default function Dwarka() {
         "A7 Satta King नियमित रूप से चार्ट में होने वाले बदलावों, रुझानों और दैनिक रिजल्ट से जुड़ी जानकारी साझा करता है। यूजर्स नवीनतम जानकारी जल्दी और आसानी से प्राप्त करने के लिए वेबसाइट पर अपडेट चेक कर सकते हैं।",
     },
     {
+      heading: "अन्य क्षेत्रीय गेम और उनकी अलग पहचान",
+      description: (
+        <>
+          Dwarka के साथ वेबसाइट पर कई अन्य क्षेत्रीय गेम के लिए भी अलग-अलग पेज
+          बनाए गए हैं। इनमें{" "}
+          <Link href="/sadar-bazar" className="text-blue-600 underline">
+            Sadar Bazar Satta Result
+          </Link>
+          ,{" "}
+          <Link href="/new-ganga" className="text-blue-600 underline">
+            New Ganga Satta Result
+          </Link>
+          ,{" "}
+          <Link href="/jaipur-matka" className="text-blue-600 underline">
+            Jaipur Matka Result
+          </Link>{" "}
+          और{" "}
+          <Link href="/shri-lakshmi" className="text-blue-600 underline">
+            Shri Lakshmi Satta Result
+          </Link>{" "}
+          शामिल हैं। प्रत्येक पेज पर संबंधित गेम की जानकारी अलग से व्यवस्थित की
+          गई है, जिससे पाठकों को अपनी जरूरत के अनुसार अलग-अलग मार्केट देखने में
+          सुविधा मिलती है।
+        </>
+      ),
+    },
+    {
       heading: "रोजाना के अन्य Satta Result विकल्पों के बारे में जानें",
       description: (
         <>
@@ -377,50 +301,6 @@ export default function Dwarka() {
         "A7 Satta King पर Dwarka Satta Result और चार्ट से जुड़ी जानकारी केवल सूचनात्मक उद्देश्यों के लिए दी जाती है। यह प्लेटफॉर्म किसी भी गैरकानूनी गतिविधि को बढ़ावा नहीं देता है। यूजर्स को अपने स्थानीय कानूनों का पालन करना चाहिए और इस जानकारी का उपयोग अपने जोखिम पर करना चाहिए।",
     },
   ];
-
-  //   const faqItems = [
-  //     {
-  //       question: "What is Dwarka Satta?",
-  //       answer:
-  //         "Dwarka Satta is a number-based system where users check daily results and charts.",
-  //     },
-  //     {
-  //       question: "Where can I check today’s Dwarka Satta Result?",
-  //       answer: "You can check the latest result on A7 Satta King.",
-  //     },
-  //     {
-  //       question: "How often are results updated?",
-  //       answer: "Results are updated daily after verification.",
-  //     },
-  //     {
-  //       question: "What is the result timing?",
-  //       answer: "Results are usually announced between 10:10 PM and 10:15 PM.",
-  //     },
-  //     {
-  //       question: "Can I view old charts?",
-  //       answer: "Yes, charts from January 2026 till today are available.",
-  //     },
-  //     {
-  //       question: "Is A7 Satta King reliable?",
-  //       answer: "Yes, it provides accurate and verified results.",
-  //     },
-  //     {
-  //       question: "Do I need to register?",
-  //       answer: "No, all results and charts are free.",
-  //     },
-  //     {
-  //       question: "Does the platform provide predictions?",
-  //       answer: "No, only results and charts are shared.",
-  //     },
-  //     {
-  //       question: "Can I check results on mobile?",
-  //       answer: "Yes, the website is fully mobile-friendly.",
-  //     },
-  //     {
-  //       question: "Are results updated daily?",
-  //       answer: "Yes, all results and charts are updated every day.",
-  //     },
-  //   ];
 
   const faqItems = [
     {

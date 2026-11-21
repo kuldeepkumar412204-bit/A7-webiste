@@ -42,147 +42,6 @@ export default function Gahaziabad({
 }: {
   latest?: LatestResult | null;
 }) {
-  // const infoSections = [
-  //   {
-  //     heading: "Gaziabad Satta Result Today and 2026 Chart",
-  //     description: (
-  //       <>
-  //         <p>
-  //           This page carries today's Gaziabad number and the 2026 chart, shows where Gaziabad sits in the late-evening timetable, and looks at what the 2026 chart has recorded so far.
-  //         </p>
-  //       </>
-  //     ),
-  //   },
-  //   {
-  //     heading: "Latest Gaziabad Satta Result",
-  //     description: latest
-  //       ? `Last chart update: ${formatDrawDate(latest.drawDate)}, ${latest.time} IST\nLatest available result: ${latest.result} (${formatDrawDate(latest.drawDate)})\nStatus: ${latest.isToday ? "Updated" : "Waiting for today's result"}`
-  //       : "Latest available result: Not available yet\nStatus: Waiting for result",
-  //   },
-  //   {
-  //     heading: "Gaziabad Satta Result Time: 9:50 PM",
-  //     description: (
-  //       <>
-  //         <p>
-  //           Gaziabad is a late-evening result. Open the page a few minutes after 9:50 PM to see today's number. Before that, today's cell in the chart may still be empty. The day's result is also listed in the home page table alongside the other games.
-  //         </p>
-  //       </>
-  //     ),
-  //   },
-  //   {
-  //     heading: "The Longest Gap of the Evening",
-  //     description: (
-  //       <>
-  //         <p>
-  //           After <Link href="/sialkot" className="text-blue-600 underline">Sialkot</Link> at 8:20 PM, nothing is declared for over an hour, the longest stretch without a result anywhere on the timetable. That quiet period ends when a run of late games begins, and Gaziabad, at 9:50 PM, is one of them.
-  //         </p>
-  //       </>
-  //     ),
-  //   },
-  //   {
-  //     heading: "The Full Evening, Start to Finish",
-  //     description: (
-  //       <>
-  //         <p>Laid out end to end, the evening after Sialkot looks like this:</p>
-  //         <ul className="list-disc pl-6 mt-4 space-y-2">
-  //           <li>Sialkot, 8:20 PM</li>
-  //           <li>(over an hour of no results)</li>
-  //           <li>Gaziabad, 9:50 PM</li>
-  //           <li><Link href="/dwarka" className="text-blue-600 underline">Dwarka</Link>, 10:35 PM</li>
-  //           <li><Link href="/gali" className="text-blue-600 underline">Gali</Link>, 11:50 PM, the last result of the day</li>
-  //         </ul>
-  //         <p className="mt-4">Gaziabad is the third-last game declared each day, with only Dwarka and Gali following it.</p>
-  //       </>
-  //     ),
-  //   },
-  //   {
-  //     heading: "A Cluster of Late Games",
-  //     description: (
-  //       <>
-  //         <p>
-  //           In the run-up to 9:50 PM, several late-evening results follow one another in quick succession. If you're checking more than one of these pages, do it in time order, since results declared close together late in the evening are easy to mix up. Checking a page too early in this window will still show the previous day's number rather than today's.
-  //         </p>
-  //       </>
-  //     ),
-  //   },
-  //   {
-  //     heading: "Gaziabad Chart 2026",
-  //     description: (
-  //       <>
-  //         <p>
-  //           The chart has one cell for each day of each month. To find today's Gaziabad Satta Result number, locate today's date in the left column and read across to this month's column. A cell that still shows the wait icon has no result yet, which is normal before 9:50 PM. Once the year fills in further, the same layout will let you compare any two months side by side just by scanning across a row.
-  //         </p>
-  //       </>
-  //     ),
-  //   },
-  //   {
-  //     heading: "Key Features of Our Chart",
-  //     description: (
-  //       <>
-  //         <ul className="list-disc pl-6 mt-4 space-y-2">
-  //           <li>Daily updated results</li>
-  //           <li>Complete history from 1 Jan 2026 to the present</li>
-  //           <li>Mobile-friendly and responsive design</li>
-  //           <li>Clear and easy-to-read format</li>
-  //           <li>Quick access to latest and old charts</li>
-  //         </ul>
-  //       </>
-  //     ),
-  //   },
-  //   {
-  //     heading: "Finding an Earlier Gaziabad Result",
-  //     description: (
-  //       <>
-  //         <p>
-  //           For a past date, go to that date in the left column and move across to the month you want. Every day that has already passed this year stays in the chart. The numbers record what was declared and do not show what the next result will be.
-  //         </p>
-  //       </>
-  //     ),
-  //   },
-  //   {
-  //     heading: "Related Satta Results",
-  //     description: (
-  //       <>
-  //         Along with Gaziabad, users on A7 Satta King also check <Link href="/sialkot" className="text-blue-600 underline">Sialkot Satta Results</Link>, <Link href="/dwarka" className="text-blue-600 underline">Dwarka Satta Results</Link>, and <Link href="/gali" className="text-blue-600 underline">Gali Satta Result</Link>.
-  //       </>
-  //     ),
-  //   },
-  //   {
-  //     heading: "Gaziabad Satta History Chart",
-  //     description: (
-  //       <>
-  //         <p>The history chart displays past results in a structured timeline, helping users understand repeated numbers and long-term patterns.
-  //         </p>
-  //         <p className="mt-3">While many users review historical data for reference, it is important to note that past results do not guarantee future outcomes.
-  //         </p>
-  //       </>
-  //     ),
-  //   },
-  //   {
-  //     heading: "Why Choose A7 Satta King",
-  //     description: (
-  //       <>
-  //         <p><Link href="https://www.a7sattaking.co/" className="text-blue-600 underline">A7 Satta King</Link> is preferred by users because it provides a simple and reliable experience.
-
-  //         </p>
-  //         <p className="mt-3 font-bold">Reasons to choose this platform:</p>
-  //         <ul className="list-disc pl-6 mt-2 space-y-2">
-  //           <li>Fast and regular result updates</li>
-  //           <li>Clean and organized chart display</li>
-  //           <li>Easy navigation for all users</li>
-  //           <li>Access to multiple Satta game results</li>
-  //           <li>Smooth performance on mobile and desktop</li>
-  //         </ul>
-  //       </>
-  //     ),
-  //   },
-  //   {
-  //     heading: "Disclaimer",
-  //     description:
-  //       "This page shows results and charts for information only. We do not promote or support gambling or any illegal activity. Please follow the laws that apply where you live.",
-  //   },
-  // ];
-
   const infoSections = [
     {
       heading: "Gaziabad Satta Result Today और 2026 Chart",
@@ -193,6 +52,45 @@ export default function Gahaziabad({
             भी बताया गया है कि शाम के आखिरी समय के रिजल्ट शेड्यूल में Gaziabad
             का स्थान क्या है और 2026 के चार्ट में अब तक कौन-कौन से रिजल्ट दर्ज
             किए गए हैं।
+          </p>
+        </>
+      ),
+    },
+    {
+      heading: "Satta Matka में इस्तेमाल होने वाले पारंपरिक शब्दों का अर्थ",
+      description: (
+        <>
+          <p className="mb-3">
+            Satta Matka की पुरानी कार्यप्रणाली में कुछ खास शब्दों का इस्तेमाल
+            किया जाता रहा है, जिनका अर्थ समझना इसके इतिहास को जानने का एक हिस्सा
+            है। उदाहरण के लिए, Matka शब्द उस बर्तन से जुड़ा है जिसका इस्तेमाल
+            शुरुआती दौर में नंबरों की पर्चियां निकालने के लिए किया जाता था। समय
+            के साथ इस व्यवस्था से जुड़े कई शब्द आम बोलचाल में शामिल हो गए। आज भी
+            Jodi, Panna, Open और Close जैसे शब्द इस खेल से संबंधित ऑनलाइन
+            सामग्री में दिखाई देते हैं।
+          </p>
+          <p className="mb-3">
+            इन शब्दों की जानकारी के साथ अलग-अलग नामों से प्रकाशित पेजों की भाषा
+            और प्रस्तुति को भी समझा जा सकता है।{" "}
+            <Link href="/lakshmi-bajar" className="text-blue-600 underline">
+              Lakshmi Bajar
+            </Link>
+            ,{" "}
+            <Link href="/dehradun-city" className="text-blue-600 underline">
+              Dehradun City
+            </Link>
+            ,{" "}
+            <Link href="/udaipur-city" className="text-blue-600 underline">
+              Udaipur City
+            </Link>{" "}
+            और{" "}
+            <Link href="/sialkot" className="text-blue-600 underline">
+              Sialkot
+            </Link>{" "}
+            जैसे पेज अपने शीर्षक और बाजार के नाम के अनुसार जानकारी प्रस्तुत करते
+            हैं। किसी भी शब्द का अर्थ समझते समय यह ध्यान रखना चाहिए कि वह केवल
+            खेल से जुड़ी पारंपरिक शब्दावली बताता है, किसी परिणाम की निश्चितता या
+            भविष्य के नंबरों की जानकारी नहीं देता।
           </p>
         </>
       ),
@@ -391,32 +289,6 @@ export default function Gahaziabad({
         "इस पेज पर दिए गए रिजल्ट और चार्ट केवल जानकारी के उद्देश्य से उपलब्ध कराए गए हैं। हम जुए या किसी भी गैरकानूनी गतिविधि को बढ़ावा या समर्थन नहीं देते हैं। कृपया अपने क्षेत्र में लागू कानूनों और नियमों का पालन करें।",
     },
   ];
-
-  // const faqItems = [
-  //   {
-  //     question: "What time is the Gaziabad Satta Result declared?",
-  //     answer: "At 9:50 PM.",
-  //   },
-  //   {
-  //     question: "What comes right before Gaziabad in the evening?",
-  //     answer:
-  //       "Sialkot at 8:20 PM, followed by the evening's longest gap: over an hour with no result.",
-  //   },
-  //   {
-  //     question: "How many results come after Gaziabad?",
-  //     answer:
-  //       "Two: Dwarka at 10:35 PM and Gali at 11:50 PM, the last of the day.",
-  //   },
-  //   {
-  //     question: "Where can I see today's Gaziabad Satta Result?",
-  //     answer:
-  //       "In today's cell in the chart on this page. It also appears in the home page table.",
-  //   },
-  //   {
-  //     question: "Does this page give tips or predictions?",
-  //     answer: "No. It shows results and charts for reference only.",
-  //   },
-  // ];
 
   const faqItems = [
     {
